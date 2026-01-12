@@ -42,6 +42,9 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
                     <Link href={`/${lang}#services`} className="text-sm font-medium hover:text-[var(--primary)] transition-colors">
                         {dict.nav?.services || 'Services'}
                     </Link>
+                    <Link href={`/${lang}#ai-solutions`} className="text-sm font-medium hover:text-[var(--primary)] transition-colors">
+                        {dict.nav?.aiSolutions || 'AI Solutions'}
+                    </Link>
                     <Link href={`/${lang}#team`} className="text-sm font-medium hover:text-[var(--primary)] transition-colors">
                         {dict.nav?.team || 'Team'}
                     </Link>
@@ -70,6 +73,9 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
                     <div className="flex flex-col gap-4">
                         <Link href={`/${lang}#services`} onClick={toggleMenu} className="text-lg font-medium">
                             {dict.nav?.services || 'Services'}
+                        </Link>
+                        <Link href={`/${lang}#ai-solutions`} onClick={toggleMenu} className="text-lg font-medium">
+                            {dict.nav?.aiSolutions || 'AI Solutions'}
                         </Link>
                         <Link href={`/${lang}#team`} onClick={toggleMenu} className="text-lg font-medium">
                             {dict.nav?.team || 'Team'}

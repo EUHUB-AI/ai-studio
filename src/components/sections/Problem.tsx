@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './Problem.module.css';
+import styles from '../../../public/assets/css/sections/Problem.module.css';
 
 const icons = [
     '/icons/time-waste.png',

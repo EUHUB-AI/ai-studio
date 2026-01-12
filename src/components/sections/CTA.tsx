@@ -1,4 +1,4 @@
-import styles from './CTA.module.css';
+import styles from '../../../public/assets/css/sections/CTA.module.css';
 
 export default function CTA({ dict }: { dict: any }) {
     return (

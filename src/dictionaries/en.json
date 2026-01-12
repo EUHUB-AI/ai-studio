@@ -1,6 +1,7 @@
 {
   "nav": {
     "services": "Strategic Services",
+    "aiSolutions": "AI Solutions",
     "team": "Team",
     "contact": "Partner With Us"
   },
@@ -8,6 +9,11 @@
     "title": "Your Strategic AI Implementation Partner in Central Europe.",
     "subtitle": "Maintain full control over your risks. Our audit identifies vulnerabilities in your infrastructure and AI potential before they become liabilities.",
     "cta": "Start Strategic Audit"
+  },
+  "valueProposition": {
+    "headline": "Beyond Websites. Beyond Expectations.",
+    "subheadline": "We don't build websites—we architect intelligent solutions that transform how your business operates and how customers experience your brand.",
+    "body": "In the new era of AI, your digital presence isn't just a webpage. It's an integrated ecosystem that learns, adapts, and delivers measurable business value from day one."
   },
   "services": {
     "title": "Enterprise-Grade AI Infrastructure",
@@ -31,19 +37,58 @@
     "subtitle": "The brains behind your strategic AI implementation.",
     "members": [
       {
-        "name": "Michal Kováč",
-        "role": "Chief AI Solutions Architect",
-        "description": "Specialist in large-scale RAG systems and multi-agent governance."
+        "name": "Artashes A.",
+        "role": "Head of Business Development",
+        "link": "Linkedin",
+        "url": "https://www.linkedin.com/in/artashes-arakelian-0b68b08b/"
       },
       {
-        "name": "Zuzana Horváthová",
-        "role": "Head of AI Compliance",
-        "description": "Legal expert specializing in the EU AI Act and ethical AI deployment."
+        "name": "Mike G.",
+        "role": "AI Operations, Solution Architect",
+        "link": "mike.euhub-ai.com",
+        "url": "https://mike.euhub-ai.com"
       },
       {
-        "name": "Jakub Molnár",
-        "role": "Infrastructure & Security Lead",
-        "description": "Focuses on private cloud LLM deployments and SOC2-compliant pipelines."
+        "name": "Kateryna H.",
+        "role": "Community Infrastructure Lead",
+        "link": "",
+        "url": ""
+      }
+    ]
+  },
+  "aiSolutions": {
+    "title": "AI Solutions",
+    "subtitle": "Strategic AI implementations that reduce risk, prevent vendor lock-in, and ensure organizational accountability.",
+    "solutions": [
+      {
+        "title": "AI Tool Selection & Testing",
+        "description": "Prevent vendor lock-in and failed AI spend through evidence-based selection. Typically delivered in 2–4 weeks.",
+        "stage": "adopt"
+      },
+      {
+        "title": "AI Concept Testing",
+        "description": "Proof of Concept and pilot programs to validate solutions in real-world conditions with minimal risk and clear ROI data.",
+        "stage": "adopt"
+      },
+      {
+        "title": "Custom Digital Assistants",
+        "description": "Reduce operational load and response latency across support, HR, and sales through intelligent automation.",
+        "stage": "build"
+      },
+      {
+        "title": "Custom AI Development",
+        "description": "Fully customized solutions built around your business processes. Complete control, scalability, and freedom from vendor dependencies.",
+        "stage": "build"
+      },
+      {
+        "title": "AI for Recruitment",
+        "description": "Modern HR solution that handles CV screening, interviews, candidate ranking, and automated communication—saving hours of manual work.",
+        "stage": "operate"
+      },
+      {
+        "title": "AI Governance, Risk & Compliance",
+        "description": "Governance frameworks and controls to ensure your AI systems are compliant, auditable, and enterprise-safe from day one. Designed for regulated environments.",
+        "stage": "operate"
       }
     ]
   },

@@ -2,7 +2,7 @@ import { GlassCard } from '../shared/GlassCard';
 
 export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
     return (
-        <section className="relative min-h-screen flex items-center pt-[calc(var(--header-height)+4rem)] overflow-hidden">
+        <section className="relative min-h-[80vh] flex items-center pt-[calc(var(--header-height)+2rem)] pb-12 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
                 <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-[var(--primary)] opacity-20 blur-[120px] animate-pulse"></div>

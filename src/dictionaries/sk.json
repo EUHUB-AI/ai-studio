@@ -1,6 +1,7 @@
 {
     "nav": {
         "services": "Služby",
+        "aiSolutions": "AI Riešenia",
         "team": "Tím",
         "contact": "Kontakt"
     },
@@ -8,6 +9,11 @@
         "title": "Znížte náklady a chybovosť pomocou inteligentnej automatizácie.",
         "subtitle": "Udržiavajte úplnú kontrolu nad svojimi rizikami. Náš audit identifikuje zraniteľnosti vo vašej infraštruktúre a potenciál AI ešte predtým, než sa stanú záväzkami.",
         "cta": "Získať Audit Zadarmo"
+    },
+    "valueProposition": {
+        "headline": "Viac než Webové Stránky. Viac než Očakávania.",
+        "subheadline": "Nevytvárame webové stránky—navrhujeme inteligentné riešenia, ktoré transformujú fungovanie vášho podnikania a zákaznícku skúsenosť.",
+        "body": "V novej ére AI nie je vaša digitálna prítomnosť len webová stránka. Je to integrovaný ekosystém, ktorý sa učí, prispôsobuje a prináša merateľnú hodnotu od prvého dňa."
     },
     "services": {
         "title": "Riešenia s garantovanou návratnosťou",
@@ -31,19 +37,58 @@
         "subtitle": "Tím, ktorý stojí za vašou úspešnou implementáciou AI.",
         "members": [
             {
-                "name": "Michal Kováč",
-                "role": "Chief AI Solutions Architect",
-                "description": "Špecialista na rozsiahle RAG systémy a správu multi-agentových riešení."
+                "name": "Artashes A.",
+                "role": "Head of Business Development",
+                "link": "Linkedin",
+                "url": "https://www.linkedin.com/in/artashes-arakelian-0b68b08b/"
             },
             {
-                "name": "Zuzana Horváthová",
-                "role": "Vedúca AI Compliance",
-                "description": "Právna expertka so zameraním na EU AI Act a etické nasadzovanie AI."
+                "name": "Mike G.",
+                "role": "AI Operations, Solution Architect",
+                "link": "euhub-ai.com",
+                "url": "https://mike.euhub-ai.com"
             },
             {
-                "name": "Jakub Molnár",
-                "role": "Infrastructure & Security Lead",
-                "description": "Zameriava sa na privátne cloudové LLM riešenia a SOC2-kompatibilné systémy."
+                "name": "Kateryna H.",
+                "role": "Community Infrastructure Lead",
+                "link": "",
+                "url": ""
+            }
+        ]
+    },
+    "aiSolutions": {
+        "title": "AI Riešenia",
+        "subtitle": "Strategické AI implementácie, ktoré znižujú riziko, zabraňujú závislosti od dodávateľov a zabezpečujú zodpovednosť organizácie.",
+        "solutions": [
+            {
+                "title": "Výber a Testovanie AI Nástrojov",
+                "description": "Zabráňte závislosti od dodávateľov a neúspešným investíciám do AI prostredníctvom výberu založeného na dôkazoch. Typicky dodané za 2–4 týždne.",
+                "stage": "adopt"
+            },
+            {
+                "title": "Testovanie AI Konceptov",
+                "description": "Proof of Concept a pilotné programy na validáciu riešení v reálnych podmienkach s minimálnym rizikom a jasnými ROI dátami.",
+                "stage": "adopt"
+            },
+            {
+                "title": "Vlastní Digitálni Asistenti",
+                "description": "Znížte prevádzkovú záťaž a latenciu odpovedí v podpore, HR a predaji prostredníctvom inteligentnej automatizácie.",
+                "stage": "build"
+            },
+            {
+                "title": "Vývoj AI na Mieru",
+                "description": "Plne prispôsobené riešenia vytvorené podľa vašich obchodných procesov. Úplná kontrola, škálovateľnosť a sloboda od závislosti na dodávateľoch.",
+                "stage": "build"
+            },
+            {
+                "title": "AI pre Nábor",
+                "description": "Moderné HR riešenie, ktoré zvláda skríning CV, pohovory, hodnotenie kandidátov a automatizovanú komunikáciu—šetrí hodiny manuálnej práce.",
+                "stage": "operate"
+            },
+            {
+                "title": "AI Governance, Risk & Compliance",
+                "description": "Rámce riadenia a kontroly na zabezpečenie toho, aby vaše AI systémy boli v súlade s predpismi, auditovateľné a bezpečné pre podnik od prvého dňa. Navrhnuté pre regulované prostredia.",
+                "stage": "operate"
             }
         ]
     },
