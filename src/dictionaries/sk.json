@@ -1,147 +1,83 @@
 {
     "nav": {
-        "services": "Služby",
-        "aiSolutions": "AI Riešenia",
-        "team": "Tím",
+        "services": "Čo ponúkame",
+        "team": "Kto sme",
         "contact": "Kontakt"
     },
     "hero": {
-        "title": "Znížte náklady a chybovosť pomocou inteligentnej automatizácie.",
-        "subtitle": "Udržiavajte úplnú kontrolu nad svojimi rizikami. Náš audit identifikuje zraniteľnosti vo vašej infraštruktúre a potenciál AI ešte predtým, než sa stanú záväzkami.",
-        "cta": "Získať Audit Zadarmo"
+        "title": "Vaša webová stránka by vám mala zarábať peniaze, nie robiť starosti.",
+        "subtitle": "Máte starý web, ktorému už nikto nerozumie? Pomôžeme vám ho prerobiť na moderný a jednoduchý systém, ktorý vám prinesie nových zákazníkov. My sa postaráme o techniku, vy o váš biznis.",
+        "cta": "Chcem modernejší web"
     },
     "valueProposition": {
-        "headline": "Viac než Webové Stránky. Viac než Očakávania.",
-        "subheadline": "Nevytvárame webové stránky—navrhujeme inteligentné riešenia, ktoré transformujú fungovanie vášho podnikania a zákaznícku skúsenosť.",
-        "body": "V novej ére AI nie je vaša digitálna prítomnosť len webová stránka. Je to integrovaný ekosystém, ktorý sa učí, prispôsobuje a prináša merateľnú hodnotu od prvého dňa."
+        "headline": "Viac než len pekná stránka. Skutočný pomocník pre váš biznis.",
+        "subheadline": "Nerobíme len bežné webové stránky—vytvárame systémy, ktoré za vás vybavia zákazníkov a ušetria vám čas.",
+        "body": "Dnes už nestačí len mať 'niečo na internete'. Vaša stránka musí byť zrozumiteľná, rýchla a musí fungovať aj na mobile. My vám postavíme moderné riešenie, ktorému pochopí každý váš zákazník."
     },
     "services": {
-        "title": "Riešenia s garantovanou návratnosťou",
+        "title": "Ako vám pomôžeme rásť",
         "items": [
             {
-                "title": "Digitálny Audit",
-                "desc": "Zistite presne, kde vaša firma stráca peniaze. Identifikujeme procesy vhodné na automatizáciu a vypočítame návratnosť investície."
+                "title": "Moderný a jasný web",
+                "desc": "Vaši zákazníci okamžite pochopia, čo ponúkate. Stránka bude moderná, prehľadná a bude sa skvele zobrazovať v počítači aj v mobile."
             },
             {
-                "title": "Pilotný Projekt",
-                "desc": "Funkčné riešenie do 4 týždňov. Žiadne dlhé čakanie. Rýchle nasadenie chatbota alebo procesného agenta."
+                "title": "Automatický pomocník",
+                "desc": "Nasadíme vám na web inteligentný systém, ktorý odpovie na otázky vašich zákazníkov aj v noci alebo cez víkend. Už nestratíte žiadnu objednávku."
             },
             {
-                "title": "Komplexná Implementácia",
-                "desc": "Plná automatizácia firmy. Využite financovanie z Plánu obnovy a Výzvy 2025. My sa postaráme o technológiu aj grantovú pripravenosť."
+                "title": "Všetko pod jednou strechou",
+                "desc": "Nemusíte ničomu rozumieť. My vybavíme adresu webu, e-maily, zabezpečenie aj aktualizácie. Vy sa sústredíte len na svojich zákazníkov."
             }
         ]
     },
     "team": {
-        "title": "Spoznajte našich expertov",
-        "subtitle": "Tím, ktorý stojí za vašou úspešnou implementáciou AI.",
+        "title": "Spoznajte náš tím",
+        "subtitle": "Sme tu, aby sme vám pomohli uspieť v digitálnom svete bez zbytočných technických výrazov.",
         "members": [
             {
                 "name": "Artashes A.",
-                "role": "Head of Business Development",
+                "role": "Obchodný rozvoj",
                 "link": "Linkedin",
                 "url": "https://www.linkedin.com/in/artashes-arakelian-0b68b08b/"
             },
             {
                 "name": "Mike G.",
-                "role": "AI Operations, Solution Architect",
+                "role": "Technický architekt",
                 "link": "euhub-ai.com",
                 "url": "https://mike.euhub-ai.com"
             },
             {
                 "name": "Kateryna H.",
-                "role": "Community Infrastructure Lead",
+                "role": "Starostlivosť o zákazníkov",
                 "link": "",
                 "url": ""
             }
         ]
     },
     "aiSolutions": {
-        "title": "AI Riešenia",
-        "subtitle": "Strategické AI implementácie, ktoré znižujú riziko, zabraňujú závislosti od dodávateľov a zabezpečujú zodpovednosť organizácie.",
-        "solutions": [
-            {
-                "title": "Strategická AI Architektúra",
-                "description": "Nestavajte svoju budúcnosť na pohyblivých pieskoch. Prerezávame sa cez hype, aby sme navrhli precízny, dôkazmi podložený technologický stack, ktorý vyhovuje vašej infraštruktúre. Predchádzame nákladnej závislosti od dodávateľov tým, že identifikujeme presné nástroje, ktoré potrebujete—a tie, ktoré nie—už za 2–4 týždne.",
-                "stage": "adopt"
-            },
-            {
-                "title": "Rýchla Validácia ROI",
-                "description": "Eliminujte riziko neúspešných investícií. Spúšťame \"Proof of Value\" pilotné projekty navrhnuté na validáciu vašich hypotéz v reálnych podmienkach. Dokážeme matematiku, efektivitu a škálovateľnosť predtým, než investujete jediný dolár do plnej produkcie.",
-                "stage": "adopt"
-            },
-            {
-                "title": "Autonómni Podnikoví Agenti",
-                "description": "Prekonajte pasívne chatboty. Nasadzujeme inteligentných agentov, ktorí vykonávajú úlohy—spracovanie refundácií, aktualizáciu CRM a autonómne riešenie technických problémov. Prestaňte lístky len smerovať; začnite ich riešiť s digitálnou pracovnou silou 24/7.",
-                "stage": "build"
-            },
-            {
-                "title": "Suverénne AI Riešenia",
-                "description": "Prestaňte si prenajímať svoju konkurenčnú výhodu. Vyvíjame vlastné, škálovateľné AI enginy prispôsobené unikátnej DNA vášho podnikania. Vlastníte kód, váhy modelu aj dáta, čím si zabezpečíte úplnú nezávislosť od dodávateľov tretích strán a zvyšovania cien API.",
-                "stage": "build"
-            },
-            {
-                "title": "Nábor Talentu Novej Generácie",
-                "description": "Skráťte čas náboru až o 80%. Naše systémy automatizujú screening, hodnotenie a plánovanie kandidátov bez zaujatosti. Vaši personalisti sa môžu prestať utápať v životopisoch a plne sa sústrediť na pohovory a získavanie špičkových talentov.",
-                "stage": "operate"
-            },
-            {
-                "title": "Podnikové Bezpečnostné Štíty",
-                "description": "Inovujte bez rizika. Implementujeme rámce riadenia na vojenskej úrovni, aby sme zabezpečili, že vaša AI bude vysvetliteľná, auditovateľná a v súlade s globálnymi predpismi (GDPR/EU AI Act). Robíme vašu AI bezpečnou pre podnik od 1. dňa.",
-                "stage": "operate"
-            }
-        ]
+        "title": "",
+        "subtitle": "",
+        "solutions": []
     },
     "cta": {
         "title": "Nechajte technológie pracovať za vás",
-        "button": "Dohodnúť Stretnutie"
+        "button": "Dohodnúť si nezáväzný rozhovor"
     },
     "footer": {
-        "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku."
+        "tagline": "Váš partner pre moderné webové riešenia na Slovensku. Budujeme weby, ktoré prinášajú výsledky."
     },
     "privacy": {
-        "title": "Politika ochrany osobných údajov",
+        "title": "Ochrana osobných údajov",
         "lastUpdated": "Posledná aktualizácia: December 2024",
         "sections": [
             {
-                "heading": "Článok 1: Úvod a rozsah",
-                "content": "Engineers-incubator s.r.o. (my, nás alebo naše) sa zaväzuje dodržiavať najvyššie štandardy ochrany súkromia a údajov. Táto politika ochrany osobných údajov stanovuje naše povinnosti a vaše práva týkajúce sa zhromažďovania, spracúvania a ochrany vašich osobných údajov, keď interagujete s našou webovou stránkou https://euhub-ai.com (Služba).\n\nTáto politika je vypracovaná v prísnom súlade s Nariadením (EÚ) 2016/679 (GDPR) a slovenským zákonom č. 18/2018 Z.z. o ochrane osobných údajov (Zákon)."
+                "heading": "Článok 1: Úvod",
+                "content": "Engineers-incubator s.r.o. chráni vaše súkromie. Tieto pravidlá vysvetľujú, ako narábame s vašimi údajmi na našej stránke https://euhub-ai.com."
             },
             {
-                "heading": "Článok 2: Prevádzkovateľ údajov",
-                "content": "Názov spoločnosti: Engineers-incubator s.r.o.\nIdentifikačné číslo spoločnosti (IČO): 53 741 200\nSídlo: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nKontaktný e-mail: hello@euhub.sk"
-            },
-            {
-                "heading": "Článok 3: Zhromažďovanie údajov a účel spracúvania",
-                "content": "Dodržiavame zásadu minimalizácie údajov a zhromažďujeme osobné údaje len na špecifikované, výslovné a legitímne účely.\n\nInformácie, ktoré poskytujete priamo:\n• Účet a profil: Celé meno, e-mail, používateľské meno, hašované heslo. Dobrovoľne – LinkedIn alebo Telegram.\n  Účel: vytvorenie a správa účtu, poskytovanie služieb, interakcia s používateľmi.\n• Komunikácia: Meno, kontaktné údaje, obsah správy.\n  Účel: odpovedať na otázky a viesť záznamy o korešpondencii.\n• Marketingové odbery: E-mailová adresa.\n  Účel: zasielanie marketingových správ na základe vášho súhlasu.\n\nAutomaticky zhromažďované informácie:\n• Údaje o protokole a zariadení: IP, typ prehliadača, zariadenie, OS, URL odkazov.\n  Účel: bezpečnosť, analýza, zlepšenie funkčnosti.\n• Súbory cookie a údaje o používaní: Informácie o interakcii so službou.\n  Účel: prevádzka webu, preferencie používateľov, analytika, marketing. Pozri osobitnú Politiku súborov cookie."
-            },
-            {
-                "heading": "Článok 4: Právny základ spracúvania",
-                "content": "• Zmluvná nevyhnutnosť: čl. 6(1)(b) GDPR\n• Súhlas: čl. 6(1)(a) GDPR\n• Oprávnené záujmy: čl. 6(1)(f) GDPR\n• Právna povinnosť: čl. 6(1)(c) GDPR"
-            },
-            {
-                "heading": "Článok 5: Sprístupnenie a prenos údajov",
-                "content": "• Poskytovatelia služieb tretích strán: hosting, platby, analytika.\n• Súlad so zákonom: sprístupnenie na základe zákona alebo rozhodnutia súdu.\n• Medzinárodný prenos: chránený štandardnými zmluvnými doložkami."
-            },
-            {
-                "heading": "Článok 6: Uchovávanie údajov",
-                "content": "Údaje uchovávame len po dobu potrebnú na účely, ak zákon nevyžaduje dlhšie uchovávanie."
-            },
-            {
-                "heading": "Článok 7: Vaše práva",
-                "content": "• Právo na prístup\n• Právo na opravu\n• Právo na vymazanie (byť zabudnutý)\n• Právo na obmedzenie spracúvania\n• Právo na prenosnosť údajov\n• Právo namietať\n• Právo odvolať súhlas\n• Právo podať sťažnosť – Úrad na ochranu osobných údajov Slovenskej republiky,\n  Hraničná 12, 820 07 Bratislava 27, Slovenská republika,\n  https://dataprotection.gov.sk/uoou/"
-            },
-            {
-                "heading": "Článok 8: Bezpečnosť údajov",
-                "content": "Zaviedli sme technické a organizačné opatrenia na ochranu údajov pred stratou, zmenou, sprístupnením alebo neoprávneným prístupom."
-            },
-            {
-                "heading": "Článok 9: Ochrana súkromia detí",
-                "content": "Služba nie je určená osobám mladším ako 16 rokov. Ak takéto údaje zhromaždíme omylom — vymažeme ich."
-            },
-            {
-                "heading": "Článok 10: Zmeny politiky",
-                "content": "Politiku môžeme aktualizovať. Nová verzia nadobúda účinnosť od dátumu označeného ako Dátum účinnosti."
+                "heading": "Článok 2: Prevádzkovateľ",
+                "content": "Spoločnosť: Engineers-incubator s.r.o.\nIČO: 53 741 200\nSídlo: Horná 67, 974 01 Banská Bystrica\nE-mail: hello@euhub.sk"
             }
         ]
     },
@@ -150,74 +86,17 @@
         "lastUpdated": "Dátum účinnosti: September 23, 2025",
         "sections": [
             {
-                "heading": "1. Úvod a súhlas",
-                "content": "Vitajte na euhub-ai.com (Stránka), ktorú prevádzkuje spoločnosť Engineers-incubator s.r.o. (my, nás alebo naša). Tieto Obchodné podmienky (Podmienky) upravujú váš prístup a používanie našej Stránky. Prístupom na Stránku alebo jej používaním súhlasíte s tým, že ste viazaní týmito Podmienkami v plnom rozsahu. Ak nesúhlasíte s ktoroukoľvek časťou týchto Podmienok, nesmiete túto Stránku používať."
-            },
-            {
-                "heading": "2. Práva duševného vlastníctva",
-                "content": "Všetok obsah prítomný na tejto Stránke, vrátane, ale nie výlučne, textu, grafiky, log, obrázkov a softvéru, je majetkom spoločnosti Engineers-incubator s.r.o. alebo jej dodávateľov obsahu a je chránený slovenskými a medzinárodnými zákonmi o autorských právach. Máte udelenú obmedzenú, nevýhradnú licenciu na prístup a prezeranie obsahu len na osobné, nekomerčné použitie."
-            },
-            {
-                "heading": "3. Povinnosti používateľa a prijateľné použitie",
-                "content": "Súhlasíte s tým, že budete Stránku používať len na zákonné účely. Je vám zakázané:\n\n• Používať Stránku akýmkoľvek spôsobom, ktorý by mohol poškodiť, znefunkčniť alebo narušiť Stránku.\n• Pokúšať sa získať neoprávnený prístup k akejkoľvek časti Stránky alebo jej súvisiacim systémom.\n• Zavádzať akékoľvek vírusy, trójske kone alebo iný materiál, ktorý je škodlivý alebo technologicky poškodzujúci."
-            },
-            {
-                "heading": "4. Vylúčenie zodpovednosti a obmedzenie zodpovednosti",
-                "content": "Stránka je poskytovaná tak, ako je a ako je dostupná. Neposkytujeme žiadne záruky, vyjadrené ani implicitné, týkajúce sa presnosti, spoľahlivosti alebo úplnosti obsahu Stránky.\n\nV plnom rozsahu povolenom slovenským právom spoločnosť Engineers-incubator s.r.o. nenesie zodpovednosť za žiadne nepriame, náhodné alebo následné škody, vrátane straty zisku alebo údajov, ktoré vzniknú z vášho používania alebo nemožnosti používať túto Stránku. Toto obmedzenie sa nevzťahuje na škody spôsobené hrubou nedbanlivosťou alebo úmyselným pochybením."
-            },
-            {
-                "heading": "5. Odkazy na webové stránky tretích strán",
-                "content": "Naša Stránka môže obsahovať odkazy na webové stránky tretích strán. Tieto odkazy sú poskytované len pre vaše pohodlie. Nemáme žiadnu kontrolu nad obsahom týchto stránok a neprijímame žiadnu zodpovednosť za ne ani za akúkoľvek stratu alebo škodu, ktorá môže vzniknúť z ich používania."
-            },
-            {
-                "heading": "6. Rozhodné právo a súdna právomoc",
-                "content": "Tieto Podmienky a akýkoľvek spor z nich vyplývajúci alebo s nimi súvisiaci sa riadia a vykladajú v súlade s právnymi predpismi Slovenskej republiky.\n\nSúhlasíte s tým, že príslušné súdy so sídlom v Banskej Bystrici, Slovenská republika, budú mať výhradnú právomoc na riešenie akéhokoľvek sporu, ktorý môže vzniknúť z týchto Podmienok alebo v súvislosti s nimi."
-            },
-            {
-                "heading": "7. Zmeny",
-                "content": "Vyhradzujeme si právo kedykoľvek zmeniť tieto Podmienky. Používateľov upozorníme na akékoľvek zmeny zverejnením nových Podmienok na tejto Stránke. Vaše ďalšie používanie Stránky po takýchto zmenách predstavuje váš súhlas s novými Podmienkami."
-            },
-            {
-                "heading": "8. Kontaktné informácie",
-                "content": "Spoločnosť: Engineers-incubator s.r.o.\nAdresa: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nEmail: hello@euhub.sk"
+                "heading": "1. Úvod",
+                "content": "Vítajte na euhub-ai.com. Používaním tejto stránky súhlasíte s našimi podmienkami. Ak nesúhlasíte, prosíme vás, aby ste stránku nepoužívali."
             }
         ]
     },
     "cookie": {
-        "title": "Zásady používania súborov cookie",
+        "title": "Súbory cookie",
         "sections": [
             {
-                "heading": "1. Čo sú súbory cookie?",
-                "content": "Súbory cookie sú malé textové súbory, ktoré sa ukladajú do vášho zariadenia (počítač, tablet, smartfón), keď navštívite webovú stránku. Sú široko používané na zefektívnenie fungovania webových stránok, ako aj na poskytovanie informácií vlastníkom stránky."
-            },
-            {
-                "heading": "2. Ako používame súbory cookie",
-                "content": "Naša webová stránka, euhub-ai.com, používa súbory cookie na to, aby sme vás odlíšili od ostatných používateľov, poskytli vám dobrý zážitok pri prehliadaní a pomohli nám vylepšiť našu stránku. Používaním našej stránky súhlasíte s používaním nevyhnutne potrebných súborov cookie. Pre všetky ostatné súbory cookie vyžadujeme váš výslovný súhlas."
-            },
-            {
-                "heading": "3. Typy súborov cookie, ktoré používame",
-                "subsections": [
-                    {
-                        "subheading": "Nevyhnutne potrebné súbory cookie",
-                        "content": "Tieto súbory cookie sú nevyhnutné na to, aby ste sa mohli pohybovať po webovej stránke a používať jej funkcie. Nevyžadujú váš súhlas.\nPríklad: sessionid – Používa sa na udržanie vašej relácie počas prehliadania."
-                    },
-                    {
-                        "subheading": "Výkonnostné a analytické súbory cookie",
-                        "content": "Tieto súbory cookie zhromažďujú anonymné informácie o tom, ako návštevníci používajú našu webovú stránku, napríklad ktoré stránky navštevujú najčastejšie. To nám pomáha zlepšovať fungovanie našej webovej stránky. Tieto súbory cookie použijeme iba vtedy, ak nám dáte svoj súhlas.\nPríklad: Google Analytics (_ga, _gid) – Používajú sa na zhromažďovanie štatistických údajov o tom, ako návštevníci používajú stránku. Všetky údaje sú anonymizované."
-                    },
-                    {
-                        "subheading": "Marketingové súbory cookie",
-                        "content": "Tieto súbory cookie sa používajú na sledovanie návštevníkov naprieč webovými stránkami. Zámerom je zobrazovať reklamy, ktoré sú relevantné a pútavé pre jednotlivého používateľa. Tieto súbory cookie použijeme iba vtedy, ak nám dáte svoj súhlas.\nPríklad: Meta (Facebook) Pixel (_fbp) – Používa sa na doručovanie cielených reklám na platformách Meta po tom, čo ste navštívili našu stránku."
-                    }
-                ]
-            },
-            {
-                "heading": "4. Vaše voľby a správa súborov cookie",
-                "content": "Svoje preferencie týkajúce sa súborov cookie môžete kedykoľvek spravovať prostredníctvom nášho bannera na správu súhlasu s cookies. Môžete tiež nastaviť svoj prehliadač tak, aby odmietal všetky alebo niektoré súbory cookie, alebo aby vás upozornil, keď webové stránky nastavia alebo pristupujú k súborom cookie. Upozorňujeme, že ak zakážete alebo odmietnete nevyhnutne potrebné súbory cookie, niektoré časti tejto webovej stránky sa môžu stať nedostupnými alebo nemusia správne fungovať."
-            },
-            {
-                "heading": "5. Kontaktujte nás",
-                "content": "Ak máte akékoľvek otázky týkajúce sa nášho používania súborov cookie, kontaktujte nás na adrese hello@euhub.sk."
+                "heading": "Čo sú cookies?",
+                "content": "Sú to malé súbory v prehliadači, ktoré pomáhajú našej stránke fungovať lepšie."
             }
         ]
     }

@@ -35,9 +35,9 @@ export const Footer = ({ lang, dict }: { lang: string, dict: any }) => {
                     <div>
                         <h4 className="font-bold mb-4">{dict.nav?.services || 'Services'}</h4>
                         <ul className="space-y-2 text-[var(--muted-foreground)]">
-                            <li><Link href="#" className="hover:text-[var(--primary)]">AI Audit</Link></li>
-                            <li><Link href="#" className="hover:text-[var(--primary)]">Automation</Link></li>
-                            <li><Link href="#" className="hover:text-[var(--primary)]">Compliance</Link></li>
+                            <li>{lang === 'sk' ? 'Tvorba webu' : 'Web Creation'}</li>
+                            <li>{lang === 'sk' ? 'Podpora a servis' : 'Support & Service'}</li>
+                            <li>{lang === 'sk' ? 'Bezpečnosť' : 'Security'}</li>
                         </ul>
                     </div>
 

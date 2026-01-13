@@ -16,8 +16,8 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                         </h2>
                         <p className="text-[var(--muted-foreground)] text-lg mb-8">
                             {lang === 'sk'
-                                ? 'Nečakajte, kým vás predbehne konkurencia. Získajte audit vašej infraštruktúry a zistite, kde strácate peniaze.'
-                                : 'Don\'t let the competition outpace you. Get an audit of your infrastructure and find out where you are losing money.'}
+                                ? 'Nečakajte, kým vás predbehne konkurencia. Získajte nezáväznú analýzu vašej starej stránky a zistite, ako ju vylepšiť.'
+                                : 'Don\'t let the competition outpace you. Get a no-obligation analysis of your old page and find out how to improve it.'}
                         </p>
 
                         <div className="space-y-4">
@@ -44,7 +44,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
 
                     <GlassCard className="border-[var(--accent)] border-opacity-30">
                         <h3 className="text-xl font-bold mb-4">
-                            {lang === 'sk' ? 'Získajte Audit Zadarmo' : 'Get a Free Audit'}
+                            {lang === 'sk' ? 'Poraďte sa s nami zadarmo' : 'Consult with us for free'}
                         </h3>
                         {state.succeeded ? (
                             <div className="text-center py-8">

@@ -49,23 +49,23 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                         </div>
                         <div className="space-y-4 font-mono text-sm">
                             <div className="flex justify-between">
-                                <span className="text-[var(--muted-foreground)]">Running Audit...</span>
-                                <span className="text-[var(--accent)]">Done (0.4s)</span>
+                                <span className="text-[var(--muted-foreground)]">{lang === 'sk' ? 'Kontrola webu...' : 'Checking web...'}</span>
+                                <span className="text-[var(--accent)]">{lang === 'sk' ? 'Hotovo' : 'Done'}</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-[var(--muted-foreground)]">Identifying Bottlenecks...</span>
-                                <span className="text-[var(--accent)]">Found 3</span>
+                                <span className="text-[var(--muted-foreground)]">{lang === 'sk' ? 'Hľadanie chýb...' : 'Finding errors...'}</span>
+                                <span className="text-[var(--accent)]">{lang === 'sk' ? 'Nájdené' : 'Found'}</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-[var(--muted-foreground)]">Optimizing Workflow...</span>
-                                <span className="text-[var(--primary)]">In Progress</span>
+                                <span className="text-[var(--muted-foreground)]">{lang === 'sk' ? 'Modernizácia...' : 'Modernizing...'}</span>
+                                <span className="text-[var(--primary)]">{lang === 'sk' ? 'Prebieha' : 'In Progress'}</span>
                             </div>
 
                             <div className="mt-8 p-4 rounded bg-[rgba(0,0,0,0.3)] border border-[var(--card-border)]">
-                                <div className="text-[var(--muted-foreground)] mb-2">// ROI Projection</div>
+                                <div className="text-[var(--muted-foreground)] mb-2">// {lang === 'sk' ? 'Výsledok pre vás' : 'Result for you'}</div>
                                 <div className="flex items-end gap-2">
-                                    <div className="text-3xl font-bold text-[var(--foreground)]">+40%</div>
-                                    <div className="text-sm text-[var(--accent)] mb-1">Efficiency</div>
+                                    <div className="text-3xl font-bold text-[var(--foreground)]">+60%</div>
+                                    <div className="text-sm text-[var(--accent)] mb-1">{lang === 'sk' ? 'Viac návštev' : 'More visitors'}</div>
                                 </div>
                             </div>
                         </div>
