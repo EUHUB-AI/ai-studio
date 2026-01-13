@@ -61,33 +61,33 @@
         "subtitle": "Strategické AI implementácie, ktoré znižujú riziko, zabraňujú závislosti od dodávateľov a zabezpečujú zodpovednosť organizácie.",
         "solutions": [
             {
-                "title": "Výber a Testovanie AI Nástrojov",
-                "description": "Zabráňte závislosti od dodávateľov a neúspešným investíciám do AI prostredníctvom výberu založeného na dôkazoch. Typicky dodané za 2–4 týždne.",
+                "title": "Strategická AI Architektúra",
+                "description": "Nestavajte svoju budúcnosť na pohyblivých pieskoch. Prerezávame sa cez hype, aby sme navrhli precízny, dôkazmi podložený technologický stack, ktorý vyhovuje vašej infraštruktúre. Predchádzame nákladnej závislosti od dodávateľov tým, že identifikujeme presné nástroje, ktoré potrebujete—a tie, ktoré nie—už za 2–4 týždne.",
                 "stage": "adopt"
             },
             {
-                "title": "Testovanie AI Konceptov",
-                "description": "Proof of Concept a pilotné programy na validáciu riešení v reálnych podmienkach s minimálnym rizikom a jasnými ROI dátami.",
+                "title": "Rýchla Validácia ROI",
+                "description": "Eliminujte riziko neúspešných investícií. Spúšťame \"Proof of Value\" pilotné projekty navrhnuté na validáciu vašich hypotéz v reálnych podmienkach. Dokážeme matematiku, efektivitu a škálovateľnosť predtým, než investujete jediný dolár do plnej produkcie.",
                 "stage": "adopt"
             },
             {
-                "title": "Vlastní Digitálni Asistenti",
-                "description": "Znížte prevádzkovú záťaž a latenciu odpovedí v podpore, HR a predaji prostredníctvom inteligentnej automatizácie.",
+                "title": "Autonómni Podnikoví Agenti",
+                "description": "Prekonajte pasívne chatboty. Nasadzujeme inteligentných agentov, ktorí vykonávajú úlohy—spracovanie refundácií, aktualizáciu CRM a autonómne riešenie technických problémov. Prestaňte lístky len smerovať; začnite ich riešiť s digitálnou pracovnou silou 24/7.",
                 "stage": "build"
             },
             {
-                "title": "Vývoj AI na Mieru",
-                "description": "Plne prispôsobené riešenia vytvorené podľa vašich obchodných procesov. Úplná kontrola, škálovateľnosť a sloboda od závislosti na dodávateľoch.",
+                "title": "Suverénne AI Riešenia",
+                "description": "Prestaňte si prenajímať svoju konkurenčnú výhodu. Vyvíjame vlastné, škálovateľné AI enginy prispôsobené unikátnej DNA vášho podnikania. Vlastníte kód, váhy modelu aj dáta, čím si zabezpečíte úplnú nezávislosť od dodávateľov tretích strán a zvyšovania cien API.",
                 "stage": "build"
             },
             {
-                "title": "AI pre Nábor",
-                "description": "Moderné HR riešenie, ktoré zvláda skríning CV, pohovory, hodnotenie kandidátov a automatizovanú komunikáciu—šetrí hodiny manuálnej práce.",
+                "title": "Nábor Talentu Novej Generácie",
+                "description": "Skráťte čas náboru až o 80%. Naše systémy automatizujú screening, hodnotenie a plánovanie kandidátov bez zaujatosti. Vaši personalisti sa môžu prestať utápať v životopisoch a plne sa sústrediť na pohovory a získavanie špičkových talentov.",
                 "stage": "operate"
             },
             {
-                "title": "AI Governance, Risk & Compliance",
-                "description": "Rámce riadenia a kontroly na zabezpečenie toho, aby vaše AI systémy boli v súlade s predpismi, auditovateľné a bezpečné pre podnik od prvého dňa. Navrhnuté pre regulované prostredia.",
+                "title": "Podnikové Bezpečnostné Štíty",
+                "description": "Inovujte bez rizika. Implementujeme rámce riadenia na vojenskej úrovni, aby sme zabezpečili, že vaša AI bude vysvetliteľná, auditovateľná a v súlade s globálnymi predpismi (GDPR/EU AI Act). Robíme vašu AI bezpečnou pre podnik od 1. dňa.",
                 "stage": "operate"
             }
         ]
