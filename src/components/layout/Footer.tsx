@@ -35,9 +35,18 @@ export const Footer = ({ lang, dict }: { lang: string, dict: any }) => {
                     <div>
                         <h4 className="font-bold mb-4">{dict.nav?.services || 'Services'}</h4>
                         <ul className="space-y-2 text-[var(--muted-foreground)]">
-                            <li>{lang === 'sk' ? 'Tvorba webu' : 'Web Creation'}</li>
-                            <li>{lang === 'sk' ? 'Podpora a servis' : 'Support & Service'}</li>
-                            <li>{lang === 'sk' ? 'Bezpečnosť' : 'Security'}</li>
+                            <li>
+                                <Link href={`/${lang}/audit`} className="hover:text-[var(--primary)] text-[var(--primary)] font-medium">
+                                    AI Audit
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={`/${lang}/web-creation`} className="hover:text-[var(--primary)] transition-colors">
+                                    {dict.footer.servicesList.webCreation}
+                                </Link>
+                            </li>
+                            {/* <li>{dict.footer.servicesList.supportService}</li>
+                            <li>{dict.footer.servicesList.security}</li> */}
                         </ul>
                     </div>
 
@@ -51,11 +60,11 @@ export const Footer = ({ lang, dict }: { lang: string, dict: any }) => {
                 </div>
 
                 <div className="border-t border-[var(--card-border)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[var(--muted-foreground)]">
-                    <p>&copy; {new Date().getFullYear()} EuHub AI. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} EuHub AI. {dict.terms.allRightsReserved}</p>
                     <div className="flex gap-6">
-                        <Link href={`/${lang}/privacy`} className="hover:text-[var(--foreground)] transition-colors">Privacy Policy</Link>
-                        <Link href={`/${lang}/terms`} className="hover:text-[var(--foreground)] transition-colors">Terms of Service</Link>
-                        <Link href={`/${lang}/cookie`} className="hover:text-[var(--foreground)] transition-colors">Cookie Policy</Link>
+                        <Link href={`/${lang}/privacy`} className="hover:text-[var(--foreground)] transition-colors">{dict.terms.privacyLabel}</Link>
+                        <Link href={`/${lang}/terms`} className="hover:text-[var(--foreground)] transition-colors">{dict.terms.termsLabel}</Link>
+                        <Link href={`/${lang}/cookie`} className="hover:text-[var(--foreground)] transition-colors">{dict.terms.cookieLabel}</Link>
                     </div>
                 </div>
             </div>

@@ -1,33 +1,61 @@
 {
+  "common": {
+    "learnMore": "Learn more"
+  },
   "nav": {
     "services": "What We Do",
     "team": "Our Team",
     "contact": "Contact Us"
   },
   "hero": {
-    "title": "Your website should bring you customers, not headaches.",
-    "subtitle": "Is your website old and hard to understand? We help you rebuild it into a modern, easy-to-use system that brings in new business. We handle the tech; you handle the business.",
-    "cta": "I Want a Better Website"
+    "title": "AI that saves time, reduces costs, and helps your business grow.",
+    "subtitle": "We help established companies use artificial intelligence in practical ways - to simplify operations, improve customer experience, and increase results without disrupting your business.",
+    "supporting_line": "You don't need to understand AI. You only need to see the benefits.",
+    "cta": "Talk to us about your business",
+    "cta2": "See how it works",
+    "status": "Accepting new clients for Q1 2026",
+    "checkingWeb": "Checking web...",
+    "done": "Done",
+    "findingErrors": "Finding errors...",
+    "found": "Found",
+    "modernizing": "Modernizing...",
+    "inProgress": "In Progress",
+    "resultForYou": "Result for you",
+    "moreVisitors": "More visitors"
   },
   "valueProposition": {
     "headline": "More Than Just a Pretty Page. A Real Helper for Your Business.",
-    "subheadline": "We don't just build common websites—we create systems that handle customers for you and save you time.",
-    "body": "It’s not enough anymore to just 'have a presence online.' Your site must be clear, fast, and work perfectly on smartphones. We build modern solutions that every one of your customers will understand."
+    "subheadline": "We don't just build common websites \n we create systems that handle customers for you and save you time.",
+    "body": "It's not enough anymore to just 'have a presence online.' Your site must be clear, fast, and work perfectly on smartphones. We build modern solutions that every one of your customers will understand."
   },
   "services": {
     "title": "How We Help You Grow",
+    "subtitle": "We’ll help you move from an old website to a modern solution that brings in new customers.",
+    "labels": {
+      "stepOne": "STEP ONE",
+      "upgrade": "UPGRADE",
+      "automation": "AUTOMATION"
+    },
+    "features": {
+      "clearWebsite": "Clear and fast website",
+      "weHandleEverything": "We handle everything",
+      "safeSecure": "Safe and Secure",
+      "dataProtected": "Your data is protected",
+      "savesTime": "Saves you time"
+    },
+    "learnMore": "Learn more",
     "items": [
+      {
+        "title": "AI Audit",
+        "desc": "Get a comprehensive audit of your digital presence. From basic checks to deep research and deep analysis."
+      },
       {
         "title": "Modern & Clear Website",
         "desc": "Your customers will immediately understand what you offer. Your site will be modern, clean, and look great on both computers and phones."
       },
       {
         "title": "Automatic Helper",
-        "desc": "We’ll add a smart system to your site that answers your customers' questions 24/7. You’ll never miss a potential order again."
-      },
-      {
-        "title": "Everything Under One Roof",
-        "desc": "You don't need to be a tech expert. We handle your domain, emails, security, and updates. You focus entirely on your customers."
+        "desc": "We'll add a smart system to your site that answers your customers' questions 24/7. You'll never miss a potential order again."
       }
     ]
   },
@@ -60,12 +88,71 @@
     "subtitle": "",
     "solutions": []
   },
+  "audit": {
+    "title": "Clear pricing for clear business results",
+    "subtitle": "Choose the level of analysis that helps you see what works, what doesn’t, and where your business can improve.",
+    "starter": {
+      "title": "Brief Business Audit",
+      "price": "9.9 EUR",
+      "tag": "Quick overview",
+      "badge": "Quick start",
+      "features": [
+        "Website clarity and usability check",
+        "Basic security review",
+        "Performance and speed overview",
+        "Visibility check (search and discoverability)",
+        "First improvement suggestions"
+      ],
+      "cta": "Get my quick overview"
+    },
+    "professional": {
+      "title": "Professional Business Audit",
+      "price": "99 EUR",
+      "tag": "Most chosen",
+      "badge": "Recommended",
+      "features": [
+        "In-depth website and online presence analysis",
+        "Customer journey and weak point review",
+        "Identification of missed business opportunities",
+        "Clear priorities — what to fix first and why",
+        "Practical recommendations you can act on",
+        "30-minute consultation to explain results"
+      ],
+      "cta": "Get detailed analysis"
+    },
+    "enterprise": {
+      "title": "Strategic Review of Your Business",
+      "price": "Custom",
+      "tag": "For established companies",
+      "features": [
+        "Market and positioning analysis",
+        "Direct competitor comparison",
+        "Identification of growth barriers",
+        "Operational improvement opportunities",
+        "Industry-specific strategic recommendations"
+      ],
+      "cta": "Talk to an expert"
+    }
+  },
   "cta": {
     "title": "Let Technology Work for You",
-    "button": "Book a Friendly Chat"
+    "button": "Book a Friendly Chat",
+    "description": "Don't let the competition outpace you. Get a no-obligation analysis of your old page and find out how to improve it.",
+    "locationLabel": "Location",
+    "consultTitle": "Consult with us for free",
+    "thankYou": "Thank you!",
+    "successMessage": "Your message has been sent. We will be in touch shortly.",
+    "nameLabel": "Name",
+    "messageLabel": "Message",
+    "sending": "Sending..."
   },
   "footer": {
-    "tagline": "Your partner for modern web solutions. We build websites that deliver results."
+    "tagline": "Your partner for modern web solutions. We build websites that deliver results.",
+    "servicesList": {
+      "webCreation": "Web Creation",
+      "supportService": "Support & Service",
+      "security": "Security"
+    }
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -89,7 +176,11 @@
         "heading": "1. Introduction",
         "content": "Welcome to euhub-ai.com. By using this site, you agree to our terms. If you do not agree, please do not use the site."
       }
-    ]
+    ],
+    "privacyLabel": "Privacy Policy",
+    "termsLabel": "Terms of Service",
+    "cookieLabel": "Cookie Policy",
+    "allRightsReserved": "All rights reserved."
   },
   "cookie": {
     "title": "Cookie Policy",

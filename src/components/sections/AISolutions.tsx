@@ -47,7 +47,7 @@ export const AISolutions = ({ lang, dict }: { lang: string, dict: any }) => {
                                                 href="#contact"
                                                 className="text-sm font-medium text-[var(--primary)] hover:text-[var(--accent)] transition-colors inline-flex items-center gap-2 group-hover:gap-3 duration-300"
                                             >
-                                                {lang === 'sk' ? 'Zistiť viac' : 'Learn more'}
+                                                {dict.common.learnMore}
                                                 <span className="text-lg">→</span>
                                             </a>
                                         </div>

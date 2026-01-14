@@ -2,7 +2,7 @@ import { GlassCard } from '../shared/GlassCard';
 
 export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
     return (
-        <section className="relative min-h-[80vh] flex items-center pt-[calc(var(--header-height)+2rem)] pb-12 overflow-hidden">
+        <section className="relative min-h-[80vh] flex items-center pt-[calc(var(--header-height)+1rem)] pb-6 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
                 <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-[var(--primary)] opacity-20 blur-[120px] animate-pulse"></div>
@@ -16,10 +16,10 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>
                         </span>
-                        {lang === 'sk' ? 'Prijímame nových klientov pre Q1 2026' : 'Accepting new clients for Q1 2026'}
+                        {dict.hero.status}
                     </div>
 
-                    <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
+                    <h1 className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
                         {dict.hero.title}
                     </h1>
 
@@ -27,13 +27,17 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                         {dict.hero.subtitle}
                     </p>
 
+                    <p className="text-xl text-[var(--accent)] max-w-xl leading-relaxed">
+                        <em>{dict.hero.supporting_line}</em>
+                    </p>
+
                     <div className="flex flex-col sm:flex-row gap-4">
                         <a href="#contact" className="btn btn-primary text-lg px-8 py-4">
                             {dict.hero.cta}
                         </a>
-                        <a href="#services" className="px-8 py-4 rounded-full border border-[var(--card-border)] hover:bg-[var(--card-hover)] transition-colors text-center font-medium">
-                            {lang === 'sk' ? 'Naše služby' : 'Our Services'}
-                        </a>
+                        {/* <a href="#services" className="px-8 py-4 rounded-full border border-[var(--card-border)] hover:bg-[var(--card-hover)] transition-colors text-center font-medium">
+                            {dict.hero.cta2}
+                        </a> */}
                     </div>
                 </div>
 
@@ -49,23 +53,23 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                         </div>
                         <div className="space-y-4 font-mono text-sm">
                             <div className="flex justify-between">
-                                <span className="text-[var(--muted-foreground)]">{lang === 'sk' ? 'Kontrola webu...' : 'Checking web...'}</span>
-                                <span className="text-[var(--accent)]">{lang === 'sk' ? 'Hotovo' : 'Done'}</span>
+                                <span className="text-[var(--muted-foreground)]">{dict.hero.checkingWeb}</span>
+                                <span className="text-[var(--accent)]">{dict.hero.done}</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-[var(--muted-foreground)]">{lang === 'sk' ? 'Hľadanie chýb...' : 'Finding errors...'}</span>
-                                <span className="text-[var(--accent)]">{lang === 'sk' ? 'Nájdené' : 'Found'}</span>
+                                <span className="text-[var(--muted-foreground)]">{dict.hero.findingErrors}</span>
+                                <span className="text-[var(--accent)]">{dict.hero.found}</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-[var(--muted-foreground)]">{lang === 'sk' ? 'Modernizácia...' : 'Modernizing...'}</span>
-                                <span className="text-[var(--primary)]">{lang === 'sk' ? 'Prebieha' : 'In Progress'}</span>
+                                <span className="text-[var(--muted-foreground)]">{dict.hero.modernizing}</span>
+                                <span className="text-[var(--primary)]">{dict.hero.inProgress}</span>
                             </div>
 
                             <div className="mt-8 p-4 rounded bg-[rgba(0,0,0,0.3)] border border-[var(--card-border)]">
-                                <div className="text-[var(--muted-foreground)] mb-2">// {lang === 'sk' ? 'Výsledok pre vás' : 'Result for you'}</div>
+                                <div className="text-[var(--muted-foreground)] mb-2">// {dict.hero.resultForYou}</div>
                                 <div className="flex items-end gap-2">
                                     <div className="text-3xl font-bold text-[var(--foreground)]">+60%</div>
-                                    <div className="text-sm text-[var(--accent)] mb-1">{lang === 'sk' ? 'Viac návštev' : 'More visitors'}</div>
+                                    <div className="text-sm text-[var(--accent)] mb-1">{dict.hero.moreVisitors}</div>
                                 </div>
                             </div>
                         </div>

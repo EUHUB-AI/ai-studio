@@ -1,22 +1,54 @@
 {
+    "common": {
+        "learnMore": "Zistiť viac"
+    },
     "nav": {
         "services": "Čo ponúkame",
         "team": "Kto sme",
         "contact": "Kontakt"
     },
     "hero": {
-        "title": "Vaša webová stránka by vám mala zarábať peniaze, nie robiť starosti.",
-        "subtitle": "Máte starý web, ktorému už nikto nerozumie? Pomôžeme vám ho prerobiť na moderný a jednoduchý systém, ktorý vám prinesie nových zákazníkov. My sa postaráme o techniku, vy o váš biznis.",
-        "cta": "Chcem modernejší web"
+        "title": "AI, ktorá šetrí čas, znižuje náklady a pomáha firme rásť.",
+        "subtitle": "Pomáhame firmám využívať umelú inteligenciu prakticky - na zjednodušenie práce, lepšiu starostlivosť o zákazníkov a lepšie výsledky bez narušenia fungovania firmy.",
+        "supporting_line": "Nemusíte rozumieť AI. Stačí vidieť výsledky.",
+        "cta": "Porozprávajme sa o vašej firme",
+        "cta2": "Ako to funguje",
+        "status": "Prijímame nových klientov pre Q1 2026",
+        "checkingWeb": "Kontrola webu...",
+        "done": "Hotovo",
+        "findingErrors": "Hľadanie chýb...",
+        "found": "Nájdené",
+        "modernizing": "Modernizácia...",
+        "inProgress": "Prebieha",
+        "resultForYou": "Výsledok pre vás",
+        "moreVisitors": "Viac návštev"
     },
     "valueProposition": {
         "headline": "Viac než len pekná stránka. Skutočný pomocník pre váš biznis.",
-        "subheadline": "Nerobíme len bežné webové stránky—vytvárame systémy, ktoré za vás vybavia zákazníkov a ušetria vám čas.",
+        "subheadline": "Nerobíme len bežné webové stránky - vytvárame systémy, ktoré za vás vybavia zákazníkov a ušetria vám čas.",
         "body": "Dnes už nestačí len mať 'niečo na internete'. Vaša stránka musí byť zrozumiteľná, rýchla a musí fungovať aj na mobile. My vám postavíme moderné riešenie, ktorému pochopí každý váš zákazník."
     },
     "services": {
         "title": "Ako vám pomôžeme rásť",
+        "subtitle": "Pomôžeme vám prejsť od starého webu k modernému riešeniu, ktoré vám prinesie nových zákazníkov.",
+        "labels": {
+            "stepOne": "PRVÝ KROK",
+            "upgrade": "VYLEPŠENIE",
+            "automation": "AUTOMATIZÁCIA"
+        },
+        "features": {
+            "clearWebsite": "Prehľadná a rýchla stránka",
+            "weHandleEverything": "Všetko vybavíme za vás",
+            "safeSecure": "Bezpečnosť a istota",
+            "dataProtected": "Vaše údaje sú chránené",
+            "savesTime": "Odbremení vás od práce"
+        },
+        "learnMore": "Chcem vedieť viac",
         "items": [
+            {
+                "title": "AI Audit",
+                "desc": "Získajte komplexný audit vašej digitálnej prítomnosti. Od základných kontrol po hĺbkový prieskum a analýzu."
+            },
             {
                 "title": "Moderný a jasný web",
                 "desc": "Vaši zákazníci okamžite pochopia, čo ponúkate. Stránka bude moderná, prehľadná a bude sa skvele zobrazovať v počítači aj v mobile."
@@ -24,10 +56,6 @@
             {
                 "title": "Automatický pomocník",
                 "desc": "Nasadíme vám na web inteligentný systém, ktorý odpovie na otázky vašich zákazníkov aj v noci alebo cez víkend. Už nestratíte žiadnu objednávku."
-            },
-            {
-                "title": "Všetko pod jednou strechou",
-                "desc": "Nemusíte ničomu rozumieť. My vybavíme adresu webu, e-maily, zabezpečenie aj aktualizácie. Vy sa sústredíte len na svojich zákazníkov."
             }
         ]
     },
@@ -60,12 +88,71 @@
         "subtitle": "",
         "solutions": []
     },
+    "audit": {
+        "title": "Jasné ceny pre jasné obchodné výsledky",
+        "subtitle": "Vyberte si úroveň analýzy, ktorá vám pomôže vidieť, čo funguje, čo nie a kde má vaša firma priestor na zlepšenie.",
+        "starter": {
+            "title": "Rýchly prehľad firmy",
+            "price": "9,9 EUR",
+            "tag": "Rýchly prehľad",
+            "badge": "Rýchly štart",
+            "features": [
+                "Prehľad zrozumiteľnosti a použiteľnosti webu",
+                "Základná bezpečnostná kontrola",
+                "Prehľad rýchlosti a výkonu",
+                "Kontrola viditeľnosti vo vyhľadávaní",
+                "Prvé odporúčania na zlepšenie"
+            ],
+            "cta": "Získať môj rýchly prehľad"
+        },
+        "professional": {
+            "title": "Detailná analýza firmy",
+            "price": "99 EUR",
+            "tag": "Najčastejšia voľba",
+            "badge": "Odporúčané",
+            "features": [
+                "Detailná analýza webu a online prezentácie",
+                "Prehľad cesty zákazníka a slabých miest",
+                "Identifikácia nevyužitých obchodných príležitostí",
+                "Jasné priority — čo riešiť ako prvé a prečo",
+                "Praktické odporúčania využiteľné v praxi",
+                "30-minútová konzultácia s vysvetlením výsledkov"
+            ],
+            "cta": "Získať detailnú analýzu"
+        },
+        "enterprise": {
+            "title": "Strategický pohľad na vašu firmu",
+            "price": "Na mieru",
+            "tag": "Pre etablované firmy",
+            "features": [
+                "Analýza trhu a pozície firmy",
+                "Porovnanie s priamou konkurenciou",
+                "Identifikácia bariér rastu",
+                "Možnosti zefektívnenia fungovania",
+                "Strategické odporúčania podľa odvetvia"
+            ],
+            "cta": "Porozprávať sa s odborníkom"
+        }
+    },
     "cta": {
         "title": "Nechajte technológie pracovať za vás",
-        "button": "Dohodnúť si nezáväzný rozhovor"
+        "button": "Dohodnúť si nezáväzný rozhovor",
+        "description": "Nečakajte, kým vás predbehne konkurencia. Získajte nezáväznú analýzu vašej starej stránky a zistite, ako ju vylepšiť.",
+        "locationLabel": "Lokácia",
+        "consultTitle": "Poraďte sa s nami zadarmo",
+        "thankYou": "Ďakujeme!",
+        "successMessage": "Vaša správa bola odoslaná. Čoskoro sa vám ozveme.",
+        "nameLabel": "Meno",
+        "messageLabel": "Správa",
+        "sending": "Odosielam..."
     },
     "footer": {
-        "tagline": "Váš partner pre moderné webové riešenia na Slovensku. Budujeme weby, ktoré prinášajú výsledky."
+        "tagline": "Váš partner pre moderné webové riešenia na Slovensku. Budujeme weby, ktoré prinášajú výsledky.",
+        "servicesList": {
+            "webCreation": "Tvorba webu",
+            "supportService": "Podpora a servis",
+            "security": "Bezpečnosť"
+        }
     },
     "privacy": {
         "title": "Ochrana osobných údajov",
@@ -89,7 +176,11 @@
                 "heading": "1. Úvod",
                 "content": "Vítajte na euhub-ai.com. Používaním tejto stránky súhlasíte s našimi podmienkami. Ak nesúhlasíte, prosíme vás, aby ste stránku nepoužívali."
             }
-        ]
+        ],
+        "privacyLabel": "Zásady ochrany osobných údajov",
+        "termsLabel": "Obchodné podmienky",
+        "cookieLabel": "Zásady používania súborov cookie",
+        "allRightsReserved": "Všetky práva vyhradené."
     },
     "cookie": {
         "title": "Súbory cookie",

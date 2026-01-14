@@ -15,9 +15,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                             {dict.cta.title}
                         </h2>
                         <p className="text-[var(--muted-foreground)] text-lg mb-8">
-                            {lang === 'sk'
-                                ? 'Nečakajte, kým vás predbehne konkurencia. Získajte nezáväznú analýzu vašej starej stránky a zistite, ako ju vylepšiť.'
-                                : 'Don\'t let the competition outpace you. Get a no-obligation analysis of your old page and find out how to improve it.'}
+                            {dict.cta.description}
                         </p>
 
                         <div className="space-y-4">
@@ -35,7 +33,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                     📍
                                 </div>
                                 <div>
-                                    <div className="font-bold">{lang === 'sk' ? 'Lokácia' : 'Location'}</div>
+                                    <div className="font-bold">{dict.cta.locationLabel}</div>
                                     <span className="text-[var(--muted-foreground)]">974 01, Banská Bystrica, Slovakia (EU)</span>
                                 </div>
                             </div>
@@ -44,7 +42,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
 
                     <GlassCard className="border-[var(--accent)] border-opacity-30">
                         <h3 className="text-xl font-bold mb-4">
-                            {lang === 'sk' ? 'Poraďte sa s nami zadarmo' : 'Consult with us for free'}
+                            {dict.cta.consultTitle}
                         </h3>
                         {state.succeeded ? (
                             <div className="text-center py-8">
@@ -52,19 +50,17 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                     ✓
                                 </div>
                                 <h4 className="text-xl font-bold mb-2">
-                                    {lang === 'sk' ? 'Ďakujeme!' : 'Thank you!'}
+                                    {dict.cta.thankYou}
                                 </h4>
                                 <p className="text-[var(--muted-foreground)]">
-                                    {lang === 'sk'
-                                        ? 'Vaša správa bola odoslaná. Čoskoro sa vám ozveme.'
-                                        : 'Your message has been sent. We will be in touch shortly.'}
+                                    {dict.cta.successMessage}
                                 </p>
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium mb-1 text-[var(--muted-foreground)]">
-                                        {lang === 'sk' ? 'Meno' : 'Name'}
+                                        {dict.cta.nameLabel}
                                     </label>
                                     <input
                                         id="name"
@@ -88,7 +84,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                 </div>
                                 <div>
                                     <label htmlFor="message" className="block text-sm font-medium mb-1 text-[var(--muted-foreground)]">
-                                        {lang === 'sk' ? 'Správa' : 'Message'}
+                                        {dict.cta.messageLabel}
                                     </label>
                                     <textarea
                                         id="message"
@@ -100,7 +96,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                 </div>
                                 <button type="submit" disabled={state.submitting} className="w-full btn btn-primary disabled:opacity-50 disabled:cursor-not-allowed">
                                     {state.submitting
-                                        ? (lang === 'sk' ? 'Odosielam...' : 'Sending...')
+                                        ? dict.cta.sending
                                         : dict.cta.button}
                                 </button>
                             </form>

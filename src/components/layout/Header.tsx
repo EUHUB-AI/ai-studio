@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { ThemeToggle } from '../navigation/ThemeToggle';
 import { LanguageSwitcher } from '../navigation/LanguageSwitcher';
-import styles from './Header.module.css';
+import styles from '../../../public/assets/css/components/layout/Header.module.css';
 
 export default function Header({ dict, lang }: { dict: any, lang: string }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

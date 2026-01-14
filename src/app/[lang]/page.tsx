@@ -16,7 +16,6 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] font-sans selection:bg-[var(--primary)] selection:text-white">
       <Navbar lang={lang} dict={dict} />
       <Hero lang={lang} dict={dict} />
-      <ValueProposition lang={lang} dict={dict} />
       <Services lang={lang} dict={dict} />
       <Team lang={lang} dict={dict} />
       <Contact lang={lang} dict={dict} />

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-import styles from './LanguageSwitcher.module.css';
+import styles from '../../../public/assets/css/components/navigation/LanguageSwitcher.module.css';
 
 export const LanguageSwitcher = ({ lang }: { lang: string }) => {
     const [isOpen, setIsOpen] = useState(false);
