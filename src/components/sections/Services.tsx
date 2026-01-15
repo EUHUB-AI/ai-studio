@@ -16,23 +16,23 @@ export const Services = ({ lang, dict }: { lang: string, dict: any }) => {
                 <BentoGrid>
                     {/* Tier 1: AI Audit */}
                     <BentoItem colSpan={2}>
-                        <GlassCard className="h-full flex flex-col justify-between border-l-4 border-l-[var(--accent)]">
-                            <div>
+                        <GlassCard className="h-full flex flex-col md:flex-row gap-6 items-center border-l-4 border-l-[var(--accent)]">
+                            <div className="flex-1">
                                 <div className="text-[var(--accent)] font-mono text-sm mb-2">01 // {dict.services.labels.stepOne}</div>
                                 <h3 className="text-2xl font-bold mb-2">{dict.services.items[0].title}</h3>
                                 <p className="text-[var(--muted-foreground)] mb-4">{dict.services.items[0].desc}</p>
+                                <div className="mt-4 pt-4 border-t border-[var(--card-border)] flex justify-between items-center">
+                                    <span className="text-sm font-bold">
+                                        {dict.services.features.clearWebsite}
+                                    </span>
+                                    <span className="text-xs px-2 py-1 rounded bg-[rgba(20,184,166,0.1)] text-[var(--accent)]">
+                                        {dict.services.features.weHandleEverything}
+                                    </span>
+                                </div>
                             </div>
-                            <div className="mt-4 pt-4 border-t border-[var(--card-border)] flex justify-between items-center">
-                                <span className="text-sm font-bold">
-                                    {dict.services.features.clearWebsite}
-                                </span>
-                                <span className="text-xs px-2 py-1 rounded bg-[rgba(20,184,166,0.1)] text-[var(--accent)]">
-                                    {dict.services.features.weHandleEverything}
-                                </span>
-                            </div>
-                            <div className="mt-4">
-                                <Link href={`/${lang}/audit`} className="text-sm font-medium text-[var(--accent)] hover:underline flex items-center gap-1">
-                                    {dict.services.learnMore} <span>→</span>
+                            <div className="flex-shrink-0">
+                                <Link href={`/${lang}/audit`} className="btn btn-accent text-sm">
+                                    {dict.services.learnMore}
                                 </Link>
                             </div>
                         </GlassCard>

@@ -134,6 +134,17 @@ a {
   box-shadow: 0 0 30px var(--primary-glow);
 }
 
+.btn-accent {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.btn-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
 .section-padding {
   padding: 6rem 0;
 }
