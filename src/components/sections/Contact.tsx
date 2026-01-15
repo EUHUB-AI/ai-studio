@@ -25,7 +25,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                 </div>
                                 <div>
                                     <div className="font-bold">Email</div>
-                                    <a href="mailto:hello@euhub.sk" className="text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">hello@euhub.sk</a>
+                                    <a href="mailto:hello@euhub-ai.com" className="text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">hello@euhub-ai.com</a>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">

@@ -54,7 +54,7 @@ export const Footer = ({ lang, dict }: { lang: string, dict: any }) => {
                         <h4 className="font-bold mb-4">{dict.nav?.contact || 'Contact'}</h4>
                         <ul className="space-y-2 text-[var(--muted-foreground)]">
                             <li>974 01, Banská Bystrica, Slovakia</li>
-                            <li><a href="mailto:hello@euhub.sk" className="hover:text-[var(--primary)]">hello@euhub.sk</a></li>
+                            <li><a href="mailto:hello@euhub-ai.com" className="hover:text-[var(--primary)]">hello@euhub-ai.com</a></li>
                         </ul>
                     </div>
                 </div>

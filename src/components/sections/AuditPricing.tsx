@@ -37,7 +37,7 @@ export const AuditPricing = ({ lang, dict }: { lang: string, dict: any }) => {
                         </ul>
 
                         <Link
-                            href={`/${lang}#contact`}
+                            href="mailto:info@euhub-ai.com?subject=BRIEF%20AI%20AUDIT"
                             className="btn btn-outline w-full text-center py-3 rounded-lg hover:bg-[var(--primary)] hover:text-white transition-all duration-300"
                         >
                             {dict.audit.starter.cta}
@@ -70,7 +70,7 @@ export const AuditPricing = ({ lang, dict }: { lang: string, dict: any }) => {
                         </ul>
 
                         <Link
-                            href={`/${lang}#contact`}
+                            href="mailto:info@euhub-ai.com?subject=PROFESSIONAL%20AI%20AUDIT"
                             className="btn btn-primary w-full text-center py-3 rounded-lg shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)] transition-all duration-300"
                         >
                             {dict.audit.professional.cta}
