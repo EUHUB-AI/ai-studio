@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { ThemeToggle } from './ThemeToggle';
+import { ThemeToggle } from '../navigation/ThemeToggle';
+import { LanguageSwitcher } from '../navigation/LanguageSwitcher';
 import styles from './Header.module.css';
 
 export default function Header({ dict, lang }: { dict: any, lang: string }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
     const { resolvedTheme } = useTheme();
-    const otherLang = lang === 'en' ? 'sk' : 'en';
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -20,19 +20,15 @@ export default function Header({ dict, lang }: { dict: any, lang: string }) {
         setMounted(true);
     }, []);
 
-    const logoSrc = mounted
-        ? (resolvedTheme === 'dark' ? '/logo_dark.png' : '/logo_light.png')
-        : '/logo_light.png';
-
     return (
         <header className={`${styles.header} glass`}>
             <div className={`container ${styles.container}`}>
                 <Link href={`/${lang}`} className={styles.logo}>
                     <Image
-                        src={logoSrc}
-                        alt="EUHub AI Studio"
+                        src={mounted ? (resolvedTheme === 'dark' ? '/logo_dark.png' : '/logo_light.png') : '/logo_light.png'}
+                        alt="EU HUB AI"
                         fill
-                        sizes="(max-width: 768px) 100px, 140px"
+                        sizes="140px"
                         style={{ objectFit: 'contain' }}
                         priority
                     />
@@ -56,18 +52,14 @@ export default function Header({ dict, lang }: { dict: any, lang: string }) {
                     </Link>
 
                     <div className={styles.mobileLang}>
-                        <Link href={`/${otherLang}`} className={styles.langLink}>
-                            {otherLang.toUpperCase()}
-                        </Link>
+                        <LanguageSwitcher lang={lang} />
                     </div>
                 </nav>
 
                 <div className={styles.desktopLang}>
                     <div className={styles.controls}>
                         <ThemeToggle />
-                        <Link href={`/${otherLang}`} className={styles.langLink}>
-                            {otherLang.toUpperCase()}
-                        </Link>
+                        <LanguageSwitcher lang={lang} />
                     </div>
                 </div>
             </div>

@@ -1,62 +1,224 @@
 {
+  "nav": {
+    "services": "Strategic Services",
+    "aiSolutions": "AI Solutions",
+    "team": "Team",
+    "contact": "Partner With Us"
+  },
   "hero": {
-    "title": "Stop Building. Start Solving.",
-    "subtitle": "Clients don't buy automations. They buy solutions to business problems. We diagnose your chaos and engineer time back into your day.",
-    "cta": "Get Your Time Back"
+    "title": "Your Strategic AI Implementation Partner in Central Europe.",
+    "subtitle": "Maintain full control over your risks. Our audit identifies vulnerabilities in your infrastructure and AI potential before they become liabilities.",
+    "cta": "Start Strategic Audit"
   },
-  "problem": {
-    "title": "The Operations Chaos",
-    "description": "Most business owners look at their operations and see CHAOS. You know things could be better, but you can't pinpoint exactly what's broken.",
-    "points": [
-      "Spending too much time on manual tasks",
-      "Complex workflow diagrams that don't work",
-      "Technical jargon without business results",
-      "Stress and overwhelm"
-    ]
-  },
-  "solution": {
-    "title": "Where The Real Value Is",
-    "subtitle": "Not in the BUILDING — in the DIAGNOSING.",
-    "description": "We don't just write scripts. We analyze your entire infrastructure to find the bottlenecks that are costing you money and time.",
-    "steps": [
-      {
-        "title": "Diagnose",
-        "desc": "Identify the root cause of operational friction."
-      },
-      {
-        "title": "Automate",
-        "desc": "Implement robust, self-healing infrastructure."
-      },
-      {
-        "title": "Scale",
-        "desc": "Grow without the growing pains."
-      }
-    ]
+  "valueProposition": {
+    "headline": "Beyond Websites. Beyond Expectations.",
+    "subheadline": "We don't build websites—we architect intelligent solutions that transform how your business operates and how customers experience your brand.",
+    "body": "In the new era of AI, your digital presence isn't just a webpage. It's an integrated ecosystem that learns, adapts, and delivers measurable business value from day one."
   },
   "services": {
-    "title": "Our Expertise",
+    "title": "Enterprise-Grade AI Infrastructure",
     "items": [
       {
-        "title": "AI-Ops & Automation",
-        "desc": "Intelligent automation that adapts to your business needs."
+        "title": "AI Readiness Audit",
+        "desc": "Comprehensive analysis of your data infrastructure, governance, and AI potential. We identify risks before they become liabilities."
       },
       {
-        "title": "Cloud Infrastructure",
-        "desc": "AWS/GCP solutions that are secure, scalable, and cost-effective."
+        "title": "Pilot Implementation",
+        "desc": "Rapid deployment of functional MVP agents. Test viability in 4 weeks with strict success metrics."
       },
       {
-        "title": "On-Prem Solutions",
-        "desc": "Secure internal infrastructure for sensitive data and operations."
+        "title": "Enterprise Transformation",
+        "desc": "Full-scale integration of custom LLMs and RAG pipelines. Built for security, compliance (EU AI Act), and massive scale."
       }
     ]
   },
-  "about": {
-    "title": "Meet Mike G.",
-    "role": "SRE & AI-Ops Architect",
-    "desc": "Specializing in migrating legacy systems to modern container architectures and establishing GitOps workflows."
+  "team": {
+    "title": "Meet Our Experts",
+    "subtitle": "The brains behind your strategic AI implementation.",
+    "members": [
+      {
+        "name": "Artashes A.",
+        "role": "Head of Business Development",
+        "link": "Linkedin",
+        "url": "https://www.linkedin.com/in/arakelian-artashes-euhub/"
+      },
+      {
+        "name": "Mike G.",
+        "role": "AI Operations, Solution Architect",
+        "link": "web-site",
+        "url": "https://mike.euhub-ai.com"
+      },
+      {
+        "name": "Kateryna H.",
+        "role": "Community Infrastructure Lead",
+        "link": "Linkedin",
+        "url": "https://www.linkedin.com/in/kateryna-hordi/"
+      }
+    ]
+  },
+  "aiSolutions": {
+    "title": "AI Solutions",
+    "subtitle": "Strategic AI implementations that reduce risk, prevent vendor lock-in, and ensure organizational accountability.",
+    "solutions": [
+      {
+        "title": "Strategic AI Architecture",
+        "description": "Don’t build your future on quicksand. We cut through the hype to engineer a precise, evidence-backed tech stack that fits your infrastructure. We prevent costly vendor lock-in by identifying the exact tools you need—and the ones you don't—in just 2–4 weeks.",
+        "stage": "adopt"
+      },
+      {
+        "title": "Rapid ROI Validation",
+        "description": "Eliminate the risk of failed investments. We launch \"Proof of Value\" pilots designed to validate your hypothesis in real-world conditions. We prove the math, the efficiency, and the scalability before you commit a single dollar to full production.",
+        "stage": "adopt"
+      },
+      {
+        "title": "Autonomous Enterprise Agents",
+        "description": "Move beyond passive chatbots. We deploy intelligent agents that execute tasks—processing refunds, updating CRMs, and troubleshooting technical issues autonomously. Stop routing tickets; start resolving them with a 24/7 digital workforce.",
+        "stage": "build"
+      },
+      {
+        "title": "Sovereign AI Solutions",
+        "description": "Stop renting your competitive advantage. We build proprietary, scalable AI engines tailored to your unique business DNA. You own the code, the weights, and the data, ensuring total freedom from third-party vendor dependencies and API price hikes.",
+        "stage": "build"
+      },
+      {
+        "title": "Next-Gen Talent Acquisition",
+        "description": "Reduce \"Time-to-Hire\" by 80%. Our systems automate the screening, ranking, and scheduling of candidates with zero bias. Your recruiters can stop drowning in CVs and focus entirely on interviewing and closing top-tier talent.",
+        "stage": "operate"
+      },
+      {
+        "title": "Enterprise Safety Shields",
+        "description": "Innovate without the liability. We implement military-grade governance frameworks to ensure your AI is explainable, auditable, and compliant with global regulations (GDPR/EU AI Act). We make your AI enterprise-safe from Day 1.",
+        "stage": "operate"
+      }
+    ]
   },
   "cta": {
-    "title": "Ready to reclaim your time?",
-    "button": "Contact Us"
+    "title": "Ready to Scale Intelligently?",
+    "button": "Request Consultation"
+  },
+  "footer": {
+    "tagline": "Bridging the gap between Western capital and Central European engineering talent."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: December 2024",
+    "sections": [
+      {
+        "heading": "Article 1: Introduction and Scope",
+        "content": "Engineers-incubator s.r.o. (\"we,\" \"us,\" or \"our\") is dedicated to upholding the highest standards of privacy and data protection. This Privacy Policy outlines our obligations and your rights concerning the collection, processing, and protection of your personal data when you interact with our website, https://euhub-ai.com (the \"Service\").\n\nThis policy is drafted in strict accordance with Regulation (EU) 2016/679 (the General Data Protection Regulation or \"GDPR\") and the Slovak Act No. 18/2018 Coll. on Personal Data Protection (the \"Act\")."
+      },
+      {
+        "heading": "Article 2: Data Controller",
+        "content": "Company Name: Engineers-incubator s.r.o.\nCompany ID (IČO): 53 741 200\nRegistered Address: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nContact Email for Privacy Inquiries: hello@euhub.sk"
+      },
+      {
+        "heading": "Article 3: Data Collection and Purpose of Processing",
+        "content": "We adhere to the principle of data minimization and collect personal data only for specified, explicit, and legitimate purposes.\n\nInformation You Provide Directly:\n• Account and Profile Information: Full Name, Email Address, Username, and Hashed Password. Optional data: LinkedIn URL, Telegram username.\n  Purpose: To create and manage your account, provide our services, and facilitate user interaction.\n• Communications: Name, contact details, and message content.\n  Purpose: To respond to inquiries and maintain a record of correspondence.\n• Marketing Subscriptions: Email Address.\n  Purpose: To send marketing communications to which you consented.\n\nInformation Collected Automatically:\n• Log and Device Data: IP, browser type, device info, OS, referring URLs.\n  Purpose: Security, analysis, improved functionality.\n• Usage Data & Cookies: Data from cookies and similar technology.\n  Purpose: Website operation, preferences, analytics, marketing. Detailed in Cookie Policy."
+      },
+      {
+        "heading": "Article 4: Legal Basis for Processing",
+        "content": "• Contractual Necessity: Article 6(1)(b) GDPR\n• Consent: Article 6(1)(a) GDPR\n• Legitimate Interests: Article 6(1)(f) GDPR\n• Legal Obligation: Article 6(1)(c) GDPR"
+      },
+      {
+        "heading": "Article 5: Data Disclosure and Transfers",
+        "content": "• Third-Party Service Providers: Hosting, payments, analytics.\n• Legal Compliance: Disclosure if required by law or authority.\n• International Transfers: Protected via Standard Contractual Clauses."
+      },
+      {
+        "heading": "Article 6: Data Retention",
+        "content": "We retain data only as long as necessary unless law requires longer retention."
+      },
+      {
+        "heading": "Article 7: Your Data Protection Rights",
+        "content": "• Right to Access\n• Right to Rectification\n• Right to Erasure (\"Right to be Forgotten\")\n• Right to Restrict Processing\n• Right to Data Portability\n• Right to Object\n• Right to Withdraw Consent\n• Right to Lodge a Complaint – Supervisory Authority:\n  Úrad na ochranu osobných údajov Slovenskej republiky,\n  Hraničná 12, 820 07 Bratislava 27, Slovenská republika,\n  https://dataprotection.gov.sk/uoou/"
+      },
+      {
+        "heading": "Article 8: Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your data from loss, alteration, unauthorized disclosure, or access."
+      },
+      {
+        "heading": "Article 9: Children's Privacy",
+        "content": "Our Service is not directed to children under 16. We do not knowingly collect their data. If we become aware, we delete it promptly."
+      },
+      {
+        "heading": "Article 10: Amendments to This Policy",
+        "content": "We may update this Privacy Policy from time to time. The updated version will show a revised \"Effective Date\" and will apply immediately."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Effective Date: September 23, 2025",
+    "sections": [
+      {
+        "heading": "1. Introduction and Agreement",
+        "content": "Welcome to euhub-ai.com (the \"Site\"), operated by Engineers-incubator s.r.o. (\"we,\" \"us,\" or \"our\"). These Terms and Conditions (\"Terms\") govern your access to and use of our Site. By accessing or using the Site, you agree to be bound by these Terms in their entirety. If you do not agree with any part of these Terms, you must not use this Site."
+      },
+      {
+        "heading": "2. Intellectual Property Rights",
+        "content": "All content present on this Site, including but not limited to text, graphics, logos, images, and software, is the property of Engineers-incubator s.r.o. or its content suppliers and is protected by Slovak and international copyright laws. You are granted a limited, non-exclusive license to access and view the content for personal, non-commercial use only."
+      },
+      {
+        "heading": "3. User Obligations and Acceptable Use",
+        "content": "You agree to use the Site only for lawful purposes. You are prohibited from:\n\n• Using the Site in any way that could damage, disable, or impair the Site.\n• Attempting to gain unauthorized access to any part of the Site or its related systems.\n• Introducing any viruses, trojans, or other material that is malicious or technologically harmful."
+      },
+      {
+        "heading": "4. Disclaimers and Limitation of Liability",
+        "content": "The Site is provided on an \"as is\" and \"as available\" basis. We make no warranties, expressed or implied, regarding the accuracy, reliability, or completeness of the Site's content.\n\nTo the fullest extent permitted by Slovak law, Engineers-incubator s.r.o. shall not be liable for any indirect, incidental, or consequential damages, including loss of profits or data, arising from your use of, or inability to use, this Site. This limitation does not apply to damages caused by gross negligence or willful misconduct."
+      },
+      {
+        "heading": "5. Links to Third-Party Websites",
+        "content": "Our Site may contain links to third-party websites. These links are provided for your convenience only. We have no control over the content of these sites and accept no responsibility for them or for any loss or damage that may arise from your use of them."
+      },
+      {
+        "heading": "6. Governing Law and Jurisdiction",
+        "content": "These Terms and any dispute arising out of or in connection with them shall be governed by and construed in accordance with the laws of the Slovak Republic.\n\nYou agree that the competent courts located in Banská Bystrica, Slovak Republic, shall have exclusive jurisdiction to settle any dispute which may arise out of or in connection with these Terms."
+      },
+      {
+        "heading": "7. Amendments",
+        "content": "We reserve the right to amend these Terms at any time. We will notify users of any changes by posting the new Terms on this Site. Your continued use of the Site after such changes constitutes your acceptance of the new Terms."
+      },
+      {
+        "heading": "8. Contact Information",
+        "content": "Company: Engineers-incubator s.r.o.\nAddress: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nEmail: hello@euhub.sk"
+      }
+    ]
+  },
+  "cookie": {
+    "title": "Cookie Policy",
+    "sections": [
+      {
+        "heading": "1. What are Cookies?",
+        "content": "Cookies are small text files that are stored on your device (computer, tablet, smartphone) when you visit a website. They are widely used to improve website functionality and provide information to website owners."
+      },
+      {
+        "heading": "2. How We Use Cookies",
+        "content": "Our website, euhub-ai.com, uses cookies to distinguish you from other users, provide you with a good browsing experience, and help us improve our site. By using our site, you agree to the use of strictly necessary cookies. For all other cookies, we require your explicit consent."
+      },
+      {
+        "heading": "3. Types of Cookies We Use",
+        "subsections": [
+          {
+            "subheading": "Strictly Necessary Cookies",
+            "content": "These cookies are essential for you to navigate the website and use its features. They do not require your consent.\nExample: sessionid – Used to maintain your session while browsing."
+          },
+          {
+            "subheading": "Performance and Analytics Cookies",
+            "content": "These cookies collect anonymous information about how visitors use our website, such as which pages are visited most frequently. This helps us improve the functionality of our website. We will only use these cookies if you give us your consent.\nExample: Google Analytics (_ga, _gid) – Used to collect statistics about how visitors use the site. All data is anonymized."
+          },
+          {
+            "subheading": "Marketing Cookies",
+            "content": "These cookies are used to track visitors across websites. The intention is to display advertisements that are relevant and engaging to the individual user. We will only use these cookies if you give us your consent.\nExample: Meta (Facebook) Pixel (_fbp) – Used to deliver targeted ads on Meta platforms after you have visited our site."
+          }
+        ]
+      },
+      {
+        "heading": "4. Your Choices and Cookie Management",
+        "content": "You can manage your cookie preferences at any time through our cookie consent banner. You can also configure your browser to reject all or some cookies, or to alert you when websites set or access cookies. Please note that if you disable or reject strictly necessary cookies, some parts of this website may become unavailable or not function properly."
+      },
+      {
+        "heading": "5. Contact Us",
+        "content": "If you have any questions about our use of cookies, please contact us at hello@euhub.sk."
+      }
+    ]
   }
 }

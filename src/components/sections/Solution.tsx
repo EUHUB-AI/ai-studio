@@ -1,4 +1,4 @@
-import styles from './Solution.module.css';
+import styles from '../../../public/assets/css/sections/Solution.module.css';
 
 export default function Solution({ dict }: { dict: any }) {
     return (
