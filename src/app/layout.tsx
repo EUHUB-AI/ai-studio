@@ -26,7 +26,6 @@ export const metadata: Metadata = {
 };
 
 import { Providers } from "./providers";
-import CookieBanner from "@/components/CookieBanner";
 
 export default function RootLayout({
   children,
@@ -41,7 +40,6 @@ export default function RootLayout({
       <body className={`${plusJakartaSans.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased`}>
         <Providers>
           {children}
-          <CookieBanner />
         </Providers>
       </body>
     </html>
