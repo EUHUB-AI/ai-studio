@@ -28,6 +28,8 @@ export const metadata: Metadata = {
 
 import { Providers } from "./providers";
 
+const GTM_ID = "GTM-YOUR_ID_HERE";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,24 +38,27 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <head>
-        {/* Google tag (gtag.js) */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-Q8F9S6PH8Z"
-          strategy="afterInteractive"
-        />
-        <Script id="google-tag" strategy="afterInteractive">
+        {/* Google Tag Manager */}
+        <Script id="gtm-head" strategy="afterInteractive">
           {`
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-Q8F9S6PH8Z');
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${GTM_ID}');
           `}
         </Script>
-        <meta name="robots" content="noindex, nofollow" />
       </head>
       <body className={`${plusJakartaSans.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Providers>
           {children}
         </Providers>
