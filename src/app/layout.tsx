@@ -28,7 +28,12 @@ export const metadata: Metadata = {
 
 import { Providers } from "./providers";
 
-const GTM_ID = "GTM-YOUR_ID_HERE";
+const DEFAULT_GTM_ID = "GTM-KMHTFB3N";
+const configuredGtmId = process.env.NEXT_PUBLIC_GTM_ID?.trim();
+const GTM_ID =
+  configuredGtmId && configuredGtmId !== "GTM-YOUR_ID_HERE" && configuredGtmId.startsWith("GTM-")
+    ? configuredGtmId
+    : DEFAULT_GTM_ID;
 
 export default function RootLayout({
   children,
