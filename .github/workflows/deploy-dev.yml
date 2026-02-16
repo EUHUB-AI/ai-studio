@@ -2,7 +2,7 @@ name: CI/CD Pipeline DEV
 
 on:
   push:
-    branches: [redesign1]
+    branches: [redesign1, main]
   workflow_dispatch:
 
 permissions:
