@@ -91,7 +91,7 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
             </div>
 
             {/* Enterprise Trust Bar Marquee */}
-            <div className="absolute bottom-0 left-0 w-full overflow-hidden border-t border-[var(--card-border)] bg-[#151722]/90 backdrop-blur-md py-6 flex items-center z-20">
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden border-t border-[var(--card-border)] bg-slate-50/80 dark:bg-[#151722]/90 backdrop-blur-md py-6 flex items-center z-20">
                 <div className="flex justify-start items-center space-x-12 animate-[marquee_30s_linear_infinite] px-4">
                     {/* Repeated items for smooth scrolling */}
                     {[...Array(2)].map((_, j) => (
@@ -99,7 +99,7 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                             <span className="font-mono text-slate-400 text-sm font-bold opacity-80">{dict.hero?.trustBar || 'TRUSTED BY INDUSTRY LEADERS'}</span>
                             <span className="text-[var(--card-border)]">|</span>
                             {/* Partner Logos */}
-                            <div className="flex items-center space-x-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
+                            <div className="flex items-center space-x-12 transition-all duration-300">
                                 <span className="font-heading font-bold text-xl text-slate-500 tracking-widest flex items-center">
                                     <span className="border-2 border-slate-500 px-1.5 mr-0.5 text-lg leading-none py-0.5">a</span>MARTINI
                                 </span>
