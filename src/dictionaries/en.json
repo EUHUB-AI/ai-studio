@@ -1,9 +1,9 @@
 {
   "nav": {
-    "services": "Strategic Services",
-    "aiSolutions": "AI Solutions",
-    "team": "Team",
-    "contact": "Work With Us"
+    "diagnostic": "The Diagnostic",
+    "engineering": "Bespoke Engineering",
+    "capabilities": "Capabilities",
+    "contact": "Initiate Audit"
   },
   "team": {
     "title": "Meet Our Experts",

@@ -1,6 +1,24 @@
+'use client';
+
 import { GlassCard } from '../shared/GlassCard';
+import { useState, useEffect } from 'react';
 
 export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
+    const [step, setStep] = useState(0);
+
+    useEffect(() => {
+        let timeoutIds: NodeJS.Timeout[] = [];
+        const runSequence = () => {
+            setStep(0);
+            timeoutIds.push(setTimeout(() => setStep(1), 1000));
+            timeoutIds.push(setTimeout(() => setStep(2), 2500));
+            timeoutIds.push(setTimeout(() => setStep(3), 4000));
+            timeoutIds.push(setTimeout(runSequence, 8000));
+        };
+        runSequence();
+        return () => timeoutIds.forEach(clearTimeout);
+    }, []);
+
     return (
         <section className="relative min-h-[90vh] flex flex-col justify-center pt-[calc(var(--header-height)+4rem)] pb-24 overflow-hidden bg-transparent">
             {/* Background Elements - Mesh Gradient */}
@@ -57,21 +75,32 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                             <div className="text-xs text-slate-400 font-mono uppercase tracking-widest">{dict.hero?.terminal?.header || 'diagnostic_node.ts'}</div>
                         </div>
 
-                        <div className="space-y-5 font-mono text-sm">
-                            <div className="flex justify-between items-center group cursor-default">
-                                <span className="text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{dict.hero?.terminal?.step1 || 'Establishing root access...'}</span>
-                                <span className="text-[var(--accent)] text-xs border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-0.5 rounded">{dict.hero?.terminal?.step1Status || 'CONNECTED'}</span>
-                            </div>
-                            <div className="flex justify-between items-center group cursor-default">
-                                <span className="text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{dict.hero?.terminal?.step2 || 'Scanning fragmented data silos...'}</span>
-                                <span className="text-[var(--accent)] text-xs border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-0.5 rounded">{dict.hero?.terminal?.step2Status || 'VULNERABILITIES: 12'}</span>
-                            </div>
-                            <div className="flex justify-between items-center group cursor-default">
-                                <span className="text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{dict.hero?.terminal?.step3 || 'Synthesizing workflow optimization...'}</span>
-                                <span className="text-[var(--primary)] text-xs animate-pulse">{dict.hero?.terminal?.step3Status || 'PROCESSING'}</span>
-                            </div>
+                        <div className="space-y-5 font-mono text-sm min-h-[220px]">
+                            {step >= 1 && (
+                                <div className="flex justify-between items-center group cursor-default animate-[fade-in-up_0.3s_ease-out_forwards]">
+                                    <span className="text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{dict.hero?.terminal?.step1 || 'Establishing root access...'}</span>
+                                    <span className="text-[var(--accent)] text-xs border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-0.5 rounded">{dict.hero?.terminal?.step1Status || 'CONNECTED'}</span>
+                                </div>
+                            )}
+                            {step >= 2 && (
+                                <div className="flex justify-between items-center group cursor-default animate-[fade-in-up_0.3s_ease-out_forwards]">
+                                    <span className="text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{dict.hero?.terminal?.step2 || 'Scanning fragmented data silos...'}</span>
+                                    <span className="text-[var(--accent)] text-xs border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-0.5 rounded">{dict.hero?.terminal?.step2Status || 'VULNERABILITIES: 12'}</span>
+                                </div>
+                            )}
+                            {step >= 3 && (
+                                <div className="flex justify-between items-center group cursor-default animate-[fade-in-up_0.3s_ease-out_forwards]">
+                                    <span className="text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{dict.hero?.terminal?.step3 || 'Synthesizing workflow optimization...'}</span>
+                                    <span className="text-[var(--primary)] text-xs animate-pulse">{dict.hero?.terminal?.step3Status || 'PROCESSING'}</span>
+                                </div>
+                            )}
+                            {step < 3 && step > 0 && (
+                                <div className="flex justify-start items-center animate-pulse">
+                                    <div className="w-2 h-4 bg-slate-500 rounded-sm"></div>
+                                </div>
+                            )}
 
-                            <div className="mt-8 p-5 rounded-lg bg-[#1a1d29] border border-[#2A2D3E] relative overflow-hidden group shadow-inner">
+                            <div className={`mt-8 p-5 rounded-lg bg-[#1a1d29] border border-[#2A2D3E] relative overflow-hidden group shadow-inner transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                                 <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary)]/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                                 <div className="text-slate-400 mb-3 text-xs uppercase tracking-widest">{dict.hero?.terminal?.comment || '// Projected Efficiency Delta'}</div>
                                 <div className="flex items-end gap-3">
@@ -82,6 +111,15 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Custom CSS for animation inline */}
+                        <style dangerouslySetInnerHTML={{
+                            __html: `
+                            @keyframes fade-in-up {
+                                0% { opacity: 0; transform: translateY(10px); }
+                                100% { opacity: 1; transform: translateY(0); }
+                            }
+                        `}} />
                     </GlassCard>
 
                     {/* Decorative node glows */}
@@ -103,6 +141,7 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                                 <span className="font-heading font-bold text-xl text-slate-500 tracking-widest flex items-center">
                                     <span className="border-2 border-slate-500 px-1.5 mr-0.5 text-lg leading-none py-0.5">a</span>MARTINI
                                 </span>
+                                <img src="/partners/ccs.svg" alt="CCS" className="h-[28px] w-auto object-contain brightness-0 opacity-80" />
                                 <img src="/partners/univera.svg" alt="UNIVERA" className="h-8 w-auto object-contain" />
                                 <img src="/partners/medicallogistic.png" alt="Medical Logistic" className="h-8 w-auto object-contain" />
                                 <img src="/partners/angemy.png" alt="ANGEMY" className="h-8 w-auto object-contain" />

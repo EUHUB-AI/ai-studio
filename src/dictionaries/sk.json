@@ -1,9 +1,9 @@
 {
     "nav": {
-        "services": "Služby",
-        "aiSolutions": "AI Riešenia",
-        "team": "Tím",
-        "contact": "Spolupráca"
+        "diagnostic": "Diagnostika",
+        "engineering": "AI na mieru",
+        "capabilities": "Schopnosti",
+        "contact": "Spustiť Audit"
     },
     "team": {
         "title": "Spoznajte našich expertov",

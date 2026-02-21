@@ -78,9 +78,9 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
                             <div className="p-6 grid grid-cols-4 gap-4 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTAgMGgyMHYyMEgweiIgZmlsbD0ibm9uZSIvPPHBhdGggZD0iTTAgMjBoMjBNMjAgMHYyMCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDIpIiBzdHJva2Utd2lkdGg9IjEiLz48L3N2Zz4=')]">
                                 {/* Sidebar */}
                                 <div className="col-span-1 space-y-3">
-                                    <div className="h-2 w-16 bg-[var(--primary)] rounded mb-6 opacity-80"></div>
+                                    <div className="h-2 w-16 bg-[var(--primary)] rounded mb-6 opacity-80 animate-pulse"></div>
                                     {[1, 2, 3, 4].map(i => (
-                                        <div key={i} className={`h-8 rounded ${i === 2 ? 'bg-[var(--primary)]/20 border border-[var(--primary)]/30' : 'bg-[var(--card-border)]/50'}`}></div>
+                                        <div key={i} className={`h-8 rounded ${i === 2 ? 'bg-[var(--primary)]/20 border border-[var(--primary)]/30' : 'bg-[var(--card-border)]/50 hover:bg-[var(--card-border)] transition-colors'}`}></div>
                                     ))}
                                 </div>
 
@@ -89,23 +89,24 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
                                     {/* Top Widget Row */}
                                     <div className="grid grid-cols-3 gap-4">
                                         {[1, 2, 3].map(i => (
-                                            <div key={i} className="h-24 bg-[rgba(255,255,255,0.02)] border border-[var(--card-border)] rounded-lg p-3 flex flex-col justify-between">
-                                                <div className="w-6 h-6 rounded-full bg-[var(--card-border)]"></div>
-                                                <div className="space-y-2">
+                                            <div key={i} className="h-24 bg-[rgba(255,255,255,0.02)] border border-[var(--card-border)] rounded-lg p-3 flex flex-col justify-between relative overflow-hidden group">
+                                                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--primary)]/10 to-transparent -translate-y-full group-hover:animate-[scanline_1.5s_linear_infinite]" style={{ animationDelay: `${i * 0.2}s` }}></div>
+                                                <div className={`w-6 h-6 rounded-full ${i === 1 ? 'bg-[var(--primary)]/60' : i === 2 ? 'bg-[var(--secondary)]/60' : 'bg-[var(--accent)]/60'} animate-pulse`} style={{ animationDelay: `${i * 0.3}s` }}></div>
+                                                <div className="space-y-2 relative z-10">
                                                     <div className="h-2 w-8 bg-[var(--muted-foreground)]/50 rounded"></div>
-                                                    <div className={`h-4 w-16 rounded ${i === 1 ? 'bg-[var(--primary)]' : i === 2 ? 'bg-[var(--secondary)]' : 'bg-white'}`}></div>
+                                                    <div className={`h-4 rounded ${i === 1 ? 'bg-[var(--primary)] animate-[barPulse1_3s_ease-in-out_infinite]' : i === 2 ? 'bg-[var(--secondary)] animate-[barPulse2_4s_ease-in-out_infinite]' : 'bg-[var(--accent)] animate-[barPulse3_2.5s_ease-in-out_infinite]'} origin-left`}></div>
                                                 </div>
                                             </div>
                                         ))}
                                     </div>
 
                                     {/* Large Chart/Graph Area */}
-                                    <div className="h-40 bg-[rgba(255,255,255,0.02)] border border-[var(--card-border)] rounded-lg p-4 relative overflow-hidden">
+                                    <div className="h-40 bg-[rgba(255,255,255,0.02)] border border-[var(--card-border)] rounded-lg p-4 relative overflow-hidden group hover:bg-[rgba(255,255,255,0.04)] transition-colors">
                                         <div className="h-3 w-32 bg-[var(--muted-foreground)]/50 rounded mb-4"></div>
                                         {/* Abstract Chart SVG */}
                                         <svg className="absolute bottom-0 left-0 w-full h-24" preserveAspectRatio="none" viewBox="0 0 100 100">
-                                            <path d="M0,100 L0,50 Q25,20 50,60 T100,30 L100,100 Z" fill="url(#grad)" opacity="0.3" />
-                                            <path d="M0,50 Q25,20 50,60 T100,30" fill="none" stroke="var(--primary)" strokeWidth="2" />
+                                            <path d="M0,100 L0,50 Q25,20 50,60 T100,30 L100,100 Z" fill="url(#grad)" opacity="0.3" className="animate-[clipReveal_4s_ease-out_forwards]" />
+                                            <path d="M0,50 Q25,20 50,60 T100,30" fill="none" stroke="var(--primary)" strokeWidth="2" strokeDasharray="150" strokeDashoffset="150" className="animate-[drawChart_4s_ease-out_forwards]" />
                                             <defs>
                                                 <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
                                                     <stop offset="0%" stopColor="var(--primary)" stopOpacity="0.8" />
@@ -116,6 +117,35 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
                                     </div>
                                 </div>
                             </div>
+
+                            <style dangerouslySetInnerHTML={{
+                                __html: `
+                                @keyframes drawChart {
+                                    0% { stroke-dashoffset: 150; }
+                                    100% { stroke-dashoffset: 0; }
+                                }
+                                @keyframes clipReveal {
+                                    0% { clip-path: inset(0 100% 0 0); }
+                                    100% { clip-path: inset(0 0 0 0); }
+                                }
+                                @keyframes barPulse1 {
+                                    0%, 100% { width: 60%; }
+                                    50% { width: 85%; }
+                                }
+                                @keyframes barPulse2 {
+                                    0%, 100% { width: 80%; }
+                                    50% { width: 50%; }
+                                }
+                                @keyframes barPulse3 {
+                                    0%, 100% { width: 40%; }
+                                    50% { width: 70%; }
+                                }
+                                @keyframes scanline {
+                                    0% { transform: translateY(-100%); opacity: 0; }
+                                    50% { opacity: 1; }
+                                    100% { transform: translateY(100%); opacity: 0; }
+                                }
+                            `}} />
                         </GlassCard>
 
                         {/* Floating elements to add depth */}
