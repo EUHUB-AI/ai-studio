@@ -98,11 +98,15 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                         <div key={j} className="flex space-x-12 items-center min-w-max">
                             <span className="font-mono text-slate-400 text-sm font-bold opacity-80">{dict.hero?.trustBar || 'TRUSTED BY INDUSTRY LEADERS'}</span>
                             <span className="text-[var(--card-border)]">|</span>
-                            {/* Generic Enterprise "Logos" or Metrics */}
-                            <span className="font-heading font-black text-xl text-slate-500 opacity-70 tracking-tighter">FINANCE<span className="text-[var(--primary)]">CORP</span></span>
-                            <span className="font-heading font-bold text-xl text-slate-500 opacity-70 tracking-widest">LOGISTIX</span>
-                            <span className="font-heading font-bold text-xl text-slate-500 opacity-70 tracking-normal border-2 border-slate-500 px-2">MANUFAC</span>
-                            <span className="font-heading italic text-xl text-slate-500 opacity-70 tracking-tight">TechNova</span>
+                            {/* Partner Logos */}
+                            <div className="flex items-center space-x-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
+                                <span className="font-heading font-bold text-xl text-slate-500 tracking-widest flex items-center">
+                                    <span className="border-2 border-slate-500 px-1.5 mr-0.5 text-lg leading-none py-0.5">a</span>MARTINI
+                                </span>
+                                <img src="/partners/univera.svg" alt="UNIVERA" className="h-8 w-auto object-contain" />
+                                <img src="/partners/medicallogistic.png" alt="Medical Logistic" className="h-8 w-auto object-contain" />
+                                <img src="/partners/angemy.png" alt="ANGEMY" className="h-8 w-auto object-contain" />
+                            </div>
                             <span className="font-mono text-slate-400 text-sm font-bold opacity-80 border border-[var(--card-border)] px-3 py-1 rounded-full">{dict.hero?.uptimeBadge || '99.9% UPTIME'}</span>
                             <span className="text-[var(--card-border)]">|</span>
                         </div>
