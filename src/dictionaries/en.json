@@ -3,12 +3,52 @@
     "services": "Strategic Services",
     "aiSolutions": "AI Solutions",
     "team": "Team",
-    "contact": "Partner With Us"
+    "contact": "Work With Us"
+  },
+  "team": {
+    "title": "Meet Our Experts",
+    "subtitle": "The brains behind your strategic AI implementation.",
+    "members": [
+      {
+        "name": "Artashes A.",
+        "role": "Head of Business Development",
+        "link": "Linkedin",
+        "url": "https://linkedin.com"
+      },
+      {
+        "name": "Mike G.",
+        "role": "AI Operations, Solution Architect",
+        "link": "web-site",
+        "url": "https://euhub-ai.com"
+      },
+      {
+        "name": "Kateryna H.",
+        "role": "Community Infrastructure Lead",
+        "link": "Linkedin",
+        "url": "https://linkedin.com"
+      }
+    ]
   },
   "hero": {
-    "title": "Your Strategic AI Implementation Partner in Central Europe.",
-    "subtitle": "Maintain full control over your risks. Our audit identifies vulnerabilities in your infrastructure and AI potential before they become liabilities.",
-    "cta": "Start Strategic Audit"
+    "badge": "ENTERPRISE AI INTEGRATION PARTNER",
+    "title": "Eliminate Bottlenecks with Agentic AI.",
+    "subtitle": "Stop guessing where AI fits into your operations. Our diagnostic audit pinpoints exact bottlenecks and automation opportunities before you invest.",
+    "cta": "Get a Free Audit",
+    "primaryCta": "Initiate AI Audit",
+    "secondaryCta": "Explore Custom Web-Apps",
+    "terminal": {
+      "header": "diagnostic_node.ts",
+      "step1": "Establishing root access...",
+      "step1Status": "CONNECTED",
+      "step2": "Scanning fragmented data silos...",
+      "step2Status": "VULNERABILITIES: 12",
+      "step3": "Synthesizing workflow optimization...",
+      "step3Status": "PROCESSING",
+      "comment": "// Projected Efficiency Delta",
+      "delta": "+42%",
+      "label": "operational bandwidth"
+    },
+    "trustBar": "TRUSTED BY INDUSTRY LEADERS"
   },
   "valueProposition": {
     "headline": "Beyond Websites. Beyond Expectations.",
@@ -56,6 +96,83 @@
       }
     ]
   },
+  "diagnostic": {
+    "tag": "The Diagnostic",
+    "title": "Mapping Pains to Autonomous Solutions",
+    "description": "We do not sell generic software. We audit your workflows and engineer specific AI mechanisms that eliminate your exact operational bottlenecks.",
+    "situations": [
+      {
+        "pain": "Fragmented Data Silos causing delayed decision making.",
+        "mechanism": "We deploy retrieval-augmented generation (RAG) agents that index your entire internal knowledge base.",
+        "outcome": "Instant, secure data retrieval and cross-departmental alignment."
+      },
+      {
+        "pain": "Manual Customer Support failing to scale during peak hours.",
+        "mechanism": "Autonomous Level-1 support agents trained on your specific product parameters and tone of voice.",
+        "outcome": "24/7 resolution of 80% of tier-1 tickets with zero headcount increase."
+      },
+      {
+        "pain": "Inefficient internal workflows and bloated processes.",
+        "mechanism": "Agentic workflow automation that connects your existing ERP/CRM via custom API orchestration.",
+        "outcome": "Up to 40% reduction in manual data entry and operational friction."
+      }
+    ]
+  },
+  "engineering": {
+    "tag": "Bespoke Engineering",
+    "title": "The Deployment Mechanism",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Data Ingestion",
+        "desc": "Secure connection to your internal databases, ERP, or CRM via compliant API bridges."
+      },
+      {
+        "num": "02",
+        "title": "Model Tuning",
+        "desc": "Training foundational LLMs strictly on your operational data and brand guidelines."
+      },
+      {
+        "num": "03",
+        "title": "Workflow Orchestration",
+        "desc": "Designing logic trees where AI agents autonomously trigger and resolve multi-step tasks."
+      },
+      {
+        "num": "04",
+        "title": "Deployment & Scale",
+        "desc": "Containerized deployment of your custom web-app with 99.9% guaranteed uptime."
+      }
+    ]
+  },
+  "features": {
+    "tag": "Capabilities",
+    "title": "Engineered For Enterprise",
+    "agentTitle": "Autonomous AI Assistants",
+    "agentDesc": "Deploy agents that execute multi-step operations like invoice processing, tier-1 support, and data aggregation entirely on their own.",
+    "demo": {
+      "msg1": "Can you process the Q3 invoices for me?",
+      "msg2": "Processing 412 invoices. Validating against ERP...",
+      "msg3": "Done. 410 approved. 2 flagged for review."
+    },
+    "items": [
+      {
+        "title": "ERP/CRM Syncing",
+        "desc": "Bidirectional sync with SAP, Salesforce, and internal databases."
+      },
+      {
+        "title": "Secure Vault",
+        "desc": "On-premise or private cloud deployment. Military-grade isolation."
+      },
+      {
+        "title": "Real-time Analytics",
+        "desc": "Live dashboards showing operational friction reduction and ROI."
+      },
+      {
+        "title": "Automated Reporting",
+        "desc": "Generate board-ready audit reports instantaneously."
+      }
+    ]
+  },
   "aiSolutions": {
     "title": "AI Solutions",
     "subtitle": "Strategic AI implementations that reduce risk, prevent vendor lock-in, and ensure organizational accountability.",
@@ -93,8 +210,12 @@
     ]
   },
   "cta": {
-    "title": "Ready to Scale Intelligently?",
-    "button": "Request Consultation"
+    "tag": "Initiate Diagnostic",
+    "title": "Stop bleeding capital on manual ops.",
+    "metric1": "Enterprises",
+    "metric2": "Avg. Cost Reduction",
+    "metric3": "Autonomous Uptime",
+    "button": "Run Diagnostic"
   },
   "footer": {
     "tagline": "Bridging the gap between Western capital and Central European engineering talent."
@@ -109,7 +230,7 @@
       },
       {
         "heading": "Article 2: Data Controller",
-        "content": "Company Name: Engineers-incubator s.r.o.\nCompany ID (IČO): 53 741 200\nRegistered Address: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nContact Email for Privacy Inquiries: hello@euhub.sk"
+        "content": "Company Name: Engineers-incubator s.r.o.\nCompany ID (IČO): 53 741 200\nRegistered Address: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nContact Email for Privacy Inquiries: hello@euhub-ai.com"
       },
       {
         "heading": "Article 3: Data Collection and Purpose of Processing",
@@ -179,7 +300,7 @@
       },
       {
         "heading": "8. Contact Information",
-        "content": "Company: Engineers-incubator s.r.o.\nAddress: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nEmail: hello@euhub.sk"
+        "content": "Company: Engineers-incubator s.r.o.\nAddress: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nEmail: hello@euhub-ai.com"
       }
     ]
   },
@@ -217,7 +338,7 @@
       },
       {
         "heading": "5. Contact Us",
-        "content": "If you have any questions about our use of cookies, please contact us at hello@euhub.sk."
+        "content": "If you have any questions about our use of cookies, please contact us at hello@euhub-ai.com."
       }
     ]
   }

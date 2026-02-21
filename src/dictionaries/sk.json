@@ -3,12 +3,52 @@
         "services": "Služby",
         "aiSolutions": "AI Riešenia",
         "team": "Tím",
-        "contact": "Kontakt"
+        "contact": "Spolupráca"
+    },
+    "team": {
+        "title": "Spoznajte našich expertov",
+        "subtitle": "Tím, ktorý stojí za vašou úspešnou implementáciou AI.",
+        "members": [
+            {
+                "name": "Artashes A.",
+                "role": "Head of Business Development",
+                "link": "Linkedin",
+                "url": "https://linkedin.com"
+            },
+            {
+                "name": "Mike G.",
+                "role": "AI Operations, Solution Architect",
+                "link": "web-site",
+                "url": "https://euhub-ai.com"
+            },
+            {
+                "name": "Kateryna H.",
+                "role": "Community Infrastructure Lead",
+                "link": "Linkedin",
+                "url": "https://linkedin.com"
+            }
+        ]
     },
     "hero": {
-        "title": "Znížte náklady a chybovosť pomocou inteligentnej automatizácie.",
-        "subtitle": "Udržiavajte úplnú kontrolu nad svojimi rizikami. Náš audit identifikuje zraniteľnosti vo vašej infraštruktúre a potenciál AI ešte predtým, než sa stanú záväzkami.",
-        "cta": "Získať Audit Zadarmo"
+        "badge": "PARTNER PRE PODNIKOVÉ INTEGRÁCIE AI",
+        "title": "Odstráňte prekážky pomocou AI.",
+        "subtitle": "Prestaňte hádať, kam AI patrí. Náš audit presne identifikuje vaše slabé miesta a príležitosti na automatizáciu ešte pred vašou investíciou.",
+        "cta": "Získať Audit Zadarmo",
+        "primaryCta": "Začať audit",
+        "secondaryCta": "Preskúmať riešenia",
+        "terminal": {
+            "header": "diagnostic_node.ts",
+            "step1": "Nadväzovanie prístupu root...",
+            "step1Status": "PRIPOJENÉ",
+            "step2": "Skenovanie fragmentovaných dátových síl...",
+            "step2Status": "ZRANITEĽNOSTI: 12",
+            "step3": "Syntetizovanie optimalizácie pracovných tokov...",
+            "step3Status": "SPRACOVÁVA SA",
+            "comment": "// Predpokladaný nárast efektivity",
+            "delta": "+42%",
+            "label": "prevádzková priepustnosť"
+        },
+        "trustBar": "DÔVERUJÚ NÁM LÍDRI V ODVETVÍ"
     },
     "valueProposition": {
         "headline": "Viac než Webové Stránky. Viac než Očakávania.",
@@ -56,6 +96,83 @@
             }
         ]
     },
+    "diagnostic": {
+        "tag": "Diagnostika",
+        "title": "Mapovanie problémov na autonómne riešenia",
+        "description": "Nepredávame generický softvér. Auditujeme vaše procesy a navrhujeme špecifické AI mechanizmy, ktoré eliminujú presné prevádzkové úzke hrdlá.",
+        "situations": [
+            {
+                "pain": "Fragmentované dátové silá spôsobujúce oneskorené rozhodovanie.",
+                "mechanism": "Nasadzujeme agentov na báze RAG, ktorí indexujú celú vašu internú znalostnú bázu.",
+                "outcome": "Okamžité a bezpečné vyhľadávanie dát a zosúladenie naprieč oddeleniami."
+            },
+            {
+                "pain": "Manuálna zákaznícka podpora, ktorá nestíha počas špičiek.",
+                "mechanism": "Autonómni agenti podpory úrovne 1 trénovaní na parametroch vašich špecifických produktov a štýle komunikácie.",
+                "outcome": "Riešenie 80% lístkov úrovne 1 nepretržite 24/7 bez navýšenia počtu zamestnancov."
+            },
+            {
+                "pain": "Neefektívne interné pracovné postupy a prebujnelé procesy.",
+                "mechanism": "Agentická automatizácia procesov, ktorá prepája vaše existujúce ERP/CRM prostredníctvom vlastnej API inštrumentácie.",
+                "outcome": "Až o 40% zníženie manuálneho zadávania dát a prevádzkového trenia."
+            }
+        ]
+    },
+    "engineering": {
+        "tag": "Zákazkové inžinierstvo",
+        "title": "Mechanizmus nasadenia",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Získavanie dát",
+                "desc": "Bezpečné pripojenie k vašim interným databázam, ERP alebo CRM prostredníctvom compliant API mostov."
+            },
+            {
+                "num": "02",
+                "title": "Ladenie modelov",
+                "desc": "Tréning základných LLM výhradne na vašich prevádzkových dátach a firemných štandardoch."
+            },
+            {
+                "num": "03",
+                "title": "Orchestrácia workflow",
+                "desc": "Navrhovanie logických stromov, kde AI agenti autonómne spúšťajú a riešia viac-krokové úlohy."
+            },
+            {
+                "num": "04",
+                "title": "Nasadenie a škálovanie",
+                "desc": "Kontajnerizované nasadenie vašej vlastnej webovej aplikácie s garantovanou dostupnosťou 99,9%."
+            }
+        ]
+    },
+    "features": {
+        "tag": "Schopnosti",
+        "title": "Navrhnuté pre podniky",
+        "agentTitle": "Autonómni AI asistenti",
+        "agentDesc": "Nasadzujte agentov, ktorí úplne samostatne vykonávajú viac-krokové operácie ako spracovanie faktúr, podporu prvej úrovne a agregáciu dát.",
+        "demo": {
+            "msg1": "Môžeš pre mňa spracovať faktúry za Q3?",
+            "msg2": "Spracovávam 412 faktúr. Overujem voči ERP...",
+            "msg3": "Hotovo. 410 schválených. 2 označené na kontrolu."
+        },
+        "items": [
+            {
+                "title": "Synchronizácia ERP/CRM",
+                "desc": "Obojsmerná synchronizácia so SAP, Salesforce a internými databázami."
+            },
+            {
+                "title": "Bezpečný trezor",
+                "desc": "Nasadenie On-premise alebo v privátnom cloude. Izolácia na vojenskej úrovni."
+            },
+            {
+                "title": "Analytika v reálnom čase",
+                "desc": "Živé informačné panele zobrazujúce zníženie prevádzkového trenia a návratnosť investícií (ROI)."
+            },
+            {
+                "title": "Automatizovaný reporting",
+                "desc": "Okamžité generovanie auditných správ pripravených pre predstavenstvo."
+            }
+        ]
+    },
     "aiSolutions": {
         "title": "AI Riešenia",
         "subtitle": "Strategické AI implementácie, ktoré znižujú riziko, zabraňujú závislosti od dodávateľov a zabezpečujú zodpovednosť organizácie.",
@@ -93,8 +210,12 @@
         ]
     },
     "cta": {
-        "title": "Nechajte technológie pracovať za vás",
-        "button": "Dohodnúť Stretnutie"
+        "tag": "Spustiť diagnostiku",
+        "title": "Prestaňte preplácať manuálne úkony.",
+        "metric1": "Zákazníkov",
+        "metric2": "Priem. zníženie nákladov",
+        "metric3": "Autonómna dostupnosť",
+        "button": "Spustiť audit"
     },
     "footer": {
         "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku."
@@ -109,7 +230,7 @@
             },
             {
                 "heading": "Článok 2: Prevádzkovateľ údajov",
-                "content": "Názov spoločnosti: Engineers-incubator s.r.o.\nIdentifikačné číslo spoločnosti (IČO): 53 741 200\nSídlo: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nKontaktný e-mail: hello@euhub.sk"
+                "content": "Názov spoločnosti: Engineers-incubator s.r.o.\nIdentifikačné číslo spoločnosti (IČO): 53 741 200\nSídlo: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nKontaktný e-mail: hello@euhub-ai.com"
             },
             {
                 "heading": "Článok 3: Zhromažďovanie údajov a účel spracúvania",
@@ -179,7 +300,7 @@
             },
             {
                 "heading": "8. Kontaktné informácie",
-                "content": "Spoločnosť: Engineers-incubator s.r.o.\nAdresa: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nEmail: hello@euhub.sk"
+                "content": "Spoločnosť: Engineers-incubator s.r.o.\nAdresa: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nEmail: hello@euhub-ai.com"
             }
         ]
     },
@@ -217,7 +338,7 @@
             },
             {
                 "heading": "5. Kontaktujte nás",
-                "content": "Ak máte akékoľvek otázky týkajúce sa nášho používania súborov cookie, kontaktujte nás na adrese hello@euhub.sk."
+                "content": "Ak máte akékoľvek otázky týkajúce sa nášho používania súborov cookie, kontaktujte nás na adrese hello@euhub-ai.com."
             }
         ]
     }
