@@ -50,7 +50,7 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
                                 <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
                                 <div className="relative">
                                     <div className="flex items-center gap-4 mb-3">
-                                        <div className="text-2xl font-mono font-bold text-[#CBD5E1] dark:text-[var(--card-border)] group-hover:text-[var(--primary)] transition-colors">{step.num}</div>
+                                        <div className="text-2xl font-mono font-bold text-[#94A3B8] dark:text-[var(--card-border)] group-hover:text-[var(--primary)] transition-colors">{step.num}</div>
                                         <h3 className="text-xl font-bold text-[#1A1C28] dark:text-white">{step.title}</h3>
                                     </div>
                                     <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed pl-12">
@@ -256,8 +256,6 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
                         </GlassCard>
 
                         {/* Floating elements to add depth */}
-                        <div className="absolute -right-6 top-1/4 w-24 h-24 bg-[var(--secondary)]/20 backdrop-blur-3xl rounded-full border border-[var(--secondary)]/30 animate-pulse z-30"></div>
-                        <div className="absolute -left-8 bottom-1/4 w-16 h-16 bg-[var(--primary)]/20 backdrop-blur-3xl rounded-full border border-[var(--primary)]/30 animate-pulse delay-700 z-30"></div>
                     </div>
 
                     {/* Right Steps */}
@@ -267,7 +265,7 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
                                 <div className="absolute inset-0 bg-gradient-to-l from-[var(--secondary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
                                 <div className="relative text-left">
                                     <div className="flex items-center gap-4 mb-3">
-                                        <div className="text-2xl font-mono font-bold text-[#CBD5E1] dark:text-[var(--card-border)] group-hover:text-[var(--secondary)] transition-colors">{step.num}</div>
+                                        <div className="text-2xl font-mono font-bold text-[#94A3B8] dark:text-[var(--card-border)] group-hover:text-[var(--secondary)] transition-colors">{step.num}</div>
                                         <h3 className="text-xl font-bold text-[#1A1C28] dark:text-white">{step.title}</h3>
                                     </div>
                                     <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed pl-12 lg:pr-12">

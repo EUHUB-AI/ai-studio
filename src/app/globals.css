@@ -49,8 +49,8 @@
 .light {
   --background: #F8FAFC;
   /* Slate 50/White alternative */
-  --foreground: #0D0E15;
-  /* Deep Charcoal Text */
+  --foreground: #0F172A;
+  /* Stark Charcoal Text */
 
   --primary: #00ADB5;
   /* Slightly darker cyan for better contrast on white */
@@ -67,8 +67,8 @@
   /* 1px semi-transparent borders in light mode */
   --card-hover: rgba(0, 173, 181, 0.05);
   /* cyan border glow base */
-  --muted-foreground: #64748B;
-  /* Slate 500 */
+  --muted-foreground: #475569;
+  /* Strong, readable slate gray */
 }
 
 * {

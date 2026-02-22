@@ -60,8 +60,7 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
                 <div className="group grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px] relative z-10">
 
                     {/* Main AI Agent Demo Card (Span 2 Cols, 2 Rows) */}
-                    <GlassCard className="col-span-1 md:col-span-2 row-span-2 flex flex-col justify-between border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] hover:border-[#00E5FF]/40 overflow-hidden relative">
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--primary)] rounded-full blur-[100px] opacity-10 pointer-events-none"></div>
+                    <GlassCard className="col-span-1 md:col-span-2 row-span-2 flex flex-col justify-between border border-[#E2E8F0] dark:border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.08)] dark:shadow-none hover:shadow-[0_15px_40px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] overflow-hidden relative">
 
                         <div className="p-8 pb-0">
                             <h3 className="text-2xl font-bold mb-2">{dict.features?.agentTitle || 'Autonomous AI Assistants'}</h3>

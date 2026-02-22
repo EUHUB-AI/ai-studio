@@ -34,7 +34,7 @@
     "title": "Eliminate Bottlenecks with Agentic AI.",
     "subtitle": "Stop guessing where AI fits into your operations. Our diagnostic audit pinpoints exact bottlenecks and automation opportunities before you invest.",
     "cta": "Get a Free Audit",
-    "primaryCta": "Initiate AI Audit",
+    "primaryCta": "Initiate Audit",
     "secondaryCta": "Explore Custom Web-Apps",
     "terminal": {
       "header": "diagnostic_node.ts",
@@ -214,11 +214,11 @@
   },
   "cta": {
     "tag": "Initiate Diagnostic",
-    "title": "Stop bleeding capital on manual ops.",
+    "title": "Eliminate the hidden costs of manual operations.",
     "metric1": "Enterprises",
     "metric2": "Avg. Cost Reduction",
     "metric3": "Autonomous Uptime",
-    "button": "Run Diagnostic"
+    "button": "Initiate Audit"
   },
   "footer": {
     "tagline": "Bridging the gap between Western capital and Central European engineering talent.",
