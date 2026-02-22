@@ -17,6 +17,73 @@ interface LegalPageProps {
 }
 
 export const LegalPage = ({ title, lastUpdated, sections, lang }: LegalPageProps) => {
+  const renderContent = (content: string) => {
+    // Regex for [text](url)
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    // Regex for emails
+    const emailRegex = /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
+
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+
+    // We'll do a simple split and search approach for simplicity
+    // First, find all matches for both regexes and sort them by index
+    const matches: { index: number; length: number; type: 'link' | 'email'; data: any }[] = [];
+
+    let m;
+    while ((m = linkRegex.exec(content)) !== null) {
+      matches.push({ index: m.index, length: m[0].length, type: 'link', data: { text: m[1], url: m[2] } });
+    }
+    while ((m = emailRegex.exec(content)) !== null) {
+      // Avoid matching emails that are already part of a markdown link
+      const alreadyMatched = matches.some(prev => m!.index >= prev.index && m!.index < prev.index + prev.length);
+      if (!alreadyMatched) {
+        matches.push({ index: m.index, length: m[0].length, type: 'email', data: { email: m[1] } });
+      }
+    }
+
+    matches.sort((a, b) => a.index - b.index);
+
+    matches.forEach((match) => {
+      // Add preceding text
+      if (match.index > lastIndex) {
+        parts.push(content.substring(lastIndex, match.index));
+      }
+
+      if (match.type === 'link') {
+        parts.push(
+          <Link
+            key={match.index}
+            href={match.data.url}
+            className="text-[var(--primary)] hover:underline transition-all"
+          >
+            {match.data.text}
+          </Link>
+        );
+      } else if (match.type === 'email') {
+        parts.push(
+          <a
+            key={match.index}
+            href={`mailto:${match.data.email}`}
+            className="text-[var(--primary)] hover:underline transition-all"
+          >
+            {match.data.email}
+          </a>
+        );
+      }
+
+      lastIndex = match.index + match.length;
+    });
+
+    // Add remaining text
+    if (lastIndex < content.length) {
+      parts.push(content.substring(lastIndex));
+    }
+
+    return parts.length > 0 ? parts : content;
+  };
+
   return (
     <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] pt-[calc(var(--header-height)+2rem)] pb-16">
       <div className="container mx-auto px-4 max-w-4xl">
@@ -45,10 +112,10 @@ export const LegalPage = ({ title, lastUpdated, sections, lang }: LegalPageProps
               <h2 className="text-2xl font-bold mb-4 text-[var(--foreground)]">
                 {section.heading}
               </h2>
-              
+
               {/* Main content */}
               <div className="text-[var(--muted-foreground)] whitespace-pre-wrap leading-relaxed mb-4">
-                {section.content}
+                {renderContent(section.content)}
               </div>
 
               {/* Subsections */}
@@ -60,7 +127,7 @@ export const LegalPage = ({ title, lastUpdated, sections, lang }: LegalPageProps
                         {subsection.subheading}
                       </h3>
                       <div className="text-[var(--muted-foreground)] whitespace-pre-wrap leading-relaxed">
-                        {subsection.content}
+                        {renderContent(subsection.content)}
                       </div>
                     </div>
                   ))}
@@ -70,14 +137,6 @@ export const LegalPage = ({ title, lastUpdated, sections, lang }: LegalPageProps
           ))}
         </div>
 
-        {/* Footer Info */}
-        <div className="mt-16 pt-8 border-t border-[var(--card-border)] text-[var(--muted-foreground)] text-sm">
-          <p>
-            {lang === 'en'
-              ? 'Disclaimer: This document is a comprehensive template based on EU and Slovak data protection laws. Please consult with a qualified legal professional to ensure full compliance with your specific business operations.'
-              : 'Zväčšenie: Tento dokument je komplexná šablóna založená na zákonoch EÚ a Slovenskej republiky. Konzultujte si kvalifikovaného právneho poradcu, aby ste zaistili úplný súlad s vašimi konkrétnymi obchodnými operáciami.'}
-          </p>
-        </div>
       </div>
     </main>
   );
