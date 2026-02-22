@@ -137,11 +137,11 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                             <span className="font-mono text-slate-400 text-sm font-bold opacity-80">{dict.hero?.trustBar || 'TRUSTED BY INDUSTRY LEADERS'}</span>
                             <span className="text-[var(--card-border)]">|</span>
                             {/* Partner Logos */}
-                            <div className="flex items-center space-x-12 transition-all duration-300">
+                            <div className="flex items-center space-x-12 transition-all duration-500 grayscale opacity-40 hover:grayscale-0 hover:opacity-100">
                                 <span className="font-heading font-bold text-xl text-slate-500 tracking-widest flex items-center">
                                     <span className="border-2 border-slate-500 px-1.5 mr-0.5 text-lg leading-none py-0.5">a</span>MARTINI
                                 </span>
-                                <img src="/partners/ccs.svg" alt="CCS" className="h-[28px] w-auto object-contain brightness-0 opacity-80" />
+                                <img src="/partners/ccs.svg" alt="CCS" className="h-[28px] w-auto object-contain brightness-0 dark:brightness-100" />
                                 <img src="/partners/univera.svg" alt="UNIVERA" className="h-8 w-auto object-contain" />
                                 <img src="/partners/medicallogistic.png" alt="Medical Logistic" className="h-8 w-auto object-contain" />
                                 <img src="/partners/angemy.png" alt="ANGEMY" className="h-8 w-auto object-contain" />

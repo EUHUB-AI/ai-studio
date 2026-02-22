@@ -4,7 +4,7 @@ import { GlassCard } from '../shared/GlassCard';
 import { useForm, ValidationError } from '@formspree/react';
 
 export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
-    const [state, handleSubmit] = useForm("xwveprkv");
+    const [state, handleSubmit] = useForm("xeelrddn");
 
     // Metrics for social proof
     const metrics = [
@@ -134,16 +134,15 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                         <button
                                             type="submit"
                                             disabled={state.submitting}
-                                            className="w-full relative group overflow-hidden bg-[var(--background)] border border-[var(--primary)] text-[var(--primary)] font-bold py-4 px-8 rounded-lg transition-all duration-300 hover:text-[var(--background)] disabled:opacity-50 disabled:cursor-not-allowed mt-4"
+                                            className="w-full relative flex items-center justify-center gap-2 bg-[#00E5FF] text-[#0D0E15] font-bold py-4 px-8 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(0,229,255,0.4)] disabled:opacity-50 disabled:cursor-not-allowed mt-4"
                                         >
-                                            <span className="absolute inset-0 w-full h-full bg-[var(--primary)] transform -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
                                             <span className="relative z-10 flex items-center justify-center gap-2">
+                                                {!state.submitting && (
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                                )}
                                                 {state.submitting
                                                     ? (lang === 'sk' ? 'Inicializujem...' : 'Initializing...')
                                                     : (dict.cta.button || 'Run Diagnostic')}
-                                                {!state.submitting && (
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:translate-x-1 transition-transform"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                                )}
                                             </span>
                                         </button>
                                     </form>

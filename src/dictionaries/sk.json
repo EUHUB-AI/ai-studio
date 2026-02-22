@@ -3,7 +3,7 @@
         "diagnostic": "Diagnostika",
         "engineering": "AI na mieru",
         "capabilities": "Schopnosti",
-        "contact": "Spustiť Audit"
+        "contact": "Začať audit"
     },
     "team": {
         "title": "Spoznajte našich expertov",
@@ -165,7 +165,7 @@
             },
             {
                 "title": "Analytika v reálnom čase",
-                "desc": "Živé informačné panele zobrazujúce zníženie prevádzkového trenia a návratnosť investícií (ROI)."
+                "desc": "Získajte okamžitý prehľad o kľúčových metrikách výkonnosti (KPIs). Náš systém transformuje komplexné dátové toky na jasné strategické výstupy, vďaka čomu môže váš manažment rozhodovať s absolútnou istotou a bez zbytočného zdržania."
             },
             {
                 "title": "Automatizovaný reporting",
@@ -215,7 +215,7 @@
         "metric1": "Zákazníkov",
         "metric2": "Priem. zníženie nákladov",
         "metric3": "Autonómna dostupnosť",
-        "button": "Spustiť audit"
+        "button": "Začať audit"
     },
     "footer": {
         "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku."

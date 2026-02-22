@@ -60,7 +60,7 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
                 <div className="group grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px] relative z-10">
 
                     {/* Main AI Agent Demo Card (Span 2 Cols, 2 Rows) */}
-                    <GlassCard className="col-span-1 md:col-span-2 row-span-2 flex flex-col justify-between border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-500 opacity-100 group-hover:[&:not(:hover)]:opacity-70 dark:group-hover:[&:not(:hover)]:opacity-40 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(0,229,255,0.15)] hover:border-[var(--card-hover)] overflow-hidden relative">
+                    <GlassCard className="col-span-1 md:col-span-2 row-span-2 flex flex-col justify-between border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] hover:border-[#00E5FF]/40 overflow-hidden relative">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--primary)] rounded-full blur-[100px] opacity-10 pointer-events-none"></div>
 
                         <div className="p-8 pb-0">
@@ -80,7 +80,7 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
                             <div className="space-y-4 flex flex-col justify-end">
                                 {messages.map((msg, i) => (
                                     <div key={i} className={`flex ${msg.isBot ? 'justify-start' : 'justify-end'} animate-[fade-in-up_0.3s_ease-out_forwards]`}>
-                                        <div className={`px-4 py-2 rounded-lg max-w-[80%] text-sm ${msg.isBot ? 'bg-slate-100 text-slate-800 border border-slate-200 dark:bg-[#151722] dark:text-slate-300 dark:border-[#2A2D3E]' : 'bg-[var(--primary)] text-white dark:bg-[var(--primary)]/20 dark:border dark:border-[var(--primary)]/30'}`}>
+                                        <div className={`px-4 py-2 rounded-lg max-w-[80%] text-sm ${msg.isBot ? 'bg-slate-100 text-slate-800 border border-slate-200 dark:bg-[#151722] dark:text-white dark:border-[#2A2D3E]' : 'bg-[#0E434C] text-white dark:bg-[#093035] dark:border dark:border-[#0E434C] dark:text-white'}`}>
                                             {msg.text}
                                         </div>
                                     </div>
@@ -115,7 +115,7 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
 
                     {/* Standard Features */}
                     {features.map((feature: any, i: number) => (
-                        <GlassCard key={i} className={`flex flex-col justify-between p-8 border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-500 opacity-100 group-hover:[&:not(:hover)]:opacity-70 dark:group-hover:[&:not(:hover)]:opacity-40 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(123,97,255,0.15)] hover:border-[rgba(123,97,255,0.3)] ${i === 2 ? 'md:col-span-2' : 'col-span-1'} ${i === 3 ? 'md:col-span-1' : ''} relative overflow-hidden`}>
+                        <GlassCard key={i} className={`flex flex-col justify-between p-8 border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] hover:border-[#00E5FF]/40 ${i === 2 ? 'md:col-span-2' : 'col-span-1'} ${i === 3 ? 'md:col-span-1' : ''} relative overflow-hidden`}>
                             {/* Decorative Background Elements to fill empty space */}
                             <div className="absolute -bottom-8 -right-8 opacity-5 text-black dark:text-white pointer-events-none">
                                 {i === 0 && <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>}

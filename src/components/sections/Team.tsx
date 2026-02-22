@@ -14,14 +14,14 @@ export const Team = ({ lang, dict }: { lang: string, dict: any }) => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     {dict.team?.members?.map((member: any, index: number) => (
-                        <GlassCard key={index} className="flex flex-col items-center text-center p-8 bg-[var(--card-bg)] border-[var(--card-border)] hover:bg-[var(--card-hover)] transition-colors duration-300">
-                            <div className="w-24 h-24 rounded-full overflow-hidden mb-6 border-2 border-[var(--primary)] shrink-0 self-center flex mx-auto shadow-[0_0_20px_rgba(0,102,255,0.4)]">
+                        <GlassCard key={index} className="flex flex-col items-center text-center p-8 bg-[var(--card-bg)] border-[var(--card-border)] hover:bg-[var(--card-hover)] transition-colors duration-300 group">
+                            <div className="w-24 h-24 rounded-full overflow-hidden mb-6 shrink-0 self-center flex mx-auto">
                                 <Image
                                     src={`/team-${index + 1}.png`}
                                     alt={member.name}
                                     width={96}
                                     height={96}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover grayscale transition-[filter] duration-300 ease-in-out group-hover:grayscale-0"
                                 />
                             </div>
 
