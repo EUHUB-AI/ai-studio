@@ -54,27 +54,27 @@ export const PainsSituations = ({ lang, dict }: { lang: string, dict: any }) => 
                                 <div className="relative z-10 p-2 sm:p-4">
                                     <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                                         {/* Pain Point */}
-                                        <div className="flex-1 min-w-[200px] bg-[rgba(13,14,21,0.6)] rounded-xl p-5 border border-dashed border-[#1e2333]/50 relative z-10 hover:border-[#F43F5E]/30 transition-colors">
+                                        <div className="md:col-span-5 border-l-2 border-[var(--card-border)] pl-6">
                                             <div className="text-[10px] uppercase font-mono tracking-widest text-[var(--muted-foreground)] mb-2">{dict.diagnostic?.situationLabel || 'Situation // Pain'}</div>
-                                            <div className="text-sm text-slate-300 font-medium">
+                                            <h3 className="text-lg font-bold text-[var(--foreground)] leading-snug">
                                                 {item.pain}
-                                            </div>
+                                            </h3>
                                         </div>
 
                                         {/* Mechanism */}
-                                        <div className="flex-1 min-w-[200px] bg-[rgba(13,14,21,0.6)] rounded-xl p-5 border border-[var(--primary)]/20 shadow-[0_0_30px_rgba(0,229,255,0.05)] relative z-10 hover:border-[var(--primary)]/50 transition-colors">
+                                        <div className="md:col-span-4 border-l-2 border-[var(--primary)] pl-6">
                                             <div className="text-[10px] uppercase font-mono tracking-widest text-[var(--primary)] mb-2">{dict.diagnostic?.mechanismLabel || 'Engineered Mechanism'}</div>
-                                            <div className="text-sm text-white font-medium">
+                                            <p className="text-sm text-[var(--muted-foreground)] leading-relaxed">
                                                 {item.mechanism}
-                                            </div>
+                                            </p>
                                         </div>
 
                                         {/* Outcome */}
-                                        <div className="w-full sm:w-[180px] shrink-0 bg-gradient-to-br from-[var(--secondary)]/10 to-transparent rounded-xl p-5 border border-[var(--secondary)]/20 flex flex-col justify-center items-center text-center relative z-10 hover:border-[var(--secondary)]/50 transition-colors">
+                                        <div className="md:col-span-3 border-l-2 border-[var(--secondary)] pl-6">
                                             <div className="text-[10px] uppercase font-mono tracking-widest text-[var(--secondary)] mb-2">{dict.diagnostic?.deltaLabel || 'Projected Delta'}</div>
-                                            <div className="text-[13px] text-slate-300 leading-tight">
+                                            <p className="text-sm font-semibold text-[var(--foreground)]">
                                                 {item.outcome}
-                                            </div>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
