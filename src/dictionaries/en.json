@@ -98,8 +98,11 @@
   },
   "diagnostic": {
     "tag": "The Diagnostic",
-    "title": "Mapping Pains to Autonomous Solutions",
-    "description": "We do not sell generic software. We audit your workflows and engineer specific AI mechanisms that eliminate your exact operational bottlenecks.",
+    "title": "Mapping Pain to Autonomous Solutions",
+    "description": "We don't sell generic software. We audit your workflows and engineer specific AI mechanisms that eliminate precise operational choke-points.",
+    "situationLabel": "Situation // Pain",
+    "mechanismLabel": "Engineered Mechanism",
+    "deltaLabel": "Projected Delta",
     "situations": [
       {
         "pain": "Fragmented Data Silos causing delayed decision making.",
@@ -218,7 +221,16 @@
     "button": "Run Diagnostic"
   },
   "footer": {
-    "tagline": "Bridging the gap between Western capital and Central European engineering talent."
+    "tagline": "Bridging the gap between Western capital and Central European engineering talent.",
+    "solutions": "Solutions",
+    "company": "Company",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved."
+  },
+  "contactSection": {
+    "directLine": "Direct Line"
   },
   "privacy": {
     "title": "Privacy Policy",

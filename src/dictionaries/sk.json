@@ -100,6 +100,9 @@
         "tag": "Diagnostika",
         "title": "Mapovanie problémov na autonómne riešenia",
         "description": "Nepredávame generický softvér. Auditujeme vaše procesy a navrhujeme špecifické AI mechanizmy, ktoré eliminujú presné prevádzkové úzke hrdlá.",
+        "situationLabel": "Situácia // Problém",
+        "mechanismLabel": "Navrhnutý Mechanizmus",
+        "deltaLabel": "Projektovaná Zmena",
         "situations": [
             {
                 "pain": "Fragmentované dátové silá spôsobujúce oneskorené rozhodovanie.",
@@ -218,7 +221,16 @@
         "button": "Začať audit"
     },
     "footer": {
-        "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku."
+        "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku.",
+        "solutions": "Riešenia",
+        "company": "Spoločnosť",
+        "privacy": "Zásady ochrany osobných údajov",
+        "terms": "Podmienky používania služby",
+        "cookies": "Zásady používania súborov cookie",
+        "rights": "Všetky práva vyhradené."
+    },
+    "contactSection": {
+        "directLine": "Priama linka"
     },
     "privacy": {
         "title": "Politika ochrany osobných údajov",

@@ -80,9 +80,9 @@ export const Footer = ({ lang, dict }: { lang: string, dict: any }) => {
                 <div className="border-t border-[var(--card-border)] pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-[var(--muted-foreground)]">
                     <p>&copy; {new Date().getFullYear()} EUHub-AI. {dict.footer?.rights || 'All rights reserved.'}</p>
                     <div className="flex flex-wrap justify-center gap-6">
-                        <Link href={`/${lang}/privacy`} className="hover:text-[var(--foreground)] transition-colors">Privacy Policy</Link>
-                        <Link href={`/${lang}/terms`} className="hover:text-[var(--foreground)] transition-colors">Terms of Service</Link>
-                        <Link href={`/${lang}/cookie`} className="hover:text-[var(--foreground)] transition-colors">Cookie Policy</Link>
+                        <Link href={`/${lang}/privacy`} className="hover:text-[var(--foreground)] transition-colors">{dict.footer?.privacy || 'Privacy Policy'}</Link>
+                        <Link href={`/${lang}/terms`} className="hover:text-[var(--foreground)] transition-colors">{dict.footer?.terms || 'Terms of Service'}</Link>
+                        <Link href={`/${lang}/cookie`} className="hover:text-[var(--foreground)] transition-colors">{dict.footer?.cookies || 'Cookie Policy'}</Link>
                     </div>
                 </div>
             </div>
