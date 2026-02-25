@@ -7,7 +7,7 @@
     },
     "hero": {
         "badge": "PARTNER PRE PODNIKOVÉ INTEGRÁCIE AI",
-        "title": "Odstráňte prekážky pomocou AI.",
+        "title": "Vyriešime vaše problémy pomocou AI.",
         "subtitle": "Prestaňte hádať, kam AI patrí. Náš audit presne identifikuje vaše slabé miesta a príležitosti na automatizáciu ešte pred vašou investíciou.",
         "cta": "Získať Audit Zadarmo",
         "primaryCta": "Začať audit",
@@ -75,25 +75,25 @@
     "diagnostic": {
         "tag": "Diagnostika",
         "title": "Mapovanie problémov na autonómne riešenia",
-        "description": "Nepredávame generický softvér. Auditujeme vaše procesy a navrhujeme špecifické AI mechanizmy, ktoré eliminujú presné prevádzkové úzke hrdlá.",
+        "description": "Nepredávame generický softvér. Auditujeme vaše procesy a navrhujeme špecifické AI mechanizmy, ktoré eliminujú presné vaše slabé miesta",
         "situationLabel": "Situácia // Problém",
         "mechanismLabel": "Navrhnutý Mechanizmus",
         "deltaLabel": "Projektovaná Zmena",
         "situations": [
             {
-                "pain": "Fragmentované dátové silá spôsobujúce oneskorené rozhodovanie.",
+                "pain": "Fragmentované dátové centra spôsobujúce oneskorené rozhodovanie.",
                 "mechanism": "Nasadzujeme agentov na báze RAG, ktorí indexujú celú vašu internú znalostnú bázu.",
                 "outcome": "Okamžité a bezpečné vyhľadávanie dát a zosúladenie naprieč oddeleniami."
             },
             {
-                "pain": "Manuálna zákaznícka podpora, ktorá nestíha počas špičiek.",
+                "pain": "Manuálna zákaznícka podpora, ktorá nestíha v pracovnej špičke.",
                 "mechanism": "Autonómni agenti podpory úrovne 1 trénovaní na parametroch vašich špecifických produktov a štýle komunikácie.",
-                "outcome": "Riešenie 80% lístkov úrovne 1 nepretržite 24/7 bez navýšenia počtu zamestnancov."
+                "outcome": "Vybavenie cez 80% komunikácie úrovne 1 nepretržite 24/7 bez navýšenia počtu zamestnancov."
             },
             {
-                "pain": "Neefektívne interné pracovné postupy a prebujnelé procesy.",
+                "pain": "Neefektívne pracovné postupy a zla priorita ich riešenia.",
                 "mechanism": "Agentická automatizácia procesov, ktorá prepája vaše existujúce ERP/CRM prostredníctvom vlastnej API inštrumentácie.",
-                "outcome": "Až o 40% zníženie manuálneho zadávania dát a prevádzkového trenia."
+                "outcome": "Až o 40% zníženie manuálneho zadávania dát a zoptimalizovanie pracovnych postupov."
             }
         ]
     },
