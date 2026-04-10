@@ -10,12 +10,12 @@ permissions:
   id-token: write
 
 env:
-  PROJECT_ID: euhub-chatbot
+  PROJECT_ID: euhub-ai
   REGION: europe-west1
   SERVICE_NAME: euhub-ai-dev
-  ARTIFACT_REGISTRY: europe-west1-docker.pkg.dev/euhub-chatbot/euhub-ai-dev
+  ARTIFACT_REGISTRY: europe-west1-docker.pkg.dev/euhub-ai/euhub-ai-dev
   IMAGE_NAME: euhub-ai-dev
-  RUNTIME_SERVICE_ACCOUNT: "euhub-bot-runtime@euhub-chatbot.iam.gserviceaccount.com"
+  RUNTIME_SERVICE_ACCOUNT: "cloudrun-runtime@euhub-ai.iam.gserviceaccount.com"
 
 jobs:
   ci:
