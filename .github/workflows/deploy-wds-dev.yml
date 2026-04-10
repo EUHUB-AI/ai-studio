@@ -1,8 +1,6 @@
-name: CI/CD Pipeline DEV
+name: CI/CD Pipeline WDS DEV
 
 on:
-  push:
-    branches: [redesign1, main]
   workflow_dispatch:
 
 permissions:
@@ -12,9 +10,9 @@ permissions:
 env:
   PROJECT_ID: euhub-chatbot
   REGION: europe-west1
-  SERVICE_NAME: euhub-ai-dev
-  ARTIFACT_REGISTRY: europe-west1-docker.pkg.dev/euhub-chatbot/euhub-ai-dev
-  IMAGE_NAME: euhub-ai-dev
+  SERVICE_NAME: euhub-ai-wds-dev
+  ARTIFACT_REGISTRY: europe-west1-docker.pkg.dev/euhub-chatbot/euhub-ai-wds-dev
+  IMAGE_NAME: euhub-ai-wds-dev
   RUNTIME_SERVICE_ACCOUNT: "euhub-bot-runtime@euhub-chatbot.iam.gserviceaccount.com"
 
 jobs:
@@ -23,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       image_digest: ${{ steps.build.outputs.digest }}
-    
+
     steps:
       - uses: actions/checkout@v4
 
@@ -63,7 +61,7 @@ jobs:
     needs: ci
     runs-on: ubuntu-latest
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -79,23 +77,21 @@ jobs:
       - name: Verify required config
         env:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
-          GTM_ID: ${{ secrets.GTM_ID }}
         run: |
           test -n "${{ env.RUNTIME_SERVICE_ACCOUNT }}" || (echo "Missing variable: RUNTIME_SERVICE_ACCOUNT" && exit 1)
           test -n "$GCP_SA_KEY" || (echo "Missing secret: GCP_SA_KEY" && exit 1)
-          test -n "$GTM_ID" || (echo "Missing secret: GTM_ID" && exit 1)
 
       - name: Deploy to Cloud Run
         run: |
           IMAGE="${{ env.ARTIFACT_REGISTRY }}/${{ env.IMAGE_NAME }}"
           DIGEST="${{ needs.ci.outputs.image_digest }}"
-          
+
           # Check if service exists
           if gcloud run services describe ${{ env.SERVICE_NAME }} \
             --region=${{ env.REGION }} \
             --project=${{ env.PROJECT_ID }} \
             --format="value(name)" 2>/dev/null; then
-            
+
             # Service exists - update image and ensure correct configuration
             echo "Service exists, updating image and configuration..."
             gcloud run deploy ${{ env.SERVICE_NAME }} \
@@ -104,7 +100,6 @@ jobs:
               --project=${{ env.PROJECT_ID }} \
               --platform=managed \
               --service-account=${{ env.RUNTIME_SERVICE_ACCOUNT }} \
-              --set-env-vars="NEXT_PUBLIC_GTM_ID=${{ secrets.GTM_ID }}" \
               --memory=1Gi \
               --cpu=1 \
               --timeout=3600 \
@@ -120,7 +115,6 @@ jobs:
               --platform=managed \
               --allow-unauthenticated \
               --service-account=${{ env.RUNTIME_SERVICE_ACCOUNT }} \
-              --set-env-vars="NEXT_PUBLIC_GTM_ID=${{ secrets.GTM_ID }}" \
               --port=3000 \
               --memory=1Gi \
               --cpu=1 \

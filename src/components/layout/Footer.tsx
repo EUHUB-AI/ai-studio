@@ -58,20 +58,10 @@ export const Footer = ({ lang, dict }: { lang: string, dict: any }) => {
 
                     {/* Contact Column */}
                     <div>
-                        <h4 className="font-bold mb-6 text-lg tracking-wide">{dict.nav?.contact || 'Contact'}</h4>
-                        <ul className="space-y-3 text-sm text-[var(--muted-foreground)]">
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1 text-[var(--primary)]">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                </span>
-                                <span>974 01, Banská Bystrica<br />Slovakia</span>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <span className="text-[var(--primary)]">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                </span>
-                                <a href="mailto:hello@euhub-ai.com" className="hover:text-[var(--primary)] transition-colors">hello@euhub-ai.com</a>
-                            </li>
+                        <h4 className="font-bold mb-4">{dict.nav?.contact || 'Contact'}</h4>
+                        <ul className="space-y-2 text-[var(--muted-foreground)]">
+                            <li>974 01, Banská Bystrica, Slovakia</li>
+                            <li><a href="mailto:hello@euhub-ai.com" className="hover:text-[var(--primary)]">hello@euhub-ai.com</a></li>
                         </ul>
                     </div>
                 </div>

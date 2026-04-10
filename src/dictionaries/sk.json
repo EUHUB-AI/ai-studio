@@ -213,8 +213,24 @@
         "lastUpdated": "Dátum účinnosti: 2026",
         "sections": [
             {
-                "heading": "1. Úvod a rozsah pôsobnosti",
-                "content": "Tieto Zásady ochrany osobných údajov vysvetľujú, ako spoločnosť Engineers-incubator s. r. o. (\"EUHub-AI\", \"my\", \"nás\") zhromažďuje, používa a chráni vaše osobné údaje pri návšteve našej webovej stránky (euhub-ai.com/sk) alebo pri interakcii s našimi B2B konzultačnými a audítorskými služvami v oblasti umelej inteligencie. Sme plne odhodlaní dodržiavať Všeobecné nariadenie o ochrane údajov (GDPR), slovenský zákon č. 18/2018 Z. z. o ochrane osobných údajov a Akt EÚ o umelej inteligencii (EU AI Act)."
+                "heading": "Článok 1: Úvod a rozsah",
+                "content": "Engineers-incubator s.r.o. (my, nás alebo naše) sa zaväzuje dodržiavať najvyššie štandardy ochrany súkromia a údajov. Táto politika ochrany osobných údajov stanovuje naše povinnosti a vaše práva týkajúce sa zhromažďovania, spracúvania a ochrany vašich osobných údajov, keď interagujete s našou webovou stránkou https://euhub-ai.com (Služba).\n\nTáto politika je vypracovaná v prísnom súlade s Nariadením (EÚ) 2016/679 (GDPR) a slovenským zákonom č. 18/2018 Z.z. o ochrane osobných údajov (Zákon)."
+            },
+            {
+                "heading": "Článok 2: Prevádzkovateľ údajov",
+                "content": "Názov spoločnosti: Engineers-incubator s.r.o.\nIdentifikačné číslo spoločnosti (IČO): 53 741 200\nSídlo: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nKontaktný e-mail: hello@euhub-ai.com"
+            },
+            {
+                "heading": "Článok 3: Zhromažďovanie údajov a účel spracúvania",
+                "content": "Dodržiavame zásadu minimalizácie údajov a zhromažďujeme osobné údaje len na špecifikované, výslovné a legitímne účely.\n\nInformácie, ktoré poskytujete priamo:\n• Účet a profil: Celé meno, e-mail, používateľské meno, hašované heslo. Dobrovoľne – LinkedIn alebo Telegram.\n  Účel: vytvorenie a správa účtu, poskytovanie služieb, interakcia s používateľmi.\n• Komunikácia: Meno, kontaktné údaje, obsah správy.\n  Účel: odpovedať na otázky a viesť záznamy o korešpondencii.\n• Marketingové odbery: E-mailová adresa.\n  Účel: zasielanie marketingových správ na základe vášho súhlasu.\n\nAutomaticky zhromažďované informácie:\n• Údaje o protokole a zariadení: IP, typ prehliadača, zariadenie, OS, URL odkazov.\n  Účel: bezpečnosť, analýza, zlepšenie funkčnosti.\n• Súbory cookie a údaje o používaní: Informácie o interakcii so službou.\n  Účel: prevádzka webu, preferencie používateľov, analytika, marketing. Pozri osobitnú Politiku súborov cookie."
+            },
+            {
+                "heading": "Článok 4: Právny základ spracúvania",
+                "content": "• Zmluvná nevyhnutnosť: čl. 6(1)(b) GDPR\n• Súhlas: čl. 6(1)(a) GDPR\n• Oprávnené záujmy: čl. 6(1)(f) GDPR\n• Právna povinnosť: čl. 6(1)(c) GDPR"
+            },
+            {
+                "heading": "Článok 5: Sprístupnenie a prenos údajov",
+                "content": "• Poskytovatelia služieb tretích strán: hosting, platby, analytika.\n• Súlad so zákonom: sprístupnenie na základe zákona alebo rozhodnutia súdu.\n• Medzinárodný prenos: chránený štandardnými zmluvnými doložkami."
             },
             {
                 "heading": "2. Údaje, ktoré zhromažďujeme a účel spracovania",
@@ -251,8 +267,16 @@
                 "content": "Systémy umelej inteligencie, vrátane veľkých jazykových modelov (LLM) a agentických pracovných tokov, sú pravdepodobnostné systémy.\n\nAI \"Halucinácie\" and presnosť: Hoci navrhujeme robustné generovanie rozšírené o vyhľadávanie (RAG) a obmedzujeme parametre modelov, EUHub-AI nezaručuje, že výstupy generované AI budú stopercentne bezchybné. Klient berie na vedomie inherentné riziko AI \"halucinácií\" (nepravdivých výstupov).\n\nĽudský dohľad: Klient je výlučne zodpovedný za implementáciu efektívneho ľudského dohľadu a overovanie výstupov generovaných AI pred ich použitím na kritické obchodné, finančné alebo právne rozhodnutia. EUHub-AI vylučuje zodpovednosť za nepriame škody, stratu zisku alebo prevádzkové zlyhania vyplývajúce z neoverených automatizovaných výstupov, a to v maximálnom rozsahu povolenom platným právom EÚ a SR."
             },
             {
-                "heading": "4. Duševné vlastníctvo",
-                "content": "Všetky metodiky, audítorské rámce a vlastný kód na nasadenie zostávajú duševným vlastníctvom spoločnosti Engineers-incubator s. r. o., pokiaľ nie sú výslovne prevedené v prispôsobenej podnikovej zmluve."
+                "heading": "6. Rozhodné právo a súdna právomoc",
+                "content": "Tieto Podmienky a akýkoľvek spor z nich vyplývajúci alebo s nimi súvisiaci sa riadia a vykladajú v súlade s právnymi predpismi Slovenskej republiky.\n\nSúhlasíte s tým, že príslušné súdy so sídlom v Banskej Bystrici, Slovenská republika, budú mať výhradnú právomoc na riešenie akéhokoľvek sporu, ktorý môže vzniknúť z týchto Podmienok alebo v súvislosti s nimi."
+            },
+            {
+                "heading": "7. Zmeny",
+                "content": "Vyhradzujeme si právo kedykoľvek zmeniť tieto Podmienky. Používateľov upozorníme na akékoľvek zmeny zverejnením nových Podmienok na tejto Stránke. Vaše ďalšie používanie Stránky po takýchto zmenách predstavuje váš súhlas s novými Podmienkami."
+            },
+            {
+                "heading": "8. Kontaktné informácie",
+                "content": "Spoločnosť: Engineers-incubator s.r.o.\nAdresa: Horná 67, 974 01 Banská Bystrica, Slovenská republika\nEmail: hello@euhub-ai.com"
             }
         ]
     },
@@ -272,8 +296,8 @@
                 "content": "Nad svojimi údajmi si ponechávate plnú kontrolu. Svoj súhlas so súbormi cookie môžete kedykoľvek spravovať, upravovať alebo odvolať pomocou nastavení preferencií na našej webovej stránke. Okrem toho môžete nakonfigurovať nastavenia svojho prehliadača tak, aby blokoval tieto súbory cookie, hoci blokovanie nevyhnutných súborov cookie ovplyvní funkčnosť webovej stránky."
             },
             {
-                "heading": "4. Kontakt",
-                "content": "V prípade otázok týkajúcich sa nášho používania súborov cookie nás kontaktujte na hello@euhub-ai.com."
+                "heading": "5. Kontaktujte nás",
+                "content": "Ak máte akékoľvek otázky týkajúce sa nášho používania súborov cookie, kontaktujte nás na adrese hello@euhub-ai.com."
             }
         ]
     }
