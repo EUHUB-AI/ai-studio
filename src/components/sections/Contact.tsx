@@ -18,27 +18,9 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
             {/* Background Glow */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-96 bg-[var(--primary)] opacity-[0.05] blur-[150px] rounded-t-full pointer-events-none"></div>
 
-                        <div className="space-y-4">
-                            <div className="flex items-center gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[rgba(20,184,166,0.1)] flex items-center justify-center text-[var(--accent)]">
-                                    ✉
-                                </div>
-                                <div>
-                                    <div className="font-bold">Email</div>
-                                    <a href="mailto:hello@euhub-ai.com" className="text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">hello@euhub-ai.com</a>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[rgba(20,184,166,0.1)] flex items-center justify-center text-[var(--accent)]">
-                                    📍
-                                </div>
-                                <div>
-                                    <div className="font-bold">{lang === 'sk' ? 'Lokácia' : 'Location'}</div>
-                                    <span className="text-[var(--muted-foreground)]">974 01, Banská Bystrica, Slovakia (EU)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div className="container mx-auto px-4 relative z-10">
+                <div className="max-w-5xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                         {/* Left Side: Trust Metrics & Copy */}
                         <div className="space-y-10">
