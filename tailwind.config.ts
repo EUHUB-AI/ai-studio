@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -18,8 +19,13 @@ const config: Config = {
         "card-border": "var(--card-border)",
         "muted-foreground": "var(--muted-foreground)",
       },
+      fontFamily: {
+        sans: ["var(--font-heading)"],
+        mono: ["var(--font-mono)"],
+      }
     },
   },
   plugins: [],
 };
 export default config;
+

@@ -1,14 +1,30 @@
 {
   "nav": {
-    "services": "Strategic Services",
-    "aiSolutions": "AI Solutions",
-    "team": "Team",
-    "contact": "Partner With Us"
+    "diagnostic": "The Diagnostic",
+    "engineering": "Bespoke Engineering",
+    "capabilities": "Capabilities",
+    "contact": "Initiate Audit"
   },
   "hero": {
-    "title": "Your Strategic AI Implementation Partner in Central Europe.",
-    "subtitle": "Maintain full control over your risks. Our audit identifies vulnerabilities in your infrastructure and AI potential before they become liabilities.",
-    "cta": "Start Strategic Audit"
+    "badge": "ENTERPRISE AI INTEGRATION PARTNER",
+    "title": "Eliminate Bottlenecks with Agentic AI.",
+    "subtitle": "Stop guessing where AI fits into your operations. Our diagnostic audit pinpoints exact bottlenecks and automation opportunities before you invest.",
+    "cta": "Get a Free Audit",
+    "primaryCta": "Initiate Audit",
+    "secondaryCta": "Explore Custom Web-Apps",
+    "terminal": {
+      "header": "diagnostic_node.ts",
+      "step1": "Establishing root access...",
+      "step1Status": "CONNECTED",
+      "step2": "Scanning fragmented data silos...",
+      "step2Status": "VULNERABILITIES: 12",
+      "step3": "Synthesizing workflow optimization...",
+      "step3Status": "PROCESSING",
+      "comment": "// Projected Efficiency Delta",
+      "delta": "+42%",
+      "label": "operational bandwidth"
+    },
+    "trustBar": "TRUSTED BY INDUSTRY LEADERS"
   },
   "valueProposition": {
     "headline": "Beyond Websites. Beyond Expectations.",
@@ -56,6 +72,86 @@
       }
     ]
   },
+  "diagnostic": {
+    "tag": "The Diagnostic",
+    "title": "Mapping Pain to Autonomous Solutions",
+    "description": "We don't sell generic software. We audit your workflows and engineer specific AI mechanisms that eliminate precise operational choke-points.",
+    "situationLabel": "Situation // Pain",
+    "mechanismLabel": "Engineered Mechanism",
+    "deltaLabel": "Projected Delta",
+    "situations": [
+      {
+        "pain": "Fragmented Data Silos causing delayed decision making.",
+        "mechanism": "We deploy retrieval-augmented generation (RAG) agents that index your entire internal knowledge base.",
+        "outcome": "Instant, secure data retrieval and cross-departmental alignment."
+      },
+      {
+        "pain": "Manual Customer Support failing to scale during peak hours.",
+        "mechanism": "Autonomous Level-1 support agents trained on your specific product parameters and tone of voice.",
+        "outcome": "24/7 resolution of 80% of tier-1 tickets with zero headcount increase."
+      },
+      {
+        "pain": "Inefficient internal workflows and bloated processes.",
+        "mechanism": "Agentic workflow automation that connects your existing ERP/CRM via custom API orchestration.",
+        "outcome": "Up to 40% reduction in manual data entry and operational friction."
+      }
+    ]
+  },
+  "engineering": {
+    "tag": "Bespoke Engineering",
+    "title": "The Deployment Mechanism",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Data Ingestion",
+        "desc": "Secure connection to your internal databases, ERP, or CRM via compliant API bridges."
+      },
+      {
+        "num": "02",
+        "title": "Model Tuning",
+        "desc": "Training foundational LLMs strictly on your operational data and brand guidelines."
+      },
+      {
+        "num": "03",
+        "title": "Workflow Orchestration",
+        "desc": "Designing logic trees where AI agents autonomously trigger and resolve multi-step tasks."
+      },
+      {
+        "num": "04",
+        "title": "Deployment & Scale",
+        "desc": "Containerized deployment of your custom web-app with 99.9% guaranteed uptime."
+      }
+    ]
+  },
+  "features": {
+    "tag": "Capabilities",
+    "title": "Engineered For Enterprise",
+    "agentTitle": "Autonomous AI Assistants",
+    "agentDesc": "Deploy agents that execute multi-step operations like invoice processing, tier-1 support, and data aggregation entirely on their own.",
+    "demo": {
+      "msg1": "Can you process the Q3 invoices for me?",
+      "msg2": "Processing 412 invoices. Validating against ERP...",
+      "msg3": "Done. 410 approved. 2 flagged for review."
+    },
+    "items": [
+      {
+        "title": "ERP/CRM Syncing",
+        "desc": "Bidirectional sync with SAP, Salesforce, and internal databases."
+      },
+      {
+        "title": "Secure Vault",
+        "desc": "On-premise or private cloud deployment. Military-grade isolation."
+      },
+      {
+        "title": "Real-time Analytics",
+        "desc": "Gain instant visibility into key performance metrics (KPIs). Our system transforms complex data streams into clear strategic insights, enabling your management to make decisions with absolute certainty and zero delay."
+      },
+      {
+        "title": "Automated Reporting",
+        "desc": "Generate board-ready audit reports instantaneously."
+      }
+    ]
+  },
   "aiSolutions": {
     "title": "AI Solutions",
     "subtitle": "Strategic AI implementations that reduce risk, prevent vendor lock-in, and ensure organizational accountability.",
@@ -93,15 +189,28 @@
     ]
   },
   "cta": {
-    "title": "Ready to Scale Intelligently?",
-    "button": "Request Consultation"
+    "tag": "Initiate Diagnostic",
+    "title": "Eliminate the hidden costs of manual operations.",
+    "metric1": "Enterprises",
+    "metric2": "Avg. Cost Reduction",
+    "metric3": "Autonomous Uptime",
+    "button": "Initiate Audit"
   },
   "footer": {
-    "tagline": "Bridging the gap between Western capital and Central European engineering talent."
+    "tagline": "Bridging the gap between Western capital and Central European engineering talent.",
+    "solutions": "Solutions",
+    "company": "Company",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved."
+  },
+  "contactSection": {
+    "directLine": "Direct Line"
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last Updated: December 2024",
+    "lastUpdated": "Effective Date: 2026",
     "sections": [
       {
         "heading": "Article 1: Introduction and Scope",
@@ -124,50 +233,38 @@
         "content": "• Third-Party Service Providers: Hosting, payments, analytics.\n• Legal Compliance: Disclosure if required by law or authority.\n• International Transfers: Protected via Standard Contractual Clauses."
       },
       {
-        "heading": "Article 6: Data Retention",
-        "content": "We retain data only as long as necessary unless law requires longer retention."
+        "heading": "2. Data We Collect and Purpose of Processing",
+        "content": "We collect personal data strictly in accordance with the principles of data minimization and purpose limitation.\n\nDiagnostic Audit Requests: When you submit a \"Request Diagnostic Audit\" form, we collect your Name, Company Name, Work Email, and Problem Statement. This data is processed exclusively to evaluate your infrastructure and communicate our findings (Legal Basis: Pre-contractual steps / Legitimate Interest).\n\nWebsite Analytics: We collect usage data via cookies (see [Cookie Policy](/en/cookie)) to improve our site architecture and user experience."
       },
       {
-        "heading": "Article 7: Your Data Protection Rights",
-        "content": "• Right to Access\n• Right to Rectification\n• Right to Erasure (\"Right to be Forgotten\")\n• Right to Restrict Processing\n• Right to Data Portability\n• Right to Object\n• Right to Withdraw Consent\n• Right to Lodge a Complaint – Supervisory Authority:\n  Úrad na ochranu osobných údajov Slovenskej republiky,\n  Hraničná 12, 820 07 Bratislava 27, Slovenská republika,\n  https://dataprotection.gov.sk/uoou/"
+        "heading": "3. AI Transparency and Automated Processing (EU AI Act Compliance)",
+        "content": "In compliance with Article 50 of the EU AI Act, we provide clear transparency regarding our use of Artificial Intelligence:\n\nInteraction with AI: When utilizing certain interactive features on our platform (such as our demonstrated \"Autonomous AI Assistants\"), you are interacting with an AI system rather than a human.\n\nAutomated Decision-Making: We do not subject website visitors to fully automated decision-making that produces legal or similarly significant effects (GDPR Article 22). All strategic diagnostic audits and consulting outputs are subject to human oversight and expert review."
       },
       {
-        "heading": "Article 8: Data Security",
-        "content": "We implement appropriate technical and organizational measures to protect your data from loss, alteration, unauthorized disclosure, or access."
+        "heading": "4. Data Security and \"Secure Vault\" Processing",
+        "content": "For our enterprise clients, data processed through our custom AI web-apps and agents is governed by a separate Data Processing Agreement (DPA) compliant with GDPR Article 28. We offer \"Secure Vault\" deployments (on-premise or private cloud) ensuring military-grade isolation and guaranteeing that client data is never used to train generalized third-party foundational models without explicit, documented consent."
       },
       {
-        "heading": "Article 9: Children's Privacy",
-        "content": "Our Service is not directed to children under 16. We do not knowingly collect their data. If we become aware, we delete it promptly."
-      },
-      {
-        "heading": "Article 10: Amendments to This Policy",
-        "content": "We may update this Privacy Policy from time to time. The updated version will show a revised \"Effective Date\" and will apply immediately."
+        "heading": "5. Your Data Protection Rights",
+        "content": "Under the GDPR and Slovak law, you possess the right to access, rectify, or erase your personal data, the right to restrict or object to processing, and the right to data portability. Where AI systems are utilized, you additionally retain the right to request human intervention, express your point of view, and contest AI-assisted outcomes. To exercise these rights, please contact hello@euhub-ai.com."
       }
     ]
   },
   "terms": {
-    "title": "Terms and Conditions",
-    "lastUpdated": "Effective Date: September 23, 2025",
+    "title": "Terms of Service",
+    "lastUpdated": "Effective Date: 2026",
     "sections": [
       {
-        "heading": "1. Introduction and Agreement",
-        "content": "Welcome to euhub-ai.com (the \"Site\"), operated by Engineers-incubator s.r.o. (\"we,\" \"us,\" or \"our\"). These Terms and Conditions (\"Terms\") govern your access to and use of our Site. By accessing or using the Site, you agree to be bound by these Terms in their entirety. If you do not agree with any part of these Terms, you must not use this Site."
+        "heading": "1. Acceptance of Terms",
+        "content": "By accessing euhub-ai.com/en or engaging our services (including AI Audits, Custom AI Web-Apps, and Autonomous AI Assistants), you agree to these B2B [Terms of Service](/en/terms). Our services are strictly intended for corporate and enterprise entities (B2B)."
       },
       {
-        "heading": "2. Intellectual Property Rights",
-        "content": "All content present on this Site, including but not limited to text, graphics, logos, images, and software, is the property of Engineers-incubator s.r.o. or its content suppliers and is protected by Slovak and international copyright laws. You are granted a limited, non-exclusive license to access and view the content for personal, non-commercial use only."
+        "heading": "2. Provision of AI Services and Compliance",
+        "content": "EUHub-AI architects, audits, and deploys custom artificial intelligence ecosystems.\n\nEU AI Act Obligations: Where EUHub-AI acts as a \"Provider\" or \"Deployer\" of an AI system under the EU AI Act, we commit to supplying the necessary technical documentation, logging capabilities, and transparency instructions required for our clients to maintain compliance.\n\nData Processing: Any processing of personal data on behalf of a client during the deployment of ERP/CRM syncing or AI agents will be strictly governed by a legally binding Data Processing Agreement (DPA) executed prior to implementation, in accordance with Article 28 of the [GDPR](/en/privacy)."
       },
       {
-        "heading": "3. User Obligations and Acceptable Use",
-        "content": "You agree to use the Site only for lawful purposes. You are prohibited from:\n\n• Using the Site in any way that could damage, disable, or impair the Site.\n• Attempting to gain unauthorized access to any part of the Site or its related systems.\n• Introducing any viruses, trojans, or other material that is malicious or technologically harmful."
-      },
-      {
-        "heading": "4. Disclaimers and Limitation of Liability",
-        "content": "The Site is provided on an \"as is\" and \"as available\" basis. We make no warranties, expressed or implied, regarding the accuracy, reliability, or completeness of the Site's content.\n\nTo the fullest extent permitted by Slovak law, Engineers-incubator s.r.o. shall not be liable for any indirect, incidental, or consequential damages, including loss of profits or data, arising from your use of, or inability to use, this Site. This limitation does not apply to damages caused by gross negligence or willful misconduct."
-      },
-      {
-        "heading": "5. Links to Third-Party Websites",
-        "content": "Our Site may contain links to third-party websites. These links are provided for your convenience only. We have no control over the content of these sites and accept no responsibility for them or for any loss or damage that may arise from your use of them."
+        "heading": "3. Liability and Limitations of Artificial Intelligence",
+        "content": "Artificial Intelligence systems, including Large Language Models (LLMs) and Agentic workflows, are probabilistic systems.\n\nAI \"Hallucinations\" and Accuracy: While we engineer robust retrieval-augmented generation (RAG) and limit model parameters to specific corporate knowledge bases, EUHub-AI does not guarantee that AI-generated outputs will be 100% error-free. The Client acknowledges the inherent risk of AI \"hallucinations\" (inaccurate outputs).\n\nHuman Oversight: The Client is solely responsible for implementing effective human oversight and verifying AI-generated outputs before relying on them for critical business, financial, or legal decisions. EUHub-AI excludes liability for indirect damages, loss of revenue, or operational failures resulting from unverified automated outputs, to the maximum extent permitted by applicable EU and Slovak law."
       },
       {
         "heading": "6. Governing Law and Jurisdiction",
@@ -188,32 +285,15 @@
     "sections": [
       {
         "heading": "1. What are Cookies?",
-        "content": "Cookies are small text files that are stored on your device (computer, tablet, smartphone) when you visit a website. They are widely used to improve website functionality and provide information to website owners."
+        "content": "Cookies are small text files stored on your device (computer, tablet, or smartphone) when you visit euhub-ai.com/en. They are utilized to ensure the proper technical functioning of our site, enhance the user experience, and provide aggregated analytical data."
       },
       {
-        "heading": "2. How We Use Cookies",
-        "content": "Our website, euhub-ai.com, uses cookies to distinguish you from other users, provide you with a good browsing experience, and help us improve our site. By using our site, you agree to the use of strictly necessary cookies. For all other cookies, we require your explicit consent."
+        "heading": "2. Types of Cookies We Use",
+        "content": "In accordance with the ePrivacy Directive and the [GDPR](/en/privacy), we classify our cookies into the following categories:\n\nStrictly Necessary Cookies: These are essential for navigating the website and utilizing its core features, such as maintaining your session state (e.g., sessionid). Because the website cannot function without them, they do not require user consent and cannot be disabled in our system.\n\nPerformance and Analytics Cookies: These cookies collect anonymized data regarding how visitors interact with our site (e.g., Google Analytics _ga, _gid). This allows us to measure performance, identify bottlenecks, and improve our digital architecture. These cookies are only deployed if you grant explicit consent via our cookie banner.\n\nMarketing Cookies: Used to track visitors across different platforms to display relevant B2B advertisements (e.g., Meta Pixel _fbp). These cookies map your interactions to external advertising networks and are only deployed with your explicit, opt-in consent."
       },
       {
-        "heading": "3. Types of Cookies We Use",
-        "subsections": [
-          {
-            "subheading": "Strictly Necessary Cookies",
-            "content": "These cookies are essential for you to navigate the website and use its features. They do not require your consent.\nExample: sessionid – Used to maintain your session while browsing."
-          },
-          {
-            "subheading": "Performance and Analytics Cookies",
-            "content": "These cookies collect anonymous information about how visitors use our website, such as which pages are visited most frequently. This helps us improve the functionality of our website. We will only use these cookies if you give us your consent.\nExample: Google Analytics (_ga, _gid) – Used to collect statistics about how visitors use the site. All data is anonymized."
-          },
-          {
-            "subheading": "Marketing Cookies",
-            "content": "These cookies are used to track visitors across websites. The intention is to display advertisements that are relevant and engaging to the individual user. We will only use these cookies if you give us your consent.\nExample: Meta (Facebook) Pixel (_fbp) – Used to deliver targeted ads on Meta platforms after you have visited our site."
-          }
-        ]
-      },
-      {
-        "heading": "4. Your Choices and Cookie Management",
-        "content": "You can manage your cookie preferences at any time through our cookie consent banner. You can also configure your browser to reject all or some cookies, or to alert you when websites set or access cookies. Please note that if you disable or reject strictly necessary cookies, some parts of this website may become unavailable or not function properly."
+        "heading": "3. Managing Your Cookie Preferences",
+        "content": "You retain full control over your data. You can manage, modify, or withdraw your cookie consent at any time by utilizing the \"Cookie Preferences\" settings located on our website. Additionally, you may configure your browser settings to block or alert you about these cookies, though blocking strictly necessary cookies will impact website functionality."
       },
       {
         "heading": "5. Contact Us",

@@ -4,21 +4,19 @@ import { GlassCard } from '../shared/GlassCard';
 import { useForm, ValidationError } from '@formspree/react';
 
 export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
-    const [state, handleSubmit] = useForm("xwveprkv");
+    const [state, handleSubmit] = useForm("xeelrddn");
+
+    // Metrics for social proof
+    const metrics = [
+        { value: "50+", label: dict.cta?.metric1 || "Enterprises" },
+        { value: "40%", label: dict.cta?.metric2 || "Avg. Cost Reduction" },
+        { value: "24/7", label: dict.cta?.metric3 || "Autonomous Uptime" }
+    ];
 
     return (
-        <section id="contact" className="section-padding">
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                            {dict.cta.title}
-                        </h2>
-                        <p className="text-[var(--muted-foreground)] text-lg mb-8">
-                            {lang === 'sk'
-                                ? 'Nečakajte, kým vás predbehne konkurencia. Získajte audit vašej infraštruktúry a zistite, kde strácate peniaze.'
-                                : 'Don\'t let the competition outpace you. Get an audit of your infrastructure and find out where you are losing money.'}
-                        </p>
+        <section id="contact" className="relative py-32 bg-[var(--background)] overflow-hidden">
+            {/* Background Glow */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-96 bg-[var(--primary)] opacity-[0.05] blur-[150px] rounded-t-full pointer-events-none"></div>
 
                         <div className="space-y-4">
                             <div className="flex items-center gap-4">
@@ -42,70 +40,135 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                         </div>
                     </div>
 
-                    <GlassCard className="border-[var(--accent)] border-opacity-30">
-                        <h3 className="text-xl font-bold mb-4">
-                            {lang === 'sk' ? 'Získajte Audit Zadarmo' : 'Get a Free Audit'}
-                        </h3>
-                        {state.succeeded ? (
-                            <div className="text-center py-8">
-                                <div className="w-16 h-16 bg-[rgba(20,184,166,0.1)] text-[var(--primary)] rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                                    ✓
-                                </div>
-                                <h4 className="text-xl font-bold mb-2">
-                                    {lang === 'sk' ? 'Ďakujeme!' : 'Thank you!'}
-                                </h4>
-                                <p className="text-[var(--muted-foreground)]">
+                        {/* Left Side: Trust Metrics & Copy */}
+                        <div className="space-y-10">
+                            <div>
+                                <span className="text-[var(--primary)] font-mono text-sm tracking-widest uppercase mb-4 block">
+                                    05 // {dict.cta?.tag || 'Initiate Diagnostic'}
+                                </span>
+                                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+                                    {dict.cta?.title || 'Stop bleeding capital on manual ops.'}
+                                </h2>
+                                <p className="text-[var(--muted-foreground)] text-lg leading-relaxed">
                                     {lang === 'sk'
-                                        ? 'Vaša správa bola odoslaná. Čoskoro sa vám ozveme.'
-                                        : 'Your message has been sent. We will be in touch shortly.'}
+                                        ? 'Nečakajte, kým vás predbehne konkurencia. Získajte audit vašej infraštruktúry a zistite, kde strácate peniaze.'
+                                        : 'Don\'t let the competition outpace you. Get an audit of your infrastructure and find out where you are losing money.'}
                                 </p>
                             </div>
-                        ) : (
-                            <form onSubmit={handleSubmit} className="space-y-4">
-                                <div>
-                                    <label htmlFor="name" className="block text-sm font-medium mb-1 text-[var(--muted-foreground)]">
-                                        {lang === 'sk' ? 'Meno' : 'Name'}
-                                    </label>
-                                    <input
-                                        id="name"
-                                        type="text"
-                                        name="name"
-                                        className="w-full px-4 py-2 rounded-lg bg-[rgba(0,0,0,0.2)] border border-[var(--card-border)] focus:border-[var(--primary)] focus:outline-none transition-colors"
-                                    />
-                                    <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
+
+                            {/* Trust Metrics Grid */}
+                            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-[var(--card-border)]">
+                                {metrics.map((metric, i) => (
+                                    <div key={i}>
+                                        <div className="text-3xl font-extrabold text-[var(--foreground)] mb-1">{metric.value}</div>
+                                        <div className="text-xs font-mono text-[var(--primary)] uppercase tracking-wider">{metric.label}</div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Contact Info */}
+                            <div className="space-y-6 pt-6">
+                                <div className="flex items-center gap-4 group">
+                                    <div className="w-12 h-12 rounded-full border border-[var(--card-border)] bg-[rgba(21,23,34,0.6)] flex items-center justify-center text-[var(--primary)] group-hover:bg-[var(--primary)]/10 group-hover:border-[var(--primary)]/30 transition-all">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    </div>
+                                    <div>
+                                        <div className="text-[10px] font-mono text-[var(--muted-foreground)] uppercase tracking-widest mb-1">{dict.contactSection?.directLine || 'Direct Line'}</div>
+                                        <a href="mailto:hello@euhub-ai.com" className="text-lg font-medium hover:text-[var(--primary)] transition-colors">hello@euhub-ai.com</a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label htmlFor="email" className="block text-sm font-medium mb-1 text-[var(--muted-foreground)]">
-                                        Email
-                                    </label>
-                                    <input
-                                        id="email"
-                                        type="email"
-                                        name="email"
-                                        className="w-full px-4 py-2 rounded-lg bg-[rgba(0,0,0,0.2)] border border-[var(--card-border)] focus:border-[var(--primary)] focus:outline-none transition-colors"
-                                    />
-                                    <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm mt-1" />
-                                </div>
-                                <div>
-                                    <label htmlFor="message" className="block text-sm font-medium mb-1 text-[var(--muted-foreground)]">
-                                        {lang === 'sk' ? 'Správa' : 'Message'}
-                                    </label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        rows={4}
-                                        className="w-full px-4 py-2 rounded-lg bg-[rgba(0,0,0,0.2)] border border-[var(--card-border)] focus:border-[var(--primary)] focus:outline-none transition-colors"
-                                    ></textarea>
-                                    <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
-                                </div>
-                                <button type="submit" disabled={state.submitting} className="w-full btn btn-primary disabled:opacity-50 disabled:cursor-not-allowed">
-                                    {state.submitting
-                                        ? (lang === 'sk' ? 'Odosielam...' : 'Sending...')
-                                        : dict.cta.button}
-                                </button>
-                            </form>
-                        )}
-                    </GlassCard>
+                            </div>
+                        </div>
+
+                        {/* Right Side: Conversion Form */}
+                        <div className="relative perspective-1000">
+                            {state.succeeded ? (
+                                <GlassCard className="border-[var(--primary)]/30 bg-[rgba(21,23,34,0.8)] backdrop-blur-xl p-12 text-center text-center transform transition-all duration-700">
+                                    <div className="w-20 h-20 bg-[var(--primary)]/20 text-[var(--primary)] rounded-full flex items-center justify-center mx-auto mb-6">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </div>
+                                    <h3 className="text-3xl font-bold mb-4">
+                                        {lang === 'sk' ? 'Audit Inicializovaný' : 'Audit Initialized'}
+                                    </h3>
+                                    <p className="text-[var(--muted-foreground)] text-lg">
+                                        {lang === 'sk'
+                                            ? 'Naši inžinieri analyzujú vašu požiadavku. Ozveme sa vám do 24 hodín.'
+                                            : 'Our engineers are analyzing your request. We will contact you within 24 hours.'}
+                                    </p>
+                                </GlassCard>
+                            ) : (
+                                <GlassCard className="border-[var(--card-border)] bg-[rgba(21,23,34,0.8)] backdrop-blur-xl p-8 relative overflow-hidden group">
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--primary)] rounded-full blur-[80px] opacity-10 pointer-events-none group-hover:opacity-20 transition-opacity duration-500"></div>
+
+                                    <h3 className="text-2xl font-bold mb-6">
+                                        {lang === 'sk' ? 'Žiadosť o Audit' : 'Request Diagnostic Audit'}
+                                    </h3>
+
+                                    <form onSubmit={handleSubmit} className="space-y-5">
+                                        <div className="space-y-1">
+                                            <label htmlFor="name" className="text-xs font-mono uppercase tracking-widest text-slate-500 dark:text-[var(--muted-foreground)] block">
+                                                {lang === 'sk' ? 'Meno / Spoločnosť' : 'Name / Company'}
+                                            </label>
+                                            <input
+                                                id="name"
+                                                type="text"
+                                                name="name"
+                                                required
+                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-400 dark:placeholder-[var(--muted-foreground)]/50 focus:outline-none transition-all"
+                                                placeholder={lang === 'sk' ? 'Váš identifikačný údaj' : 'Your identifier'}
+                                            />
+                                            <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
+                                        </div>
+
+                                        <div className="space-y-1">
+                                            <label htmlFor="email" className="text-xs font-mono uppercase tracking-widest text-slate-500 dark:text-[var(--muted-foreground)] block">
+                                                {lang === 'sk' ? 'Pracovný Email' : 'Work Email'}
+                                            </label>
+                                            <input
+                                                id="email"
+                                                type="email"
+                                                name="email"
+                                                required
+                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-400 dark:placeholder-[var(--muted-foreground)]/50 focus:outline-none transition-all"
+                                                placeholder="sysadmin@enterprise.com"
+                                            />
+                                            <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm mt-1" />
+                                        </div>
+
+                                        <div className="space-y-1">
+                                            <label htmlFor="message" className="text-xs font-mono uppercase tracking-widest text-slate-500 dark:text-[var(--muted-foreground)] block">
+                                                {lang === 'sk' ? 'Popis problému' : 'Problem Statement'}
+                                            </label>
+                                            <textarea
+                                                id="message"
+                                                name="message"
+                                                rows={4}
+                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-400 dark:placeholder-[var(--muted-foreground)]/50 focus:outline-none transition-all resize-none"
+                                                placeholder={lang === 'sk' ? 'Aké systémy potrebujete integrovať?' : 'Which systems do you need to integrate?'}
+                                            ></textarea>
+                                            <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
+                                        </div>
+
+                                        <button
+                                            type="submit"
+                                            disabled={state.submitting}
+                                            className="w-full relative flex items-center justify-center gap-2 bg-[#00E5FF] text-[#0D0E15] font-bold py-4 px-8 rounded-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(0,229,255,0.4)] disabled:opacity-50 disabled:cursor-not-allowed mt-4"
+                                        >
+                                            <span className="relative z-10 flex items-center justify-center gap-2">
+                                                {!state.submitting && (
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                                )}
+                                                {state.submitting
+                                                    ? (lang === 'sk' ? 'Inicializujem...' : 'Initializing...')
+                                                    : (dict.cta.button || 'Run Diagnostic')}
+                                            </span>
+                                        </button>
+                                    </form>
+                                </GlassCard>
+                            )}
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>

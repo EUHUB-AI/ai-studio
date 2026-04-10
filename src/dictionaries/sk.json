@@ -1,14 +1,30 @@
 {
     "nav": {
-        "services": "Služby",
-        "aiSolutions": "AI Riešenia",
-        "team": "Tím",
-        "contact": "Kontakt"
+        "diagnostic": "Diagnostika",
+        "engineering": "AI na mieru",
+        "capabilities": "Schopnosti",
+        "contact": "Začať audit"
     },
     "hero": {
-        "title": "Znížte náklady a chybovosť pomocou inteligentnej automatizácie.",
-        "subtitle": "Udržiavajte úplnú kontrolu nad svojimi rizikami. Náš audit identifikuje zraniteľnosti vo vašej infraštruktúre a potenciál AI ešte predtým, než sa stanú záväzkami.",
-        "cta": "Získať Audit Zadarmo"
+        "badge": "PARTNER PRE PODNIKOVÉ INTEGRÁCIE AI",
+        "title": "Vyriešime vaše problémy pomocou AI.",
+        "subtitle": "Prestaňte hádať, kam AI patrí. Náš audit presne identifikuje vaše slabé miesta a príležitosti na automatizáciu ešte pred vašou investíciou.",
+        "cta": "Získať Audit Zadarmo",
+        "primaryCta": "Začať audit",
+        "secondaryCta": "Preskúmať riešenia",
+        "terminal": {
+            "header": "diagnostic_node.ts",
+            "step1": "Nadväzovanie prístupu root...",
+            "step1Status": "PRIPOJENÉ",
+            "step2": "Skenovanie fragmentovaných dátových síl...",
+            "step2Status": "ZRANITEĽNOSTI: 12",
+            "step3": "Syntetizovanie optimalizácie pracovných tokov...",
+            "step3Status": "SPRACOVÁVA SA",
+            "comment": "// Predpokladaný nárast efektivity",
+            "delta": "+42%",
+            "label": "prevádzková priepustnosť"
+        },
+        "trustBar": "DÔVERUJÚ NÁM LÍDRI V ODVETVÍ"
     },
     "valueProposition": {
         "headline": "Viac než Webové Stránky. Viac než Očakávania.",
@@ -56,6 +72,86 @@
             }
         ]
     },
+    "diagnostic": {
+        "tag": "Diagnostika",
+        "title": "Mapovanie problémov na autonómne riešenia",
+        "description": "Nepredávame generický softvér. Auditujeme vaše procesy a navrhujeme špecifické AI mechanizmy, ktoré eliminujú presné vaše slabé miesta",
+        "situationLabel": "Situácia // Problém",
+        "mechanismLabel": "Navrhnutý Mechanizmus",
+        "deltaLabel": "Projektovaná Zmena",
+        "situations": [
+            {
+                "pain": "Fragmentované dátové centra spôsobujúce oneskorené rozhodovanie.",
+                "mechanism": "Nasadzujeme agentov na báze RAG, ktorí indexujú celú vašu internú znalostnú bázu.",
+                "outcome": "Okamžité a bezpečné vyhľadávanie dát a zosúladenie naprieč oddeleniami."
+            },
+            {
+                "pain": "Manuálna zákaznícka podpora, ktorá nestíha v pracovnej špičke.",
+                "mechanism": "Autonómni agenti podpory úrovne 1 trénovaní na parametroch vašich špecifických produktov a štýle komunikácie.",
+                "outcome": "Vybavenie cez 80% komunikácie úrovne 1 nepretržite 24/7 bez navýšenia počtu zamestnancov."
+            },
+            {
+                "pain": "Neefektívne pracovné postupy a zla priorita ich riešenia.",
+                "mechanism": "Agentická automatizácia procesov, ktorá prepája vaše existujúce ERP/CRM prostredníctvom vlastnej API inštrumentácie.",
+                "outcome": "Až o 40% zníženie manuálneho zadávania dát a zoptimalizovanie pracovnych postupov."
+            }
+        ]
+    },
+    "engineering": {
+        "tag": "Zákazkové inžinierstvo",
+        "title": "Mechanizmus nasadenia",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Získavanie dát",
+                "desc": "Bezpečné pripojenie k vašim interným databázam, ERP alebo CRM prostredníctvom compliant API mostov."
+            },
+            {
+                "num": "02",
+                "title": "Ladenie modelov",
+                "desc": "Tréning základných LLM výhradne na vašich prevádzkových dátach a firemných štandardoch."
+            },
+            {
+                "num": "03",
+                "title": "Orchestrácia workflow",
+                "desc": "Navrhovanie logických stromov, kde AI agenti autonómne spúšťajú a riešia viac-krokové úlohy."
+            },
+            {
+                "num": "04",
+                "title": "Nasadenie a škálovanie",
+                "desc": "Kontajnerizované nasadenie vašej vlastnej webovej aplikácie s garantovanou dostupnosťou 99,9%."
+            }
+        ]
+    },
+    "features": {
+        "tag": "Schopnosti",
+        "title": "Navrhnuté pre podniky",
+        "agentTitle": "Autonómni AI asistenti",
+        "agentDesc": "Nasadzujte agentov, ktorí úplne samostatne vykonávajú viac-krokové operácie ako spracovanie faktúr, podporu prvej úrovne a agregáciu dát.",
+        "demo": {
+            "msg1": "Môžeš pre mňa spracovať faktúry za Q3?",
+            "msg2": "Spracovávam 412 faktúr. Overujem voči ERP...",
+            "msg3": "Hotovo. 410 schválených. 2 označené na kontrolu."
+        },
+        "items": [
+            {
+                "title": "Synchronizácia ERP/CRM",
+                "desc": "Obojsmerná synchronizácia so SAP, Salesforce a internými databázami."
+            },
+            {
+                "title": "Bezpečný trezor",
+                "desc": "Nasadenie On-premise alebo v privátnom cloude. Izolácia na vojenskej úrovni."
+            },
+            {
+                "title": "Analytika v reálnom čase",
+                "desc": "Získajte okamžitý prehľad o kľúčových metrikách výkonnosti (KPIs). Náš systém transformuje komplexné dátové toky na jasné strategické výstupy, vďaka čomu môže váš manažment rozhodovať s absolútnou istotou a bez zbytočného zdržania."
+            },
+            {
+                "title": "Automatizovaný reporting",
+                "desc": "Okamžité generovanie auditných správ pripravených pre predstavenstvo."
+            }
+        ]
+    },
     "aiSolutions": {
         "title": "AI Riešenia",
         "subtitle": "Strategické AI implementácie, ktoré znižujú riziko, zabraňujú závislosti od dodávateľov a zabezpečujú zodpovednosť organizácie.",
@@ -93,15 +189,28 @@
         ]
     },
     "cta": {
-        "title": "Nechajte technológie pracovať za vás",
-        "button": "Dohodnúť Stretnutie"
+        "tag": "Spustiť diagnostiku",
+        "title": "Prestaňte preplácať manuálne úkony.",
+        "metric1": "Zákazníkov",
+        "metric2": "Priem. zníženie nákladov",
+        "metric3": "Autonómna dostupnosť",
+        "button": "Začať audit"
     },
     "footer": {
-        "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku."
+        "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku.",
+        "solutions": "Riešenia",
+        "company": "Spoločnosť",
+        "privacy": "Ochrana osobných údajov",
+        "terms": "Podmienky používania",
+        "cookies": "Používanie cookies",
+        "rights": "Všetky práva vyhradené."
+    },
+    "contactSection": {
+        "directLine": "Priama linka"
     },
     "privacy": {
-        "title": "Politika ochrany osobných údajov",
-        "lastUpdated": "Posledná aktualizácia: December 2024",
+        "title": "Zásady ochrany osobných údajov",
+        "lastUpdated": "Dátum účinnosti: 2026",
         "sections": [
             {
                 "heading": "Článok 1: Úvod a rozsah",
@@ -124,50 +233,38 @@
                 "content": "• Poskytovatelia služieb tretích strán: hosting, platby, analytika.\n• Súlad so zákonom: sprístupnenie na základe zákona alebo rozhodnutia súdu.\n• Medzinárodný prenos: chránený štandardnými zmluvnými doložkami."
             },
             {
-                "heading": "Článok 6: Uchovávanie údajov",
-                "content": "Údaje uchovávame len po dobu potrebnú na účely, ak zákon nevyžaduje dlhšie uchovávanie."
+                "heading": "2. Údaje, ktoré zhromažďujeme a účel spracovania",
+                "content": "Osobné údaje zhromažďujeme striktne v súlade so zásadami minimalizácie údajov a obmedzenia účelu.\n\nŽiadosti o diagnostický audit: Keď odošlete formulár \"Žiadosť o Audit\", zhromažďujeme váš identifikačný údaj (Meno / Spoločnosť), pracovný email a popis problému (aké systémy potrebujete integrovať). Tieto údaje sa spracúvajú výlučne na vyhodnotenie vašej infraštruktúry a komunikáciu našich zistení (Právny základ: Predzmluvné vzťahy / Oprávnený záujem).\n\nAnalytika webových stránok: Údaje o používaní zhromažďujeme prostredníctvom súborov cookie (pozri [Zásady používania súborov cookie](/sk/cookie)) na zlepšenie architektúry našej stránky a používateľskej skúsenosti."
             },
             {
-                "heading": "Článok 7: Vaše práva",
-                "content": "• Právo na prístup\n• Právo na opravu\n• Právo na vymazanie (byť zabudnutý)\n• Právo na obmedzenie spracúvania\n• Právo na prenosnosť údajov\n• Právo namietať\n• Právo odvolať súhlas\n• Právo podať sťažnosť – Úrad na ochranu osobných údajov Slovenskej republiky,\n  Hraničná 12, 820 07 Bratislava 27, Slovenská republika,\n  https://dataprotection.gov.sk/uoou/"
+                "heading": "3. Transparentnosť AI a automatizované spracovanie (súlad s Aktom EÚ o AI)",
+                "content": "V súlade s článkom 50 Aktu EÚ o AI poskytujeme jasnú transparentnosť týkajúcu sa nášho využívania umelej inteligencie:\n\nInterakcia s AI: Pri využívaní určitých interaktívnych funkcií na našej platforme (ako sú napríklad ukážky modulu \"Autonómni AI asistenti\") interagujete so systémom umelej inteligencie, nie s človekom.\n\nAutomatizované rozhodovanie: Návštevníkov webových stránok nevystavujeme plne automatizovanému rozhodovaniu, ktoré by malo právne alebo podobne významné účinky v zmysle článku 22 GDPR. Všetky strategické diagnostické audity a konzultačné výstupy podliehajú ľudskému dohľadu a odbornému posúdeniu."
             },
             {
-                "heading": "Článok 8: Bezpečnosť údajov",
-                "content": "Zaviedli sme technické a organizačné opatrenia na ochranu údajov pred stratou, zmenou, sprístupnením alebo neoprávneným prístupom."
+                "heading": "4. Bezpečnosť údajov a \"Bezpečný trezor\"",
+                "content": "Pre našich firemných klientov sa spracovanie údajov prostredníctvom našich vlastných AI webových aplikácií a agentov riadi samostatnou Zmluvou o spracúvaní osobných údajov (DPA) v súlade s článkom 28 GDPR. Ponúkame nasadenie typu \"Bezpečný trezor\" (On-premise alebo v privátnom cloude), ktoré zaisťuje izoláciu dát a zaručuje, že klientske dáta sa nikdy nepoužijú na trénovanie všeobecných modelov tretích strán bez výslovného a zdokumentovaného súhlasu."
             },
             {
-                "heading": "Článok 9: Ochrana súkromia detí",
-                "content": "Služba nie je určená osobám mladším ako 16 rokov. Ak takéto údaje zhromaždíme omylom — vymažeme ich."
-            },
-            {
-                "heading": "Článok 10: Zmeny politiky",
-                "content": "Politiku môžeme aktualizovať. Nová verzia nadobúda účinnosť od dátumu označeného ako Dátum účinnosti."
+                "heading": "5. Vaše práva na ochranu údajov",
+                "content": "Podľa GDPR a zákona č. 18/2018 Z. z. máte právo na prístup k svojim osobným údajom, ich opravu alebo vymazanie, právo na obmedzenie alebo namietanie proti spracovaniu a právo na prenosnosť údajov. V prípadoch, kde sa využívajú systémy AI, si navyše ponechávate právo požadovať ľudský zásah, vyjadriť svoj názor a napadnúť výsledky podporené AI. Ak chcete uplatniť tieto práva, kontaktujte nás na hello@euhub-ai.com."
             }
         ]
     },
     "terms": {
         "title": "Obchodné podmienky",
-        "lastUpdated": "Dátum účinnosti: September 23, 2025",
+        "lastUpdated": "Dátum účinnosti: 2026",
         "sections": [
             {
-                "heading": "1. Úvod a súhlas",
-                "content": "Vitajte na euhub-ai.com (Stránka), ktorú prevádzkuje spoločnosť Engineers-incubator s.r.o. (my, nás alebo naša). Tieto Obchodné podmienky (Podmienky) upravujú váš prístup a používanie našej Stránky. Prístupom na Stránku alebo jej používaním súhlasíte s tým, že ste viazaní týmito Podmienkami v plnom rozsahu. Ak nesúhlasíte s ktoroukoľvek časťou týchto Podmienok, nesmiete túto Stránku používať."
+                "heading": "1. Prijatie podmienok",
+                "content": "Prístupom na stránku euhub-ai.com/sk alebo využitím našich služieb (vrátane AI diagnostiky, vlastných AI aplikácií a autonómnych AI asistentov) súhlasíte s týmito B2B [Všeobecnými obchodnými podmienkami](/sk/terms). Naše služby sú prísne určené pre korporátne a podnikateľské subjekty (B2B), čomu zodpovedá aj rozsah práv a povinností."
             },
             {
-                "heading": "2. Práva duševného vlastníctva",
-                "content": "Všetok obsah prítomný na tejto Stránke, vrátane, ale nie výlučne, textu, grafiky, log, obrázkov a softvéru, je majetkom spoločnosti Engineers-incubator s.r.o. alebo jej dodávateľov obsahu a je chránený slovenskými a medzinárodnými zákonmi o autorských právach. Máte udelenú obmedzenú, nevýhradnú licenciu na prístup a prezeranie obsahu len na osobné, nekomerčné použitie."
+                "heading": "2. Poskytovanie AI služieb a súlad s legislatívou",
+                "content": "EUHub-AI navrhuje, audituje a nasadzuje vlastné ekosystémy umelej inteligencie.\n\nPovinnosti vyplývajúce z Aktu EÚ o AI (AI Act): V prípadoch, kde EUHub-AI vystupuje ako \"Poskytovateľ\" alebo \"Zavádzateľ\" systému AI, zaväzujeme sa poskytnúť potrebné technickú dokumentáciu a pokyny pre transparentnosť potrebné na to, aby si naši klienti udržali súlad s predpismi.\n\nSpracovanie údajov: Akékoľvek spracovanie osobných údajov v mene klienta počas nasadenia synchronizácie ERP/CRM alebo AI agentov sa bude prísne riadiť právne záväznou Zmluvou o spracúvaní osobných údajov (DPA) podľa čl. 28 [GDPR](/sk/privacy)."
             },
             {
-                "heading": "3. Povinnosti používateľa a prijateľné použitie",
-                "content": "Súhlasíte s tým, že budete Stránku používať len na zákonné účely. Je vám zakázané:\n\n• Používať Stránku akýmkoľvek spôsobom, ktorý by mohol poškodiť, znefunkčniť alebo narušiť Stránku.\n• Pokúšať sa získať neoprávnený prístup k akejkoľvek časti Stránky alebo jej súvisiacim systémom.\n• Zavádzať akékoľvek vírusy, trójske kone alebo iný materiál, ktorý je škodlivý alebo technologicky poškodzujúci."
-            },
-            {
-                "heading": "4. Vylúčenie zodpovednosti a obmedzenie zodpovednosti",
-                "content": "Stránka je poskytovaná tak, ako je a ako je dostupná. Neposkytujeme žiadne záruky, vyjadrené ani implicitné, týkajúce sa presnosti, spoľahlivosti alebo úplnosti obsahu Stránky.\n\nV plnom rozsahu povolenom slovenským právom spoločnosť Engineers-incubator s.r.o. nenesie zodpovednosť za žiadne nepriame, náhodné alebo následné škody, vrátane straty zisku alebo údajov, ktoré vzniknú z vášho používania alebo nemožnosti používať túto Stránku. Toto obmedzenie sa nevzťahuje na škody spôsobené hrubou nedbanlivosťou alebo úmyselným pochybením."
-            },
-            {
-                "heading": "5. Odkazy na webové stránky tretích strán",
-                "content": "Naša Stránka môže obsahovať odkazy na webové stránky tretích strán. Tieto odkazy sú poskytované len pre vaše pohodlie. Nemáme žiadnu kontrolu nad obsahom týchto stránok a neprijímame žiadnu zodpovednosť za ne ani za akúkoľvek stratu alebo škodu, ktorá môže vzniknúť z ich používania."
+                "heading": "3. Zodpovednosť a obmedzenia umelej inteligencie",
+                "content": "Systémy umelej inteligencie, vrátane veľkých jazykových modelov (LLM) a agentických pracovných tokov, sú pravdepodobnostné systémy.\n\nAI \"Halucinácie\" and presnosť: Hoci navrhujeme robustné generovanie rozšírené o vyhľadávanie (RAG) a obmedzujeme parametre modelov, EUHub-AI nezaručuje, že výstupy generované AI budú stopercentne bezchybné. Klient berie na vedomie inherentné riziko AI \"halucinácií\" (nepravdivých výstupov).\n\nĽudský dohľad: Klient je výlučne zodpovedný za implementáciu efektívneho ľudského dohľadu a overovanie výstupov generovaných AI pred ich použitím na kritické obchodné, finančné alebo právne rozhodnutia. EUHub-AI vylučuje zodpovednosť za nepriame škody, stratu zisku alebo prevádzkové zlyhania vyplývajúce z neoverených automatizovaných výstupov, a to v maximálnom rozsahu povolenom platným právom EÚ a SR."
             },
             {
                 "heading": "6. Rozhodné právo a súdna právomoc",
@@ -188,32 +285,15 @@
         "sections": [
             {
                 "heading": "1. Čo sú súbory cookie?",
-                "content": "Súbory cookie sú malé textové súbory, ktoré sa ukladajú do vášho zariadenia (počítač, tablet, smartfón), keď navštívite webovú stránku. Sú široko používané na zefektívnenie fungovania webových stránok, ako aj na poskytovanie informácií vlastníkom stránky."
+                "content": "Súbory cookie sú malé textové súbory uložené vo vašom zariadení (počítač, tablet alebo smartfón) pri návšteve stránky euhub-ai.com/sk. Využívajú sa na zabezpečenie správneho technického fungovania našej stránky, zlepšenie používateľského zážitku a poskytovanie agregovaných analytických údajov."
             },
             {
-                "heading": "2. Ako používame súbory cookie",
-                "content": "Naša webová stránka, euhub-ai.com, používa súbory cookie na to, aby sme vás odlíšili od ostatných používateľov, poskytli vám dobrý zážitok pri prehliadaní a pomohli nám vylepšiť našu stránku. Používaním našej stránky súhlasíte s používaním nevyhnutne potrebných súborov cookie. Pre všetky ostatné súbory cookie vyžadujeme váš výslovný súhlas."
+                "heading": "2. Typy súborov cookie, ktoré používame",
+                "content": "V súlade so smernicou ePrivacy a nariadením [GDPR](/sk/privacy) rozdeľujeme naše súbory cookie do nasledujúcich kategórií:\n\nPrísne nevyhnutné súbory cookie: Sú nevyhnutné pre navigáciu na webovej stránke a využívanie jej základných funkcií, ako je udržiavanie stavu vašej relácie (napr. sessionid). Keďže webová stránka bez nich nemôže fungovať, nevyžadujú súhlas používateľa a v našom systéme ich možno vypnúť.\n\nVýkonnostné a analytické súbory cookie: Tieto súbory cookie zhromažďujú anonymizované údaje o tom, ako návštevníci interagujú s našou stránkou (napr. Google Analytics _ga, _gid). To nám umožňuje merať výkonnosť a zlepšovať našu digitálnu architektúru. Tieto súbory cookie sa nasadia len vtedy, ak udelíte výslovný súhlas prostredníctvom nášho banneru.\n\nMarketingové súbory cookie: Používajú sa na sledovanie návštevníkov s cieľom zobraziť relevantné B2B reklamy (napr. Meta Pixel _fbp). Tieto súbory cookie mapujú vaše interakcie s externými reklamnými sieťami a nasadzujú sa len s vaším výslovným súhlasom."
             },
             {
-                "heading": "3. Typy súborov cookie, ktoré používame",
-                "subsections": [
-                    {
-                        "subheading": "Nevyhnutne potrebné súbory cookie",
-                        "content": "Tieto súbory cookie sú nevyhnutné na to, aby ste sa mohli pohybovať po webovej stránke a používať jej funkcie. Nevyžadujú váš súhlas.\nPríklad: sessionid – Používa sa na udržanie vašej relácie počas prehliadania."
-                    },
-                    {
-                        "subheading": "Výkonnostné a analytické súbory cookie",
-                        "content": "Tieto súbory cookie zhromažďujú anonymné informácie o tom, ako návštevníci používajú našu webovú stránku, napríklad ktoré stránky navštevujú najčastejšie. To nám pomáha zlepšovať fungovanie našej webovej stránky. Tieto súbory cookie použijeme iba vtedy, ak nám dáte svoj súhlas.\nPríklad: Google Analytics (_ga, _gid) – Používajú sa na zhromažďovanie štatistických údajov o tom, ako návštevníci používajú stránku. Všetky údaje sú anonymizované."
-                    },
-                    {
-                        "subheading": "Marketingové súbory cookie",
-                        "content": "Tieto súbory cookie sa používajú na sledovanie návštevníkov naprieč webovými stránkami. Zámerom je zobrazovať reklamy, ktoré sú relevantné a pútavé pre jednotlivého používateľa. Tieto súbory cookie použijeme iba vtedy, ak nám dáte svoj súhlas.\nPríklad: Meta (Facebook) Pixel (_fbp) – Používa sa na doručovanie cielených reklám na platformách Meta po tom, čo ste navštívili našu stránku."
-                    }
-                ]
-            },
-            {
-                "heading": "4. Vaše voľby a správa súborov cookie",
-                "content": "Svoje preferencie týkajúce sa súborov cookie môžete kedykoľvek spravovať prostredníctvom nášho bannera na správu súhlasu s cookies. Môžete tiež nastaviť svoj prehliadač tak, aby odmietal všetky alebo niektoré súbory cookie, alebo aby vás upozornil, keď webové stránky nastavia alebo pristupujú k súborom cookie. Upozorňujeme, že ak zakážete alebo odmietnete nevyhnutne potrebné súbory cookie, niektoré časti tejto webovej stránky sa môžu stať nedostupnými alebo nemusia správne fungovať."
+                "heading": "3. Správa vašich preferencií súborov cookie",
+                "content": "Nad svojimi údajmi si ponechávate plnú kontrolu. Svoj súhlas so súbormi cookie môžete kedykoľvek spravovať, upravovať alebo odvolať pomocou nastavení preferencií na našej webovej stránke. Okrem toho môžete nakonfigurovať nastavenia svojho prehliadača tak, aby blokoval tieto súbory cookie, hoci blokovanie nevyhnutných súborov cookie ovplyvní funkčnosť webovej stránky."
             },
             {
                 "heading": "5. Kontaktujte nás",
