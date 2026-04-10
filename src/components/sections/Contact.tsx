@@ -77,7 +77,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                         {/* Right Side: Conversion Form */}
                         <div className="relative perspective-1000">
                             {state.succeeded ? (
-                                <GlassCard className="border-[var(--primary)]/30 bg-[rgba(21,23,34,0.8)] backdrop-blur-xl p-12 text-center text-center transform transition-all duration-700">
+                                <GlassCard className="border-[var(--primary)]/30 bg-[rgba(21,23,34,0.8)] backdrop-blur-xl p-12 text-center transform transition-all duration-700">
                                     <div className="w-20 h-20 bg-[var(--primary)]/20 text-[var(--primary)] rounded-full flex items-center justify-center mx-auto mb-6">
                                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
@@ -154,7 +154,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                                 )}
                                                 {state.submitting
                                                     ? (lang === 'sk' ? 'Inicializujem...' : 'Initializing...')
-                                                    : (dict.cta.button || 'Run Diagnostic')}
+                                                    : (dict.cta?.button || 'Run Diagnostic')}
                                             </span>
                                         </button>
                                     </form>
