@@ -103,7 +103,7 @@ jobs:
               --project=${{ env.PROJECT_ID }} \
               --platform=managed \
               --service-account=${{ env.RUNTIME_SERVICE_ACCOUNT }} \
-              --set-env-vars="NEXT_PUBLIC_GTM_ID=${{ secrets.GTM_ID }}" \
+              --set-env-vars="NEXT_PUBLIC_GTM_ID=${{ secrets.GTM_ID }},NEXT_PUBLIC_COOKIEYES_CBID=${{ secrets.COOKIEYES_CBID }}" \
               --memory=1Gi \
               --cpu=1 \
               --timeout=3600 \
@@ -119,7 +119,7 @@ jobs:
               --platform=managed \
               --allow-unauthenticated \
               --service-account=${{ env.RUNTIME_SERVICE_ACCOUNT }} \
-              --set-env-vars="NEXT_PUBLIC_GTM_ID=${{ secrets.GTM_ID }}" \
+              --set-env-vars="NEXT_PUBLIC_GTM_ID=${{ secrets.GTM_ID }},NEXT_PUBLIC_COOKIEYES_CBID=${{ secrets.COOKIEYES_CBID }}" \
               --port=3000 \
               --memory=1Gi \
               --cpu=1 \

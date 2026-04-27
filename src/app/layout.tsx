@@ -35,6 +35,8 @@ const GTM_ID =
     ? configuredGtmId
     : DEFAULT_GTM_ID;
 
+const COOKIEYES_CBID = process.env.NEXT_PUBLIC_COOKIEYES_CBID?.trim();
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +45,33 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <head>
+        {/* Google Consent Mode v2 — defaults must run before GTM */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'functionality_storage': 'denied',
+              'personalization_storage': 'denied',
+              'security_storage': 'granted',
+              'wait_for_update': 500
+            });
+          `}
+        </Script>
+
+        {/* CookieYes — auto-issues gtag('consent','update',...) on user choice */}
+        {COOKIEYES_CBID && (
+          <Script
+            id="cookieyes"
+            strategy="beforeInteractive"
+            src={`https://cdn-cookieyes.com/client_data/${COOKIEYES_CBID}/script.js`}
+          />
+        )}
+
         {/* Google Tag Manager */}
         <Script id="gtm-head" strategy="afterInteractive">
           {`
