@@ -1,10 +1,22 @@
 'use client';
 
+import { useEffect } from 'react';
 import { GlassCard } from '../shared/GlassCard';
 import { useForm, ValidationError } from '@formspree/react';
 
+declare global {
+    interface Window { dataLayer: Record<string, unknown>[]; }
+}
+
 export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
     const [state, handleSubmit] = useForm("xeelrddn");
+
+    useEffect(() => {
+        if (state.succeeded && typeof window !== 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: 'audit_initiated', form_id: 'xeelrddn' });
+        }
+    }, [state.succeeded]);
 
     // Metrics for social proof
     const metrics = [
