@@ -206,7 +206,24 @@
         "rights": "Všetky práva vyhradené."
     },
     "contactSection": {
-        "directLine": "Priama linka"
+        "directLine": "Priama linka",
+        "intro": "Nečakajte, kým vás predbehne konkurencia. Získajte audit vašej infraštruktúry a zistite, kde strácate peniaze.",
+        "successTitle": "Audit Inicializovaný",
+        "successBody": "Naši inžinieri analyzujú vašu požiadavku. Ozveme sa vám do 24 hodín.",
+        "formTitle": "Žiadosť o Audit",
+        "nameLabel": "Meno / Spoločnosť",
+        "namePlaceholder": "Váš identifikačný údaj",
+        "emailLabel": "Pracovný Email",
+        "messageLabel": "Popis problému",
+        "messagePlaceholder": "Aké systémy potrebujete integrovať?",
+        "submitting": "Inicializujem..."
+    },
+    "legal": {
+        "backHome": "Späť na Domov"
+    },
+    "meta": {
+        "title": "EuHub AI | Strategická Implementácia AI",
+        "description": "Váš strategický partner pre implementáciu AI v strednej Európe. Navrhujeme a nasadzujeme agentické AI systémy, ktoré eliminujú prevádzkové obmedzenia."
     },
     "privacy": {
         "title": "Zásady ochrany osobných údajov",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
+import { headers } from "next/headers";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -22,7 +23,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EuHub AI | Strategic AI Implementation",
+  title: {
+    default: "EuHub AI | Strategic AI Implementation",
+    template: "%s | EuHub AI",
+  },
   description: "Your Strategic AI Implementation Partner in Central Europe. We engineer and deploy agentic AI systems.",
 };
 
@@ -37,13 +41,16 @@ const GTM_ID =
 
 const COOKIEYES_CBID = process.env.NEXT_PUBLIC_COOKIEYES_CBID?.trim();
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const locale = headersList.get('x-locale') || 'en';
+
   return (
-    <html lang="en" suppressHydrationWarning className="dark">
+    <html lang={locale} suppressHydrationWarning className="dark">
       <head>
         {/* Google Consent Mode v2 — defaults must run before GTM */}
         <Script id="consent-default" strategy="beforeInteractive">

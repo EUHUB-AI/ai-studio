@@ -1,0 +1,321 @@
+{
+  "nav": {
+    "diagnostic": "Die Diagnostik",
+    "engineering": "Maßgeschneiderte Lösungen",
+    "capabilities": "Fähigkeiten",
+    "contact": "Audit starten"
+  },
+  "hero": {
+    "badge": "ENTERPRISE-KI-INTEGRATIONSPARTNER",
+    "title": "Beseitigen Sie Engpässe mit agentischer KI.",
+    "subtitle": "Hören Sie auf zu raten, wo KI in Ihre Abläufe passt. Unser Diagnose-Audit identifiziert präzise Engpässe und Automatisierungspotenziale, bevor Sie investieren.",
+    "cta": "Kostenloses Audit anfordern",
+    "primaryCta": "Audit starten",
+    "secondaryCta": "Web-Apps erkunden",
+    "terminal": {
+      "header": "diagnostic_node.ts",
+      "step1": "Root-Zugang wird aufgebaut...",
+      "step1Status": "VERBUNDEN",
+      "step2": "Fragmentierte Datensilos werden gescannt...",
+      "step2Status": "SCHWACHSTELLEN: 12",
+      "step3": "Workflow-Optimierung wird synthetisiert...",
+      "step3Status": "VERARBEITUNG",
+      "comment": "// Prognostiziertes Effizienz-Delta",
+      "delta": "+42%",
+      "label": "operative Bandbreite"
+    },
+    "trustBar": "VON BRANCHENFÜHRERN VERTRAUT"
+  },
+  "valueProposition": {
+    "headline": "Weit mehr als Websites. Weit mehr als erwartet.",
+    "subheadline": "Wir bauen keine Websites – wir entwickeln intelligente Lösungen, die transformieren, wie Ihr Unternehmen agiert und wie Kunden Ihre Marke erleben.",
+    "body": "Im neuen KI-Zeitalter ist Ihre digitale Präsenz weit mehr als eine Webseite. Es ist ein integriertes Ökosystem, das lernt, sich anpasst und vom ersten Tag an messbaren Geschäftswert liefert."
+  },
+  "services": {
+    "title": "KI-Infrastruktur auf Unternehmensebene",
+    "items": [
+      {
+        "title": "KI-Bereitschaftsaudit",
+        "desc": "Umfassende Analyse Ihrer Dateninfrastruktur, Governance und KI-Potenzials. Wir identifizieren Risiken, bevor sie zur Belastung werden."
+      },
+      {
+        "title": "Pilotimplementierung",
+        "desc": "Schnelle Bereitstellung funktionaler MVP-Agenten. Testen Sie die Realisierbarkeit in 4 Wochen mit klaren Erfolgskennzahlen."
+      },
+      {
+        "title": "Unternehmenstransformation",
+        "desc": "Vollständige Integration maßgeschneiderter LLMs und RAG-Pipelines. Entwickelt für Sicherheit, Compliance (EU-KI-Gesetz) und massive Skalierung."
+      }
+    ]
+  },
+  "team": {
+    "title": "Lernen Sie unsere Experten kennen",
+    "subtitle": "Die Köpfe hinter Ihrer strategischen KI-Implementierung.",
+    "members": [
+      {
+        "name": "Artashes A.",
+        "role": "Head of Business Development",
+        "link": "Linkedin",
+        "url": "https://www.linkedin.com/in/arakelian-artashes-euhub/"
+      },
+      {
+        "name": "Mike G.",
+        "role": "KI-Betrieb, Lösungsarchitekt",
+        "link": "Website",
+        "url": "https://mike.euhub-ai.com"
+      },
+      {
+        "name": "Kateryna H.",
+        "role": "Community Infrastructure Lead",
+        "link": "Linkedin",
+        "url": "https://www.linkedin.com/in/kateryna-hordi/"
+      }
+    ]
+  },
+  "diagnostic": {
+    "tag": "Die Diagnostik",
+    "title": "Schmerzen zu autonomen Lösungen zuordnen",
+    "description": "Wir verkaufen keine Standardsoftware. Wir auditieren Ihre Workflows und entwickeln spezifische KI-Mechanismen, die präzise operative Engpässe eliminieren.",
+    "situationLabel": "Situation // Schmerz",
+    "mechanismLabel": "Entwickelter Mechanismus",
+    "deltaLabel": "Prognostiziertes Delta",
+    "situations": [
+      {
+        "pain": "Fragmentierte Datensilos verursachen verzögerte Entscheidungsfindung.",
+        "mechanism": "Wir setzen RAG-Agenten ein, die Ihre gesamte interne Wissensbasis indexieren.",
+        "outcome": "Sofortiger, sicherer Datenabruf und abteilungsübergreifende Abstimmung."
+      },
+      {
+        "pain": "Manueller Kundensupport kann in Stoßzeiten nicht skalieren.",
+        "mechanism": "Autonome Level-1-Support-Agenten, trainiert auf Ihren spezifischen Produktparametern und Ihrem Kommunikationsstil.",
+        "outcome": "24/7-Lösung von 80 % der Tier-1-Tickets ohne Erhöhung der Mitarbeiterzahl."
+      },
+      {
+        "pain": "Ineffiziente interne Workflows und aufgeblähte Prozesse.",
+        "mechanism": "Agentische Workflow-Automatisierung, die Ihre bestehenden ERP-/CRM-Systeme über benutzerdefinierte API-Orchestrierung verbindet.",
+        "outcome": "Bis zu 40 % Reduzierung der manuellen Dateneingabe und des operativen Reibungsverlusts."
+      }
+    ]
+  },
+  "engineering": {
+    "tag": "Maßgeschneiderte Entwicklung",
+    "title": "Der Bereitstellungsmechanismus",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Datenerfassung",
+        "desc": "Sichere Anbindung an Ihre internen Datenbanken, ERP oder CRM über konforme API-Brücken."
+      },
+      {
+        "num": "02",
+        "title": "Modell-Feinabstimmung",
+        "desc": "Training grundlegender LLMs ausschließlich mit Ihren operativen Daten und Markenrichtlinien."
+      },
+      {
+        "num": "03",
+        "title": "Workflow-Orchestrierung",
+        "desc": "Entwicklung von Logikbäumen, in denen KI-Agenten mehrstufige Aufgaben autonom auslösen und lösen."
+      },
+      {
+        "num": "04",
+        "title": "Bereitstellung & Skalierung",
+        "desc": "Containerisierte Bereitstellung Ihrer maßgeschneiderten Web-App mit 99,9 % garantierter Verfügbarkeit."
+      }
+    ]
+  },
+  "features": {
+    "tag": "Fähigkeiten",
+    "title": "Entwickelt für Unternehmen",
+    "agentTitle": "Autonome KI-Assistenten",
+    "agentDesc": "Setzen Sie Agenten ein, die mehrstufige Vorgänge wie Rechnungsverarbeitung, First-Level-Support und Datenaggregation völlig eigenständig ausführen.",
+    "demo": {
+      "msg1": "Können Sie die Q3-Rechnungen für mich verarbeiten?",
+      "msg2": "Verarbeite 412 Rechnungen. Abgleich mit ERP...",
+      "msg3": "Fertig. 410 genehmigt. 2 zur Überprüfung markiert."
+    },
+    "items": [
+      {
+        "title": "ERP/CRM-Synchronisierung",
+        "desc": "Bidirektionale Synchronisierung mit SAP, Salesforce und internen Datenbanken."
+      },
+      {
+        "title": "Sicherer Tresor",
+        "desc": "On-Premise- oder Private-Cloud-Bereitstellung. Isolierung auf Militärniveau."
+      },
+      {
+        "title": "Echtzeit-Analyse",
+        "desc": "Erhalten Sie sofortigen Einblick in wichtige Leistungskennzahlen (KPIs). Unser System wandelt komplexe Datenströme in klare strategische Erkenntnisse um und ermöglicht Ihrem Management, Entscheidungen mit absoluter Sicherheit und ohne Verzögerung zu treffen."
+      },
+      {
+        "title": "Automatisiertes Reporting",
+        "desc": "Sofortige Erstellung vorstandsfähiger Prüfberichte."
+      }
+    ]
+  },
+  "aiSolutions": {
+    "title": "KI-Lösungen",
+    "subtitle": "Strategische KI-Implementierungen, die Risiken reduzieren, Anbieterabhängigkeit verhindern und organisatorische Verantwortung sicherstellen.",
+    "solutions": [
+      {
+        "title": "Strategische KI-Architektur",
+        "description": "Bauen Sie Ihre Zukunft nicht auf Sand. Wir durchdringen den Hype, um einen präzisen, evidenzbasierten Tech-Stack zu entwickeln, der zu Ihrer Infrastruktur passt. Wir verhindern kostspielige Anbieterabhängigkeit, indem wir die exakten Tools identifizieren, die Sie brauchen – und die, die Sie nicht brauchen – in nur 2–4 Wochen.",
+        "stage": "adopt"
+      },
+      {
+        "title": "Schnelle ROI-Validierung",
+        "description": "Eliminieren Sie das Risiko fehlgeschlagener Investitionen. Wir starten „Proof of Value"-Pilotprojekte, die Ihre Hypothese unter realen Bedingungen validieren. Wir beweisen die Mathematik, die Effizienz und die Skalierbarkeit, bevor Sie auch nur einen Euro in die Vollproduktion investieren.",
+        "stage": "adopt"
+      },
+      {
+        "title": "Autonome Unternehmensagenten",
+        "description": "Gehen Sie über passive Chatbots hinaus. Wir setzen intelligente Agenten ein, die Aufgaben ausführen – Erstattungen verarbeiten, CRMs aktualisieren und technische Probleme autonom beheben. Hören Sie auf, Tickets nur weiterzuleiten; lösen Sie sie mit einer digitalen Belegschaft rund um die Uhr.",
+        "stage": "build"
+      },
+      {
+        "title": "Souveräne KI-Lösungen",
+        "description": "Hören Sie auf, Ihren Wettbewerbsvorteil zu mieten. Wir entwickeln proprietäre, skalierbare KI-Engines, die auf die einzigartige DNA Ihres Unternehmens zugeschnitten sind. Sie besitzen den Code, die Modellgewichte und die Daten und sichern damit vollständige Unabhängigkeit von Drittanbieter-Abhängigkeiten und API-Preiserhöhungen.",
+        "stage": "build"
+      },
+      {
+        "title": "Talentakquise der nächsten Generation",
+        "description": "Reduzieren Sie die „Time-to-Hire" um 80 %. Unsere Systeme automatisieren das Screening, Ranking und die Terminplanung von Kandidaten ohne jede Voreingenommenheit. Ihre Recruiter können aufhören, in Bewerbungsunterlagen zu ertrinken, und sich vollständig auf Interviews und die Gewinnung erstklassiger Talente konzentrieren.",
+        "stage": "operate"
+      },
+      {
+        "title": "Unternehmens-Sicherheitsschilde",
+        "description": "Innovieren Sie ohne Haftungsrisiko. Wir implementieren Governance-Frameworks auf Militärniveau, um sicherzustellen, dass Ihre KI erklärbar, prüfbar und konform mit globalen Vorschriften (DSGVO/EU-KI-Gesetz) ist. Wir machen Ihre KI vom ersten Tag an unternehmenssicher.",
+        "stage": "operate"
+      }
+    ]
+  },
+  "cta": {
+    "tag": "Diagnostik starten",
+    "title": "Eliminieren Sie die versteckten Kosten manueller Abläufe.",
+    "metric1": "Unternehmen",
+    "metric2": "Ø Kostenreduzierung",
+    "metric3": "Autonome Verfügbarkeit",
+    "button": "Audit starten"
+  },
+  "footer": {
+    "tagline": "Die Brücke zwischen westlichem Kapital und mitteleuropäischem Engineering-Talent.",
+    "solutions": "Lösungen",
+    "company": "Unternehmen",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "contactSection": {
+    "directLine": "Direkter Kontakt",
+    "intro": "Lassen Sie sich nicht von der Konkurrenz überholen. Lassen Sie Ihre Infrastruktur auditieren und erfahren Sie, wo Sie Geld verlieren.",
+    "successTitle": "Audit gestartet",
+    "successBody": "Unsere Ingenieure analysieren Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden.",
+    "formTitle": "Diagnose-Audit anfordern",
+    "nameLabel": "Name / Unternehmen",
+    "namePlaceholder": "Ihre Kennung",
+    "emailLabel": "Geschäftliche E-Mail",
+    "messageLabel": "Problembeschreibung",
+    "messagePlaceholder": "Welche Systeme müssen Sie integrieren?",
+    "submitting": "Initialisierung..."
+  },
+  "legal": {
+    "backHome": "Zurück zur Startseite"
+  },
+  "meta": {
+    "title": "EuHub AI | Strategische KI-Implementierung",
+    "description": "Ihr strategischer KI-Implementierungspartner für den DACH-Raum. Wir entwickeln und betreiben agentische KI-Systeme, die operative Engpässe eliminieren."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Gültig ab: 2026",
+    "sections": [
+      {
+        "heading": "Artikel 1: Einleitung und Geltungsbereich",
+        "content": "Engineers-incubator s.r.o. (nachfolgend „wir", „uns" oder „unser") verpflichtet sich, die höchsten Standards des Datenschutzes einzuhalten. Diese Datenschutzerklärung beschreibt unsere Pflichten und Ihre Rechte hinsichtlich der Erhebung, Verarbeitung und des Schutzes Ihrer personenbezogenen Daten, wenn Sie mit unserer Website https://euhub-ai.com (die „Dienstleistung") interagieren.\n\nDiese Richtlinie wurde in strikter Übereinstimmung mit der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung, „DSGVO") und dem slowakischen Gesetz Nr. 18/2018 Slg. über den Schutz personenbezogener Daten (das „Gesetz") erstellt."
+      },
+      {
+        "heading": "Artikel 2: Verantwortlicher",
+        "content": "Firmenname: Engineers-incubator s.r.o.\nFirmennummer (IČO): 53 741 200\nEingetragene Adresse: Horná 67, 974 01 Banská Bystrica, Slowakische Republik\nKontakt-E-Mail für Datenschutzanfragen: hello@euhub-ai.com"
+      },
+      {
+        "heading": "Artikel 3: Datenerhebung und Verarbeitungszweck",
+        "content": "Wir halten uns an das Prinzip der Datensparsamkeit und erheben personenbezogene Daten nur für festgelegte, ausdrückliche und legitime Zwecke.\n\nVon Ihnen direkt bereitgestellte Informationen:\n• Konto- und Profilinformationen: Vollständiger Name, E-Mail-Adresse, Benutzername und gehashtes Passwort. Optional: LinkedIn-URL, Telegram-Benutzername.\n  Zweck: Erstellung und Verwaltung Ihres Kontos, Erbringung unserer Dienstleistungen und Ermöglichung der Nutzerinteraktion.\n• Kommunikation: Name, Kontaktdaten und Nachrichteninhalt.\n  Zweck: Beantwortung von Anfragen und Führung von Korrespondenzaufzeichnungen.\n• Marketing-Abonnements: E-Mail-Adresse.\n  Zweck: Versand von Marketingmitteilungen, denen Sie zugestimmt haben.\n\nAutomatisch erhobene Informationen:\n• Protokoll- und Gerätedaten: IP-Adresse, Browsertyp, Geräteinformationen, Betriebssystem, verweisende URLs.\n  Zweck: Sicherheit, Analyse, verbesserte Funktionalität.\n• Nutzungsdaten & Cookies: Daten aus Cookies und ähnlichen Technologien.\n  Zweck: Website-Betrieb, Präferenzen, Analytik, Marketing. Ausführlich beschrieben in der Cookie-Richtlinie."
+      },
+      {
+        "heading": "Artikel 4: Rechtsgrundlage der Verarbeitung",
+        "content": "• Vertragserfüllung: Art. 6(1)(b) DSGVO\n• Einwilligung: Art. 6(1)(a) DSGVO\n• Berechtigte Interessen: Art. 6(1)(f) DSGVO\n• Rechtliche Verpflichtung: Art. 6(1)(c) DSGVO"
+      },
+      {
+        "heading": "Artikel 5: Datenweitergabe und -übermittlung",
+        "content": "• Drittanbieter-Dienstleister: Hosting, Zahlungsabwicklung, Analytik.\n• Gesetzliche Compliance: Weitergabe bei gesetzlicher Verpflichtung oder behördlicher Anordnung.\n• Internationale Übermittlungen: Schutz durch Standardvertragsklauseln."
+      },
+      {
+        "heading": "2. Von uns erhobene Daten und Verarbeitungszweck",
+        "content": "Wir erheben personenbezogene Daten strikt nach den Grundsätzen der Datensparsamkeit und Zweckbindung.\n\nDiagnose-Audit-Anfragen: Wenn Sie das Formular „Diagnose-Audit anfordern" absenden, erheben wir Ihren Namen, Unternehmensnamen, Ihre geschäftliche E-Mail und Ihre Problembeschreibung. Diese Daten werden ausschließlich zur Bewertung Ihrer Infrastruktur und zur Kommunikation unserer Ergebnisse verarbeitet (Rechtsgrundlage: Vorvertragliche Maßnahmen / Berechtigtes Interesse).\n\nWebsite-Analytik: Wir erheben Nutzungsdaten über Cookies (siehe [Cookie-Richtlinie](/de/cookie)), um unsere Website-Architektur und Benutzererfahrung zu verbessern."
+      },
+      {
+        "heading": "3. KI-Transparenz und automatisierte Verarbeitung (Compliance mit dem EU-KI-Gesetz)",
+        "content": "In Übereinstimmung mit Artikel 50 des EU-KI-Gesetzes gewährleisten wir vollständige Transparenz über unseren Einsatz von Künstlicher Intelligenz:\n\nInteraktion mit KI: Wenn Sie bestimmte interaktive Funktionen unserer Plattform nutzen (wie unsere demonstrierten „Autonomen KI-Assistenten"), interagieren Sie mit einem KI-System und nicht mit einem Menschen.\n\nAutomatisierte Entscheidungsfindung: Wir unterwerfen Website-Besucher keiner vollständig automatisierten Entscheidungsfindung, die rechtliche oder ähnlich bedeutsame Wirkungen erzeugt (DSGVO Artikel 22). Alle strategischen Diagnoseaudits und Beratungsleistungen unterliegen menschlicher Aufsicht und fachkundiger Überprüfung."
+      },
+      {
+        "heading": "4. Datensicherheit und \"Sicherer Tresor\"-Verarbeitung",
+        "content": "Für unsere Unternehmenskunden werden Daten, die über unsere maßgeschneiderten KI-Web-Apps und Agenten verarbeitet werden, durch eine separate Auftragsverarbeitungsvereinbarung (AVV) gemäß DSGVO Artikel 28 geregelt. Wir bieten „Sicherer Tresor"-Bereitstellungen (On-Premise oder Private Cloud) an, die Isolierung auf Militärniveau gewährleisten und garantieren, dass Kundendaten niemals ohne ausdrückliche, dokumentierte Einwilligung zum Training allgemeiner Drittanbieter-Grundlagenmodelle verwendet werden."
+      },
+      {
+        "heading": "5. Ihre Datenschutzrechte",
+        "content": "Gemäß DSGVO und slowakischem Recht haben Sie das Recht auf Auskunft, Berichtigung oder Löschung Ihrer personenbezogenen Daten, das Recht auf Einschränkung oder Widerspruch gegen die Verarbeitung sowie das Recht auf Datenübertragbarkeit. Wo KI-Systeme eingesetzt werden, behalten Sie zusätzlich das Recht, menschliches Eingreifen zu verlangen, Ihren Standpunkt darzulegen und KI-gestützte Ergebnisse anzufechten. Um diese Rechte auszuüben, kontaktieren Sie uns bitte unter hello@euhub-ai.com."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Gültig ab: 2026",
+    "sections": [
+      {
+        "heading": "1. Annahme der Bedingungen",
+        "content": "Durch den Zugriff auf euhub-ai.com/de oder die Inanspruchnahme unserer Dienstleistungen (einschließlich KI-Audits, maßgeschneiderter KI-Web-Apps und Autonomer KI-Assistenten) stimmen Sie diesen B2B-[Nutzungsbedingungen](/de/terms) zu. Unsere Dienstleistungen richten sich ausschließlich an Unternehmen und Konzerne (B2B)."
+      },
+      {
+        "heading": "2. Bereitstellung von KI-Dienstleistungen und Compliance",
+        "content": "EUHub-AI entwickelt, auditiert und betreibt maßgeschneiderte Ökosysteme für künstliche Intelligenz.\n\nPflichten gemäß EU-KI-Gesetz: Soweit EUHub-AI im Sinne des EU-KI-Gesetzes als „Anbieter" oder „Betreiber" eines KI-Systems agiert, verpflichtet sich EUHub-AI, die erforderliche technische Dokumentation, Protokollierungsfähigkeiten und Transparenzanweisungen bereitzustellen, die unsere Kunden zur Aufrechterhaltung der Compliance benötigen.\n\nDatenverarbeitung: Jede Verarbeitung personenbezogener Daten im Auftrag eines Kunden während der Bereitstellung von ERP-/CRM-Synchronisierung oder KI-Agenten wird strikt durch eine rechtsverbindliche Auftragsverarbeitungsvereinbarung (AVV) gemäß Artikel 28 der [DSGVO](/de/privacy) geregelt, die vor der Implementierung abgeschlossen wird."
+      },
+      {
+        "heading": "3. Haftung und Einschränkungen Künstlicher Intelligenz",
+        "content": "Systeme der Künstlichen Intelligenz, einschließlich Large Language Models (LLMs) und agentischer Workflows, sind probabilistische Systeme.\n\nKI-„Halluzinationen" und Genauigkeit: Obwohl wir robuste Retrieval-Augmented Generation (RAG) entwickeln und Modellparameter auf spezifische Unternehmenswissensdatenbanken beschränken, garantiert EUHub-AI nicht, dass KI-generierte Ausgaben zu 100 % fehlerfrei sein werden. Der Kunde erkennt das inhärente Risiko von KI-„Halluzinationen" (ungenaue Ausgaben) an.\n\nMenschliche Aufsicht: Der Kunde ist allein verantwortlich für die Implementierung einer effektiven menschlichen Aufsicht und die Überprüfung KI-generierter Ausgaben, bevor er sich für kritische geschäftliche, finanzielle oder rechtliche Entscheidungen darauf verlässt. EUHub-AI schließt die Haftung für mittelbare Schäden, Umsatzverluste oder Betriebsausfälle aus, die aus ungeprüften automatisierten Ausgaben resultieren, soweit dies nach geltendem EU- und slowakischem Recht zulässig ist."
+      },
+      {
+        "heading": "6. Anwendbares Recht und Gerichtsstand",
+        "content": "Diese Bedingungen und alle Streitigkeiten, die sich aus ihnen ergeben oder damit zusammenhängen, unterliegen dem Recht der Slowakischen Republik und sind nach diesem auszulegen.\n\nSie erklären sich damit einverstanden, dass die zuständigen Gerichte mit Sitz in Banská Bystrica, Slowakische Republik, die ausschließliche Zuständigkeit für die Beilegung von Streitigkeiten haben, die sich aus diesen Bedingungen oder im Zusammenhang damit ergeben können."
+      },
+      {
+        "heading": "7. Änderungen",
+        "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Wir werden Benutzer über Änderungen informieren, indem wir die neuen Bedingungen auf dieser Website veröffentlichen. Ihre fortgesetzte Nutzung der Website nach solchen Änderungen gilt als Ihre Zustimmung zu den neuen Bedingungen."
+      },
+      {
+        "heading": "8. Kontaktinformationen",
+        "content": "Unternehmen: Engineers-incubator s.r.o.\nAdresse: Horná 67, 974 01 Banská Bystrica, Slowakische Republik\nE-Mail: hello@euhub-ai.com"
+      }
+    ]
+  },
+  "cookie": {
+    "title": "Cookie-Richtlinie",
+    "sections": [
+      {
+        "heading": "1. Was sind Cookies?",
+        "content": "Cookies sind kleine Textdateien, die auf Ihrem Gerät (Computer, Tablet oder Smartphone) gespeichert werden, wenn Sie euhub-ai.com/de besuchen. Sie werden genutzt, um das ordnungsgemäße technische Funktionieren unserer Website zu gewährleisten, die Benutzererfahrung zu verbessern und aggregierte Analysedaten bereitzustellen."
+      },
+      {
+        "heading": "2. Von uns verwendete Cookie-Typen",
+        "content": "In Übereinstimmung mit der ePrivacy-Richtlinie und der [DSGVO](/de/privacy) klassifizieren wir unsere Cookies in folgende Kategorien:\n\nUnbedingt erforderliche Cookies: Diese sind unerlässlich für die Navigation auf der Website und die Nutzung ihrer Kernfunktionen, wie die Aufrechterhaltung Ihres Sitzungsstatus (z. B. sessionid). Da die Website ohne sie nicht funktionieren kann, benötigen sie keine Nutzereinwilligung und können in unserem System nicht deaktiviert werden.\n\nLeistungs- und Analyse-Cookies: Diese Cookies erfassen anonymisierte Daten darüber, wie Besucher mit unserer Website interagieren (z. B. Google Analytics _ga, _gid). Damit können wir die Leistung messen, Engpässe identifizieren und unsere digitale Architektur verbessern. Diese Cookies werden nur eingesetzt, wenn Sie über unser Cookie-Banner ausdrücklich einwilligen.\n\nMarketing-Cookies: Werden verwendet, um Besucher über verschiedene Plattformen hinweg zu verfolgen und relevante B2B-Werbung anzuzeigen (z. B. Meta Pixel _fbp). Diese Cookies ordnen Ihre Interaktionen externen Werbenetzwerken zu und werden nur mit Ihrer ausdrücklichen Opt-in-Einwilligung eingesetzt."
+      },
+      {
+        "heading": "3. Verwaltung Ihrer Cookie-Einstellungen",
+        "content": "Sie behalten die vollständige Kontrolle über Ihre Daten. Sie können Ihre Cookie-Einwilligung jederzeit verwalten, ändern oder widerrufen, indem Sie die Einstellungen für „Cookie-Einstellungen" auf unserer Website nutzen. Darüber hinaus können Sie Ihre Browsereinstellungen so konfigurieren, dass diese Cookies blockiert oder Warnmeldungen ausgegeben werden, obwohl das Blockieren unbedingt erforderlicher Cookies die Funktionalität der Website beeinträchtigt."
+      },
+      {
+        "heading": "5. Kontaktieren Sie uns",
+        "content": "Wenn Sie Fragen zu unserem Einsatz von Cookies haben, kontaktieren Sie uns bitte unter hello@euhub-ai.com."
+      }
+    ]
+  }
+}

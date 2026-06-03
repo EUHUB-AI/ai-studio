@@ -206,7 +206,24 @@
     "rights": "All rights reserved."
   },
   "contactSection": {
-    "directLine": "Direct Line"
+    "directLine": "Direct Line",
+    "intro": "Don't let the competition outpace you. Get an audit of your infrastructure and find out where you are losing money.",
+    "successTitle": "Audit Initialized",
+    "successBody": "Our engineers are analyzing your request. We will contact you within 24 hours.",
+    "formTitle": "Request Diagnostic Audit",
+    "nameLabel": "Name / Company",
+    "namePlaceholder": "Your identifier",
+    "emailLabel": "Work Email",
+    "messageLabel": "Problem Statement",
+    "messagePlaceholder": "Which systems do you need to integrate?",
+    "submitting": "Initializing..."
+  },
+  "legal": {
+    "backHome": "Back to Home"
+  },
+  "meta": {
+    "title": "EuHub AI | Strategic AI Implementation",
+    "description": "Your Strategic AI Implementation Partner in Central Europe. We engineer and deploy agentic AI systems that eliminate operational bottlenecks."
   },
   "privacy": {
     "title": "Privacy Policy",

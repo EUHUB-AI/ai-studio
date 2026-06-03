@@ -22,7 +22,8 @@ export const LanguageSwitcher = ({ lang }: { lang: string }) => {
 
     const languages = [
         { code: 'en', label: 'EN' },
-        { code: 'sk', label: 'SK' }
+        { code: 'sk', label: 'SK' },
+        { code: 'de', label: 'DE' },
     ];
 
     const currentLang = languages.find(l => l.code === lang);

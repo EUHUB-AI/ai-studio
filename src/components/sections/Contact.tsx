@@ -44,9 +44,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                     {dict.cta?.title || 'Stop bleeding capital on manual ops.'}
                                 </h2>
                                 <p className="text-[var(--muted-foreground)] text-lg leading-relaxed">
-                                    {lang === 'sk'
-                                        ? 'Nečakajte, kým vás predbehne konkurencia. Získajte audit vašej infraštruktúry a zistite, kde strácate peniaze.'
-                                        : 'Don\'t let the competition outpace you. Get an audit of your infrastructure and find out where you are losing money.'}
+                                    {dict.contactSection?.intro || 'Don\'t let the competition outpace you. Get an audit of your infrastructure and find out where you are losing money.'}
                                 </p>
                             </div>
 
@@ -82,12 +80,10 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
                                     <h3 className="text-3xl font-bold mb-4">
-                                        {lang === 'sk' ? 'Audit Inicializovaný' : 'Audit Initialized'}
+                                        {dict.contactSection?.successTitle || 'Audit Initialized'}
                                     </h3>
                                     <p className="text-[var(--muted-foreground)] text-lg">
-                                        {lang === 'sk'
-                                            ? 'Naši inžinieri analyzujú vašu požiadavku. Ozveme sa vám do 24 hodín.'
-                                            : 'Our engineers are analyzing your request. We will contact you within 24 hours.'}
+                                        {dict.contactSection?.successBody || 'Our engineers are analyzing your request. We will contact you within 24 hours.'}
                                     </p>
                                 </GlassCard>
                             ) : (
@@ -95,13 +91,13 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                     <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--primary)] rounded-full blur-[80px] opacity-10 pointer-events-none group-hover:opacity-20 transition-opacity duration-500"></div>
 
                                     <h3 className="text-2xl font-bold mb-6">
-                                        {lang === 'sk' ? 'Žiadosť o Audit' : 'Request Diagnostic Audit'}
+                                        {dict.contactSection?.formTitle || 'Request Diagnostic Audit'}
                                     </h3>
 
                                     <form onSubmit={handleSubmit} className="space-y-5">
                                         <div className="space-y-1">
                                             <label htmlFor="name" className="text-xs font-mono uppercase tracking-widest text-slate-500 dark:text-[var(--muted-foreground)] block">
-                                                {lang === 'sk' ? 'Meno / Spoločnosť' : 'Name / Company'}
+                                                {dict.contactSection?.nameLabel || 'Name / Company'}
                                             </label>
                                             <input
                                                 id="name"
@@ -109,14 +105,14 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                                 name="name"
                                                 required
                                                 className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-400 dark:placeholder-[var(--muted-foreground)]/50 focus:outline-none transition-all"
-                                                placeholder={lang === 'sk' ? 'Váš identifikačný údaj' : 'Your identifier'}
+                                                placeholder={dict.contactSection?.namePlaceholder || 'Your identifier'}
                                             />
                                             <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
                                         </div>
 
                                         <div className="space-y-1">
                                             <label htmlFor="email" className="text-xs font-mono uppercase tracking-widest text-slate-500 dark:text-[var(--muted-foreground)] block">
-                                                {lang === 'sk' ? 'Pracovný Email' : 'Work Email'}
+                                                {dict.contactSection?.emailLabel || 'Work Email'}
                                             </label>
                                             <input
                                                 id="email"
@@ -131,14 +127,14 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
 
                                         <div className="space-y-1">
                                             <label htmlFor="message" className="text-xs font-mono uppercase tracking-widest text-slate-500 dark:text-[var(--muted-foreground)] block">
-                                                {lang === 'sk' ? 'Popis problému' : 'Problem Statement'}
+                                                {dict.contactSection?.messageLabel || 'Problem Statement'}
                                             </label>
                                             <textarea
                                                 id="message"
                                                 name="message"
                                                 rows={4}
                                                 className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-400 dark:placeholder-[var(--muted-foreground)]/50 focus:outline-none transition-all resize-none"
-                                                placeholder={lang === 'sk' ? 'Aké systémy potrebujete integrovať?' : 'Which systems do you need to integrate?'}
+                                                placeholder={dict.contactSection?.messagePlaceholder || 'Which systems do you need to integrate?'}
                                             ></textarea>
                                             <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
                                         </div>
@@ -153,7 +149,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                                                 )}
                                                 {state.submitting
-                                                    ? (lang === 'sk' ? 'Inicializujem...' : 'Initializing...')
+                                                    ? (dict.contactSection?.submitting || 'Initializing...')
                                                     : (dict.cta?.button || 'Run Diagnostic')}
                                             </span>
                                         </button>
