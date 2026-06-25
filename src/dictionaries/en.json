@@ -24,7 +24,7 @@
       "delta": "+42%",
       "label": "operational bandwidth"
     },
-    "trustBar": "TRUSTED BY INDUSTRY LEADERS"
+    "trustBar": "PARTNERS & CLIENTS"
   },
   "valueProposition": {
     "headline": "Beyond Websites. Beyond Expectations.",
@@ -88,7 +88,7 @@
       {
         "pain": "Manual Customer Support failing to scale during peak hours.",
         "mechanism": "Autonomous Level-1 support agents trained on your specific product parameters and tone of voice.",
-        "outcome": "24/7 resolution of 80% of tier-1 tickets with zero headcount increase."
+        "outcome": "Up to 80% of tier-1 tickets resolved automatically, 24/7 — support that scales without adding headcount."
       },
       {
         "pain": "Inefficient internal workflows and bloated processes.",
@@ -119,7 +119,7 @@
       {
         "num": "04",
         "title": "Deployment & Scale",
-        "desc": "Containerized deployment of your custom web-app with 99.9% guaranteed uptime."
+        "desc": "Containerized deployment of your custom web-app with monitoring and a 99.9% uptime target."
       }
     ]
   },
@@ -140,11 +140,11 @@
       },
       {
         "title": "Secure Vault",
-        "desc": "On-premise or private cloud deployment. Military-grade isolation."
+        "desc": "Isolated single-tenant deployment in your own environment (on-premise or private cloud): encryption in transit and at rest, role-based access control, and full audit trails."
       },
       {
         "title": "Real-time Analytics",
-        "desc": "Gain instant visibility into key performance metrics (KPIs). Our system transforms complex data streams into clear strategic insights, enabling your management to make decisions with absolute certainty and zero delay."
+        "desc": "Gain instant visibility into key performance metrics (KPIs). Our system turns complex data streams into clear strategic insight, so your management decides on live data instead of last week's report."
       },
       {
         "title": "Automated Reporting",
@@ -178,12 +178,12 @@
       },
       {
         "title": "Next-Gen Talent Acquisition",
-        "description": "Reduce \"Time-to-Hire\" by 80%. Our systems automate the screening, ranking, and scheduling of candidates with zero bias. Your recruiters can stop drowning in CVs and focus entirely on interviewing and closing top-tier talent.",
+        "description": "Speed up time-to-hire. Our systems automate the screening, ranking, and scheduling of candidates with built-in bias controls and auditing. Your recruiters can stop drowning in CVs and focus entirely on interviewing and closing top-tier talent.",
         "stage": "operate"
       },
       {
         "title": "Enterprise Safety Shields",
-        "description": "Innovate without the liability. We implement military-grade governance frameworks to ensure your AI is explainable, auditable, and compliant with global regulations (GDPR/EU AI Act). We make your AI enterprise-safe from Day 1.",
+        "description": "Innovate without the liability. We implement rigorous governance frameworks to ensure your AI is explainable, auditable, and compliant with global regulations (GDPR/EU AI Act). We make your AI enterprise-safe from Day 1.",
         "stage": "operate"
       }
     ]
@@ -191,8 +191,9 @@
   "cta": {
     "tag": "Initiate Diagnostic",
     "title": "Eliminate the hidden costs of manual operations.",
-    "metric1": "Enterprises",
-    "metric2": "Avg. Cost Reduction",
+    "metric1Value": "2 weeks",
+    "metric1": "From audit to roadmap",
+    "metric2": "Less manual data entry",
     "metric3": "Autonomous Uptime",
     "button": "Initiate Audit"
   },
@@ -242,7 +243,7 @@
       },
       {
         "heading": "4. Data Security and \"Secure Vault\" Processing",
-        "content": "For our enterprise clients, data processed through our custom AI web-apps and agents is governed by a separate Data Processing Agreement (DPA) compliant with GDPR Article 28. We offer \"Secure Vault\" deployments (on-premise or private cloud) ensuring military-grade isolation and guaranteeing that client data is never used to train generalized third-party foundational models without explicit, documented consent."
+        "content": "For our enterprise clients, data processed through our custom AI web-apps and agents is governed by a separate Data Processing Agreement (DPA) compliant with GDPR Article 28. We offer \"Secure Vault\" deployments (on-premise or private cloud) ensuring strong tenant isolation and that client data is never used to train generalized third-party foundational models without explicit, documented consent."
       },
       {
         "heading": "5. Your Data Protection Rights",

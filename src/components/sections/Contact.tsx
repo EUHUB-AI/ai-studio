@@ -8,8 +8,8 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
 
     // Metrics for social proof
     const metrics = [
-        { value: "50+", label: dict.cta?.metric1 || "Enterprises" },
-        { value: "40%", label: dict.cta?.metric2 || "Avg. Cost Reduction" },
+        { value: dict.cta?.metric1Value || "2 weeks", label: dict.cta?.metric1 || "From audit to roadmap" },
+        { value: "40%", label: dict.cta?.metric2 || "Less manual data entry" },
         { value: "24/7", label: dict.cta?.metric3 || "Autonomous Uptime" }
     ];
 

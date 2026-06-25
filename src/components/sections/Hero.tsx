@@ -134,7 +134,7 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                     {/* Repeated items for smooth scrolling */}
                     {[...Array(2)].map((_, j) => (
                         <div key={j} className="flex space-x-12 items-center min-w-max">
-                            <span className="font-mono text-slate-400 text-sm font-bold opacity-80">{dict.hero?.trustBar || 'TRUSTED BY INDUSTRY LEADERS'}</span>
+                            <span className="font-mono text-slate-400 text-sm font-bold opacity-80">{dict.hero?.trustBar || 'PARTNERS & CLIENTS'}</span>
                             <span className="text-[var(--card-border)]">|</span>
                             {/* Partner Logos */}
                             <div className="flex items-center space-x-12 transition-all duration-500 grayscale opacity-40 hover:grayscale-0 hover:opacity-100">

@@ -11,7 +11,7 @@ export const PainsSituations = ({ lang, dict }: { lang: string, dict: any }) => 
         {
             pain: "Manual Customer Support failing to scale during peak hours.",
             mechanism: "Autonomous Level-1 support agents trained on your specific product parameters and tone of voice.",
-            outcome: "24/7 resolution of 80% of tier-1 tickets with zero headcount increase."
+            outcome: "Up to 80% of tier-1 tickets resolved automatically, 24/7 — support that scales without adding headcount."
         },
         {
             pain: "Inefficient internal workflows and bloated processes.",
