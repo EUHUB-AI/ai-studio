@@ -200,6 +200,8 @@
     "tagline": "Bridging the gap between Western capital and Central European engineering talent.",
     "solutions": "Solutions",
     "company": "Company",
+    "aiAct": "EU AI Act Readiness",
+    "dataResidency": "Data Residency & GDPR",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Policy",
@@ -207,6 +209,74 @@
   },
   "contactSection": {
     "directLine": "Direct Line"
+  },
+  "aiAct": {
+    "title": "EU AI Act Readiness",
+    "lastUpdated": "Build AI that's legal on the EU market — most obligations apply from 2 August 2026.",
+    "sections": [
+      {
+        "heading": "Does the EU AI Act apply to you?",
+        "content": "Almost certainly — even if you are not based in the EU. The Act applies if any of the following is true:\n\n• You place an AI system on the EU market, regardless of where your company is established.\n• You deploy AI inside the EU.\n• The output of your AI system is used in the EU, even if you operate from a third country.\n\nIf you sell into Europe, the EU AI Act reaches you — the same way GDPR did. We make that reach a non-issue."
+      },
+      {
+        "heading": "What risk level is your AI?",
+        "content": "The Act regulates AI by risk. We classify your use case up front:\n\n• Unacceptable risk — prohibited outright (e.g. social scoring). Banned since 2 February 2025.\n• High risk — strict obligations (risk management, documentation, human oversight, logging). Includes AI used in recruitment, hiring and worker management, credit scoring, and critical infrastructure.\n• Limited risk — transparency duties. Most operational AI we build — chatbots, RAG assistants, workflow agents — sits here. The core obligation is telling people they are dealing with an AI (Article 50).\n• Minimal risk — no specific obligations.\n\nMost of what you deploy is limited-risk and straightforward. The job is knowing which of your systems cross into high-risk — and handling it before launch."
+      },
+      {
+        "heading": "Transparency for interactive AI (Article 50)",
+        "content": "If your AI interacts directly with people — a chatbot, a voice agent, an autonomous assistant — Article 50 requires that those people are clearly informed they are interacting with an AI, at the latest at the moment of first interaction. Burying it in your terms and conditions does not satisfy the rule.\n\nWhat we implement:\n• A clear, first-interaction AI disclosure on every interactive system we build.\n• Labelling of AI-generated or AI-manipulated content where required.\n• Accessibility-compliant notices.\n\nThis obligation applies from 2 August 2026."
+      },
+      {
+        "heading": "What we deliver",
+        "content": "Compliance is mostly documentation and process discipline. For every engagement we provide:\n\n• AI risk classification — where each of your systems falls, and what that triggers.\n• Transparency implementation — Article 50 disclosures built into the product.\n• Technical documentation and logging — the records the Act expects from providers and deployers.\n• Human-oversight design — meaningful review built into automated workflows.\n• A governance pack — policies, data boundaries, and an audit trail you can show a regulator."
+      },
+      {
+        "heading": "Key dates",
+        "content": "• 1 August 2024 — the Act enters into force.\n• 2 February 2025 — prohibited practices banned; AI-literacy duties begin.\n• 2 August 2025 — obligations for general-purpose AI models.\n• 2 August 2026 — most obligations apply, including Article 50 transparency and high-risk systems.\n• 2 August 2027 — remaining high-risk (regulated-product) systems."
+      },
+      {
+        "heading": "Why it matters",
+        "content": "Non-compliance carries significant penalties:\n\n• Up to €35 million or 7% of worldwide annual turnover for prohibited practices.\n• Up to €15 million or 3% for most other breaches, including transparency and high-risk obligations.\n• Up to €7.5 million or 1% for supplying incorrect or misleading information.\n\nFor SMEs and start-ups, the lower of the fixed amount or the percentage applies."
+      },
+      {
+        "heading": "Get an EU AI Act readiness assessment",
+        "content": "We will map your systems to their risk class, implement the transparency your products need, and hand you the documentation a regulator expects. [Request an assessment](/en#contact) or email hello@euhub-ai.com."
+      }
+    ]
+  },
+  "dataResidency": {
+    "title": "Data Residency & GDPR",
+    "lastUpdated": "Your data stays in the EU — here is exactly how.",
+    "sections": [
+      {
+        "heading": "Where your data lives",
+        "content": "For European buyers, \"where does our data go?\" is the first question. Our answer is concrete:\n\n• This website runs on Google Cloud (europe-west1, Belgium).\n• Client systems are deployed to the environment you choose — an EU-only region, your private cloud, or on-premise — configured per engagement by our DevOps team.\n• What leaves your environment (telemetry, logs) is configured per deployment; we can keep prompts, documents and logs entirely inside your environment.\n• Your data is never used to train generalised third-party foundation models without your explicit, documented consent. Where a self-hosted model is deployed, your content does not leave your environment at all."
+      },
+      {
+        "heading": "Data Processing Agreement (DPA)",
+        "content": "When we process personal data on your behalf, we act as your processor under a binding Data Processing Agreement compliant with GDPR Article 28. It sets out, in writing: the scope and purpose of processing, confidentiality, security measures (Article 32), our handling of data-subject requests, deletion or return of data on termination, and audit rights.\n\nOur standard DPA is available on request."
+      },
+      {
+        "heading": "Subprocessors",
+        "content": "We keep a current list of subprocessors and, per GDPR Article 28(2), we do not add or replace one without giving you prior notice and the opportunity to object.\n\nFor fully self-hosted or on-premise deployments, no third-party AI or model provider acts as a subprocessor for your content."
+      },
+      {
+        "heading": "International data transfers",
+        "content": "If any processing involves a transfer outside the European Economic Area, we rely on the European Commission's Standard Contractual Clauses and — following the Schrems II ruling — conduct a documented transfer impact assessment and apply supplementary safeguards, such as encryption, where needed.\n\nThe simplest answer to transfer risk is not to transfer. That is why we lead with an EU-only deployment option — it removes most of this for you."
+      },
+      {
+        "heading": "Security controls",
+        "content": "Every deployment includes:\n\n• Encryption in transit and at rest.\n• Role-based access control and least-privilege access.\n• Full audit logging.\n• Single-tenant isolation in your chosen environment (on-premise or private cloud)."
+      },
+      {
+        "heading": "Retention, deletion and your rights",
+        "content": "• Retention — we hold personal data only as long as needed for the agreed purpose.\n• Deletion or return — on termination we return or delete client data within 30 days, per the DPA.\n• Data-subject rights — we assist you, as controller, in responding to access, rectification, erasure and portability requests."
+      },
+      {
+        "heading": "Contact",
+        "content": "Data controller for this website: Engineers-incubator s.r.o., Horná 67, 974 01 Banská Bystrica, Slovakia.\n\n[Request our DPA and data-processing pack](/en#contact) or email hello@euhub-ai.com."
+      }
+    ]
   },
   "privacy": {
     "title": "Privacy Policy",
