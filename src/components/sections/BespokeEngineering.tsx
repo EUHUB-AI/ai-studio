@@ -21,7 +21,7 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
         {
             num: "04",
             title: "Deployment & Scale",
-            desc: "Containerized deployment of your custom web-app with 99.9% guaranteed uptime."
+            desc: "Containerized deployment of your custom web-app with monitoring and a 99.9% uptime target."
         }
     ];
 
@@ -108,7 +108,7 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-slate-500">UPTIME:</span>
-                                            <span className="text-white">99.99%</span>
+                                            <span className="text-white">99.9%</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-slate-500">LATENCY:</span>

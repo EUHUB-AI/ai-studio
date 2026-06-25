@@ -39,7 +39,7 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
 
     const features = dict.features?.items || [
         { title: 'ERP/CRM Syncing', desc: 'Bidirectional sync with SAP, Salesforce, and internal databases.' },
-        { title: 'Secure Vault', desc: 'On-premise or private cloud deployment. Military-grade isolation.' },
+        { title: 'Secure Vault', desc: 'Isolated single-tenant deployment in your own environment (on-premise or private cloud): encryption in transit and at rest, role-based access control, and full audit trails.' },
         { title: 'Real-time Analytics', desc: 'Live dashboards showing operational friction reduction and ROI.' },
         { title: 'Automated Reporting', desc: 'Generate board-ready audit reports instantaneously.' }
     ];

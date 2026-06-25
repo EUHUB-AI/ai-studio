@@ -24,7 +24,7 @@
             "delta": "+42%",
             "label": "prevádzková priepustnosť"
         },
-        "trustBar": "DÔVERUJÚ NÁM LÍDRI V ODVETVÍ"
+        "trustBar": "PARTNERI A KLIENTI"
     },
     "valueProposition": {
         "headline": "Viac než Webové Stránky. Viac než Očakávania.",
@@ -32,7 +32,7 @@
         "body": "V novej ére AI nie je vaša digitálna prítomnosť len webová stránka. Je to integrovaný ekosystém, ktorý sa učí, prispôsobuje a prináša merateľnú hodnotu od prvého dňa."
     },
     "services": {
-        "title": "Riešenia s garantovanou návratnosťou",
+        "title": "Riešenia s merateľnou návratnosťou",
         "items": [
             {
                 "title": "Digitálny Audit",
@@ -88,7 +88,7 @@
             {
                 "pain": "Manuálna zákaznícka podpora, ktorá nestíha v pracovnej špičke.",
                 "mechanism": "Autonómni agenti podpory úrovne 1 trénovaní na parametroch vašich špecifických produktov a štýle komunikácie.",
-                "outcome": "Vybavenie cez 80% komunikácie úrovne 1 nepretržite 24/7 bez navýšenia počtu zamestnancov."
+                "outcome": "Až 80% tiketov úrovne 1 vyriešených automaticky, nepretržite 24/7 — podpora, ktorá škáluje bez navyšovania počtu zamestnancov."
             },
             {
                 "pain": "Neefektívne pracovné postupy a zla priorita ich riešenia.",
@@ -119,7 +119,7 @@
             {
                 "num": "04",
                 "title": "Nasadenie a škálovanie",
-                "desc": "Kontajnerizované nasadenie vašej vlastnej webovej aplikácie s garantovanou dostupnosťou 99,9%."
+                "desc": "Kontajnerizované nasadenie vašej webovej aplikácie s monitoringom a cieľovou dostupnosťou 99,9%."
             }
         ]
     },
@@ -140,11 +140,11 @@
             },
             {
                 "title": "Bezpečný trezor",
-                "desc": "Nasadenie On-premise alebo v privátnom cloude. Izolácia na vojenskej úrovni."
+                "desc": "Izolované nasadenie vo vašom vlastnom prostredí (on-premise alebo privátny cloud): šifrovanie pri prenose aj v pokoji, riadenie prístupu podľa rolí a úplné auditné záznamy."
             },
             {
                 "title": "Analytika v reálnom čase",
-                "desc": "Získajte okamžitý prehľad o kľúčových metrikách výkonnosti (KPIs). Náš systém transformuje komplexné dátové toky na jasné strategické výstupy, vďaka čomu môže váš manažment rozhodovať s absolútnou istotou a bez zbytočného zdržania."
+                "desc": "Získajte okamžitý prehľad o kľúčových metrikách výkonnosti (KPIs). Náš systém transformuje komplexné dátové toky na jasné strategické výstupy, vďaka čomu sa váš manažment rozhoduje na základe aktuálnych dát, nie týždeň starých reportov."
             },
             {
                 "title": "Automatizovaný reporting",
@@ -178,12 +178,12 @@
             },
             {
                 "title": "Nábor Talentu Novej Generácie",
-                "description": "Skráťte čas náboru až o 80%. Naše systémy automatizujú screening, hodnotenie a plánovanie kandidátov bez zaujatosti. Vaši personalisti sa môžu prestať utápať v životopisoch a plne sa sústrediť na pohovory a získavanie špičkových talentov.",
+                "description": "Zrýchlite nábor. Naše systémy automatizujú screening, hodnotenie a plánovanie kandidátov so zabudovanou kontrolou zaujatosti a auditom. Vaši personalisti sa môžu prestať utápať v životopisoch a plne sa sústrediť na pohovory a získavanie špičkových talentov.",
                 "stage": "operate"
             },
             {
                 "title": "Podnikové Bezpečnostné Štíty",
-                "description": "Inovujte bez rizika. Implementujeme rámce riadenia na vojenskej úrovni, aby sme zabezpečili, že vaša AI bude vysvetliteľná, auditovateľná a v súlade s globálnymi predpismi (GDPR/EU AI Act). Robíme vašu AI bezpečnou pre podnik od 1. dňa.",
+                "description": "Inovujte bez rizika. Implementujeme dôsledné rámce riadenia (governance), aby sme zabezpečili, že vaša AI bude vysvetliteľná, auditovateľná a v súlade s globálnymi predpismi (GDPR/EU AI Act). Robíme vašu AI bezpečnou pre podnik od 1. dňa.",
                 "stage": "operate"
             }
         ]
@@ -191,8 +191,9 @@
     "cta": {
         "tag": "Spustiť diagnostiku",
         "title": "Prestaňte preplácať manuálne úkony.",
-        "metric1": "Zákazníkov",
-        "metric2": "Priem. zníženie nákladov",
+        "metric1Value": "2 týždne",
+        "metric1": "Z auditu po plán",
+        "metric2": "Menej manuálneho zadávania dát",
         "metric3": "Autonómna dostupnosť",
         "button": "Začať audit"
     },
