@@ -140,7 +140,7 @@
             },
             {
                 "title": "Bezpečný trezor",
-                "desc": "Izolované nasadenie vo vašom vlastnom prostredí (on-premise alebo privátny cloud): šifrovanie pri prenose aj v pokoji, riadenie prístupu podľa rolí a úplné auditné záznamy."
+                "desc": "Izolované nasadenie jedného nájomcu vo vašom vlastnom prostredí (on-premise alebo privátny cloud): šifrovanie pri prenose aj v pokoji, riadenie prístupu podľa rolí a úplné auditné záznamy."
             },
             {
                 "title": "Analytika v reálnom čase",

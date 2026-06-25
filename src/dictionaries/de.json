@@ -24,7 +24,7 @@
       "delta": "+42%",
       "label": "operative Bandbreite"
     },
-    "trustBar": "VON BRANCHENFÜHRERN VERTRAUT"
+    "trustBar": "PARTNER & KUNDEN"
   },
   "valueProposition": {
     "headline": "Weit mehr als Websites. Weit mehr als erwartet.",
@@ -88,7 +88,7 @@
       {
         "pain": "Manueller Kundensupport kann in Stoßzeiten nicht skalieren.",
         "mechanism": "Autonome Level-1-Support-Agenten, trainiert auf Ihren spezifischen Produktparametern und Ihrem Kommunikationsstil.",
-        "outcome": "24/7-Lösung von 80 % der Tier-1-Tickets ohne Erhöhung der Mitarbeiterzahl."
+        "outcome": "Bis zu 80 % der Tier-1-Tickets automatisch gelöst, rund um die Uhr — Support, der ohne zusätzliches Personal skaliert."
       },
       {
         "pain": "Ineffiziente interne Workflows und aufgeblähte Prozesse.",
@@ -119,7 +119,7 @@
       {
         "num": "04",
         "title": "Bereitstellung & Skalierung",
-        "desc": "Containerisierte Bereitstellung Ihrer maßgeschneiderten Web-App mit 99,9 % garantierter Verfügbarkeit."
+        "desc": "Containerisierte Bereitstellung Ihrer maßgeschneiderten Web-App mit Monitoring und einem Verfügbarkeitsziel von 99,9 %."
       }
     ]
   },
@@ -140,11 +140,11 @@
       },
       {
         "title": "Sicherer Tresor",
-        "desc": "On-Premise- oder Private-Cloud-Bereitstellung. Isolierung auf Militärniveau."
+        "desc": "Isolierte Single-Tenant-Bereitstellung in Ihrer eigenen Umgebung (On-Premise oder Private Cloud): Verschlüsselung bei Übertragung und im Ruhezustand, rollenbasierte Zugriffskontrolle und lückenlose Audit-Protokolle."
       },
       {
         "title": "Echtzeit-Analyse",
-        "desc": "Erhalten Sie sofortigen Einblick in wichtige Leistungskennzahlen (KPIs). Unser System wandelt komplexe Datenströme in klare strategische Erkenntnisse um und ermöglicht Ihrem Management, Entscheidungen mit absoluter Sicherheit und ohne Verzögerung zu treffen."
+        "desc": "Erhalten Sie sofortigen Einblick in wichtige Leistungskennzahlen (KPIs). Unser System wandelt komplexe Datenströme in klare strategische Erkenntnisse um, sodass Ihr Management auf Basis aktueller Daten entscheidet statt auf Berichten der Vorwoche."
       },
       {
         "title": "Automatisiertes Reporting",
@@ -178,12 +178,12 @@
       },
       {
         "title": "Talentakquise der nächsten Generation",
-        "description": "Reduzieren Sie die „Time-to-Hire“ um 80 %. Unsere Systeme automatisieren das Screening, Ranking und die Terminplanung von Kandidaten ohne jede Voreingenommenheit. Ihre Recruiter können aufhören, in Bewerbungsunterlagen zu ertrinken, und sich vollständig auf Interviews und die Gewinnung erstklassiger Talente konzentrieren.",
+        "description": "Beschleunigen Sie Ihre Einstellungsprozesse. Unsere Systeme automatisieren das Screening, Ranking und die Terminplanung von Kandidaten mit eingebauten Bias-Kontrollen und Auditierung. Ihre Recruiter können aufhören, in Bewerbungsunterlagen zu ertrinken, und sich vollständig auf Interviews und die Gewinnung erstklassiger Talente konzentrieren.",
         "stage": "operate"
       },
       {
         "title": "Unternehmens-Sicherheitsschilde",
-        "description": "Innovieren Sie ohne Haftungsrisiko. Wir implementieren Governance-Frameworks auf Militärniveau, um sicherzustellen, dass Ihre KI erklärbar, prüfbar und konform mit globalen Vorschriften (DSGVO/EU-KI-Gesetz) ist. Wir machen Ihre KI vom ersten Tag an unternehmenssicher.",
+        "description": "Innovieren Sie ohne Haftungsrisiko. Wir implementieren rigorose Governance-Frameworks, um sicherzustellen, dass Ihre KI erklärbar, prüfbar und konform mit globalen Vorschriften (DSGVO/EU-KI-Gesetz) ist. Wir machen Ihre KI vom ersten Tag an unternehmenssicher.",
         "stage": "operate"
       }
     ]
@@ -191,8 +191,9 @@
   "cta": {
     "tag": "Diagnostik starten",
     "title": "Eliminieren Sie die versteckten Kosten manueller Abläufe.",
-    "metric1": "Unternehmen",
-    "metric2": "Ø Kostenreduzierung",
+    "metric1Value": "2 Wochen",
+    "metric1": "Vom Audit zum Fahrplan",
+    "metric2": "Weniger manuelle Dateneingabe",
     "metric3": "Autonome Verfügbarkeit",
     "button": "Audit starten"
   },
@@ -200,6 +201,8 @@
     "tagline": "Die Brücke zwischen westlichem Kapital und mitteleuropäischem Engineering-Talent.",
     "solutions": "Lösungen",
     "company": "Unternehmen",
+    "aiAct": "EU-KI-Gesetz-Bereitschaft",
+    "dataResidency": "Datenresidenz & DSGVO",
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "cookies": "Cookie-Richtlinie",
@@ -226,6 +229,74 @@
     "title": "EuHub AI | Strategische KI-Implementierung",
     "description": "Ihr strategischer KI-Implementierungspartner für den DACH-Raum. Wir entwickeln und betreiben agentische KI-Systeme, die operative Engpässe eliminieren."
   },
+  "aiAct": {
+    "title": "EU-KI-Gesetz-Bereitschaft",
+    "lastUpdated": "Entwickeln Sie KI, die auf dem EU-Markt rechtskonform ist – die meisten Pflichten gelten ab dem 2. August 2026.",
+    "sections": [
+      {
+        "heading": "Gilt das EU-KI-Gesetz für Sie?",
+        "content": "Mit ziemlicher Sicherheit – selbst wenn Sie nicht in der EU ansässig sind. Das Gesetz gilt, wenn einer der folgenden Punkte zutrifft:\n\n• Sie bringen ein KI-System auf dem EU-Markt in Verkehr, unabhängig davon, wo Ihr Unternehmen niedergelassen ist.\n• Sie setzen KI innerhalb der EU ein.\n• Die Ausgabe Ihres KI-Systems wird in der EU verwendet, selbst wenn Sie von einem Drittland aus operieren.\n\nWenn Sie nach Europa verkaufen, erreicht Sie das EU-KI-Gesetz – genauso wie es die DSGVO getan hat. Wir sorgen dafür, dass diese Reichweite für Sie kein Problem darstellt."
+      },
+      {
+        "heading": "Welche Risikostufe hat Ihre KI?",
+        "content": "Das Gesetz reguliert KI nach Risiko. Wir klassifizieren Ihren Anwendungsfall von Anfang an:\n\n• Unannehmbares Risiko – grundsätzlich verboten (z. B. Social Scoring). Seit dem 2. Februar 2025 untersagt.\n• Hohes Risiko – strenge Pflichten (Risikomanagement, Dokumentation, menschliche Aufsicht, Protokollierung). Umfasst KI, die in der Personalbeschaffung, bei Einstellung und Beschäftigtenmanagement, beim Kreditscoring und in kritischer Infrastruktur eingesetzt wird.\n• Begrenztes Risiko – Transparenzpflichten. Die meiste operative KI, die wir entwickeln – Chatbots, RAG-Assistenten, Workflow-Agenten – fällt hierunter. Die Kernpflicht besteht darin, Menschen darüber zu informieren, dass sie es mit einer KI zu tun haben (Artikel 50).\n• Minimales Risiko – keine spezifischen Pflichten.\n\nDas meiste, was Sie einsetzen, fällt unter begrenztes Risiko und ist unkompliziert. Die Aufgabe besteht darin, zu wissen, welche Ihrer Systeme in den Hochrisikobereich fallen – und dies vor dem Start zu handhaben."
+      },
+      {
+        "heading": "Transparenz für interaktive KI (Artikel 50)",
+        "content": "Wenn Ihre KI direkt mit Menschen interagiert – ein Chatbot, ein Sprachagent, ein autonomer Assistent – verlangt Artikel 50, dass diese Menschen klar darüber informiert werden, dass sie mit einer KI interagieren, spätestens zum Zeitpunkt der ersten Interaktion. Dies in Ihren Allgemeinen Geschäftsbedingungen zu verstecken, erfüllt die Vorschrift nicht.\n\nWas wir umsetzen:\n• Eine klare KI-Offenlegung bei der ersten Interaktion auf jedem interaktiven System, das wir entwickeln.\n• Kennzeichnung von KI-generierten oder KI-manipulierten Inhalten, wo erforderlich.\n• Barrierefreie Hinweise.\n\nDiese Pflicht gilt ab dem 2. August 2026."
+      },
+      {
+        "heading": "Was wir liefern",
+        "content": "Compliance besteht größtenteils aus Dokumentation und Prozessdisziplin. Für jedes Projekt bieten wir:\n\n• KI-Risikoklassifizierung – wo jedes Ihrer Systeme einzuordnen ist und was dies auslöst.\n• Transparenzumsetzung – Artikel-50-Offenlegungen, die in das Produkt integriert sind.\n• Technische Dokumentation und Protokollierung – die Aufzeichnungen, die das Gesetz von Anbietern und Betreibern erwartet.\n• Gestaltung der menschlichen Aufsicht – sinnvolle Überprüfung, eingebaut in automatisierte Workflows.\n• Ein Governance-Paket – Richtlinien, Datengrenzen und ein Prüfpfad, den Sie einer Aufsichtsbehörde vorlegen können."
+      },
+      {
+        "heading": "Wichtige Termine",
+        "content": "• 1. August 2024 – das Gesetz tritt in Kraft.\n• 2. Februar 2025 – verbotene Praktiken untersagt; KI-Kompetenzpflichten beginnen.\n• 2. August 2025 – Pflichten für KI-Modelle mit allgemeinem Verwendungszweck.\n• 2. August 2026 – die meisten Pflichten gelten, einschließlich der Transparenz nach Artikel 50 und Hochrisikosystemen.\n• 2. August 2027 – verbleibende Hochrisikosysteme (regulierte Produkte)."
+      },
+      {
+        "heading": "Warum es wichtig ist",
+        "content": "Nichteinhaltung zieht erhebliche Strafen nach sich:\n\n• Bis zu 35 Mio. € oder 7 % des weltweiten Jahresumsatzes für verbotene Praktiken.\n• Bis zu 15 Mio. € oder 3 % für die meisten anderen Verstöße, einschließlich Transparenz- und Hochrisikopflichten.\n• Bis zu 7,5 Mio. € oder 1 % für die Bereitstellung falscher oder irreführender Informationen.\n\nFür KMU und Start-ups gilt der jeweils niedrigere Betrag aus festem Betrag oder Prozentsatz."
+      },
+      {
+        "heading": "Lassen Sie eine EU-KI-Gesetz-Bereitschaftsbewertung durchführen",
+        "content": "Wir ordnen Ihre Systeme ihrer Risikoklasse zu, setzen die Transparenz um, die Ihre Produkte benötigen, und übergeben Ihnen die Dokumentation, die eine Aufsichtsbehörde erwartet. [Bewertung anfordern](/de#contact) oder schreiben Sie an hello@euhub-ai.com."
+      }
+    ]
+  },
+  "dataResidency": {
+    "title": "Datenresidenz & DSGVO",
+    "lastUpdated": "Ihre Daten bleiben in der EU – hier erfahren Sie genau, wie.",
+    "sections": [
+      {
+        "heading": "Wo Ihre Daten liegen",
+        "content": "Für europäische Kunden ist „Wohin gehen unsere Daten?“ die erste Frage. Unsere Antwort ist konkret:\n\n• Diese Website läuft auf Google Cloud (europe-west1, Belgien).\n• Kundensysteme werden in der von Ihnen gewählten Umgebung bereitgestellt – einer reinen EU-Region, Ihrer Private Cloud oder On-Premise – und werden pro Projekt von unserem DevOps-Team konfiguriert.\n• Was Ihre Umgebung verlässt (Telemetrie, Protokolle), wird pro Bereitstellung konfiguriert; wir können Prompts, Dokumente und Protokolle vollständig innerhalb Ihrer Umgebung belassen.\n• Ihre Daten werden niemals ohne Ihre ausdrückliche, dokumentierte Einwilligung zum Training allgemeiner Drittanbieter-Grundlagenmodelle verwendet. Wo ein selbst gehostetes Modell bereitgestellt wird, verlassen Ihre Inhalte Ihre Umgebung überhaupt nicht."
+      },
+      {
+        "heading": "Auftragsverarbeitungsvereinbarung (AVV)",
+        "content": "Wenn wir personenbezogene Daten in Ihrem Auftrag verarbeiten, handeln wir als Ihr Auftragsverarbeiter auf Grundlage einer verbindlichen Auftragsverarbeitungsvereinbarung gemäß DSGVO Artikel 28. Sie legt schriftlich fest: Umfang und Zweck der Verarbeitung, Vertraulichkeit, Sicherheitsmaßnahmen (Artikel 32), unseren Umgang mit Anfragen betroffener Personen, Löschung oder Rückgabe der Daten bei Beendigung sowie Auditrechte.\n\nUnsere Standard-AVV ist auf Anfrage erhältlich."
+      },
+      {
+        "heading": "Unterauftragsverarbeiter",
+        "content": "Wir führen eine aktuelle Liste der Unterauftragsverarbeiter und fügen gemäß DSGVO Artikel 28 Absatz 2 keinen hinzu und ersetzen keinen, ohne Sie vorab zu informieren und Ihnen die Möglichkeit zum Widerspruch zu geben.\n\nBei vollständig selbst gehosteten oder On-Premise-Bereitstellungen agiert kein Drittanbieter von KI- oder Modelldiensten als Unterauftragsverarbeiter für Ihre Inhalte."
+      },
+      {
+        "heading": "Internationale Datenübermittlungen",
+        "content": "Sofern eine Verarbeitung eine Übermittlung außerhalb des Europäischen Wirtschaftsraums umfasst, stützen wir uns auf die Standardvertragsklauseln der Europäischen Kommission und führen – im Anschluss an das Schrems II-Urteil – eine dokumentierte Folgenabschätzung der Übermittlung durch und wenden bei Bedarf ergänzende Schutzmaßnahmen wie Verschlüsselung an.\n\nDie einfachste Antwort auf das Übermittlungsrisiko ist, nicht zu übermitteln. Deshalb stellen wir eine reine EU-Bereitstellungsoption in den Vordergrund – sie nimmt Ihnen den Großteil davon ab."
+      },
+      {
+        "heading": "Sicherheitskontrollen",
+        "content": "Jede Bereitstellung umfasst:\n\n• Verschlüsselung bei der Übertragung und im Ruhezustand.\n• Rollenbasierte Zugriffskontrolle und Zugriff nach dem Least-Privilege-Prinzip.\n• Vollständige Audit-Protokollierung.\n• Single-Tenant-Isolation in Ihrer gewählten Umgebung (On-Premise oder Private Cloud)."
+      },
+      {
+        "heading": "Aufbewahrung, Löschung und Ihre Rechte",
+        "content": "• Aufbewahrung – wir bewahren personenbezogene Daten nur so lange auf, wie es für den vereinbarten Zweck erforderlich ist.\n• Löschung oder Rückgabe – bei Beendigung geben wir Kundendaten innerhalb von 30 Tagen gemäß der AVV zurück oder löschen sie.\n• Rechte betroffener Personen – wir unterstützen Sie als Verantwortlichen bei der Beantwortung von Anfragen auf Auskunft, Berichtigung, Löschung und Datenübertragbarkeit."
+      },
+      {
+        "heading": "Kontakt",
+        "content": "Für diese Website Verantwortlicher: Engineers-incubator s.r.o., Horná 67, 974 01 Banská Bystrica, Slowakei.\n\n[Fordern Sie unsere AVV und unser Datenverarbeitungspaket an](/de#contact) oder schreiben Sie an hello@euhub-ai.com."
+      }
+    ]
+  },
   "privacy": {
     "title": "Datenschutzerklärung",
     "lastUpdated": "Gültig ab: 2026",
@@ -240,7 +311,7 @@
       },
       {
         "heading": "Artikel 3: Datenerhebung und Verarbeitungszweck",
-        "content": "Wir halten uns an das Prinzip der Datensparsamkeit und erheben personenbezogene Daten nur für festgelegte, ausdrückliche und legitime Zwecke.\n\nVon Ihnen direkt bereitgestellte Informationen:\n• Konto- und Profilinformationen: Vollständiger Name, E-Mail-Adresse, Benutzername und gehashtes Passwort. Optional: LinkedIn-URL, Telegram-Benutzername.\n  Zweck: Erstellung und Verwaltung Ihres Kontos, Erbringung unserer Dienstleistungen und Ermöglichung der Nutzerinteraktion.\n• Kommunikation: Name, Kontaktdaten und Nachrichteninhalt.\n  Zweck: Beantwortung von Anfragen und Führung von Korrespondenzaufzeichnungen.\n• Marketing-Abonnements: E-Mail-Adresse.\n  Zweck: Versand von Marketingmitteilungen, denen Sie zugestimmt haben.\n\nAutomatisch erhobene Informationen:\n• Protokoll- und Gerätedaten: IP-Adresse, Browsertyp, Geräteinformationen, Betriebssystem, verweisende URLs.\n  Zweck: Sicherheit, Analyse, verbesserte Funktionalität.\n• Nutzungsdaten & Cookies: Daten aus Cookies und ähnlichen Technologien.\n  Zweck: Website-Betrieb, Präferenzen, Analytik, Marketing. Ausführlich beschrieben in der Cookie-Richtlinie."
+        "content": "Wir halten uns an das Prinzip der Datensparsamkeit und erheben personenbezogene Daten nur für festgelegte, ausdrückliche und legitime Zwecke. Wir betreiben keine Benutzerkonten und erheben keine Passwörter.\n\nVon Ihnen direkt bereitgestellte Informationen:\n• Diagnose-Audit- / Kontaktanfragen: Wenn Sie ein Formular absenden, erheben wir Ihren Namen, Ihr Unternehmen, Ihre geschäftliche E-Mail und die von Ihnen beschriebene Problemstellung.\n  Zweck: Bewertung Ihrer Anfrage, Antwort an Sie und Führung von Korrespondenzaufzeichnungen (Rechtsgrundlage: vorvertragliche Maßnahmen / berechtigtes Interesse).\n• Direkte Korrespondenz: Ihr Name, Ihre Kontaktdaten und der Nachrichteninhalt, wenn Sie uns per E-Mail oder anderweitig kontaktieren.\n  Zweck: Beantwortung Ihrer Anfrage.\n\nAutomatisch erhobene Informationen:\n• Protokoll- und Gerätedaten: IP-Adresse, Browsertyp, Geräteinformationen, Betriebssystem und verweisende URLs.\n  Zweck: Sicherheit, Fehlerbehebung und Verbesserung unserer Website.\n• Nutzungsdaten und Cookies: Daten aus Cookies und ähnlichen Technologien, sofern Sie einwilligen.\n  Zweck: Analytik und Marketing, wie in unserer Cookie-Richtlinie ausführlich beschrieben."
       },
       {
         "heading": "Artikel 4: Rechtsgrundlage der Verarbeitung",
@@ -248,7 +319,7 @@
       },
       {
         "heading": "Artikel 5: Datenweitergabe und -übermittlung",
-        "content": "• Drittanbieter-Dienstleister: Hosting, Zahlungsabwicklung, Analytik.\n• Gesetzliche Compliance: Weitergabe bei gesetzlicher Verpflichtung oder behördlicher Anordnung.\n• Internationale Übermittlungen: Schutz durch Standardvertragsklauseln."
+        "content": "Wir geben personenbezogene Daten nur an die folgenden Kategorien von Empfängern und unter angemessenen Garantien weiter:\n\n• Hosting & Infrastruktur: Google Cloud (Google Cloud EMEA Limited) — Website-Hosting innerhalb der EU (europe-west1, Belgien).\n• Verarbeitung von Kontaktformularen: Formspree (Formspree, Inc., USA) — verarbeitet den Namen, das Unternehmen, die geschäftliche E-Mail und die Nachricht, die Sie über unsere Formulare übermitteln.\n• Tag-Verwaltung & Analytik: Google (Google Ireland Limited / Google LLC) — wir verwenden Google Tag Manager, um Mess- und Marketing-Tags zu laden, die Google Analytics umfassen können, vorbehaltlich Ihrer Cookie-Einwilligung.\n• Werbung: Meta Platforms Ireland Limited — sofern der Meta Pixel aktiviert ist, vorbehaltlich Ihrer Cookie-Einwilligung.\n• Gesetzliche Compliance: Behörden und fachliche Berater, soweit die Weitergabe gesetzlich vorgeschrieben ist.\n\nInternationale Übermittlungen: Befindet sich ein Empfänger außerhalb des EWR (z. B. in den USA), wird die Übermittlung durch die Standardvertragsklauseln der Europäischen Kommission und, soweit erforderlich, durch ergänzende Garantien geschützt.\n\nEine aktuelle Liste der Auftragsverarbeiter ist auf Anfrage unter hello@euhub-ai.com erhältlich."
       },
       {
         "heading": "2. Von uns erhobene Daten und Verarbeitungszweck",
@@ -260,7 +331,7 @@
       },
       {
         "heading": "4. Datensicherheit und \"Sicherer Tresor\"-Verarbeitung",
-        "content": "Für unsere Unternehmenskunden werden Daten, die über unsere maßgeschneiderten KI-Web-Apps und Agenten verarbeitet werden, durch eine separate Auftragsverarbeitungsvereinbarung (AVV) gemäß DSGVO Artikel 28 geregelt. Wir bieten „Sicherer Tresor“-Bereitstellungen (On-Premise oder Private Cloud) an, die Isolierung auf Militärniveau gewährleisten und garantieren, dass Kundendaten niemals ohne ausdrückliche, dokumentierte Einwilligung zum Training allgemeiner Drittanbieter-Grundlagenmodelle verwendet werden."
+        "content": "Für unsere Unternehmenskunden werden Daten, die über unsere maßgeschneiderten KI-Web-Apps und Agenten verarbeitet werden, durch eine separate Auftragsverarbeitungsvereinbarung (AVV) gemäß DSGVO Artikel 28 geregelt. Wir bieten „Sicherer Tresor“-Bereitstellungen (On-Premise oder Private Cloud) an, die eine starke Mandantentrennung gewährleisten und sicherstellen, dass Kundendaten niemals ohne ausdrückliche, dokumentierte Einwilligung zum Training allgemeiner Drittanbieter-Grundlagenmodelle verwendet werden."
       },
       {
         "heading": "5. Ihre Datenschutzrechte",
@@ -307,7 +378,7 @@
       },
       {
         "heading": "2. Von uns verwendete Cookie-Typen",
-        "content": "In Übereinstimmung mit der ePrivacy-Richtlinie und der [DSGVO](/de/privacy) klassifizieren wir unsere Cookies in folgende Kategorien:\n\nUnbedingt erforderliche Cookies: Diese sind unerlässlich für die Navigation auf der Website und die Nutzung ihrer Kernfunktionen, wie die Aufrechterhaltung Ihres Sitzungsstatus (z. B. sessionid). Da die Website ohne sie nicht funktionieren kann, benötigen sie keine Nutzereinwilligung und können in unserem System nicht deaktiviert werden.\n\nLeistungs- und Analyse-Cookies: Diese Cookies erfassen anonymisierte Daten darüber, wie Besucher mit unserer Website interagieren (z. B. Google Analytics _ga, _gid). Damit können wir die Leistung messen, Engpässe identifizieren und unsere digitale Architektur verbessern. Diese Cookies werden nur eingesetzt, wenn Sie über unser Cookie-Banner ausdrücklich einwilligen.\n\nMarketing-Cookies: Werden verwendet, um Besucher über verschiedene Plattformen hinweg zu verfolgen und relevante B2B-Werbung anzuzeigen (z. B. Meta Pixel _fbp). Diese Cookies ordnen Ihre Interaktionen externen Werbenetzwerken zu und werden nur mit Ihrer ausdrücklichen Opt-in-Einwilligung eingesetzt."
+        "content": "In Übereinstimmung mit der ePrivacy-Richtlinie und der [DSGVO](/de/privacy) klassifizieren wir unsere Cookies in folgende Kategorien:\n\nUnbedingt erforderliche Cookies: Diese sind unerlässlich für die Navigation auf der Website und die Nutzung ihrer Kernfunktionen, wie die Aufrechterhaltung Ihres Sitzungsstatus (z. B. sessionid). Da die Website ohne sie nicht funktionieren kann, benötigen sie keine Nutzereinwilligung und können in unserem System nicht deaktiviert werden.\n\nLeistungs- und Analyse-Cookies: Diese Cookies erfassen anonymisierte Daten darüber, wie Besucher mit unserer Website interagieren (z. B. Google Analytics _ga, _gid). Damit können wir die Leistung messen, Engpässe identifizieren und unsere digitale Architektur verbessern. Diese Cookies werden nur eingesetzt, wenn Sie über unser Cookie-Banner ausdrücklich einwilligen.\n\nMarketing-Cookies: Werden verwendet, um Besucher über verschiedene Plattformen hinweg zu verfolgen und relevante B2B-Werbung anzuzeigen (z. B. Meta Pixel _fbp). Diese Cookies ordnen Ihre Interaktionen externen Werbenetzwerken zu und werden nur mit Ihrer ausdrücklichen Opt-in-Einwilligung eingesetzt.\n\nTag-Verwaltung: Analyse- und Marketing-Tags auf dieser Website werden über Google Tag Manager, einen Dienst von Google, geladen und verwaltet. Google Tag Manager selbst setzt keine Analyse- oder Werbe-Cookies, lädt aber die Tags, die dies tun, im Einklang mit den oben genannten Einwilligungskategorien."
       },
       {
         "heading": "3. Verwaltung Ihrer Cookie-Einstellungen",
