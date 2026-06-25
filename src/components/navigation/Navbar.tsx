@@ -60,6 +60,8 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
                             <Link href={switchLang('en')} className={`text-xs font-bold tracking-widest ${lang === 'en' ? 'text-[var(--primary)]' : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)]'}`}>EN</Link>
                             <span className="text-[var(--card-border)]">|</span>
                             <Link href={switchLang('sk')} className={`text-xs font-bold tracking-widest ${lang === 'sk' ? 'text-[var(--primary)]' : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)]'}`}>SK</Link>
+                            <span className="text-[var(--card-border)]">|</span>
+                            <Link href={switchLang('de')} className={`text-xs font-bold tracking-widest ${lang === 'de' ? 'text-[var(--primary)]' : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)]'}`}>DE</Link>
                         </div>
                         <ThemeToggle />
                         <Link href={`/${lang}#contact`} className="btn btn-primary text-sm py-2 w-[190px] text-center inline-flex justify-center">
@@ -94,8 +96,9 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
                         </Link>
                         <div className="flex justify-center items-center gap-6 mt-4 pt-6 border-t border-[var(--card-border)]">
                             <Link href={switchLang('en')} className={`font-bold ${lang === 'en' ? 'text-[var(--primary)]' : 'text-[var(--muted-foreground)]'}`}>EN</Link>
-                            <ThemeToggle />
                             <Link href={switchLang('sk')} className={`font-bold ${lang === 'sk' ? 'text-[var(--primary)]' : 'text-[var(--muted-foreground)]'}`}>SK</Link>
+                            <ThemeToggle />
+                            <Link href={switchLang('de')} className={`font-bold ${lang === 'de' ? 'text-[var(--primary)]' : 'text-[var(--muted-foreground)]'}`}>DE</Link>
                         </div>
                     </div>
                 </div>
