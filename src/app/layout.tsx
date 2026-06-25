@@ -31,6 +31,7 @@ export const metadata: Metadata = {
 };
 
 import { Providers } from "./providers";
+import CookieConsent from "../components/consent/CookieConsent";
 
 const DEFAULT_GTM_ID = "GTM-KMHTFB3N";
 const configuredGtmId = process.env.NEXT_PUBLIC_GTM_ID?.trim();
@@ -38,8 +39,6 @@ const GTM_ID =
   configuredGtmId && configuredGtmId !== "GTM-YOUR_ID_HERE" && configuredGtmId.startsWith("GTM-")
     ? configuredGtmId
     : DEFAULT_GTM_ID;
-
-const COOKIEYES_CBID = process.env.NEXT_PUBLIC_COOKIEYES_CBID?.trim();
 
 export default async function RootLayout({
   children,
@@ -70,15 +69,6 @@ export default async function RootLayout({
           `}
         </Script>
 
-        {/* CookieYes — auto-issues gtag('consent','update',...) on user choice */}
-        {COOKIEYES_CBID && (
-          <Script
-            id="cookieyes"
-            strategy="beforeInteractive"
-            src={`https://cdn-cookieyes.com/client_data/${COOKIEYES_CBID}/script.js`}
-          />
-        )}
-
         {/* Google Tag Manager */}
         <Script id="gtm-head" strategy="afterInteractive">
           {`
@@ -103,6 +93,7 @@ export default async function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <CookieConsent locale={locale} />
       </body>
     </html>
   );
