@@ -1,20 +1,48 @@
+import type { Metadata } from 'next';
 import { getDictionary } from '../../../get-dictionary';
 import Header from '../../../components/layout/Header';
 import { Footer } from '../../../components/layout/Footer';
 import { LegalPage } from '../../../components/legal/LegalPage';
 
+const BASE_URL = 'https://euhub-ai.com';
+
+// This page is authored in EN + SK. For any other locale (e.g. DE), fall back to EN content.
+async function getPage(lang: string) {
+  const dict = await getDictionary(lang as 'en' | 'sk' | 'de');
+  const page = dict.dataResidency ?? (await getDictionary('en')).dataResidency;
+  return { dict, page };
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const { page } = await getPage(lang);
+
+  return {
+    title: page.title,
+    alternates: {
+      canonical: `${BASE_URL}/${lang}/data-residency`,
+      languages: {
+        'en': `${BASE_URL}/en/data-residency`,
+        'sk': `${BASE_URL}/sk/data-residency`,
+        'x-default': `${BASE_URL}/en/data-residency`,
+      },
+    },
+  };
+}
+
 export default async function DataResidencyPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang as "en" | "sk");
+  const { dict, page } = await getPage(lang);
 
   return (
     <>
       <Header dict={dict} lang={lang} />
       <LegalPage
-        title={dict.dataResidency.title}
-        lastUpdated={dict.dataResidency.lastUpdated}
-        sections={dict.dataResidency.sections}
+        title={page.title}
+        lastUpdated={page.lastUpdated}
+        sections={page.sections}
         lang={lang}
+        backHome={dict.legal?.backHome || 'Back to Home'}
       />
       <Footer lang={lang} dict={dict} />
     </>

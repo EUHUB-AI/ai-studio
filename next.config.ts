@@ -35,7 +35,7 @@ const nextConfig: NextConfig = {
       // But we must exclude /api, /_next, etc.
       // Regex lookaheads are not fully supported in simple string sources, but we can try:
       {
-        source: '/:path((?!en|sk|api|_next|favicon.ico|robots.txt|.*\\..*).*)',
+        source: '/:path((?!en|sk|de|api|_next|favicon.ico|robots.txt|.*\\..*).*)',
         destination: '/en/:path*',
         permanent: false,
       },

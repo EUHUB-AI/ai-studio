@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
+import { headers } from "next/headers";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -22,7 +23,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EuHub AI | Strategic AI Implementation",
+  title: {
+    default: "EuHub AI | Strategic AI Implementation",
+    template: "%s | EuHub AI",
+  },
   description: "Your Strategic AI Implementation Partner in Central Europe. We engineer and deploy agentic AI systems.",
 };
 
@@ -35,14 +39,46 @@ const GTM_ID =
     ? configuredGtmId
     : DEFAULT_GTM_ID;
 
-export default function RootLayout({
+const COOKIEYES_CBID = process.env.NEXT_PUBLIC_COOKIEYES_CBID?.trim();
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const locale = headersList.get('x-locale') || 'en';
+
   return (
-    <html lang="en" suppressHydrationWarning className="dark">
+    <html lang={locale} suppressHydrationWarning className="dark">
       <head>
+        {/* Google Consent Mode v2 — defaults must run before GTM */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'functionality_storage': 'denied',
+              'personalization_storage': 'denied',
+              'security_storage': 'granted',
+              'wait_for_update': 500
+            });
+          `}
+        </Script>
+
+        {/* CookieYes — auto-issues gtag('consent','update',...) on user choice */}
+        {COOKIEYES_CBID && (
+          <Script
+            id="cookieyes"
+            strategy="beforeInteractive"
+            src={`https://cdn-cookieyes.com/client_data/${COOKIEYES_CBID}/script.js`}
+          />
+        )}
+
         {/* Google Tag Manager */}
         <Script id="gtm-head" strategy="afterInteractive">
           {`

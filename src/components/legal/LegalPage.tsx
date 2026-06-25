@@ -14,9 +14,10 @@ interface LegalPageProps {
   lastUpdated?: string;
   sections: LegalSection[];
   lang: string;
+  backHome: string;
 }
 
-export const LegalPage = ({ title, lastUpdated, sections, lang }: LegalPageProps) => {
+export const LegalPage = ({ title, lastUpdated, sections, lang, backHome }: LegalPageProps) => {
   const renderContent = (content: string) => {
     // Regex for [text](url)
     const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
@@ -101,7 +102,7 @@ export const LegalPage = ({ title, lastUpdated, sections, lang }: LegalPageProps
             href={`/${lang}`}
             className="text-[var(--primary)] hover:text-[var(--accent)] transition-colors"
           >
-            ← {lang === 'en' ? 'Back to Home' : 'Späť na Domov'}
+            ← {backHome}
           </Link>
         </div>
 
