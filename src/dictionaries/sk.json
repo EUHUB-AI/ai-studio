@@ -201,6 +201,8 @@
         "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku.",
         "solutions": "Riešenia",
         "company": "Spoločnosť",
+        "aiAct": "Pripravenosť na Akt EÚ o AI",
+        "dataResidency": "Dátová rezidencia a GDPR",
         "privacy": "Ochrana osobných údajov",
         "terms": "Podmienky používania",
         "cookies": "Používanie cookies",
@@ -226,6 +228,74 @@
         "title": "EuHub AI | Strategická Implementácia AI",
         "description": "Váš strategický partner pre implementáciu AI v strednej Európe. Navrhujeme a nasadzujeme agentické AI systémy, ktoré eliminujú prevádzkové obmedzenia."
     },
+    "aiAct": {
+        "title": "Pripravenosť na Akt EÚ o AI",
+        "lastUpdated": "Budujte AI, ktorá je legálna na trhu EÚ — väčšina povinností platí od 2. augusta 2026.",
+        "sections": [
+            {
+                "heading": "Vzťahuje sa na vás Akt EÚ o AI?",
+                "content": "Takmer určite — aj keď nesídlite v EÚ. Akt sa uplatňuje, ak platí čokoľvek z nasledujúceho:\n\n• Uvádzate systém AI na trh EÚ bez ohľadu na to, kde je vaša spoločnosť usadená.\n• Nasadzujete AI v rámci EÚ.\n• Výstup vášho systému AI sa používa v EÚ, aj keď pôsobíte z tretej krajiny.\n\nAk predávate do Európy, Akt EÚ o AI sa vás týka — rovnako ako GDPR. Postaráme sa o to, aby to nebol problém."
+            },
+            {
+                "heading": "Akú úroveň rizika má vaša AI?",
+                "content": "Akt reguluje AI podľa rizika. Váš prípad použitia klasifikujeme hneď na začiatku:\n\n• Neprijateľné riziko — úplne zakázané (napr. sociálne skórovanie). Zakázané od 2. februára 2025.\n• Vysoké riziko — prísne povinnosti (riadenie rizík, dokumentácia, ľudský dohľad, logovanie). Zahŕňa AI používanú pri nábore, prijímaní a riadení zamestnancov, úverovom skórovaní a kritickej infraštruktúre.\n• Obmedzené riziko — povinnosti transparentnosti. Väčšina prevádzkovej AI, ktorú staviame — chatboty, RAG asistenti, procesní agenti — patrí sem. Hlavnou povinnosťou je informovať ľudí, že komunikujú s AI (článok 50).\n• Minimálne riziko — žiadne osobitné povinnosti.\n\nVäčšina toho, čo nasadíte, je v pásme obmedzeného rizika a je priamočiara. Úlohou je vedieť, ktoré z vašich systémov prechádzajú do vysokého rizika — a vyriešiť to pred spustením."
+            },
+            {
+                "heading": "Transparentnosť pre interaktívnu AI (článok 50)",
+                "content": "Ak vaša AI komunikuje priamo s ľuďmi — chatbot, hlasový agent, autonómny asistent — článok 50 vyžaduje, aby boli títo ľudia jasne informovaní, že komunikujú s AI, najneskôr pri prvej interakcii. Skrytie tejto informácie v obchodných podmienkach nestačí.\n\nČo implementujeme:\n• Jasné upozornenie o AI pri prvej interakcii v každom interaktívnom systéme, ktorý staviame.\n• Označovanie obsahu generovaného alebo upraveného pomocou AI, kde sa to vyžaduje.\n• Upozornenia v súlade s požiadavkami na prístupnosť.\n\nTáto povinnosť platí od 2. augusta 2026."
+            },
+            {
+                "heading": "Čo dodávame",
+                "content": "Súlad je najmä o dokumentácii a disciplíne procesov. Pri každej spolupráci poskytujeme:\n\n• Klasifikáciu rizika AI — kam patrí každý z vašich systémov a čo to spúšťa.\n• Implementáciu transparentnosti — upozornenia podľa článku 50 zabudované do produktu.\n• Technickú dokumentáciu a logovanie — záznamy, ktoré Akt očakáva od poskytovateľov a zavádzateľov.\n• Návrh ľudského dohľadu — zmysluplná kontrola zabudovaná do automatizovaných procesov.\n• Balík governance — politiky, dátové hranice a auditný záznam, ktorý môžete predložiť regulátorovi."
+            },
+            {
+                "heading": "Kľúčové dátumy",
+                "content": "• 1. august 2024 — Akt nadobúda účinnosť.\n• 2. február 2025 — zákaz zakázaných praktík; začínajú povinnosti AI gramotnosti.\n• 2. august 2025 — povinnosti pre modely AI na všeobecné účely.\n• 2. august 2026 — platí väčšina povinností vrátane transparentnosti podľa článku 50 a vysokorizikových systémov.\n• 2. august 2027 — zostávajúce vysokorizikové systémy (regulované produkty)."
+            },
+            {
+                "heading": "Prečo na tom záleží",
+                "content": "Nesúlad so sebou nesie významné pokuty:\n\n• Až 35 miliónov € alebo 7 % celosvetového ročného obratu za zakázané praktiky.\n• Až 15 miliónov € alebo 3 % za väčšinu ostatných porušení vrátane transparentnosti a vysokorizikových povinností.\n• Až 7,5 milióna € alebo 1 % za poskytnutie nesprávnych alebo zavádzajúcich informácií.\n\nPre malé a stredné podniky a startupy platí nižšia z hodnôt — pevná suma alebo percento."
+            },
+            {
+                "heading": "Získajte posúdenie pripravenosti na Akt EÚ o AI",
+                "content": "Zmapujeme vaše systémy na ich rizikovú triedu, implementujeme transparentnosť, ktorú vaše produkty potrebujú, a odovzdáme vám dokumentáciu, ktorú regulátor očakáva. [Vyžiadajte si posúdenie](/sk#contact) alebo napíšte na hello@euhub-ai.com."
+            }
+        ]
+    },
+    "dataResidency": {
+        "title": "Dátová rezidencia a GDPR",
+        "lastUpdated": "Vaše dáta zostávajú v EÚ — tu je presne ako.",
+        "sections": [
+            {
+                "heading": "Kde sídlia vaše dáta",
+                "content": "Pre európskych zákazníkov je „kam idú naše dáta?“ prvá otázka. Naša odpoveď je konkrétna:\n\n• Táto webová stránka beží na Google Cloud (europe-west1, Belgicko).\n• Klientske systémy nasadzujeme do prostredia, ktoré si zvolíte — región výhradne v EÚ, váš privátny cloud alebo on-premise — konfigurované individuálne naším DevOps tímom.\n• Čo opúšťa vaše prostredie (telemetria, logy) sa nastavuje pre každé nasadenie; prompty, dokumenty a logy môžeme udržať úplne vo vašom prostredí.\n• Vaše dáta sa nikdy nepoužijú na trénovanie všeobecných modelov tretích strán bez vášho výslovného a zdokumentovaného súhlasu. Pri nasadení self-hosted modelu váš obsah vaše prostredie vôbec neopustí."
+            },
+            {
+                "heading": "Zmluva o spracúvaní osobných údajov (DPA)",
+                "content": "Keď spracúvame osobné údaje vo vašom mene, vystupujeme ako váš sprostredkovateľ na základe záväznej Zmluvy o spracúvaní osobných údajov v súlade s článkom 28 GDPR. Písomne stanovuje: rozsah a účel spracúvania, mlčanlivosť, bezpečnostné opatrenia (článok 32), naše vybavovanie žiadostí dotknutých osôb, vymazanie alebo vrátenie údajov po ukončení a právo na audit.\n\nNašu štandardnú DPA poskytujeme na vyžiadanie."
+            },
+            {
+                "heading": "Subdodávatelia spracúvania",
+                "content": "Vedieme aktuálny zoznam subdodávateľov spracúvania a v súlade s článkom 28(2) GDPR žiadneho nepridáme ani nenahradíme bez toho, aby sme vás vopred informovali a dali vám možnosť namietať.\n\nPri úplne self-hosted alebo on-premise nasadeniach nevystupuje žiadny poskytovateľ AI alebo modelov tretej strany ako subdodávateľ pre váš obsah."
+            },
+            {
+                "heading": "Medzinárodné prenosy údajov",
+                "content": "Ak spracúvanie zahŕňa prenos mimo Európskeho hospodárskeho priestoru, opierame sa o Štandardné zmluvné doložky Európskej komisie a — v nadväznosti na rozsudok Schrems II — vykonávame zdokumentované posúdenie vplyvu prenosu a uplatňujeme doplnkové záruky, ako je šifrovanie, tam kde je to potrebné.\n\nNajjednoduchšou odpoveďou na riziko prenosu je neprenášať. Preto kladieme dôraz na možnosť nasadenia výhradne v EÚ — odstráni to za vás väčšinu tejto agendy."
+            },
+            {
+                "heading": "Bezpečnostné kontroly",
+                "content": "Každé nasadenie zahŕňa:\n\n• Šifrovanie pri prenose aj v pokoji.\n• Riadenie prístupu na základe rolí a princíp najmenších oprávnení.\n• Úplné auditné logovanie.\n• Izoláciu jedného nájomcu vo vašom zvolenom prostredí (on-premise alebo privátny cloud)."
+            },
+            {
+                "heading": "Uchovávanie, vymazanie a vaše práva",
+                "content": "• Uchovávanie — osobné údaje uchovávame len tak dlho, ako je to potrebné na dohodnutý účel.\n• Vymazanie alebo vrátenie — po ukončení vrátime alebo vymažeme klientske dáta do 30 dní v súlade s DPA.\n• Práva dotknutých osôb — pomáhame vám ako prevádzkovateľovi vybaviť žiadosti o prístup, opravu, vymazanie a prenosnosť."
+            },
+            {
+                "heading": "Kontakt",
+                "content": "Prevádzkovateľ údajov pre túto webovú stránku: Engineers-incubator s.r.o., Horná 67, 974 01 Banská Bystrica, Slovensko.\n\n[Vyžiadajte si našu DPA a balík pre spracúvanie údajov](/sk#contact) alebo napíšte na hello@euhub-ai.com."
+            }
+        ]
+    },
     "privacy": {
         "title": "Zásady ochrany osobných údajov",
         "lastUpdated": "Dátum účinnosti: 2026",
@@ -240,7 +310,7 @@
             },
             {
                 "heading": "Článok 3: Zhromažďovanie údajov a účel spracúvania",
-                "content": "Dodržiavame zásadu minimalizácie údajov a zhromažďujeme osobné údaje len na špecifikované, výslovné a legitímne účely.\n\nInformácie, ktoré poskytujete priamo:\n• Účet a profil: Celé meno, e-mail, používateľské meno, hašované heslo. Dobrovoľne – LinkedIn alebo Telegram.\n  Účel: vytvorenie a správa účtu, poskytovanie služieb, interakcia s používateľmi.\n• Komunikácia: Meno, kontaktné údaje, obsah správy.\n  Účel: odpovedať na otázky a viesť záznamy o korešpondencii.\n• Marketingové odbery: E-mailová adresa.\n  Účel: zasielanie marketingových správ na základe vášho súhlasu.\n\nAutomaticky zhromažďované informácie:\n• Údaje o protokole a zariadení: IP, typ prehliadača, zariadenie, OS, URL odkazov.\n  Účel: bezpečnosť, analýza, zlepšenie funkčnosti.\n• Súbory cookie a údaje o používaní: Informácie o interakcii so službou.\n  Účel: prevádzka webu, preferencie používateľov, analytika, marketing. Pozri osobitnú Politiku súborov cookie."
+                "content": "Dodržiavame zásadu minimalizácie údajov a zhromažďujeme osobné údaje len na špecifikované, výslovné a legitímne účely. Neprevádzkujeme používateľské účty a nezhromažďujeme heslá.\n\nInformácie, ktoré poskytujete priamo:\n• Žiadosti o diagnostický audit / kontaktné formuláre: pri odoslaní formulára zhromažďujeme vaše meno, spoločnosť, pracovný e-mail a popis problému, ktorý uvediete.\n  Účel: vyhodnotiť vašu žiadosť, odpovedať vám a viesť záznam o korešpondencii (právny základ: predzmluvné vzťahy / oprávnený záujem).\n• Priama komunikácia: vaše meno, kontaktné údaje a obsah správy, keď nám napíšete alebo nás inak kontaktujete.\n  Účel: odpovedať na vašu otázku.\n\nAutomaticky zhromažďované informácie:\n• Údaje o protokole a zariadení: IP adresa, typ prehliadača, informácie o zariadení, operačný systém a URL odkazov.\n  Účel: bezpečnosť, riešenie problémov a zlepšovanie webovej stránky.\n• Údaje o používaní a súbory cookie: údaje zo súborov cookie a podobných technológií, ak udelíte súhlas.\n  Účel: analytika a marketing, ako je podrobne uvedené v našej Politike súborov cookie."
             },
             {
                 "heading": "Článok 4: Právny základ spracúvania",
@@ -248,7 +318,7 @@
             },
             {
                 "heading": "Článok 5: Sprístupnenie a prenos údajov",
-                "content": "• Poskytovatelia služieb tretích strán: hosting, platby, analytika.\n• Súlad so zákonom: sprístupnenie na základe zákona alebo rozhodnutia súdu.\n• Medzinárodný prenos: chránený štandardnými zmluvnými doložkami."
+                "content": "Osobné údaje zdieľame len s nasledujúcimi kategóriami príjemcov a za primeraných záruk:\n\n• Hosting a infraštruktúra: Google Cloud (Google Cloud EMEA Limited) — hosting webovej stránky v rámci EÚ (europe-west1, Belgicko).\n• Spracovanie kontaktných formulárov: Formspree (Formspree, Inc., USA) — spracúva meno, spoločnosť, pracovný e-mail a správu, ktorú odošlete cez naše formuláre.\n• Správa značiek a analytika: Google (Google Ireland Limited / Google LLC) — používame Google Tag Manager na načítanie meracích a marketingových značiek, ktoré môžu zahŕňať Google Analytics, na základe vášho súhlasu so súbormi cookie.\n• Reklama: Meta Platforms Ireland Limited — ak je povolený Meta Pixel, na základe vášho súhlasu so súbormi cookie.\n• Súlad so zákonom: orgány verejnej moci a odborní poradcovia, ak to vyžaduje zákon.\n\nMedzinárodné prenosy: ak sa príjemca nachádza mimo EHP (napríklad v USA), prenos je chránený štandardnými zmluvnými doložkami Európskej komisie a v prípade potreby doplnkovými zárukami.\n\nAktuálny zoznam sprostredkovateľov je dostupný na vyžiadanie na hello@euhub-ai.com."
             },
             {
                 "heading": "2. Údaje, ktoré zhromažďujeme a účel spracovania",
@@ -307,7 +377,7 @@
             },
             {
                 "heading": "2. Typy súborov cookie, ktoré používame",
-                "content": "V súlade so smernicou ePrivacy a nariadením [GDPR](/sk/privacy) rozdeľujeme naše súbory cookie do nasledujúcich kategórií:\n\nPrísne nevyhnutné súbory cookie: Sú nevyhnutné pre navigáciu na webovej stránke a využívanie jej základných funkcií, ako je udržiavanie stavu vašej relácie (napr. sessionid). Keďže webová stránka bez nich nemôže fungovať, nevyžadujú súhlas používateľa a v našom systéme ich možno vypnúť.\n\nVýkonnostné a analytické súbory cookie: Tieto súbory cookie zhromažďujú anonymizované údaje o tom, ako návštevníci interagujú s našou stránkou (napr. Google Analytics _ga, _gid). To nám umožňuje merať výkonnosť a zlepšovať našu digitálnu architektúru. Tieto súbory cookie sa nasadia len vtedy, ak udelíte výslovný súhlas prostredníctvom nášho banneru.\n\nMarketingové súbory cookie: Používajú sa na sledovanie návštevníkov s cieľom zobraziť relevantné B2B reklamy (napr. Meta Pixel _fbp). Tieto súbory cookie mapujú vaše interakcie s externými reklamnými sieťami a nasadzujú sa len s vaším výslovným súhlasom."
+                "content": "V súlade so smernicou ePrivacy a nariadením [GDPR](/sk/privacy) rozdeľujeme naše súbory cookie do nasledujúcich kategórií:\n\nPrísne nevyhnutné súbory cookie: Sú nevyhnutné pre navigáciu na webovej stránke a využívanie jej základných funkcií, ako je udržiavanie stavu vašej relácie (napr. sessionid). Keďže webová stránka bez nich nemôže fungovať, nevyžadujú súhlas používateľa a v našom systéme ich možno vypnúť.\n\nVýkonnostné a analytické súbory cookie: Tieto súbory cookie zhromažďujú anonymizované údaje o tom, ako návštevníci interagujú s našou stránkou (napr. Google Analytics _ga, _gid). To nám umožňuje merať výkonnosť a zlepšovať našu digitálnu architektúru. Tieto súbory cookie sa nasadia len vtedy, ak udelíte výslovný súhlas prostredníctvom nášho banneru.\n\nMarketingové súbory cookie: Používajú sa na sledovanie návštevníkov s cieľom zobraziť relevantné B2B reklamy (napr. Meta Pixel _fbp). Tieto súbory cookie mapujú vaše interakcie s externými reklamnými sieťami a nasadzujú sa len s vaším výslovným súhlasom.\n\nSpráva značiek: Analytické a marketingové značky na tejto webovej stránke sa načítavajú a spravujú prostredníctvom Google Tag Manager, služby spoločnosti Google. Samotný Google Tag Manager nenastavuje analytické ani reklamné súbory cookie, ale načítava značky, ktoré tak robia, v súlade s vyššie uvedenými kategóriami súhlasu."
             },
             {
                 "heading": "3. Správa vašich preferencií súborov cookie",
