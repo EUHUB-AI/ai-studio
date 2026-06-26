@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export const Team = ({ lang, dict }: { lang: string, dict: any }) => {
     const photosByMemberName: Record<string, string> = {
-        'Artashes A.': '/photos/artie1.png',
-        'Mike G.': '/photos/mike1.png',
+        'Artashes A.': '/photos/artashes1.webp',
+        'Mike G.': '/photos/mike1.webp',
         'Kateryna H.': '/photos/katka1.png',
     };
 
