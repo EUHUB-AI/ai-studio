@@ -49,25 +49,27 @@
     ]
   },
   "team": {
-    "title": "Meet Our Experts",
-    "subtitle": "The brains behind your strategic AI implementation.",
+    "tag": "Team",
+    "title": "The people behind your implementation",
+    "subtitle": "A small senior team. You work directly with us — not with a junior account manager.",
+    "connect": "Connect",
     "members": [
       {
         "name": "Artashes A.",
-        "role": "Head of Business Development",
-        "link": "Linkedin",
+        "role": "Chief Operational Officer (COO)",
+        "badge": "COO",
         "url": "https://www.linkedin.com/in/arakelian-artashes-euhub/"
       },
       {
         "name": "Mike G.",
-        "role": "AI Operations, Solution Architect",
-        "link": "web-site",
+        "role": "Founder & Visionary",
+        "badge": "FOUNDER",
         "url": "https://mike.euhub-ai.com"
       },
       {
         "name": "Kateryna H.",
-        "role": "Community Infrastructure Lead",
-        "link": "Linkedin",
+        "role": "Chief Information Officer (CIO)",
+        "badge": "CIO",
         "url": "https://www.linkedin.com/in/kateryna-hordi/"
       }
     ]
