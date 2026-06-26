@@ -4,7 +4,7 @@ export const Team = ({ lang, dict }: { lang: string, dict: any }) => {
     const photosByMemberName: Record<string, string> = {
         'Artashes A.': '/photos/artashes1.webp',
         'Mike G.': '/photos/mike1.webp',
-        'Kateryna H.': '/photos/katka1.png',
+        'Kateryna H.': '/photos/katka1.webp',
     };
 
     const members = dict.team?.members || [];

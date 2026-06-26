@@ -27,6 +27,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'x-default': `${BASE_URL}/en`,
       },
     },
+    openGraph: {
+      title: dict.meta?.title,
+      description: dict.meta?.description,
+      url: `${BASE_URL}/${lang}`,
+      locale: lang,
+      images: ['/og.png'],
+    },
   };
 }
 
@@ -34,8 +41,39 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   const { lang } = await params;
   const dict = await getDictionary(lang as 'en' | 'sk' | 'de');
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${BASE_URL}/#organization`,
+        name: 'EuHub AI',
+        legalName: 'Engineers-incubator s.r.o.',
+        url: BASE_URL,
+        logo: `${BASE_URL}/logo_dark.png`,
+        email: 'hello@euhub-ai.com',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Horná 67',
+          addressLocality: 'Banská Bystrica',
+          postalCode: '974 01',
+          addressCountry: 'SK',
+        },
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${BASE_URL}/#website`,
+        url: BASE_URL,
+        name: 'EuHub AI',
+        publisher: { '@id': `${BASE_URL}/#organization` },
+        inLanguage: lang,
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] font-sans selection:bg-[var(--primary)] selection:text-[var(--background)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar lang={lang} dict={dict} />
       <Hero lang={lang} dict={dict} />
       <PainsSituations lang={lang} dict={dict} />

@@ -2,6 +2,16 @@
 
 > **⚠️ DRAFT TEMPLATE — NOT YET LEGAL ADVICE.** This is a solid, GDPR Article 28-compliant starting point prepared for EuHub-AI (Engineers-incubator s.r.o.). **Have a qualified Slovak/EU data-protection lawyer review and finalise it before sending it to any client or relying on it.** Fields in `[BRACKETS]` are filled in per engagement.
 
+### For your legal reviewer — please validate
+- [ ] **Governing law & jurisdiction** (§12.3) — Slovak Republic / courts in Banská Bystrica: confirm it matches the Principal Agreement.
+- [ ] **Breach-notification window** (§8) — currently **48 hours**; confirm acceptable (GDPR requires "without undue delay").
+- [ ] **Sub-processor model** (§6) — general written authorisation + **14-day** objection window: confirm the model and notice period.
+- [ ] **International transfers** (§9) — SCCs + Schrems II transfer impact assessment; confirm the EU-only-residency carve-out and that the correct SCC modules are referenced.
+- [ ] **Return/deletion period** (§10) — **30 days** after termination; confirm.
+- [ ] **Audit rights** (§11) — max once per 12 months absent breach/regulator request; confirm scope.
+- [ ] **Annexes 1–3** — fill per-engagement processing details; confirm Annex 2 (TOMs) matches actual security controls; keep Annex 3 (sub-processors) current — Google Cloud `europe-west1`; model provider per engagement, or **none when self-hosted**.
+- [ ] **Liability** — confirm alignment with the Principal Agreement's liability caps.
+
 ---
 
 This Data Processing Agreement (the "**DPA**") forms part of the agreement for services (the "**Principal Agreement**") between:
