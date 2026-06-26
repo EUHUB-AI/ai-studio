@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
   return {
     title: page.title,
+    description: page.lastUpdated,
     alternates: {
       canonical: `${BASE_URL}/${lang}/ai-act`,
       languages: {
@@ -28,6 +29,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'x-default': `${BASE_URL}/en/ai-act`,
       },
     },
+    openGraph: {
+      title: page.title,
+      description: page.lastUpdated,
+      url: `${BASE_URL}/${lang}/ai-act`,
+      locale: lang,
+      images: ['/og.png'],
+    },
   };
 }
 
@@ -35,8 +43,20 @@ export default async function AiActPage({ params }: { params: Promise<{ lang: st
   const { lang } = await params;
   const { dict, page } = await getPage(lang);
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: page.title,
+    description: page.lastUpdated,
+    url: `${BASE_URL}/${lang}/ai-act`,
+    inLanguage: lang,
+    isPartOf: { '@type': 'WebSite', url: BASE_URL, name: 'EuHub AI' },
+    publisher: { '@type': 'Organization', name: 'EuHub AI', url: BASE_URL },
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header dict={dict} lang={lang} />
       <LegalPage
         title={page.title}

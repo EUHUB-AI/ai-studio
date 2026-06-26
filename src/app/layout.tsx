@@ -23,11 +23,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://euhub-ai.com"),
   title: {
     default: "EuHub AI | Strategic AI Implementation",
     template: "%s | EuHub AI",
   },
   description: "Your Strategic AI Implementation Partner in Central Europe. We engineer and deploy agentic AI systems.",
+  openGraph: {
+    type: "website",
+    siteName: "EuHub AI",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "EuHub AI — Strategic AI Implementation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.png"],
+  },
 };
 
 import { Providers } from "./providers";
