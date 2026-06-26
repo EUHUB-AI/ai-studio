@@ -6,7 +6,7 @@ import { LegalPage } from '../../../components/legal/LegalPage';
 
 const BASE_URL = 'https://euhub-ai.com';
 
-// This page is authored in EN + SK. For any other locale (e.g. DE), fall back to EN content.
+// Authored in EN, SK and DE. Falls back to EN content for any unknown locale.
 async function getPage(lang: string) {
   const dict = await getDictionary(lang as 'en' | 'sk' | 'de');
   const page = dict.aiAct ?? (await getDictionary('en')).aiAct;
@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       languages: {
         'en': `${BASE_URL}/en/ai-act`,
         'sk': `${BASE_URL}/sk/ai-act`,
+        'de': `${BASE_URL}/de/ai-act`,
         'x-default': `${BASE_URL}/en/ai-act`,
       },
     },
