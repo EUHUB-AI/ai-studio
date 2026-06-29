@@ -199,12 +199,95 @@
     "metric3": "Autonomous Uptime",
     "button": "Initiate Audit"
   },
+  "icp": {
+    "tag": "Who we're for",
+    "title": "Built for teams with real constraints",
+    "subtitle": "We work with organisations where AI has to clear compliance, legacy systems and procurement — not just a demo.",
+    "items": [
+      {
+        "title": "Regulated mid-market",
+        "sector": "Finance · Insurance · Healthcare-adjacent",
+        "pain": "The AI upside is real, but compliance and audit risk block adoption.",
+        "outcome": "Automation your compliance team signs off on — EU AI Act & GDPR controls, audit trails and human oversight built in."
+      },
+      {
+        "title": "Manufacturers & logistics",
+        "sector": "Legacy ERP/CRM · Fragmented data",
+        "pain": "Critical knowledge is trapped in silos and legacy systems.",
+        "outcome": "RAG and agents over your existing ERP/CRM via compliant API bridges — instant retrieval, less manual entry."
+      },
+      {
+        "title": "SaaS & service firms",
+        "sector": "High support volume",
+        "pain": "Tier-1 support can't scale during peaks without adding headcount.",
+        "outcome": "Autonomous Level-1 agents trained on your product and tone — the bulk of tier-1 resolved 24/7."
+      },
+      {
+        "title": "Ops & back-office teams",
+        "sector": "Manual, repetitive workflows",
+        "pain": "Skilled people stuck on manual screening and data entry.",
+        "outcome": "Agentic workflow automation with bias controls and auditing — throughput up, people focused on judgement."
+      }
+    ]
+  },
+  "process": {
+    "tag": "How we work",
+    "title": "Audit → Pilot → Scale",
+    "subtitle": "A productised path with clear deliverables and exit criteria at every step — so procurement knows exactly what they are buying.",
+    "deliverablesLabel": "Deliverables",
+    "tiers": [
+      {
+        "name": "Audit",
+        "price": "Fixed-fee",
+        "timeline": "~2 weeks",
+        "summary": "Know exactly where AI pays off — before you invest.",
+        "deliverables": ["Risk register & opportunity map", "ROI model", "Reference architecture plan", "EU AI Act & GDPR compliance check"]
+      },
+      {
+        "name": "Pilot",
+        "price": "Fixed-scope",
+        "timeline": "~4 weeks",
+        "summary": "A working MVP, proven against real success criteria.",
+        "deliverables": ["Functional MVP agent / workflow", "Success metrics & evaluation set", "Rollback plan", "Go / no-go decision pack"]
+      },
+      {
+        "name": "Scale",
+        "price": "Custom retainer",
+        "timeline": "Ongoing",
+        "summary": "Production deployment you can rely on.",
+        "deliverables": ["Full integration & rollout", "SLA / SLOs & monitoring", "Incident response", "Security review"]
+      }
+    ]
+  },
+  "portability": {
+    "title": "You own it. No lock-in.",
+    "lastUpdated": "Your competitive advantage shouldn't be rented.",
+    "sections": [
+      {
+        "heading": "Model-agnostic by design",
+        "content": "We pick the right model for the job — commercial (OpenAI, Anthropic), open-weight, or fully self-hosted on your own infrastructure. You are never tied to one vendor's roadmap or price hikes, and models can be swapped as the field moves."
+      },
+      {
+        "heading": "Your data and configuration stay yours",
+        "content": "Your data, prompts and configurations belong to you. Ownership of any custom-built IP (code, fine-tuned models) is defined explicitly in your contract — no ambiguity, no hostage-taking."
+      },
+      {
+        "heading": "A portability checklist, not a promise",
+        "content": "Every build is designed to leave with you:\n\n• Standard, open data formats — no proprietary stores.\n• Version-controlled prompts, configs and infrastructure-as-code.\n• Containerised deployment you can run in any environment.\n• An evaluation harness so you can change models with confidence."
+      },
+      {
+        "heading": "Exit-friendly",
+        "content": "If you ever move on, you get a clean handover — documentation, source and deployment artefacts. The goal is leverage for you, not dependency on us. [Talk to us](/en#contact) or email hello@euhub-ai.com."
+      }
+    ]
+  },
   "footer": {
     "tagline": "Bridging the gap between Western capital and Central European engineering talent.",
     "solutions": "Solutions",
     "company": "Company",
     "aiAct": "EU AI Act Readiness",
     "dataResidency": "Data Residency & GDPR",
+    "portability": "No Lock-in & Portability",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Policy",

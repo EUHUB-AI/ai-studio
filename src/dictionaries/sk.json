@@ -199,12 +199,110 @@
         "metric3": "Autonómna dostupnosť",
         "button": "Začať audit"
     },
+    "icp": {
+        "tag": "Pre koho sme",
+        "title": "Stavané pre tímy s reálnymi obmedzeniami",
+        "subtitle": "Spolupracujeme s organizáciami, kde AI musí prejsť cez súlad s predpismi, legacy systémy a obstarávanie — nielen cez demo.",
+        "items": [
+            {
+                "title": "Regulovaný stredný trh",
+                "sector": "Financie · Poisťovníctvo · Blízko zdravotníctva",
+                "pain": "Prínos AI je reálny, no súlad s predpismi a riziko auditu blokujú nasadenie.",
+                "outcome": "Automatizácia, ktorú váš compliance tím schváli — kontroly podľa Aktu EÚ o AI a GDPR, auditné záznamy a ľudský dohľad sú súčasťou riešenia."
+            },
+            {
+                "title": "Výrobcovia a logistika",
+                "sector": "Legacy ERP/CRM · Fragmentované dáta",
+                "pain": "Kritické znalosti sú uväznené v silách a legacy systémoch.",
+                "outcome": "RAG a agenti nad vaším existujúcim ERP/CRM prostredníctvom compliant API mostov — okamžité vyhľadávanie, menej manuálneho zadávania."
+            },
+            {
+                "title": "SaaS a servisné firmy",
+                "sector": "Vysoký objem podpory",
+                "pain": "Podpora úrovne 1 nestíha škálovať v špičke bez navyšovania počtu zamestnancov.",
+                "outcome": "Autonómni agenti úrovne 1 trénovaní na vašom produkte a štýle komunikácie — väčšina tiketov úrovne 1 vyriešená 24/7."
+            },
+            {
+                "title": "Prevádzkové a back-office tímy",
+                "sector": "Manuálne, opakujúce sa procesy",
+                "pain": "Kvalifikovaní ľudia uviaznutí pri manuálnom triedení a zadávaní dát.",
+                "outcome": "Agentická automatizácia procesov s kontrolou zaujatosti a auditom — vyššia priepustnosť, ľudia sústredení na úsudok."
+            }
+        ]
+    },
+    "process": {
+        "tag": "Ako pracujeme",
+        "title": "Audit → Pilot → Škálovanie",
+        "subtitle": "Produktizovaná cesta s jasnými výstupmi a výstupnými kritériami v každom kroku — aby obstarávanie presne vedelo, čo kupuje.",
+        "deliverablesLabel": "Výstupy",
+        "tiers": [
+            {
+                "name": "Audit",
+                "price": "Pevná cena",
+                "timeline": "~2 týždne",
+                "summary": "Zistite presne, kde sa AI vyplatí — ešte pred investíciou.",
+                "deliverables": [
+                    "Register rizík a mapa príležitostí",
+                    "Model ROI",
+                    "Plán referenčnej architektúry",
+                    "Kontrola súladu s Aktom EÚ o AI a GDPR"
+                ]
+            },
+            {
+                "name": "Pilot",
+                "price": "Pevný rozsah",
+                "timeline": "~4 týždne",
+                "summary": "Funkčné MVP, overené voči reálnym kritériám úspechu.",
+                "deliverables": [
+                    "Funkčný MVP agent / workflow",
+                    "Metriky úspechu a hodnotiaca sada",
+                    "Plán pre návrat (rollback)",
+                    "Rozhodovací balík go / no-go"
+                ]
+            },
+            {
+                "name": "Škálovanie",
+                "price": "Individuálny retainer",
+                "timeline": "Priebežne",
+                "summary": "Produkčné nasadenie, na ktoré sa môžete spoľahnúť.",
+                "deliverables": [
+                    "Plná integrácia a roll-out",
+                    "SLA / SLO a monitoring",
+                    "Reakcia na incidenty",
+                    "Bezpečnostný audit"
+                ]
+            }
+        ]
+    },
+    "portability": {
+        "title": "Vlastníte to. Žiadna závislosť od dodávateľa.",
+        "lastUpdated": "Svoju konkurenčnú výhodu by ste si nemali prenajímať.",
+        "sections": [
+            {
+                "heading": "Model-agnostický už z princípu",
+                "content": "Vyberáme správny model na danú úlohu — komerčný (OpenAI, Anthropic), s otvorenými váhami alebo plne self-hosted na vašej vlastnej infraštruktúre. Nikdy nie ste viazaní na roadmapu jedného dodávateľa ani na zvyšovanie jeho cien a modely možno vymeniť, ako sa odvetvie posúva ďalej."
+            },
+            {
+                "heading": "Vaše dáta a konfigurácia zostávajú vaše",
+                "content": "Vaše dáta, prompty a konfigurácie patria vám. Vlastníctvo akéhokoľvek na mieru vytvoreného duševného vlastníctva (kód, doladené modely) je výslovne vymedzené vo vašej zmluve — žiadna nejednoznačnosť, žiadne rukojemníctvo."
+            },
+            {
+                "heading": "Kontrolný zoznam prenosnosti, nie sľub",
+                "content": "Každé riešenie je navrhnuté tak, aby odišlo s vami:\n\n• Štandardné, otvorené dátové formáty — žiadne proprietárne úložiská.\n• Prompty, konfigurácie a infraštruktúra ako kód pod správou verzií.\n• Kontajnerizované nasadenie, ktoré môžete spustiť v ľubovoľnom prostredí.\n• Hodnotiaci nástroj (evaluation harness), vďaka ktorému môžete s istotou meniť modely."
+            },
+            {
+                "heading": "Priateľské k odchodu",
+                "content": "Ak sa niekedy rozhodnete posunúť ďalej, dostanete čisté odovzdanie — dokumentáciu, zdrojový kód a nasadzovacie artefakty. Cieľom je páka pre vás, nie závislosť na nás. [Ozvite sa nám](/sk#contact) alebo napíšte na hello@euhub-ai.com."
+            }
+        ]
+    },
     "footer": {
         "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku.",
         "solutions": "Riešenia",
         "company": "Spoločnosť",
         "aiAct": "Pripravenosť na Akt EÚ o AI",
         "dataResidency": "Dátová rezidencia a GDPR",
+        "portability": "Žiadna závislosť a prenosnosť",
         "privacy": "Ochrana osobných údajov",
         "terms": "Podmienky používania",
         "cookies": "Používanie cookies",
