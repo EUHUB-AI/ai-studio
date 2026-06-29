@@ -116,7 +116,7 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
                     {features.map((feature: any, i: number) => (
                         <GlassCard key={i} className={`flex flex-col justify-between p-8 border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] hover:border-[#00E5FF]/40 ${i === 2 ? 'md:col-span-2' : 'col-span-1'} ${i === 3 ? 'md:col-span-1' : ''} relative overflow-hidden`}>
                             {/* Decorative Background Elements to fill empty space */}
-                            <div className="absolute -bottom-8 -right-8 opacity-5 text-black dark:text-white pointer-events-none">
+                            <div aria-hidden="true" className="absolute -bottom-8 -right-8 opacity-5 text-black dark:text-white pointer-events-none">
                                 {i === 0 && <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>}
                                 {i === 1 && <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>}
                                 {i === 2 && <svg width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>}
@@ -124,7 +124,7 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
                             </div>
 
                             <div className="relative z-10 w-12 h-12 rounded-lg bg-[var(--card-border)]/20 border border-[var(--card-border)] flex items-center justify-center mb-6 text-[var(--secondary)]">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     {i === 0 && <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>} {/* Activity */}
                                     {i === 1 && <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>} {/* Shield */}
                                     {i === 2 && <><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></>} {/* Bar Chart */}

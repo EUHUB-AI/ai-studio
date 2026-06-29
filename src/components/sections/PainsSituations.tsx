@@ -42,11 +42,12 @@ export const PainsSituations = ({ lang, dict }: { lang: string, dict: any }) => 
                     </div>
 
                     {/* Right Scrolling Column (Cards) */}
-                    <div className="lg:w-2/3 space-y-8">
+                    <div role="list" className="lg:w-2/3 space-y-8">
                         {situations.map((item: any, index: number) => (
                             <GlassCard
                                 key={index}
-                                className="group relative border-[var(--card-border)] bg-[rgba(21,23,34,0.4)] hover:bg-[rgba(21,23,34,0.8)] transition-all duration-500 hover:border-[var(--card-hover)] overflow-hidden"
+                                role="listitem"
+                                className="group relative border-[var(--card-border)] dark:bg-[rgba(21,23,34,0.4)] dark:hover:bg-[rgba(21,23,34,0.8)] transition-all duration-500 hover:border-[var(--card-hover)] overflow-hidden"
                             >
                                 {/* Card Hover Gradient */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--secondary)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

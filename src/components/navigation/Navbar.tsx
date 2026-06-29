@@ -19,6 +19,14 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
         setMounted(true);
     }, []);
 
+    // Close the mobile menu on Escape (WCAG 2.1.2 / keyboard operability)
+    useEffect(() => {
+        if (!isOpen) return;
+        const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setIsOpen(false); };
+        document.addEventListener('keydown', onKey);
+        return () => document.removeEventListener('keydown', onKey);
+    }, [isOpen]);
+
     // Helper to switch language in the current URL path
     const switchLang = (newLocale: string) => {
         if (!pathname) return `/${newLocale}`;
@@ -28,13 +36,14 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
     };
 
     return (
+        <header>
         <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-[var(--card-border)] backdrop-blur-md">
             <div className="container mx-auto px-4 h-[var(--header-height)] flex items-center justify-between">
                 {/* Logo */}
                 <Link href={`/${lang}`} className="relative w-[120px] h-[48px] flex-shrink-0 block transition-transform hover:scale-105">
                     <Image
-                        src={mounted ? (resolvedTheme === 'dark' ? '/logo_dark.png' : '/logo_light.png') : '/logo_light.png'}
-                        alt="EUHub-AI"
+                        src={mounted ? (resolvedTheme === 'dark' ? '/logo_dark.webp' : '/logo_light.webp') : '/logo_light.webp'}
+                        alt="EuHub AI"
                         fill
                         sizes="120px"
                         style={{ objectFit: 'contain' }}
@@ -71,7 +80,7 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden p-2 text-[var(--foreground)]" onClick={toggleMenu} aria-label="Toggle Menu">
+                <button className="md:hidden p-2 text-[var(--foreground)]" onClick={toggleMenu} aria-label="Toggle menu" aria-expanded={isOpen} aria-controls="mobile-menu">
                     <div className={`w-6 h-0.5 bg-current mb-1.5 transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
                     <div className={`w-6 h-0.5 bg-current mb-1.5 transition-all ${isOpen ? 'opacity-0' : ''}`}></div>
                     <div className={`w-6 h-0.5 bg-current transition-all ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
@@ -80,7 +89,7 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
 
             {/* Mobile Menu Dropdown */}
             {isOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full glass border-b border-[var(--card-border)] p-6 shadow-2xl">
+                <div id="mobile-menu" className="md:hidden absolute top-full left-0 w-full glass border-b border-[var(--card-border)] p-6 shadow-2xl">
                     <div className="flex flex-col gap-6 text-center">
                         <Link href={`/${lang}#diagnostic`} onClick={toggleMenu} className="text-lg font-medium text-[var(--muted-foreground)] hover:text-[var(--primary)]">
                             {dict.nav?.diagnostic || 'The Diagnostic'}
@@ -104,5 +113,6 @@ export const Navbar = ({ lang, dict }: { lang: string, dict: any }) => {
                 </div>
             )}
         </nav>
+        </header>
     );
 };

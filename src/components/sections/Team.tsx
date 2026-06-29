@@ -28,10 +28,11 @@ export const Team = ({ lang, dict }: { lang: string, dict: any }) => {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
+                <div role="list" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
                     {members.map((member: any, index: number) => (
                         <div
                             key={index}
+                            role="listitem"
                             className="group rounded-3xl bg-white dark:bg-[var(--card-bg)] border border-[var(--card-border)] p-4 shadow-[0_12px_32px_-14px_rgba(0,0,0,0.15)] dark:shadow-none transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_44px_-18px_rgba(0,0,0,0.22)]"
                         >
                             {/* Photo */}
@@ -60,6 +61,7 @@ export const Team = ({ lang, dict }: { lang: string, dict: any }) => {
                                         href={member.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label={`${dict.team?.connect || 'Connect'} — ${member.name} (opens in a new tab)`}
                                         className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-amber-600 hover:text-amber-700 dark:text-amber-500 transition-colors"
                                     >
                                         {dict.team?.connect || 'Connect'}

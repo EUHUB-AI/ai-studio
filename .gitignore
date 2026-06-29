@@ -43,3 +43,6 @@ next-env.d.ts
 
 # Instruction files
 instructions/
+
+# Claude Code local dir (worktrees, scratch)
+.claude/

@@ -52,15 +52,15 @@
   --foreground: #0F172A;
   /* Stark Charcoal Text */
 
-  --primary: #00ADB5;
-  /* Slightly darker cyan for better contrast on white */
+  --primary: #006B70;
+  /* Dark teal — 6.0:1 on the slate-50 background (WCAG AA for text + UI) */
   --primary-glow: rgba(0, 173, 181, 0.2);
 
-  --secondary: #6366F1;
-  /* Indigo for light mode */
+  --secondary: #4F46E5;
+  /* Indigo 600 — 6.0:1 on the slate-50 background (WCAG AA) */
   --secondary-glow: rgba(99, 102, 241, 0.2);
 
-  --accent: #00ADB5;
+  --accent: #006B70;
 
   --card-bg: #FFFFFF;
   --card-border: rgba(13, 14, 21, 0.1);
@@ -131,6 +131,33 @@ a {
   text-decoration: none;
 }
 
+/* Visible keyboard focus indicator for all interactive elements (WCAG 2.4.7).
+   UA defaults were the only indicator and were invisible on dark surfaces. */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip-to-content link (WCAG 2.4.1): hidden until focused, then visible. */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background: var(--primary);
+  color: #0D0E15;
+  font-weight: 600;
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 /* Utilities */
 .container {
   width: 100%;
@@ -176,6 +203,13 @@ a {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 229, 255, 0.4);
+}
+
+/* In light mode --primary is a dark teal, so the CTA button needs light text
+   (dark mode keeps dark text on bright cyan). Keeps the primary CTA AA-compliant. */
+.light .btn-primary,
+[data-theme='light'] .btn-primary {
+  color: #ffffff;
 }
 
 .btn-ghost {

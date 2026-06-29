@@ -227,6 +227,12 @@
         "sector": "Manual, repetitive workflows",
         "pain": "Skilled people stuck on manual screening and data entry.",
         "outcome": "Agentic workflow automation with bias controls and auditing — throughput up, people focused on judgement."
+      },
+      {
+        "title": "Non-EU companies entering the EU",
+        "sector": "US · UK · APAC firms · EU market entry",
+        "pain": "Your AI product falls under the EU AI Act and GDPR the moment it reaches EU users.",
+        "outcome": "EU-native compliance engineering — Article 50 transparency, GDPR/SCC data flows and audit trails — so you launch in the EU without legal surprises."
       }
     ]
   },
@@ -280,6 +286,15 @@
         "content": "If you ever move on, you get a clean handover — documentation, source and deployment artefacts. The goal is leverage for you, not dependency on us. [Talk to us](/en#contact) or email hello@euhub-ai.com."
       }
     ]
+  },
+  "caseStudies": {
+    "tag": "Proof",
+    "title": "Outcomes, not slideware",
+    "subtitle": "Selected engagements and the measurable results they delivered. Full details shared under NDA on request.",
+    "challengeLabel": "Challenge",
+    "approachLabel": "What we built",
+    "resultLabel": "Result",
+    "items": []
   },
   "footer": {
     "tagline": "Bridging the gap between Western capital and Central European engineering talent.",

@@ -20,13 +20,21 @@ export default function Header({ dict, lang }: { dict: any, lang: string }) {
         setMounted(true);
     }, []);
 
+    // Close the mobile menu on Escape (keyboard operability)
+    useEffect(() => {
+        if (!isMenuOpen) return;
+        const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setIsMenuOpen(false); };
+        document.addEventListener('keydown', onKey);
+        return () => document.removeEventListener('keydown', onKey);
+    }, [isMenuOpen]);
+
     return (
         <header className={`${styles.header} glass`}>
             <div className={`container ${styles.container}`}>
                 <Link href={`/${lang}`} className={styles.logo}>
                     <Image
-                        src={mounted ? (resolvedTheme === 'dark' ? '/logo_dark.png' : '/logo_light.png') : '/logo_light.png'}
-                        alt="EU HUB AI"
+                        src={mounted ? (resolvedTheme === 'dark' ? '/logo_dark.webp' : '/logo_light.webp') : '/logo_light.webp'}
+                        alt="EuHub AI"
                         fill
                         sizes="140px"
                         style={{ objectFit: 'contain' }}
@@ -38,15 +46,17 @@ export default function Header({ dict, lang }: { dict: any, lang: string }) {
                     className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
+                    aria-expanded={isMenuOpen}
+                    aria-controls="mobile-nav"
                 >
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
                 </button>
 
-                <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
-                    <Link href={`/${lang}#services`} className={styles.link} onClick={() => setIsMenuOpen(false)}>Services</Link>
-                    <Link href={`/${lang}#about`} className={styles.link} onClick={() => setIsMenuOpen(false)}>About</Link>
+                <nav id="mobile-nav" className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
+                    <Link href={`/${lang}#capabilities`} className={styles.link} onClick={() => setIsMenuOpen(false)}>Services</Link>
+                    <Link href={`/${lang}#team`} className={styles.link} onClick={() => setIsMenuOpen(false)}>About</Link>
                     <Link href={`/${lang}#contact`} className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }} onClick={() => setIsMenuOpen(false)}>
                         Contact
                     </Link>

@@ -8,19 +8,28 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
+  preload: true, // heading font carries the LCP <h1>
 });
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
+  preload: true,
 });
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
   display: "swap",
+  preload: false, // mono is used sparingly, off the critical path
 });
+
+const SKIP_LABEL: Record<string, string> = {
+  en: "Skip to content",
+  sk: "Preskočiť na obsah",
+  de: "Zum Inhalt springen",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://euhub-ai.com"),
@@ -61,6 +70,9 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning className="dark">
       <head>
+        {/* Speed up the GTM connection (loaded afterInteractive) */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         {/* Google Consent Mode v2 — defaults must run before GTM */}
         <Script id="consent-default" strategy="beforeInteractive">
           {`
@@ -91,9 +103,12 @@ export default async function RootLayout({
         </Script>
       </head>
       <body className={`${plusJakartaSans.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased`}>
+        {/* Skip-to-content link — first focusable element (WCAG 2.4.1) */}
+        <a href="#main" className="skip-link">{SKIP_LABEL[locale] || SKIP_LABEL.en}</a>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
+            title="Google Tag Manager"
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"

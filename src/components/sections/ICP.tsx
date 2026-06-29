@@ -21,10 +21,11 @@ export const ICP = ({ lang, dict }: { lang: string, dict: any }) => {
                     )}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div role="list" className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {items.map((item: any, i: number) => (
                         <GlassCard
                             key={i}
+                            role="listitem"
                             className="p-8 border border-[var(--card-border)] bg-[var(--card-bg)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--primary)]/40"
                         >
                             <h3 className="text-xl font-bold text-[var(--foreground)]">{item.title}</h3>

@@ -62,7 +62,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                             <div className="space-y-6 pt-6">
                                 <div className="flex items-center gap-4 group">
                                     <div className="w-12 h-12 rounded-full border border-[var(--card-border)] bg-[rgba(21,23,34,0.6)] flex items-center justify-center text-[var(--primary)] group-hover:bg-[var(--primary)]/10 group-hover:border-[var(--primary)]/30 transition-all">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                     </div>
                                     <div>
                                         <div className="text-[10px] font-mono text-[var(--muted-foreground)] uppercase tracking-widest mb-1">{dict.contactSection?.directLine || 'Direct Line'}</div>
@@ -75,9 +75,10 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                         {/* Right Side: Conversion Form */}
                         <div className="relative perspective-1000">
                             {state.succeeded ? (
+                                <div role="status" aria-live="polite">
                                 <GlassCard className="border-[var(--primary)]/30 bg-[rgba(21,23,34,0.8)] backdrop-blur-xl p-12 text-center transform transition-all duration-700">
                                     <div className="w-20 h-20 bg-[var(--primary)]/20 text-[var(--primary)] rounded-full flex items-center justify-center mx-auto mb-6">
-                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
                                     <h3 className="text-3xl font-bold mb-4">
                                         {dict.contactSection?.successTitle || 'Audit Initialized'}
@@ -86,6 +87,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                         {dict.contactSection?.successBody || 'Our engineers are analyzing your request. We will contact you within 24 hours.'}
                                     </p>
                                 </GlassCard>
+                                </div>
                             ) : (
                                 <GlassCard className="border-[var(--card-border)] bg-[rgba(21,23,34,0.8)] backdrop-blur-xl p-8 relative overflow-hidden group">
                                     <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--primary)] rounded-full blur-[80px] opacity-10 pointer-events-none group-hover:opacity-20 transition-opacity duration-500"></div>
@@ -104,10 +106,11 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                                 type="text"
                                                 name="name"
                                                 required
-                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-400 dark:placeholder-[var(--muted-foreground)]/50 focus:outline-none transition-all"
+                                                aria-describedby="name-error"
+                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-500 dark:placeholder-[var(--muted-foreground)] focus:outline-none transition-all"
                                                 placeholder={dict.contactSection?.namePlaceholder || 'Your identifier'}
                                             />
-                                            <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
+                                            <ValidationError id="name-error" prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
                                         </div>
 
                                         <div className="space-y-1">
@@ -119,10 +122,11 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                                 type="email"
                                                 name="email"
                                                 required
-                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-400 dark:placeholder-[var(--muted-foreground)]/50 focus:outline-none transition-all"
+                                                aria-describedby="email-error"
+                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-500 dark:placeholder-[var(--muted-foreground)] focus:outline-none transition-all"
                                                 placeholder="sysadmin@enterprise.com"
                                             />
-                                            <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm mt-1" />
+                                            <ValidationError id="email-error" prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm mt-1" />
                                         </div>
 
                                         <div className="space-y-1">
@@ -133,10 +137,11 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                                 id="message"
                                                 name="message"
                                                 rows={4}
-                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-400 dark:placeholder-[var(--muted-foreground)]/50 focus:outline-none transition-all resize-none"
+                                                aria-describedby="message-error"
+                                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-[rgba(0,0,0,0.3)] border border-slate-200 dark:border-[var(--card-border)] focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] text-[var(--foreground)] placeholder-slate-500 dark:placeholder-[var(--muted-foreground)] focus:outline-none transition-all resize-none"
                                                 placeholder={dict.contactSection?.messagePlaceholder || 'Which systems do you need to integrate?'}
                                             ></textarea>
-                                            <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
+                                            <ValidationError id="message-error" prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
                                         </div>
 
                                         <button
@@ -146,7 +151,7 @@ export const Contact = ({ lang, dict }: { lang: string, dict: any }) => {
                                         >
                                             <span className="relative z-10 flex items-center justify-center gap-2">
                                                 {!state.submitting && (
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                                                 )}
                                                 {state.submitting
                                                     ? (dict.contactSection?.submitting || 'Initializing...')

@@ -7,6 +7,7 @@ import { BespokeEngineering } from '../../components/sections/BespokeEngineering
 import { FeatureGrid } from '../../components/sections/FeatureGrid';
 import { ICP } from '../../components/sections/ICP';
 import { Process } from '../../components/sections/Process';
+import { CaseStudies } from '../../components/sections/CaseStudies';
 import { Team } from '../../components/sections/Team';
 import { Contact } from '../../components/sections/Contact';
 import { Footer } from '../../components/layout/Footer';
@@ -18,7 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const dict = await getDictionary(lang as 'en' | 'sk' | 'de');
 
   return {
-    title: dict.meta?.title,
+    // absolute → skip the "%s | EuHub AI" template (meta.title already carries the brand)
+    title: { absolute: dict.meta?.title || 'EuHub AI | Strategic AI Implementation' },
     description: dict.meta?.description,
     alternates: {
       canonical: `${BASE_URL}/${lang}`,
@@ -52,7 +54,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         name: 'EuHub AI',
         legalName: 'Engineers-incubator s.r.o.',
         url: BASE_URL,
-        logo: `${BASE_URL}/logo_dark.png`,
+        logo: `${BASE_URL}/logo_dark.webp`,
         email: 'hello@euhub-ai.com',
         address: {
           '@type': 'PostalAddress',
@@ -74,18 +76,21 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   };
 
   return (
-    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] font-sans selection:bg-[var(--primary)] selection:text-[var(--background)]">
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar lang={lang} dict={dict} />
-      <Hero lang={lang} dict={dict} />
-      <PainsSituations lang={lang} dict={dict} />
-      <BespokeEngineering lang={lang} dict={dict} />
-      <FeatureGrid lang={lang} dict={dict} />
-      <ICP lang={lang} dict={dict} />
-      <Process lang={lang} dict={dict} />
-      <Team lang={lang} dict={dict} />
-      <Contact lang={lang} dict={dict} />
+      <main id="main" className="min-h-screen bg-[var(--background)] text-[var(--foreground)] font-sans selection:bg-[var(--primary)] selection:text-[var(--background)]">
+        <Hero lang={lang} dict={dict} />
+        <PainsSituations lang={lang} dict={dict} />
+        <BespokeEngineering lang={lang} dict={dict} />
+        <FeatureGrid lang={lang} dict={dict} />
+        <ICP lang={lang} dict={dict} />
+        <Process lang={lang} dict={dict} />
+        <CaseStudies lang={lang} dict={dict} />
+        <Team lang={lang} dict={dict} />
+        <Contact lang={lang} dict={dict} />
+      </main>
       <Footer lang={lang} dict={dict} />
-    </main>
+    </>
   );
 }
