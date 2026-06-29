@@ -238,7 +238,7 @@
         "tiers": [
             {
                 "name": "Audit",
-                "price": "od 1 500 €",
+                "price": "Pevná cena",
                 "timeline": "~2 týždne",
                 "summary": "Zistite presne, kde sa AI vyplatí — ešte pred investíciou.",
                 "deliverables": [
@@ -250,7 +250,7 @@
             },
             {
                 "name": "Pilot",
-                "price": "od 10 000 €",
+                "price": "Pevný rozsah",
                 "timeline": "~4 týždne",
                 "summary": "Funkčné MVP, overené voči reálnym kritériám úspechu.",
                 "deliverables": [

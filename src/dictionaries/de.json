@@ -238,7 +238,7 @@
     "tiers": [
       {
         "name": "Audit",
-        "price": "ab 1.500 €",
+        "price": "Festpreis",
         "timeline": "~2 Wochen",
         "summary": "Wissen Sie genau, wo sich KI auszahlt – bevor Sie investieren.",
         "deliverables": [
@@ -250,7 +250,7 @@
       },
       {
         "name": "Pilot",
-        "price": "ab 10.000 €",
+        "price": "Fester Umfang",
         "timeline": "~4 Wochen",
         "summary": "Ein funktionierendes MVP, erprobt anhand echter Erfolgskriterien.",
         "deliverables": [
