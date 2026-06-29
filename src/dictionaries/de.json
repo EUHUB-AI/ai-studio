@@ -296,6 +296,15 @@
       }
     ]
   },
+  "caseStudies": {
+    "tag": "Nachweis",
+    "title": "Ergebnisse, keine Foliensätze",
+    "subtitle": "Ausgewählte Projekte und die messbaren Ergebnisse, die sie geliefert haben. Vollständige Details auf Anfrage unter NDA.",
+    "challengeLabel": "Herausforderung",
+    "approachLabel": "Was wir gebaut haben",
+    "resultLabel": "Ergebnis",
+    "items": []
+  },
   "footer": {
     "tagline": "Die Brücke zwischen westlichem Kapital und mitteleuropäischem Engineering-Talent.",
     "solutions": "Lösungen",

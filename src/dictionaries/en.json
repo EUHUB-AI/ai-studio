@@ -281,6 +281,15 @@
       }
     ]
   },
+  "caseStudies": {
+    "tag": "Proof",
+    "title": "Outcomes, not slideware",
+    "subtitle": "Selected engagements and the measurable results they delivered. Full details shared under NDA on request.",
+    "challengeLabel": "Challenge",
+    "approachLabel": "What we built",
+    "resultLabel": "Result",
+    "items": []
+  },
   "footer": {
     "tagline": "Bridging the gap between Western capital and Central European engineering talent.",
     "solutions": "Solutions",

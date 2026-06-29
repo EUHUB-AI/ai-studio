@@ -21,10 +21,11 @@ export const Process = ({ lang, dict }: { lang: string, dict: any }) => {
                     )}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div role="list" className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {tiers.map((tier: any, i: number) => (
                         <GlassCard
                             key={i}
+                            role="listitem"
                             className="p-8 flex flex-col border border-[var(--card-border)] bg-[var(--card-bg)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--primary)]/40"
                         >
                             <div className="flex items-baseline justify-between gap-3">

@@ -86,7 +86,7 @@ export const LegalPage = ({ title, lastUpdated, sections, lang, backHome }: Lega
   };
 
   return (
-    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] pt-[calc(var(--header-height)+2rem)] pb-16">
+    <main id="main" className="min-h-screen bg-[var(--background)] text-[var(--foreground)] pt-[calc(var(--header-height)+2rem)] pb-16">
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Header */}
         <div className="mb-12">

@@ -63,8 +63,8 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                     </div>
                 </div>
 
-                {/* Right Side Visual - High Fidelity Diagnostic Interface */}
-                <div className="lg:col-span-5 relative hidden lg:block perspective-1000">
+                {/* Right Side Visual - High Fidelity Diagnostic Interface (decorative) */}
+                <div aria-hidden="true" className="lg:col-span-5 relative hidden lg:block perspective-1000">
                     <GlassCard className="transform rotate-y-[-5deg] rotate-x-[5deg] transition-transform duration-700 hover:rotate-y-0 hover:rotate-x-0 relative z-10 border-[#2A2D3E] bg-[#0D0E15]/90 shadow-2xl backdrop-blur-xl text-slate-300">
                         <div className="flex items-center justify-between mb-6 border-b border-[#2A2D3E] pb-4">
                             <div className="flex gap-2">
@@ -134,7 +134,7 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                     {/* Repeated items for smooth scrolling */}
                     {[...Array(2)].map((_, j) => (
                         <div key={j} className="flex space-x-12 items-center min-w-max">
-                            <span className="font-mono text-slate-400 text-sm font-bold opacity-80">{dict.hero?.trustBar || 'PARTNERS & CLIENTS'}</span>
+                            <span className="font-mono text-slate-600 dark:text-slate-400 text-sm font-bold">{dict.hero?.trustBar || 'PARTNERS & CLIENTS'}</span>
                             <span className="text-[var(--card-border)]">|</span>
                             {/* Partner Logos */}
                             <div className="flex items-center space-x-12 transition-all duration-500 grayscale opacity-40 hover:grayscale-0 hover:opacity-100">
@@ -146,7 +146,7 @@ export const Hero = ({ lang, dict }: { lang: string, dict: any }) => {
                                 <img src="/partners/medicallogistic.png" alt="Medical Logistic" className="h-8 w-auto object-contain dark:invert" />
                                 <img src="/partners/angemy.png" alt="ANGEMY" className="h-8 w-auto object-contain dark:invert" />
                             </div>
-                            <span className="font-mono text-slate-400 text-sm font-bold opacity-80 border border-[var(--card-border)] px-3 py-1 rounded-full">{dict.hero?.uptimeBadge || '99.9% UPTIME'}</span>
+                            <span className="font-mono text-slate-600 dark:text-slate-400 text-sm font-bold border border-[var(--card-border)] px-3 py-1 rounded-full">{dict.hero?.uptimeBadge || '99.9% UPTIME'}</span>
                             <span className="text-[var(--card-border)]">|</span>
                         </div>
                     ))}

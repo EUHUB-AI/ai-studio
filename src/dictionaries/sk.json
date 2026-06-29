@@ -296,6 +296,15 @@
             }
         ]
     },
+    "caseStudies": {
+        "tag": "Dôkazy",
+        "title": "Výsledky, nie prezentácie",
+        "subtitle": "Vybrané projekty a merateľné výsledky, ktoré priniesli. Úplné detaily poskytneme na požiadanie pod NDA.",
+        "challengeLabel": "Výzva",
+        "approachLabel": "Čo sme postavili",
+        "resultLabel": "Výsledok",
+        "items": []
+    },
     "footer": {
         "tagline": "Váš partner pre digitálnu transformáciu a automatizáciu na Slovensku.",
         "solutions": "Riešenia",

@@ -61,8 +61,8 @@ export const BespokeEngineering = ({ lang, dict }: { lang: string, dict: any }) 
                         ))}
                     </div>
 
-                    {/* Center Dashboard Mockup */}
-                    <div className="lg:w-2/4 w-full relative perspective-1000 transition-all duration-500 opacity-100 group-hover/steps:[&:not(:hover)]:opacity-40 z-20 hover:z-40">
+                    {/* Center Dashboard Mockup (decorative — simulated data, hidden from assistive tech) */}
+                    <div aria-hidden="true" className="lg:w-2/4 w-full relative perspective-1000 transition-all duration-500 opacity-100 group-hover/steps:[&:not(:hover)]:opacity-40 z-20 hover:z-40">
                         <GlassCard className="border-[var(--card-border)] bg-[rgba(13,14,21,0.8)] p-1 pb-0 overflow-hidden shadow-[0_0_50px_rgba(0,229,255,0.1)] rounded-xl relative">
                             {/* Browser/OS Header */}
                             <div className="bg-[rgba(255,255,255,0.03)] p-3 flex items-center gap-2 border-b border-[var(--card-border)]">

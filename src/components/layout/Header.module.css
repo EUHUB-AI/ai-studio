@@ -33,7 +33,7 @@
 }
 
 .link {
-    color: #64748b;
+    color: var(--muted-foreground);
     font-weight: 500;
     transition: color 0.2s;
 }
@@ -120,14 +120,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: right 0.3s ease-in-out;
+        transition: right 0.3s ease-in-out, visibility 0.3s ease-in-out;
         gap: 2rem;
         padding: 2rem;
         z-index: 9;
+        /* Hidden state also removes the off-screen links from the tab order (WCAG 2.4.3) */
+        visibility: hidden;
     }
 
     .navOpen {
         right: 0;
+        visibility: visible;
     }
 
     .link {

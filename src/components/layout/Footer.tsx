@@ -24,12 +24,11 @@ export const Footer = ({ lang, dict }: { lang: string, dict: any }) => {
                     <div className="col-span-1">
                         <Link href={`/${lang}`} className="relative w-[120px] h-[48px] flex-shrink-0 block mb-6 transition-transform hover:scale-105">
                             <Image
-                                src={mounted ? (resolvedTheme === 'dark' ? '/logo_dark.png' : '/logo_light.png') : '/logo_light.png'}
-                                alt="EUHub-AI"
+                                src={mounted ? (resolvedTheme === 'dark' ? '/logo_dark.webp' : '/logo_light.webp') : '/logo_light.webp'}
+                                alt="EuHub AI"
                                 fill
                                 sizes="120px"
                                 style={{ objectFit: 'contain' }}
-                                priority
                             />
                         </Link>
                         <p className="text-[var(--muted-foreground)] text-sm leading-relaxed max-w-sm">
