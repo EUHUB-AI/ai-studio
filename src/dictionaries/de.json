@@ -227,6 +227,12 @@
         "sector": "Manuelle, repetitive Workflows",
         "pain": "Qualifizierte Mitarbeiter stecken in manuellem Screening und Dateneingabe fest.",
         "outcome": "Agentische Workflow-Automatisierung mit Bias-Kontrollen und Auditierung – höherer Durchsatz, während sich Ihre Mitarbeiter auf die Beurteilung konzentrieren."
+      },
+      {
+        "title": "Nicht-EU-Unternehmen mit EU-Markteintritt",
+        "sector": "US- · UK- · APAC-Firmen · EU-Markteintritt",
+        "pain": "Ihr KI-Produkt fällt unter das EU-KI-Gesetz und die DSGVO, sobald es EU-Nutzer erreicht.",
+        "outcome": "Von Grund auf EU-konformes Compliance-Engineering – Transparenz nach Artikel 50, DSGVO-/SCC-Datenflüsse und Prüfpfade – damit Sie ohne rechtliche Überraschungen in der EU starten."
       }
     ]
   },

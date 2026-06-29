@@ -227,6 +227,12 @@
                 "sector": "Manuálne, opakujúce sa procesy",
                 "pain": "Kvalifikovaní ľudia uviaznutí pri manuálnom triedení a zadávaní dát.",
                 "outcome": "Agentická automatizácia procesov s kontrolou zaujatosti a auditom — vyššia priepustnosť, ľudia sústredení na úsudok."
+            },
+            {
+                "title": "Spoločnosti mimo EÚ vstupujúce na trh EÚ",
+                "sector": "Firmy z USA · UK · APAC · vstup na trh EÚ",
+                "pain": "Váš AI produkt spadá pod Akt EÚ o AI a GDPR vo chvíli, keď sa dostane k používateľom v EÚ.",
+                "outcome": "Súlad navrhnutý a vybudovaný priamo pre EÚ — transparentnosť podľa článku 50, dátové toky podľa GDPR/SCC a auditné záznamy — aby ste na trh EÚ vstúpili bez právnych prekvapení."
             }
         ]
     },

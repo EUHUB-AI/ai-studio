@@ -227,6 +227,12 @@
         "sector": "Manual, repetitive workflows",
         "pain": "Skilled people stuck on manual screening and data entry.",
         "outcome": "Agentic workflow automation with bias controls and auditing — throughput up, people focused on judgement."
+      },
+      {
+        "title": "Non-EU companies entering the EU",
+        "sector": "US · UK · APAC firms · EU market entry",
+        "pain": "Your AI product falls under the EU AI Act and GDPR the moment it reaches EU users.",
+        "outcome": "EU-native compliance engineering — Article 50 transparency, GDPR/SCC data flows and audit trails — so you launch in the EU without legal surprises."
       }
     ]
   },
