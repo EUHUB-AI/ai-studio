@@ -5,6 +5,8 @@ import { Hero } from '../../components/sections/Hero';
 import { PainsSituations } from '../../components/sections/PainsSituations';
 import { BespokeEngineering } from '../../components/sections/BespokeEngineering';
 import { FeatureGrid } from '../../components/sections/FeatureGrid';
+import { ICP } from '../../components/sections/ICP';
+import { Process } from '../../components/sections/Process';
 import { Team } from '../../components/sections/Team';
 import { Contact } from '../../components/sections/Contact';
 import { Footer } from '../../components/layout/Footer';
@@ -79,6 +81,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <PainsSituations lang={lang} dict={dict} />
       <BespokeEngineering lang={lang} dict={dict} />
       <FeatureGrid lang={lang} dict={dict} />
+      <ICP lang={lang} dict={dict} />
+      <Process lang={lang} dict={dict} />
       <Team lang={lang} dict={dict} />
       <Contact lang={lang} dict={dict} />
       <Footer lang={lang} dict={dict} />

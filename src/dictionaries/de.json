@@ -199,12 +199,110 @@
     "metric3": "Autonome Verfügbarkeit",
     "button": "Audit starten"
   },
+  "icp": {
+    "tag": "Für wen wir da sind",
+    "title": "Entwickelt für Teams mit realen Rahmenbedingungen",
+    "subtitle": "Wir arbeiten mit Organisationen, in denen KI Compliance, Altsysteme und Beschaffung bestehen muss – nicht nur eine Demo.",
+    "items": [
+      {
+        "title": "Reguliertes Mittelstandssegment",
+        "sector": "Finanzwesen · Versicherung · Gesundheitsnah",
+        "pain": "Das KI-Potenzial ist real, aber Compliance- und Auditrisiken blockieren die Einführung.",
+        "outcome": "Automatisierung, die Ihr Compliance-Team absegnet – mit EU-KI-Gesetz- und DSGVO-Kontrollen, Prüfpfaden und menschlicher Aufsicht von Grund auf eingebaut."
+      },
+      {
+        "title": "Hersteller & Logistik",
+        "sector": "Altsystem-ERP/CRM · Fragmentierte Daten",
+        "pain": "Kritisches Wissen ist in Silos und Altsystemen gefangen.",
+        "outcome": "RAG und Agenten über Ihre bestehenden ERP-/CRM-Systeme via konforme API-Brücken – sofortiger Abruf, weniger manuelle Eingabe."
+      },
+      {
+        "title": "SaaS- & Dienstleistungsunternehmen",
+        "sector": "Hohes Supportaufkommen",
+        "pain": "First-Level-Support kann in Stoßzeiten nicht ohne zusätzliches Personal skalieren.",
+        "outcome": "Autonome Level-1-Agenten, trainiert auf Ihrem Produkt und Ihrem Kommunikationsstil – der Großteil der Tier-1-Anfragen rund um die Uhr gelöst."
+      },
+      {
+        "title": "Operations- & Back-Office-Teams",
+        "sector": "Manuelle, repetitive Workflows",
+        "pain": "Qualifizierte Mitarbeiter stecken in manuellem Screening und Dateneingabe fest.",
+        "outcome": "Agentische Workflow-Automatisierung mit Bias-Kontrollen und Auditierung – höherer Durchsatz, während sich Ihre Mitarbeiter auf die Beurteilung konzentrieren."
+      }
+    ]
+  },
+  "process": {
+    "tag": "Wie wir arbeiten",
+    "title": "Audit → Pilot → Scale",
+    "subtitle": "Ein produktisierter Weg mit klaren Liefergegenständen und Ausstiegskriterien bei jedem Schritt – damit die Beschaffung genau weiß, was sie einkauft.",
+    "deliverablesLabel": "Liefergegenstände",
+    "tiers": [
+      {
+        "name": "Audit",
+        "price": "ab 1.500 €",
+        "timeline": "~2 Wochen",
+        "summary": "Wissen Sie genau, wo sich KI auszahlt – bevor Sie investieren.",
+        "deliverables": [
+          "Risikoregister & Chancenkarte",
+          "ROI-Modell",
+          "Referenzarchitekturplan",
+          "EU-KI-Gesetz- & DSGVO-Compliance-Prüfung"
+        ]
+      },
+      {
+        "name": "Pilot",
+        "price": "ab 10.000 €",
+        "timeline": "~4 Wochen",
+        "summary": "Ein funktionierendes MVP, erprobt anhand echter Erfolgskriterien.",
+        "deliverables": [
+          "Funktionaler MVP-Agent / -Workflow",
+          "Erfolgskennzahlen & Bewertungsset",
+          "Rollback-Plan",
+          "Go-/No-Go-Entscheidungspaket"
+        ]
+      },
+      {
+        "name": "Scale",
+        "price": "Individueller Retainer",
+        "timeline": "Laufend",
+        "summary": "Produktivbereitstellung, auf die Sie sich verlassen können.",
+        "deliverables": [
+          "Vollständige Integration & Rollout",
+          "SLA / SLOs & Monitoring",
+          "Incident Response",
+          "Sicherheitsüberprüfung"
+        ]
+      }
+    ]
+  },
+  "portability": {
+    "title": "Es gehört Ihnen. Keine Anbieterabhängigkeit.",
+    "lastUpdated": "Ihr Wettbewerbsvorteil sollte nicht gemietet sein.",
+    "sections": [
+      {
+        "heading": "Modellunabhängig per Design",
+        "content": "Wir wählen das passende Modell für die Aufgabe – kommerziell (OpenAI, Anthropic), mit offenen Gewichten oder vollständig selbst gehostet auf Ihrer eigenen Infrastruktur. Sie sind niemals an den Fahrplan oder die Preiserhöhungen eines einzigen Anbieters gebunden, und Modelle können ausgetauscht werden, während sich das Feld weiterentwickelt."
+      },
+      {
+        "heading": "Ihre Daten und Konfiguration bleiben Ihre",
+        "content": "Ihre Daten, Prompts und Konfigurationen gehören Ihnen. Das Eigentum an jeglichem maßgeschneidert entwickelten geistigen Eigentum (Code, feinabgestimmte Modelle) wird ausdrücklich in Ihrem Vertrag festgelegt – keine Mehrdeutigkeit, keine Geiselhaft Ihrer Daten."
+      },
+      {
+        "heading": "Eine Portabilitäts-Checkliste, kein Versprechen",
+        "content": "Jede Lösung ist so konzipiert, dass sie mit Ihnen geht:\n\n• Standardisierte, offene Datenformate – keine proprietären Speicher.\n• Versionskontrollierte Prompts, Konfigurationen und Infrastructure-as-Code.\n• Containerisierte Bereitstellung, die Sie in jeder Umgebung betreiben können.\n• Ein Evaluierungs-Framework, damit Sie Modelle mit Zuversicht wechseln können."
+      },
+      {
+        "heading": "Ausstiegsfreundlich",
+        "content": "Falls Sie sich jemals umorientieren, erhalten Sie eine saubere Übergabe – Dokumentation, Quellcode und Bereitstellungsartefakte. Das Ziel ist Hebelwirkung für Sie, nicht Abhängigkeit von uns. [Sprechen Sie mit uns](/de#contact) oder schreiben Sie an hello@euhub-ai.com."
+      }
+    ]
+  },
   "footer": {
     "tagline": "Die Brücke zwischen westlichem Kapital und mitteleuropäischem Engineering-Talent.",
     "solutions": "Lösungen",
     "company": "Unternehmen",
     "aiAct": "EU-KI-Gesetz-Bereitschaft",
     "dataResidency": "Datenresidenz & DSGVO",
+    "portability": "Keine Anbieterabhängigkeit & Portabilität",
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "cookies": "Cookie-Richtlinie",

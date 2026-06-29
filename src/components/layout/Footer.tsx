@@ -55,6 +55,7 @@ export const Footer = ({ lang, dict }: { lang: string, dict: any }) => {
                             <li><Link href={`/${lang}#contact`} className="hover:text-[var(--primary)] transition-colors">{dict.nav?.contact || 'Initiate Consultation'}</Link></li>
                             <li><Link href={`/${lang}/ai-act`} className="hover:text-[var(--primary)] transition-colors">{dict.footer?.aiAct || 'EU AI Act Readiness'}</Link></li>
                             <li><Link href={`/${lang}/data-residency`} className="hover:text-[var(--primary)] transition-colors">{dict.footer?.dataResidency || 'Data Residency & GDPR'}</Link></li>
+                            <li><Link href={`/${lang}/portability`} className="hover:text-[var(--primary)] transition-colors">{dict.footer?.portability || 'No Lock-in & Portability'}</Link></li>
                         </ul>
                     </div>
 

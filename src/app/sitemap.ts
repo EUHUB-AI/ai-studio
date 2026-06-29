@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 const BASE_URL = 'https://euhub-ai.com'
 const LOCALES = ['en', 'sk', 'de'] as const
-const ROUTES = ['', '/ai-act', '/data-residency', '/privacy', '/terms', '/cookie'] as const
+const ROUTES = ['', '/ai-act', '/data-residency', '/portability', '/privacy', '/terms', '/cookie'] as const
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
