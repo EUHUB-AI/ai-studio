@@ -3,6 +3,7 @@ import { getDictionary } from '../../../get-dictionary';
 import Header from '../../../components/layout/Header';
 import { Footer } from '../../../components/layout/Footer';
 import { LegalPage } from '../../../components/legal/LegalPage';
+import { breadcrumbLd, faqLd } from '../../../lib/seo';
 
 const BASE_URL = 'https://euhub-ai.com';
 
@@ -43,15 +44,22 @@ export default async function AiActPage({ params }: { params: Promise<{ lang: st
   const { lang } = await params;
   const { dict, page } = await getPage(lang);
 
+  const faq = faqLd(page.sections);
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: page.title,
-    description: page.lastUpdated,
-    url: `${BASE_URL}/${lang}/ai-act`,
-    inLanguage: lang,
-    isPartOf: { '@type': 'WebSite', url: BASE_URL, name: 'EuHub AI' },
-    publisher: { '@type': 'Organization', name: 'EuHub AI', url: BASE_URL },
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        name: page.title,
+        description: page.lastUpdated,
+        url: `${BASE_URL}/${lang}/ai-act`,
+        inLanguage: lang,
+        isPartOf: { '@type': 'WebSite', url: BASE_URL, name: 'EuHub AI' },
+        publisher: { '@type': 'Organization', name: 'EuHub AI', url: BASE_URL },
+      },
+      breadcrumbLd(lang, 'ai-act', page.title),
+      ...(faq ? [faq] : []),
+    ],
   };
 
   return (

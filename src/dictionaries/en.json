@@ -399,6 +399,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
+    "metaDescription": "How EuHub AI collects, uses, and protects your data under GDPR — your rights, retention periods, and how to contact us.",
     "lastUpdated": "Effective Date: 2026",
     "sections": [
       {
@@ -441,6 +442,7 @@
   },
   "terms": {
     "title": "Terms of Service",
+    "metaDescription": "The terms governing use of EuHub AI's website and services: scope, liability, intellectual property, and governing law.",
     "lastUpdated": "Effective Date: 2026",
     "sections": [
       {
@@ -471,6 +473,7 @@
   },
   "cookie": {
     "title": "Cookie Policy",
+    "metaDescription": "How EuHub AI uses cookies and consent — what we set, why, and how to change your preferences at any time.",
     "sections": [
       {
         "heading": "1. What are Cookies?",

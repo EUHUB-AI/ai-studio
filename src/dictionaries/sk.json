@@ -414,6 +414,7 @@
     },
     "privacy": {
         "title": "Zásady ochrany osobných údajov",
+        "metaDescription": "Ako EuHub AI zhromažďuje, používa a chráni vaše údaje podľa GDPR — vaše práva, doby uchovávania a kontakt na nás.",
         "lastUpdated": "Dátum účinnosti: 2026",
         "sections": [
             {
@@ -456,6 +457,7 @@
     },
     "terms": {
         "title": "Obchodné podmienky",
+        "metaDescription": "Podmienky používania webovej stránky a služieb EuHub AI: rozsah, zodpovednosť, duševné vlastníctvo a rozhodné právo.",
         "lastUpdated": "Dátum účinnosti: 2026",
         "sections": [
             {
@@ -486,6 +488,7 @@
     },
     "cookie": {
         "title": "Zásady používania súborov cookie",
+        "metaDescription": "Ako EuHub AI používa súbory cookie a súhlas — čo nastavujeme, prečo a ako kedykoľvek zmeniť svoje preferencie.",
         "sections": [
             {
                 "heading": "1. Čo sú súbory cookie?",
