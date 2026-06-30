@@ -9,33 +9,10 @@ import styles from './infra.module.css';
 // Dedicated Formspree form for the infra waitlist.
 const FORM_ID = 'xzdlajdd';
 const MIKE_LINKEDIN = 'https://www.linkedin.com/in/gordievsky/';
+const LOCALES = ['en', 'sk', 'de'] as const;
+type Locale = (typeof LOCALES)[number];
 
-const SERVICES = [
-  {
-    title: 'Infrastructure migration',
-    body: 'Cloud-to-cloud, on-prem to cloud, or data-centre exit — mapped, codified in Terraform/IaC, and cut over with minimal downtime.',
-  },
-  {
-    title: 'DevSecOps pipelines',
-    body: 'CI/CD with security as a gate, not an afterthought: SAST/DAST, SBOMs, secret and dependency scanning, and policy-as-code.',
-  },
-  {
-    title: 'Platform & reliability (SRE)',
-    body: 'Observability, autoscaling, and incident-ready operations — built for uptime and on-call sanity.',
-  },
-  {
-    title: 'Compliance-ready by default',
-    body: 'EU data residency, GDPR-aligned data flows, audit trails, and controls mapped to ISO 27001 / SOC 2 expectations.',
-  },
-];
-
-const STEPS = [
-  { n: '01', t: 'Assess', d: 'Map your estate, risks, and the migration path.' },
-  { n: '02', t: 'Migrate', d: 'Codify and move workloads with IaC; zero-downtime cutover.' },
-  { n: '03', t: 'Harden', d: 'Build security and compliance into the pipeline.' },
-  { n: '04', t: 'Operate', d: 'Observability, SRE practices, and clean handover. You own it.' },
-];
-
+// Terminal/CI mockup stays in English (a real terminal) and is decorative.
 const PIPELINE = [
   { mark: '✓', label: 'Discover', meta: '142 resources mapped' },
   { mark: '✓', label: 'Provision', meta: 'Terraform / IaC — 0 drift' },
@@ -51,27 +28,23 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
   );
 }
 
-function WaitlistForm({ id, compact }: { id: string; compact?: boolean }) {
+function WaitlistForm({ id, t }: { id: string; t: any }) {
   const [state, handleSubmit] = useForm(FORM_ID);
 
   if (state.succeeded) {
-    return (
-      <p role="status" className="text-[var(--foreground)] font-medium">
-        ✓ You&rsquo;re on the list — we&rsquo;ll be in touch when infra.euhub-ai.com goes live.
-      </p>
-    );
+    return <p role="status" className="text-[var(--foreground)] font-medium">{t.success}</p>;
   }
 
   return (
-    <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row gap-3 ${compact ? '' : 'max-w-md'}`}>
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md">
       <div className="flex-1">
-        <label htmlFor={id} className="sr-only">Work email</label>
+        <label htmlFor={id} className="sr-only">{t.emailLabel}</label>
         <input
           id={id}
           type="email"
           name="email"
           required
-          placeholder="you@company.com"
+          placeholder={t.emailPlaceholder}
           className="w-full px-4 py-3 rounded-lg bg-[var(--card-bg)] border border-[var(--card-border)] text-[var(--foreground)] placeholder-[var(--muted-foreground)] focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)] focus:outline-none transition"
         />
         <input type="hidden" name="interest" value="infra-waitlist" />
@@ -82,39 +55,69 @@ function WaitlistForm({ id, compact }: { id: string; compact?: boolean }) {
         disabled={state.submitting}
         className="rounded-lg px-6 py-3 font-semibold bg-[var(--primary)] text-[var(--on-primary)] shadow-[0_0_20px_var(--primary-glow)] transition hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
       >
-        {state.submitting ? 'Joining…' : 'Get early access'}
+        {state.submitting ? t.submitting : t.submit}
       </button>
     </form>
   );
 }
 
-export function InfraLanding() {
+export function InfraLanding({ dicts }: { dicts: Record<Locale, any> }) {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [lang, setLang] = useState<Locale>('en');
 
+  // Restore theme + language; fall back to the browser language on first visit.
   useEffect(() => {
-    const saved = typeof window !== 'undefined' ? window.localStorage.getItem('infra-theme') : null;
-    if (saved === 'dark' || saved === 'light') setTheme(saved);
+    try {
+      const savedTheme = window.localStorage.getItem('infra-theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') setTheme(savedTheme);
+      const savedLang = window.localStorage.getItem('infra-lang') as Locale | null;
+      if (savedLang && LOCALES.includes(savedLang)) setLang(savedLang);
+      else {
+        const nav = (navigator.language || 'en').slice(0, 2) as Locale;
+        if (LOCALES.includes(nav)) setLang(nav);
+      }
+    } catch {}
   }, []);
 
-  const toggleTheme = () => {
-    setTheme((t) => {
-      const next = t === 'light' ? 'dark' : 'light';
-      try { window.localStorage.setItem('infra-theme', next); } catch {}
-      return next;
-    });
+  const toggleTheme = () => setTheme((prev) => {
+    const next = prev === 'light' ? 'dark' : 'light';
+    try { window.localStorage.setItem('infra-theme', next); } catch {}
+    return next;
+  });
+
+  const changeLang = (l: Locale) => {
+    setLang(l);
+    try { window.localStorage.setItem('infra-lang', l); } catch {}
   };
+
+  const t = dicts[lang] || dicts.en;
+  const logo = theme === 'light' ? '/logo_light.webp' : '/logo_dark.webp';
 
   return (
     <div className={`${styles.shell} ${theme === 'light' ? styles.light : styles.dark} font-sans selection:bg-[var(--primary)] selection:text-[var(--on-primary)]`}>
       {/* ---------- Nav ---------- */}
       <header className="sticky top-0 z-50 glass border-b border-[var(--card-border)] backdrop-blur-md">
-        <div className="container mx-auto px-4 h-[var(--header-height)] flex items-center justify-between">
-          <div className="flex items-baseline gap-2">
-            <span className="text-lg font-extrabold tracking-tight text-[var(--foreground)]">EuHub AI</span>
+        <div className="container mx-auto px-4 h-[var(--header-height)] flex items-center justify-between gap-4">
+          <a href="https://euhub-ai.com" className="flex items-center gap-2 flex-shrink-0" aria-label="EuHub AI">
+            <span className="relative w-[112px] h-[36px] block">
+              <Image src={logo} alt="EuHub AI" fill sizes="112px" style={{ objectFit: 'contain', objectPosition: 'left' }} priority />
+            </span>
             <span className="font-mono text-xs tracking-widest uppercase text-[var(--primary)]">/ Infra</span>
-          </div>
-          <div className="flex items-center gap-4 sm:gap-6">
-            <a href="https://euhub-ai.com" className="hidden sm:inline text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition">euhub-ai.com&nbsp;↗</a>
+          </a>
+          <div className="flex items-center gap-3 sm:gap-5">
+            <div className="flex items-center gap-2 text-xs font-bold" role="group" aria-label="Language">
+              {LOCALES.map((l) => (
+                <button
+                  key={l}
+                  type="button"
+                  onClick={() => changeLang(l)}
+                  aria-current={lang === l ? 'true' : undefined}
+                  className={`tracking-widest transition-colors ${lang === l ? 'text-[var(--primary)]' : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)]'}`}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+            </div>
             <button
               type="button"
               onClick={toggleTheme}
@@ -123,8 +126,8 @@ export function InfraLanding() {
             >
               <span aria-hidden>{theme === 'light' ? '☾' : '☀'}</span>
             </button>
-            <a href="#waitlist" className="rounded-full px-5 py-2 text-sm font-semibold bg-[var(--primary)] text-[var(--on-primary)] shadow-[0_0_18px_var(--primary-glow)] hover:-translate-y-0.5 transition">
-              Join the waitlist
+            <a href="#waitlist" className="hidden sm:inline-flex rounded-full px-5 py-2 text-sm font-semibold bg-[var(--primary)] text-[var(--on-primary)] shadow-[0_0_18px_var(--primary-glow)] hover:-translate-y-0.5 transition">
+              {t.nav.waitlist}
             </a>
           </div>
         </div>
@@ -132,35 +135,30 @@ export function InfraLanding() {
 
       <main id="main">
         {/* ---------- Hero ---------- */}
-        <section className="relative overflow-hidden">
+        <section className="relative overflow-hidden pt-20 pb-24">
           <div aria-hidden className={`absolute inset-0 -z-10 ${styles.heroGlow}`} />
           <div aria-hidden className={`absolute inset-0 -z-10 ${styles.gridLines}`} />
-          <div className="container mx-auto px-4 pt-20 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-7">
-              <Eyebrow>Infrastructure migration · DevSecOps</Eyebrow>
+              <Eyebrow>{t.hero.eyebrow}</Eyebrow>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-[var(--foreground)]">
-                Migrate with confidence.{' '}
-                <span className={styles.gradientText}>Secure by design.</span>
+                {t.hero.titleLead}{' '}
+                <span className={styles.gradientText}>{t.hero.titleAccent}</span>
               </h1>
               <p className="text-lg text-[var(--muted-foreground)] leading-relaxed max-w-2xl">
-                We move your workloads to the cloud and bake security into every pipeline — infrastructure-as-code you own,
-                EU data residency, and zero lock-in. Architected by a senior DevOps engineer, not handed to juniors.
+                {t.hero.subtitle}
               </p>
 
               <div id="waitlist" className="pt-2 scroll-mt-24">
-                <WaitlistForm id="email-hero" />
-                <p className="text-xs text-[var(--muted-foreground)] mt-2">
-                  Be first when infra.euhub-ai.com goes live. No spam, ever.
-                </p>
+                <WaitlistForm id="email-hero" t={t.hero} />
+                <p className="text-xs text-[var(--muted-foreground)] mt-2">{t.hero.note}</p>
               </div>
 
               <div className="flex flex-wrap items-center gap-4 pt-1">
                 <a href="mailto:hello@euhub-ai.com?subject=infra.euhub-ai.com" className="rounded-full px-6 py-3 font-semibold border border-[var(--muted-foreground)] text-[var(--foreground)] hover:border-[var(--foreground)] transition">
-                  Book a call with Mike&nbsp;→
+                  {t.hero.secondaryCta}
                 </a>
-                <span className="font-mono text-xs text-[var(--muted-foreground)]">
-                  EU data residency · IaC you own · No vendor lock-in
-                </span>
+                <span className="font-mono text-xs text-[var(--muted-foreground)]">{t.hero.trust}</span>
               </div>
             </div>
 
@@ -171,14 +169,14 @@ export function InfraLanding() {
                   <span className="w-3 h-3 rounded-full bg-red-500/70" />
                   <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
                   <span className="w-3 h-3 rounded-full bg-green-500/70" />
-                  <span className="ml-3 font-mono text-[11px] text-slate-400">infra · migration pipeline</span>
+                  <span className="ml-3 font-mono text-[11px] text-slate-400">{t.hero.terminalCaption}</span>
                 </div>
                 <div className="p-5 font-mono text-sm space-y-3">
                   <div className="text-slate-400">$ infra migrate --plan</div>
                   {PIPELINE.map((p) => (
                     <div key={p.label} className="flex items-center justify-between gap-4">
                       <span className="flex items-center gap-2 text-slate-200">
-                        <span className={`${p.active ? `text-[#00E5FF] ${styles.pulse} animate-pulse` : 'text-[#00E5FF]'}`}>{p.mark}</span>
+                        <span className={p.active ? `text-[#00E5FF] ${styles.pulse} animate-pulse` : 'text-[#00E5FF]'}>{p.mark}</span>
                         {p.label}
                       </span>
                       <span className="text-slate-500 text-xs">{p.meta}</span>
@@ -186,7 +184,7 @@ export function InfraLanding() {
                   ))}
                   <div className="mt-4 pt-3 border-t border-[#2A2D3E] flex items-center justify-between">
                     <span className="text-slate-400 text-xs">status</span>
-                    <span className="text-[#00FF55] text-xs">migration ready</span>
+                    <span className="text-[#00FF55] text-xs">{t.hero.terminalStatus}</span>
                   </div>
                 </div>
               </div>
@@ -195,91 +193,94 @@ export function InfraLanding() {
         </section>
 
         {/* ---------- What we do ---------- */}
-        <section className="container mx-auto px-4 py-24">
-          <div className="max-w-3xl mb-12">
-            <Eyebrow>01 // What we do</Eyebrow>
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
-              Infrastructure, migrated and hardened.
-            </h2>
-          </div>
-          <div role="list" className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {SERVICES.map((s) => (
-              <GlassCard
-                key={s.title}
-                role="listitem"
-                className="p-8 border border-[var(--card-border)] bg-[var(--card-bg)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--primary)]/40"
-              >
-                <h3 className="text-xl font-bold text-[var(--foreground)]">{s.title}</h3>
-                <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mt-3">{s.body}</p>
-              </GlassCard>
-            ))}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mb-12">
+              <Eyebrow>{t.services.eyebrow}</Eyebrow>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
+                {t.services.title}
+              </h2>
+            </div>
+            <div role="list" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {t.services.items.map((s: any) => (
+                <GlassCard
+                  key={s.title}
+                  role="listitem"
+                  className="p-8 border border-[var(--card-border)] bg-[var(--card-bg)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--primary)]/40"
+                >
+                  <h3 className="text-xl font-bold text-[var(--foreground)]">{s.title}</h3>
+                  <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mt-3">{s.body}</p>
+                </GlassCard>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* ---------- How it works ---------- */}
-        <section className="container mx-auto px-4 py-24">
-          <div className="max-w-3xl mb-12">
-            <Eyebrow>02 // How it works</Eyebrow>
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
-              A migration path you can see end to end.
-            </h2>
-          </div>
-          <div role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {STEPS.map((s) => (
-              <div role="listitem" key={s.n} className="p-6 rounded-2xl border border-[var(--card-border)] bg-[var(--card-bg)]">
-                <div className="font-mono text-2xl font-bold text-[var(--primary)]">{s.n}</div>
-                <h3 className="text-lg font-bold text-[var(--foreground)] mt-3">{s.t}</h3>
-                <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mt-2">{s.d}</p>
-              </div>
-            ))}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mb-12">
+              <Eyebrow>{t.process.eyebrow}</Eyebrow>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
+                {t.process.title}
+              </h2>
+            </div>
+            <div role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {t.process.steps.map((s: any, i: number) => (
+                <div role="listitem" key={s.t} className="p-6 rounded-2xl border border-[var(--card-border)] bg-[var(--card-bg)]">
+                  <div className="font-mono text-2xl font-bold text-[var(--primary)]">{String(i + 1).padStart(2, '0')}</div>
+                  <h3 className="text-lg font-bold text-[var(--foreground)] mt-3">{s.t}</h3>
+                  <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mt-2">{s.d}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* ---------- The expert ---------- */}
-        <section className="container mx-auto px-4 py-24">
-          <div className="max-w-3xl mb-12">
-            <Eyebrow>03 // Who</Eyebrow>
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
-              Led by a DevOps Architect.
-            </h2>
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mb-12">
+              <Eyebrow>{t.expert.eyebrow}</Eyebrow>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
+                {t.expert.title}
+              </h2>
+            </div>
+            <GlassCard className="p-8 border border-[var(--card-border)] bg-[var(--card-bg)] flex flex-col sm:flex-row gap-8 items-start">
+              <div className="relative w-28 h-28 rounded-2xl overflow-hidden bg-[var(--card-border)] flex-shrink-0">
+                <Image src="/photos/mike1.webp" alt={t.expert.name} fill sizes="112px" className="object-cover object-top" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-[var(--foreground)]">{t.expert.name}</h3>
+                <p className="text-sm font-mono uppercase tracking-widest text-[var(--primary)] mt-1">{t.expert.role}</p>
+                <p className="text-[var(--muted-foreground)] leading-relaxed mt-4 max-w-xl">{t.expert.bio}</p>
+                <a
+                  href={MIKE_LINKEDIN}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${t.expert.connect} — ${t.expert.name}`}
+                  className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-[var(--primary)] hover:underline"
+                >
+                  {t.expert.connect}
+                  <span aria-hidden>→</span>
+                </a>
+              </div>
+            </GlassCard>
           </div>
-          <GlassCard className="p-8 border border-[var(--card-border)] bg-[var(--card-bg)] flex flex-col sm:flex-row gap-8 items-start">
-            <div className="relative w-28 h-28 rounded-2xl overflow-hidden bg-[var(--card-border)] flex-shrink-0">
-              <Image src="/photos/mike1.webp" alt="Mike G." fill sizes="112px" className="object-cover object-top" />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-[var(--foreground)]">Mike G.</h3>
-              <p className="text-sm font-mono uppercase tracking-widest text-[var(--primary)] mt-1">DevOps Architect</p>
-              <p className="text-[var(--muted-foreground)] leading-relaxed mt-4 max-w-xl">
-                Years building and securing cloud platforms across AWS, GCP, and Azure, Kubernetes, and Terraform.
-                He leads every infrastructure engagement personally — your migration is architected, not outsourced to juniors.
-              </p>
-              <a
-                href={MIKE_LINKEDIN}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Connect with Mike G. on LinkedIn (opens in a new tab)"
-                className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-[var(--primary)] hover:underline"
-              >
-                Connect on LinkedIn
-                <span aria-hidden>→</span>
-              </a>
-            </div>
-          </GlassCard>
         </section>
 
         {/* ---------- Final CTA ---------- */}
-        <section className="container mx-auto px-4 py-24">
-          <div className="rounded-3xl border border-[var(--card-border)] bg-[var(--card-bg)] p-10 md:p-14 text-center max-w-3xl mx-auto">
-            <Eyebrow>04 // Early access</Eyebrow>
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3 mb-4">
-              infra.euhub-ai.com is launching soon.
-            </h2>
-            <p className="text-[var(--muted-foreground)] leading-relaxed mb-8 max-w-xl mx-auto">
-              Join the waitlist for early access to EU-grade infrastructure migration and DevSecOps.
-            </p>
-            <div className="flex justify-center">
-              <WaitlistForm id="email-final" />
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="rounded-3xl border border-[var(--card-border)] bg-[var(--card-bg)] p-10 md:p-14 text-center max-w-3xl mx-auto">
+              <Eyebrow>{t.cta.eyebrow}</Eyebrow>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3 mb-4">
+                {t.cta.title}
+              </h2>
+              <p className="text-[var(--muted-foreground)] leading-relaxed mb-8 max-w-xl mx-auto">{t.cta.body}</p>
+              <div className="flex justify-center">
+                <WaitlistForm id="email-final" t={t.hero} />
+              </div>
             </div>
           </div>
         </section>
@@ -290,8 +291,8 @@ export function InfraLanding() {
         <div className="container mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[var(--muted-foreground)]">
           <p>&copy; {new Date().getFullYear()} EuHub AI — Engineers-incubator s.r.o.</p>
           <div className="flex items-center gap-6">
-            <a href="https://euhub-ai.com" className="hover:text-[var(--foreground)] transition">← Back to euhub-ai.com</a>
-            <a href="https://euhub-ai.com/en/privacy" className="hover:text-[var(--foreground)] transition">Privacy</a>
+            <a href="https://euhub-ai.com" className="hover:text-[var(--foreground)] transition">{t.footerLinks.back}</a>
+            <a href="https://euhub-ai.com/en/privacy" className="hover:text-[var(--foreground)] transition">{t.footerLinks.privacy}</a>
           </div>
         </div>
       </footer>
