@@ -6,9 +6,8 @@ import { useForm, ValidationError } from '@formspree/react';
 import { GlassCard } from '../../components/shared/GlassCard';
 import styles from './infra.module.css';
 
-// Reuses the main site's Formspree project so submissions work on deploy.
-// Tagged with interest=infra-waitlist; swap for a dedicated form when ready.
-const FORM_ID = 'xeelrddn';
+// Dedicated Formspree form for the infra waitlist.
+const FORM_ID = 'xzdlajdd';
 const MIKE_LINKEDIN = 'https://www.linkedin.com/in/gordievsky/';
 
 const SERVICES = [
@@ -196,7 +195,7 @@ export function InfraLanding() {
         </section>
 
         {/* ---------- What we do ---------- */}
-        <section className="container mx-auto px-4 py-20">
+        <section className="container mx-auto px-4 py-24">
           <div className="max-w-3xl mb-12">
             <Eyebrow>01 // What we do</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
@@ -218,7 +217,7 @@ export function InfraLanding() {
         </section>
 
         {/* ---------- How it works ---------- */}
-        <section className="container mx-auto px-4 py-20">
+        <section className="container mx-auto px-4 py-24">
           <div className="max-w-3xl mb-12">
             <Eyebrow>02 // How it works</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
@@ -237,7 +236,7 @@ export function InfraLanding() {
         </section>
 
         {/* ---------- The expert ---------- */}
-        <section className="container mx-auto px-4 py-20">
+        <section className="container mx-auto px-4 py-24">
           <div className="max-w-3xl mb-12">
             <Eyebrow>03 // Who</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3">
