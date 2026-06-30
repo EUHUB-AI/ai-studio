@@ -414,6 +414,7 @@
   },
   "privacy": {
     "title": "Datenschutzerklärung",
+    "metaDescription": "Wie EuHub AI Ihre Daten gemäß DSGVO erhebt, nutzt und schützt — Ihre Rechte, Speicherfristen und Kontaktmöglichkeiten.",
     "lastUpdated": "Gültig ab: 2026",
     "sections": [
       {
@@ -456,6 +457,7 @@
   },
   "terms": {
     "title": "Nutzungsbedingungen",
+    "metaDescription": "Die Nutzungsbedingungen für Website und Dienste von EuHub AI: Umfang, Haftung, geistiges Eigentum und anwendbares Recht.",
     "lastUpdated": "Gültig ab: 2026",
     "sections": [
       {
@@ -486,6 +488,7 @@
   },
   "cookie": {
     "title": "Cookie-Richtlinie",
+    "metaDescription": "Wie EuHub AI Cookies und Einwilligung verwendet — was wir setzen, warum, und wie Sie Ihre Einstellungen jederzeit ändern.",
     "sections": [
       {
         "heading": "1. Was sind Cookies?",

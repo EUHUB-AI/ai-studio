@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getDictionary } from '../../get-dictionary';
+import { personLd, serviceLd, founderId } from '../../lib/seo';
 import { Navbar } from '../../components/navigation/Navbar';
 import { Hero } from '../../components/sections/Hero';
 import { PainsSituations } from '../../components/sections/PainsSituations';
@@ -45,6 +46,11 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   const { lang } = await params;
   const dict = await getDictionary(lang as 'en' | 'sk' | 'de');
 
+  const members = dict.team?.members || [];
+  const persons = personLd(members);
+  const fId = founderId(members);
+  const service = serviceLd(dict.process?.tiers);
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -63,6 +69,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           postalCode: '974 01',
           addressCountry: 'SK',
         },
+        ...(fId ? { founder: { '@id': fId } } : {}),
+        ...(persons.length ? { employee: persons.map((p) => ({ '@id': p['@id'] })) } : {}),
       },
       {
         '@type': 'WebSite',
@@ -72,6 +80,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         publisher: { '@id': `${BASE_URL}/#organization` },
         inLanguage: lang,
       },
+      ...persons,
+      service,
     ],
   };
 
