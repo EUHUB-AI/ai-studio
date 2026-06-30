@@ -1,20 +1,29 @@
 import type { Metadata } from 'next';
+import { getDictionary } from '../../get-dictionary';
 import { InfraLanding } from './InfraLanding';
 
 const BASE = 'https://infra.euhub-ai.com';
-const TITLE = 'Infrastructure Migration & DevSecOps | EuHub AI';
-const DESC =
-  'Cloud migration and DevSecOps for the EU: infrastructure-as-code you own, security baked into every pipeline, EU data residency, and zero lock-in. Join the waitlist.';
 
-export const metadata: Metadata = {
-  title: { absolute: TITLE }, // skip the root "%s | EuHub AI" template (brand already present)
-  description: DESC,
-  alternates: { canonical: BASE },
-  openGraph: { title: TITLE, description: DESC, url: BASE, images: ['/og.png'] },
-  twitter: { card: 'summary_large_image', images: ['/og.png'] },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const dict = await getDictionary('en');
+  const m = dict.infra?.meta || {};
+  return {
+    title: { absolute: m.title || 'Infrastructure Migration & DevSecOps | EuHub AI' },
+    description: m.description,
+    alternates: { canonical: BASE },
+    openGraph: { title: m.title, description: m.description, url: BASE, images: ['/og.png'] },
+    twitter: { card: 'summary_large_image', images: ['/og.png'] },
+  };
+}
 
-export default function InfraPage() {
+export default async function InfraPage() {
+  const [en, sk, de] = await Promise.all([
+    getDictionary('en'),
+    getDictionary('sk'),
+    getDictionary('de'),
+  ]);
+  const dicts = { en: en.infra, sk: sk.infra, de: de.infra };
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -40,7 +49,7 @@ export default function InfraPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <InfraLanding />
+      <InfraLanding dicts={dicts} />
     </>
   );
 }
