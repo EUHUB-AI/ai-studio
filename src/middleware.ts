@@ -5,6 +5,15 @@ const VALID_LOCALES = ['en', 'sk', 'de'];
 
 export function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
+    const host = (request.headers.get('host') || '').split(':')[0];
+
+    // The infra.* subdomain serves the /infra route at its root.
+    if (host.startsWith('infra.') && !pathname.startsWith('/infra')) {
+        const url = request.nextUrl.clone();
+        url.pathname = '/infra';
+        return NextResponse.rewrite(url);
+    }
+
     const locale = pathname.split('/')[1];
 
     const requestHeaders = new Headers(request.headers);
