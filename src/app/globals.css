@@ -163,7 +163,12 @@ a {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 2rem;
+  /* Horizontal only. Using the `padding` shorthand here zeroed the vertical
+     padding of any element that ALSO had a Tailwind py-* utility (it's declared
+     after @tailwind utilities, so it won the cascade) — which collapsed sections
+     that put `container` and `py-*` on the same element. */
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .glass {
