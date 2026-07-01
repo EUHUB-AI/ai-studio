@@ -351,6 +351,28 @@
       "terminalCaption": "infra · migration pipeline",
       "terminalStatus": "migration ready"
     },
+    "why": {
+      "banner": {
+        "title": "Storing EU customer data on a US cloud? This is worth five minutes.",
+        "body": "A June 2026 US Supreme Court ruling weakened the \"independent oversight\" the EU–US Data Privacy Framework legally rests on.",
+        "cta": "Why this matters →"
+      },
+      "eyebrow": "02 // Why now",
+      "title": "Storing EU customer data on a US cloud? The ground just moved.",
+      "paragraphs": [
+        "On 29 June 2026 the US Supreme Court (Trump v. Slaughter) let the President remove the FTC's leadership — the \"independent oversight\" the EU–US Data Privacy Framework needs to survive a challenge in EU courts. That independence isn't a technicality; it's the framework's legal basis.",
+        "We've seen this movie before. Twice — Safe Harbor (2015) and Privacy Shield (2020), both over the same flaw. The current framework still stands (it survived a court challenge in 2025), but noyb — the group that struck down the last two — has already asked the European Commission to wind it down.",
+        "Nobody knows the timeline; these EU cases run two to three years. But \"we have time\" is what companies said in 2019 — right before Privacy Shield collapsed and contracts were rewritten in a hurry.",
+        "Running these migrations, the companies that stay calm already know which workloads are exposed and have a credible plan B. That's why we build this way: infrastructure-as-code you own, EU data residency by default, no single-provider lock-in."
+      ],
+      "sourcesLabel": "Sources:",
+      "sources": [
+        { "label": "SCOTUSblog", "url": "https://www.scotusblog.com/2026/06/court-allows-trump-to-fire-ftc-commissioner-and-overturns-major-restraint-on-presidential-power/" },
+        { "label": "noyb.eu", "url": "https://noyb.eu/en/us-supreme-court-just-blew-eu-us-data-transfers" },
+        { "label": "EU adequacy decision (EU) 2023/1795", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023D1795" },
+        { "label": "EU–US Data Privacy Framework", "url": "https://en.wikipedia.org/wiki/EU%E2%80%93US_Data_Privacy_Framework" }
+      ]
+    },
     "services": {
       "eyebrow": "01 // What we do",
       "title": "Infrastructure, migrated and hardened.",
@@ -362,7 +384,7 @@
       ]
     },
     "process": {
-      "eyebrow": "02 // How it works",
+      "eyebrow": "03 // How it works",
       "title": "A migration path you can see end to end.",
       "steps": [
         { "t": "Assess", "d": "Map your estate, risks, and the migration path." },
@@ -372,7 +394,7 @@
       ]
     },
     "expert": {
-      "eyebrow": "03 // Who",
+      "eyebrow": "04 // Who",
       "title": "Led by a DevOps Architect.",
       "name": "Mike G.",
       "role": "DevOps Architect",
@@ -380,7 +402,7 @@
       "connect": "Connect on LinkedIn"
     },
     "cta": {
-      "eyebrow": "04 // Early access",
+      "eyebrow": "05 // Early access",
       "title": "infra.euhub-ai.com is launching soon.",
       "body": "Join the waitlist for early access to EU-grade infrastructure migration and DevSecOps."
     },

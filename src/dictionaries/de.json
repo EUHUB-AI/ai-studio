@@ -366,6 +366,28 @@
       "terminalCaption": "infra · Migrations-Pipeline",
       "terminalStatus": "bereit zur Migration"
     },
+    "why": {
+      "banner": {
+        "title": "Sie speichern EU-Kundendaten in einer US-Cloud? Das ist fünf Minuten wert.",
+        "body": "Ein Urteil des Obersten US-Gerichtshofs vom Juni 2026 hat die „unabhängige Aufsicht“ geschwächt, auf der der EU-US-Datenschutzrahmen rechtlich beruht.",
+        "cta": "Warum das wichtig ist →"
+      },
+      "eyebrow": "02 // Warum jetzt",
+      "title": "Sie speichern EU-Kundendaten in einer US-Cloud? Der Boden ist gerade ins Wanken geraten.",
+      "paragraphs": [
+        "Am 29. Juni 2026 erlaubte der Oberste US-Gerichtshof (Trump v. Slaughter) dem Präsidenten, die Führung der FTC abzusetzen — die „unabhängige Aufsicht“, die der EU-US-Datenschutzrahmen braucht, um vor EU-Gerichten zu bestehen. Diese Unabhängigkeit ist keine Formalität, sondern die rechtliche Grundlage des Rahmens.",
+        "Diesen Film haben wir schon gesehen. Zweimal — Safe Harbor (2015) und Privacy Shield (2020), jedes Mal wegen desselben Mangels. Der aktuelle Rahmen gilt noch (er hat 2025 eine gerichtliche Prüfung überstanden), aber noyb — die Gruppe, die die beiden vorherigen zu Fall brachte — hat die Europäische Kommission bereits aufgefordert, ihn abzuwickeln.",
+        "Niemand kennt den Zeitrahmen; solche EU-Verfahren dauern zwei bis drei Jahre. Aber „wir haben Zeit“ ist genau das, was Unternehmen 2019 sagten — kurz bevor Privacy Shield kippte und Verträge in aller Eile neu geschrieben werden mussten.",
+        "Bei diesen Migrationen bleiben die Unternehmen gelassen, die bereits wissen, welche Workloads betroffen sind, und einen belastbaren Plan B haben. Deshalb bauen wir so: Infrastructure-as-Code, der Ihnen gehört, EU-Datenresidenz als Standard, keine Abhängigkeit von einem einzigen Anbieter."
+      ],
+      "sourcesLabel": "Quellen:",
+      "sources": [
+        { "label": "SCOTUSblog", "url": "https://www.scotusblog.com/2026/06/court-allows-trump-to-fire-ftc-commissioner-and-overturns-major-restraint-on-presidential-power/" },
+        { "label": "noyb.eu", "url": "https://noyb.eu/en/us-supreme-court-just-blew-eu-us-data-transfers" },
+        { "label": "Angemessenheitsbeschluss (EU) 2023/1795", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023D1795" },
+        { "label": "EU-US-Datenschutzrahmen", "url": "https://en.wikipedia.org/wiki/EU%E2%80%93US_Data_Privacy_Framework" }
+      ]
+    },
     "services": {
       "eyebrow": "01 // Was wir tun",
       "title": "Infrastruktur — migriert und gehärtet.",
@@ -377,7 +399,7 @@
       ]
     },
     "process": {
-      "eyebrow": "02 // Wie es funktioniert",
+      "eyebrow": "03 // Wie es funktioniert",
       "title": "Ein Migrationspfad, den Sie von Anfang bis Ende sehen.",
       "steps": [
         { "t": "Analyse", "d": "Wir kartieren Ihre Landschaft, Risiken und den Migrationspfad." },
@@ -387,7 +409,7 @@
       ]
     },
     "expert": {
-      "eyebrow": "03 // Wer",
+      "eyebrow": "04 // Wer",
       "title": "Geleitet von einem DevOps-Architekten.",
       "name": "Mike G.",
       "role": "DevOps-Architekt",
@@ -395,7 +417,7 @@
       "connect": "Auf LinkedIn vernetzen"
     },
     "cta": {
-      "eyebrow": "04 // Frühzugang",
+      "eyebrow": "05 // Frühzugang",
       "title": "infra.euhub-ai.com geht bald live.",
       "body": "Tragen Sie sich in die Warteliste ein für Frühzugang zu Infrastruktur-Migration und DevSecOps auf EU-Niveau."
     },
