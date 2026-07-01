@@ -113,10 +113,11 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
             setVisibleCount(0);
             setTyping(scene.messages.length > 0);
 
+            const PACE = 4; // 4× slower presentation — more time to read each step
             let acc = 0;
             scene.messages.forEach((m, idx) => {
-                // ~900–1400ms per message, scaled to text length
-                acc += Math.min(1400, Math.max(900, 700 + m.text.length * 9));
+                // per-message delay scaled to text length, then slowed by PACE
+                acc += Math.min(1400, Math.max(900, 700 + m.text.length * 9)) * PACE;
                 const at = acc;
                 timers.push(setTimeout(() => {
                     setVisibleCount(idx + 1);
@@ -124,8 +125,8 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
                 }, at));
             });
 
-            // ~2s hold at the end of the scene, then advance + loop
-            timers.push(setTimeout(next, acc + 2000));
+            // hold at the end of the scene, then advance + loop
+            timers.push(setTimeout(next, acc + 2000 * PACE));
         }
 
         return () => timers.forEach(clearTimeout);
@@ -136,7 +137,6 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
     const features = dict.features?.items || [
         { title: 'ERP/CRM Syncing', desc: 'Bidirectional sync with SAP, Salesforce, and internal databases.' },
         { title: 'Secure Vault', desc: 'Isolated single-tenant deployment in your own environment (on-premise or private cloud): encryption in transit and at rest, role-based access control, and full audit trails.' },
-        { title: 'Real-time Analytics', desc: 'Live dashboards showing operational friction reduction and ROI.' },
         { title: 'Automated Reporting', desc: 'Generate board-ready audit reports instantaneously.' }
     ];
 
@@ -155,8 +155,8 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
                 {/* Bento Box Grid */}
                 <div className="group grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px] relative z-10">
 
-                    {/* Main AI Agent Demo Card (Span 2 Cols, 2 Rows) */}
-                    <GlassCard className="col-span-1 md:col-span-2 row-span-2 flex flex-col justify-between border border-[#E2E8F0] dark:border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.08)] dark:shadow-none hover:shadow-[0_15px_40px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] overflow-hidden relative">
+                    {/* Main AI Agent Demo Card (Span 2 Cols, full height) */}
+                    <GlassCard className="col-span-1 md:col-span-2 md:row-span-3 flex flex-col justify-between border border-[#E2E8F0] dark:border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.08)] dark:shadow-none hover:shadow-[0_15px_40px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] overflow-hidden relative">
 
                         <div className="p-8 pb-0">
                             <h3 className="text-2xl font-bold mb-2">{dict.features?.agentTitle || 'Autonomous AI Assistants'}</h3>
@@ -180,7 +180,7 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
                         </div>
 
                         {/* Animated Chat Interface */}
-                        <div ref={chatRef} className="mt-8 mx-8 mb-0 p-4 bg-white dark:bg-[#0D0E15] border-t border-l border-r border-slate-200 dark:border-[#2A2D3E] rounded-t-xl h-64 overflow-hidden relative flex flex-col shadow-[0_-5px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
+                        <div ref={chatRef} className="mt-8 mx-8 mb-0 p-4 bg-white dark:bg-[#0D0E15] border-t border-l border-r border-slate-200 dark:border-[#2A2D3E] rounded-t-xl flex-1 min-h-[16rem] overflow-hidden relative flex flex-col shadow-[0_-5px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
                             {/* Window chrome: traffic lights · address (lkw-control.com) · scene title pill */}
                             <div className="flex items-center gap-2 mb-3 border-b border-slate-200 dark:border-[#2A2D3E] pb-3 relative z-20">
                                 <div className="w-2.5 h-2.5 rounded-full bg-red-400 dark:bg-red-500/80"></div>
@@ -259,21 +259,19 @@ export const FeatureGrid = ({ lang, dict }: { lang: string, dict: any }) => {
 
                     {/* Standard Features */}
                     {features.map((feature: any, i: number) => (
-                        <GlassCard key={i} className={`flex flex-col justify-between p-8 border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] hover:border-[#00E5FF]/40 ${i === 2 ? 'md:col-span-2' : 'col-span-1'} ${i === 3 ? 'md:col-span-1' : ''} relative overflow-hidden`}>
+                        <GlassCard key={i} className={`flex flex-col justify-between p-8 border-[var(--card-border)] bg-[var(--card-bg)] backdrop-blur-md transition-all duration-300 opacity-100 group-hover:[&:not(:hover)]:opacity-50 dark:group-hover:[&:not(:hover)]:opacity-30 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(0,229,255,0.2)] hover:border-[#00E5FF]/40 col-span-1 relative overflow-hidden`}>
                             {/* Decorative Background Elements to fill empty space */}
                             <div aria-hidden="true" className="absolute -bottom-8 -right-8 opacity-5 text-black dark:text-white pointer-events-none">
                                 {i === 0 && <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>}
                                 {i === 1 && <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>}
-                                {i === 2 && <svg width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>}
-                                {i === 3 && <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>}
+                                {i === 2 && <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>}
                             </div>
 
                             <div className="relative z-10 w-12 h-12 rounded-lg bg-[var(--card-border)]/20 border border-[var(--card-border)] flex items-center justify-center mb-6 text-[var(--secondary)]">
                                 <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     {i === 0 && <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>} {/* Activity */}
                                     {i === 1 && <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>} {/* Shield */}
-                                    {i === 2 && <><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></>} {/* Bar Chart */}
-                                    {i === 3 && <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>} {/* File */}
+                                    {i === 2 && <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>} {/* File (Automated Reporting) */}
                                 </svg>
                             </div>
                             <div className="relative z-10">
