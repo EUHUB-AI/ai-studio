@@ -59,6 +59,23 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  // Serve the /infra landing at the root of the infra.euhub-ai.com subdomain.
+  // Complements redirects() above, which already exempt this host from the
+  // locale (/en) redirect via their `missing host` guards. Without this rewrite
+  // infra.euhub-ai.com/ has no matching route (there is no app/page.tsx) and 404s.
+  // beforeFiles ensures it wins before any filesystem/dynamic route resolution.
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/',
+          has: [{ type: 'host', value: 'infra.euhub-ai.com' }],
+          destination: '/infra',
+        },
+      ],
+    };
+  },
 };
 
 export default nextConfig;
