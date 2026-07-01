@@ -192,6 +192,17 @@ export function InfraLanding({ dicts }: { dicts: Record<Locale, any> }) {
           </div>
         </section>
 
+        {/* ---------- Why now banner ---------- */}
+        <div className="border-y border-[var(--card-border)] bg-[var(--card-bg)]">
+          <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+            <p className="text-sm text-[var(--foreground)] flex-1">
+              <span className="font-semibold">{t.why.banner.title}</span>{' '}
+              <span className="text-[var(--muted-foreground)]">{t.why.banner.body}</span>
+            </p>
+            <a href="#why" className="text-sm font-semibold text-[var(--primary)] whitespace-nowrap hover:underline flex-shrink-0">{t.why.banner.cta}</a>
+          </div>
+        </div>
+
         {/* ---------- What we do ---------- */}
         <section className="py-24">
           <div className="container mx-auto px-4">
@@ -212,6 +223,32 @@ export function InfraLanding({ dicts }: { dicts: Record<Locale, any> }) {
                   <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mt-3">{s.body}</p>
                 </GlassCard>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ---------- Why now ---------- */}
+        <section id="why" className="py-24 scroll-mt-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl">
+              <Eyebrow>{t.why.eyebrow}</Eyebrow>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--foreground)] mt-3 mb-6">
+                {t.why.title}
+              </h2>
+              <div className="space-y-4">
+                {t.why.paragraphs.map((p: string, i: number) => (
+                  <p key={i} className="text-[var(--muted-foreground)] leading-relaxed">{p}</p>
+                ))}
+              </div>
+              <p className="text-xs text-[var(--muted-foreground)] mt-6">
+                {t.why.sourcesLabel}{' '}
+                {t.why.sources.map((s: any, i: number) => (
+                  <span key={i}>
+                    {i > 0 && ' · '}
+                    <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">{s.label}</a>
+                  </span>
+                ))}
+              </p>
             </div>
           </div>
         </section>
