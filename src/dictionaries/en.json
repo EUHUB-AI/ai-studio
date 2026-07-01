@@ -182,10 +182,6 @@
         "desc": "Isolated single-tenant deployment in your own environment (on-premise or private cloud): encryption in transit and at rest, role-based access control, and full audit trails."
       },
       {
-        "title": "Real-time Analytics",
-        "desc": "Gain instant visibility into key performance metrics (KPIs). Our system turns complex data streams into clear strategic insight, so your management decides on live data instead of last week's report."
-      },
-      {
         "title": "Automated Reporting",
         "desc": "Generate board-ready audit reports instantaneously."
       }

@@ -182,10 +182,6 @@
         "desc": "Isolierte Single-Tenant-Bereitstellung in Ihrer eigenen Umgebung (On-Premise oder Private Cloud): Verschlüsselung bei Übertragung und im Ruhezustand, rollenbasierte Zugriffskontrolle und lückenlose Audit-Protokolle."
       },
       {
-        "title": "Echtzeit-Analyse",
-        "desc": "Erhalten Sie sofortigen Einblick in wichtige Leistungskennzahlen (KPIs). Unser System wandelt komplexe Datenströme in klare strategische Erkenntnisse um, sodass Ihr Management auf Basis aktueller Daten entscheidet statt auf Berichten der Vorwoche."
-      },
-      {
         "title": "Automatisiertes Reporting",
         "desc": "Sofortige Erstellung vorstandsfähiger Prüfberichte."
       }
